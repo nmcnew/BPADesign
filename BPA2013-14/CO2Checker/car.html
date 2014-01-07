@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Carbon Footprint Analyzer</title>
+		<link href="/BPA2013-14/assets/bs/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/BPA2013-14/assets/css/MainStyles.css" rel="stylesheet">
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="/BPA2013-14/assets/bs/js/bootstrap.min.js"></script>
+		<link href="/BPA2013-14/assets/select2-3.4.5/select2.css" rel="stylesheet"/>
+		<script src="/BPA2013-14/assets/select2-3.4.5/select2.js"></script>
+		<script>
+			$(document).ready(function() {
+
+				$('.myTip').tooltip();
+				$("#toLocation").select2();
+			});
+		</script>
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse center" role="navigation">
+			<div class="navbar-inner">
+				<ul class="nav navbar-nav">
+					<li >
+						<a href="/BPA2013-14" >Home</a>
+					</li>
+					<li class="active">
+						<a href="#">Carbon Footprint</a>
+					</li>
+					<li>
+						<a href="#">Check Stats</a>
+					</li>
+					<li >
+						<a href="/BPA2013-14/register">Register</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="body">
+			<ul class="nav nav-pills">
+				<li >
+					<a href="/BPA2013-14/CO2Checker">Get Started!</a>
+				</li>
+				<li>
+					<a href="/BPA2013-14/CO2Checker/houseCO2.html">House</a>
+				</li>
+				<li>
+					<a href="/BPA2013-14/CO2Checker/flight.html">Flights</a>
+				</li>
+				<li class="active">
+					<a href="car.html">Car</a>
+				</li>
+				<li>
+					<a href="motorbike.html">Motorbike</a>
+				</li>
+				<li>
+					<a href="busAndRail.html">Bus and Rail</a>
+				</li>
+				<li>
+					<a href="Secondary.html">Secondary</a>
+				</li>
+				<li>
+					<a href="results.html">Results</a>
+				</li>
+			</ul>
+			<h2>Car</h2>
+			<div >
+				<form role="form" class="calcForm">
+					<div class="input-group">
+					<label for="amtOfCar">How many cars do you own?</label>
+					<input type="number" class="amtOfCar">
+				</div>
+				<br/>
+					<div id="miles" class="input-group">
+						<input id="milesTravelled" type="number" class="form-control" placeholder="Mileage">
+						<div class="input-group-btn">
+							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+								Value <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu pull-right">
+								<li>
+									<a href="#">miles</a>
+								</li>
+								<li>
+									<a href="#">km</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+					<br/>
+					<div id="efficiency" class="input-group">
+						<input id="efficientNumber" type="number" class="form-control" placeholder="Efficiency">
+						<div class="input-group-btn">
+							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+								Value <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu pull-right">
+								<li>
+									<a href="#">mpg(US)</a>
+								</li>
+								<li>
+									<a href="#">mpg(UK)</a>
+								</li>
+								<li>
+									<a href="#">L/100km</a>
+								</li>
+								<li>
+									<a href="#">g/km(+15%)</a>
+								</li>
+							</ul>
+						</div>
+						<div class="input-group-btn">
+							<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+								Fuel <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu pull-right">
+								<li>
+									<a href="#">petrol/gas</a>
+								</li>
+								<li>
+									<a href="#">diesel</a>
+								</li>
+								<li>
+									<a href="#">LPG</a>
+								</li>
+								<li>
+									<a href="#">LNG/CNG</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+					<br/>
+					<br/>
+					<button type="submit" class="btn btn-primary">
+						Submit
+					</button>
+					<button type="button" class="btn btn-info calculate">
+						Calculate
+					</button>
+					<button type="button" class="btn btn-danger">
+						Back
+					</button>
+				</form>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(".dropdown-menu li a").click(function() {
+				var selText = $(this).text();
+				$(this).parents('.input-group-btn').find('.dropdown-toggle').html(selText + ' <span class="caret"></span>');
+
+			});
+		</script>
+	</body>
+</html>

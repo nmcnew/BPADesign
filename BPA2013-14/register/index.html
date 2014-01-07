@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Carbon Footprint Analyzer</title>
+		<link href="/BPA2013-14/assets/bs/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/BPA2013-14/assets/css/MainStyles.css" rel="stylesheet">
+
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse center" role="navigation">
+			<div class="navbar-inner">
+				<ul class="nav navbar-nav">
+					<li >
+						<a href="/BPA2013-14" >Home</a>
+					</li>
+					<li>
+						<a href="/BPA2013-14/CO2Checker">Carbon Footprint</a>
+					</li>
+					<li>
+						<a href="#">Check Stats</a>
+					</li>
+					<li class="active">
+						<a href="#">Register</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="body">
+			<div class="forms">
+			<form role="form" class="registerForm">
+				<h3>Register<br/><small>Keep Track of your stats!</small></h3>
+				<div class="form-group ">
+					<label for="username">Username*</label>
+					<input type="text" class="form-control input-sm" id="reg_username" placeholder="username">
+				</div>
+				<div class="form-group ">
+					<label for="email">Email address*</label>
+					<input type="email" class="form-control input-sm" id="email" placeholder="Enter email">
+				</div>
+				<div class="form-group ">
+					<label for="password">Password*</label>
+					<input type="password" class="form-control input-sm" id="reg_password" placeholder="Password">
+				</div>
+				<div class="form-group ">
+					<label for="passwordCheck">Password Check*</label>
+					<input type="password" class="form-control input-sm" id="passwordCheck" placeholder="Retype Password">
+				</div>
+				<button type="submit" class="btn btn-default ">
+					Submit
+				</button>
+			</form>
+			<form role="form" class="loginForm">
+				<h3>Login<br/><small>Access Your Account</small></h3>
+				<div class="form-group ">
+					<label for="login_username">Username</label>
+					<input type="text" class="form-control input-sm" id="login_username" placeholder="username/email">
+				</div>
+				<div class="form-group ">
+					<label for="login_password">Password</label>
+					<input type="password" class="form-control input-sm" id="login_password" placeholder="Password">
+				</div>
+				<button type="submit" class="btn btn-default ">
+					Submit
+				</button>
+			</form>
+			</div>
+		</div>
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="/BPA2013-14/assets/bs/js/bootstrap.min.js"></script>
+	</body>
+</html>
