@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Carbon Footprint Analyzer</title>
-		<link href="/BPA2013-14/assets/bs/css/bootstrap.min.css" rel="stylesheet">
-		<link href="/BPA2013-14/assets/css/MainStyles.css" rel="stylesheet">
+		<title>Your Effect</title>
+		<link href="../assets/bs/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../assets/css/MainStyles.css" rel="stylesheet">
 
 		<body>
 			<nav class="navbar navbar-inverse center" role="navigation">
 				<div class="navbar-inner">
 					<ul class="nav navbar-nav">
 						<li >
-							<a href="/BPA2013-14" >Home</a>
+							<a href=".." >Home</a>
 						</li>
 						<li class="active">
 							<a href="#">Carbon Footprint</a>
@@ -19,7 +19,7 @@
 							<a href="#">Check Stats</a>
 						</li>
 						<li >
-							<a href="/BPA2013-14/register">Register</a>
+							<a href="..//register">Register</a>
 						</li>
 					</ul>
 				</div>
@@ -27,13 +27,13 @@
 			<div class="body">
 				<ul class="nav nav-pills">
 					<li >
-						<a href="/BPA2013-14/CO2Checker">Get Started!</a>
+						<a href="../CO2Checker">Get Started!</a>
 					</li>
 					<li>
-						<a href="/BPA2013-14/CO2Checker/houseCO2.html">House</a>
+						<a href="../CO2Checker/houseCO2.html">House</a>
 					</li>
 					<li>
-						<a href="/BPA2013-14/CO2Checker/flight.html">Flights</a>
+						<a href="../CO2Checker/flight.html">Flights</a>
 					</li>
 					<li>
 						<a href="car.html">Car</a>
@@ -56,7 +56,7 @@
 					Carbon Footprint for someVar between Date1 and Date2
 				</p>
 				<div>
-					<p>This will autofill based on JS Cookie</p>
+					<!--This will autofill based on JS Cookie-->
 					<table class="table">
 						<tr>
 							<th>Type of Emission</th>
@@ -66,51 +66,61 @@
 						</tr>
 						<tr>
 							<td>House</td>
-							<td id="houseVal">House</td>
-							<td>House</td>
-							<td>House</td>
+							<td id="houseVal">Value</td>
+							<td>usVal</td>
+							<td>avgVal</td>
 						</tr>
 						<tr>
-							<td>House</td>
-							<td id="flightVal">House</td>
-							<td>House</td>
-							<td>House</td>
+							<td>Flights</td>
+							<td id="flightVal">Value</td>
+							<td>usVal</td>
+							<td>avgVal</td>
 						</tr>
 						<tr>
-							<td>House</td>
-							<td id="carVal">House</td>
-							<td>House</td>
-							<td>House</td>
+							<td>Car</td>
+							<td id="carVal">Value</td>
+							<td>usVal</td>
+							<td>avgVal</td>
 						</tr>
 						<tr>
-							<td>House</td>
-							<td id="bikeVal">House</td>
-							<td>House</td>
-							<td>House</td>
+							<td>Motorbike</td>
+							<td id="bikeVal">Value</td>
+							<td>usVal</td>
+							<td>avgVal</td>
 						</tr>
 						<tr>
-							<td>House</td>
-							<td id="busRailVal">House</td>
-							<td>House</td>
-							<td>House</td>
+							<td>Bus and Rail</td>
+							<td id="busRailVal">Value</td>
+							<td>usVal</td>
+							<td>avgVal</td>
 						</tr>
 						<tr>
-							<td>House</td>
-							<td id="secVal">House</td>
-							<td>House</td>
-							<td>House</td>
+							<td>Secondary</td>
+							<td id="secVal">Value</td>
+							<td>usVal</td>
+							<td>avgVal</td>
+						</tr>
+						<tr>
+							<th> Total </th>
+							<td id="totalCo2">Value</td>
+							<td>usVal</td>
+							<td>avgVal</td>
 						</tr>
 					</table>
 				</div>
-				<button type="button" class="btn btn-success">Submit Stats</button>
+				<button type="button" class="btn btn-success">
+					Submit Stats
+				</button>
 				<br/>
-				<a href="/BPA2013-14/register" >Create an account to keep track of your Stats!</a>
+				<a href="../register" >Create an account to keep track of your Stats!</a>
 
 				<hr/>
-				<footer>Created by The Centennial High School BPA Chapter Web Applications Team. </footer>
+				<footer>
+					Created by The Centennial High School BPA Chapter Web Applications Team.
+				</footer>
 			</div>
 			<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-			<script src="/BPA2013-14/assets/bs/js/bootstrap.min.js"></script>
+			<script src="../assets/bs/js/bootstrap.min.js"></script>
 			<script>
 				$(document).ready(function() {
 
