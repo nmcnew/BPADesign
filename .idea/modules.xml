@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BPA2013-14/BPA2013-14.iml" filepath="$PROJECT_DIR$/BPA2013-14/BPA2013-14.iml" />
+      <module fileurl="file://$PROJECT_DIR$/youreffect/youreffect.iml" filepath="$PROJECT_DIR$/youreffect/youreffect.iml" />
+    </modules>
+  </component>
+</project>
+
