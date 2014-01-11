@@ -21,7 +21,7 @@
     <div class="navbar-inner">
         <ul class="nav navbar-nav">
             <li>
-                <a href="..">Home</a>
+                <a href="../">Home</a>
             </li>
             <li class="active">
                 <a href="#">Carbon Footprint</a>
@@ -38,18 +38,18 @@
 <div class="body">
     <ul class="nav nav-pills">
         <li>
-            <a href="../CO2Checker">Get Started!</a>
+            <a href="">Get Started!</a>
         </li>
         <li>
-            <a href="../CO2Checker/houseCO2.html">House</a>
+            <a href="houseCO2.html">House</a>
         </li>
         <li>
-            <a href="../CO2Checker/flight.html">Flights</a>
-        </li>
-        <li>
-            <a href="car.html">Car</a>
+            <a href="flight.html">Flights</a>
         </li>
         <li class="active">
+            <a href="car.html">Car</a>
+        </li>
+        <li>
             <a href="motorbike.html">Motorbike</a>
         </li>
         <li>
@@ -62,10 +62,16 @@
             <a href="results.html">Results</a>
         </li>
     </ul>
-    <h2>Motorbike</h2>
+    <h2>Car</h2>
 
     <div>
         <form role="form" class="calcForm">
+            <div class="input-group">
+                <label for="amtOfCar">How many cars do you own?</label>
+                <input type="number" class="amtOfCar">
+            </div>
+            <br/>
+
             <div id="miles" class="input-group">
                 <input id="milesTravelled" type="number" class="form-control" placeholder="Mileage">
 
@@ -108,7 +114,25 @@
                         </li>
                     </ul>
                 </div>
-
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                        Fuel <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu pull-right">
+                        <li>
+                            <a href="#">petrol/gas</a>
+                        </li>
+                        <li>
+                            <a href="#">diesel</a>
+                        </li>
+                        <li>
+                            <a href="#">LPG</a>
+                        </li>
+                        <li>
+                            <a href="#">LNG/CNG</a>
+                        </li>
+                    </ul>
+                </div>
 
             </div>
             <br/>
@@ -124,12 +148,13 @@
             </button>
         </form>
     </div>
-    <script type="text/javascript">
-        $(".dropdown-menu li a").click(function () {
-            var selText = $(this).text();
-            $(this).parents('.input-group-btn').find('.dropdown-toggle').html(selText + ' <span class="caret"></span>');
+</div>
+<script type="text/javascript">
+    $(".dropdown-menu li a").click(function () {
+        var selText = $(this).text();
+        $(this).parents('.input-group-btn').find('.dropdown-toggle').html(selText + ' <span class="caret"></span>');
 
-        });
-    </script>
+    });
+</script>
 </body>
 </html>
