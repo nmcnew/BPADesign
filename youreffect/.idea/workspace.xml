@@ -2,20 +2,86 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06063096-bfe1-4e35-9f05-404f1a450a95" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hello.jsp" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/CO2Checker/Secondary.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/CO2Checker/Secondary.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/CO2Checker/busAndRail.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/CO2Checker/busAndRail.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/CO2Checker/car.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/CO2Checker/car.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/CO2Checker/flight.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/CO2Checker/flight.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/CO2Checker/houseCO2.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/CO2Checker/houseCO2.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/CO2Checker/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/CO2Checker/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/CO2Checker/motorbike.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/CO2Checker/motorbike.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/CO2Checker/results.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/CO2Checker/results.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/bs/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/bs/css/bootstrap-theme.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/bs/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/bs/css/bootstrap-theme.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/bs/css/bootstrap.css" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/bs/css/bootstrap.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/bs/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/bs/css/bootstrap.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/bs/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/bs/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/bs/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/bs/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/bs/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/bs/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/bs/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/bs/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/bs/js/bootstrap.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/bs/js/bootstrap.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/bs/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/bs/js/bootstrap.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/css/MainStyles.css" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/css/MainStyles.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/css/hover.css" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/css/hover.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/img/load.gif" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/img/load.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/js/Selectize.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/js/Selectize.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/js/slider.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/js/slider.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/LICENSE" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/LICENSE" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/README.md" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/bower.json" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/bower.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/release.sh" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/release.sh" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2-bootstrap.css" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2-bootstrap.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2-spinner.gif" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2-spinner.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2.css" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2.jquery.json" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2.jquery.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2.min.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2.png" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_ar.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_ar.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_bg.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_bg.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_ca.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_ca.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_cs.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_cs.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_da.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_da.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_de.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_de.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_el.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_el.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_en.js.template" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_en.js.template" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_es.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_es.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_et.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_et.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_eu.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_eu.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_fa.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_fa.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_fi.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_fi.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_fr.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_fr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_gl.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_gl.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_he.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_he.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_hr.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_hr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_hu.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_hu.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_id.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_id.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_is.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_is.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_it.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_it.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_ja.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_ja.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_ko.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_ko.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_lt.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_lt.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_lv.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_lv.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_mk.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_mk.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_ms.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_ms.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_nl.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_nl.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_no.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_no.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_pl.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_pl.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_pt-BR.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_pt-BR.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_pt-PT.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_pt-PT.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_ro.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_ro.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_ru.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_ru.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_sk.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_sk.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_sv.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_sv.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_th.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_th.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_tr.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_tr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_ua.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_ua.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_vi.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_vi.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_zh-CN.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_zh-CN.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2_locale_zh-TW.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2_locale_zh-TW.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/select2-3.4.5/select2x2.png" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/assets/select2-3.4.5/select2x2.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/register/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/public/register/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/youreffect/HelloController.java" afterPath="$PROJECT_DIR$/src/main/java/com/youreffect/HelloController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="YourEffect.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="06063096-bfe1-4e35-9f05-404f1a450a95" time="1389477324040" ignored="false" />
+    <file path="/Dummy.txt" changelist="06063096-bfe1-4e35-9f05-404f1a450a95" time="1389479052893" ignored="false" />
+    <file path="/HelloController.java" changelist="06063096-bfe1-4e35-9f05-404f1a450a95" time="1389479269734" ignored="false" />
+    <file path="/mvc-dispatcher-servlet.xml" changelist="06063096-bfe1-4e35-9f05-404f1a450a95" time="1389479394882" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +140,37 @@
     <favorites_list name="YourEffect" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/public/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mvc-dispatcher-servlet.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="11" selection-start="261" selection-end="261" vertical-scroll-proportion="0.14423077">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HelloController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/HelloController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="25" selection-start="421" selection-end="421" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -87,6 +183,14 @@
   <component name="GitLogSettings">
     <option name="myDateState">
       <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/HelloController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
+      </list>
     </option>
   </component>
   <component name="LogFilters">
@@ -272,6 +376,9 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/public" />
     </key>
@@ -462,7 +569,11 @@
       <created>1389477332614</created>
       <updated>1389477332614</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="setting up spring mvc">
+      <created>1389479068940</created>
+      <updated>1389479068940</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -563,10 +674,12 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/HelloController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="11" selection-start="666" selection-end="666" vertical-scroll-proportion="0.3846154">
-          <folding />
+        <state line="12" column="25" selection-start="421" selection-end="421" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -577,12 +690,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/HelloController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="26" selection-start="273" selection-end="273" vertical-scroll-proportion="0.27972028">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="4" column="11" selection-start="261" selection-end="261" vertical-scroll-proportion="0.14423077">
+          <folding />
         </state>
       </provider>
     </entry>
