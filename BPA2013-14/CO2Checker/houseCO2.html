@@ -1,260 +1,273 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Your Effect</title>
-		<link href="../assets/bs/css/bootstrap.min.css" rel="stylesheet">
-		<link href="../assets/css/MainStyles.css" rel="stylesheet">
-		<link href="../assets/css/hover.css" rel="stylesheet">
-		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script src="../assets/bs/js/bootstrap.min.js"></script>
-		<script>
-			$(document).ready(function() {
+<head>
+    <title>Your Effect</title>
+    <link href="../assets/bs/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/MainStyles.css" rel="stylesheet">
+    <link href="../assets/css/hover.css" rel="stylesheet">
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../assets/bs/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
 
-				$('.myTip').tooltip();
-			});
-		</script>
-	</head>
-	<body>
-		<nav class="navbar navbar-inverse center" role="navigation">
-			<div class="navbar-inner">
-				<ul class="nav navbar-nav">
-					<li >
-						<a href=".." >Home</a>
-					</li>
-					<li class="active">
-						<a href="#">Carbon Footprint</a>
-					</li>
-					<li>
-						<a href="#">Check Stats</a>
-					</li>
-					<li >
-						<a href="../register">Register</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		<div class="body">
-			<ul class="nav nav-pills">
-				<li >
-					<a href="../CO2Checker">Get Started!</a>
-				</li>
-				<li class="active">
-					<a href="../CO2Checker/houseCO2.html">House</a>
-				</li>
-				<li>
-					<a href="../CO2Checker/flight.html">Flights</a>
-				</li>
-				<li>
-					<a href="car.html">Car</a>
-				</li>
-				<li>
-					<a href="motorbike.html">Motorbike</a>
-				</li>
-				<li>
-					<a href="busAndRail.html">Bus and Rail</a>
-				</li>
-				<li>
-					<a href="Secondary.html">Secondary</a>
-				</li>
-				<li>
-					<a href="results.html">Results</a>
-				</li>
-			</ul>
-			<h2>House</h2>
+            $('.myTip').tooltip();
+        });
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-inverse center" role="navigation">
+    <div class="navbar-inner">
+        <ul class="nav navbar-nav">
+            <li>
+                <a href="..">Home</a>
+            </li>
+            <li class="active">
+                <a href="#">Carbon Footprint</a>
+            </li>
+            <li>
+                <a href="#">Check Stats</a>
+            </li>
+            <li>
+                <a href="../register">Register</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="body">
+    <ul class="nav nav-pills">
+        <li>
+            <a href="../CO2Checker">Get Started!</a>
+        </li>
+        <li class="active">
+            <a href="../CO2Checker/houseCO2.html">House</a>
+        </li>
+        <li>
+            <a href="../CO2Checker/flight.html">Flights</a>
+        </li>
+        <li>
+            <a href="car.html">Car</a>
+        </li>
+        <li>
+            <a href="motorbike.html">Motorbike</a>
+        </li>
+        <li>
+            <a href="busAndRail.html">Bus and Rail</a>
+        </li>
+        <li>
+            <a href="Secondary.html">Secondary</a>
+        </li>
+        <li>
+            <a href="results.html">Results</a>
+        </li>
+    </ul>
+    <h2>House</h2>
 
-			<form role="form" class="calcForm">
-				<div class="input-group">
-					<label for="amtOfPeople">How many People are in your family?</label>
-					<input type="number" class="amtOfPeople">
-				</div>
-				<br/>
-				<div id="elecChoice" class="input-group">
-					<input id="electricity" type="number" class="form-control" placeholder="Electricity">
-					<div class="input-group-btn">
-						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-							Value <span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu pull-right">
-							<li>
-								<a href="#">kWh</a>
-							</li>
-							<li>
-								<a href="#">USD($)</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<br/>
-				<div id="natGasChoice" class="input-group">
-					<input id="natGas" type="number" class="form-control" placeholder="Natural Gas">
-					<div class="input-group-btn">
-						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-							Value <span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu pull-right">
-							<li>
-								<a href="#">kWh</a>
-							</li>
-							<li>
-								<a href="#">therms</a>
-							</li>
-							<li>
-								<a href="#">USD($)</a>
-							</li>
-						</ul>
-					</div>
+    <form role="form" class="calcForm">
+        <div class="input-group">
+            <label for="amtOfPeople">How many People are in your family?</label>
+            <input type="number" class="amtOfPeople">
+        </div>
+        <br/>
 
-				</div>
-				<br/>
-				<div id="oilChoice" class="input-group">
+        <div id="elecChoice" class="input-group">
+            <input id="electricity" type="number" class="form-control" placeholder="Electricity">
 
-					<input id="oil" type="number" class="form-control" placeholder="Heating Oil">
-					<div class="input-group-btn">
-						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-							Value <span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu pull-right">
-							<li>
-								<a href="#">kWh</a>
-							</li>
-							<li>
-								<a href="#">litres</a>
-							</li>
-							<li>
-								<a href="#">Metric Tons</a>
-							</li>
-							<li>
-								<a href="#">US Gallons</a>
-							</li>
-						</ul>
-					</div>
-					<br/>
-				</div>
-				<br/>
-				<div id="coalChoice" class="input-group">
-					<input id="coal" type="number" class="form-control" placeholder="Coal">
-					<div class="input-group-btn">
-						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-							Value <span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu pull-right">
-							<li>
-								<a href="#">kWh</a>
-							</li>
-							<li>
-								<a href="#">Metric Tons</a>
-							</li>
-							<li>
-								<a href="#">x 10kg bags</a>
-							</li>
-							<li>
-								<a href="#">x 20kg bags</a>
-							</li>
-							<li>
-								<a href="#">x 25kg bags</a>
-							</li>
-							<li>
-								<a href="#">x 50kg bags</a>
-							</li>
-						</ul>
-					</div>
-					<br/>
-				</div>
-				<br/>
-				<div id="lpgChoice" class="input-group">
-					<input id="lpg" type="number" class="form-control" placeholder="LPG">
-					<div class="input-group-btn">
-						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-							Value <span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu pull-right">
-							<li>
-								<a href="#">kWh</a>
-							</li>
-							<li>
-								<a href="#">litres</a>
-							</li>
-							<li>
-								<a href="#">Metric Tons</a>
-							</li>
-							<li>
-								<a href="#">US Gallons</a>
-							</li>
-						</ul>
-					</div>
-					<br/>
-				</div>
-				<br/>
-				<div id="propaneChoice" class="input-group">
-					<input id="propane" type="number" class="form-control" placeholder="Propane">
-					<div class="input-group-btn">
-						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-							Value <span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu pull-right">
-							<li>
-								<a href="#">litres</a>
-							</li>
-							<li>
-								<a href="#">US Gallons</a>
-							</li>
-						</ul>
-					</div>
-					<br/>
-				</div>
-				<br/>
-				<div id="woodPelletsChoice" class="input-group">
-					<input id="woodPellets" type="number" class="form-control" placeholder="Wood Pellets">
-					<span class="input-group-addon">Metric Tons</span>
-					<br/>
-				</div>
-				<br/>
-				<br/>
-				<button type="submit" class="btn btn-primary">
-					Submit
-				</button>
-				<button type="button" class="btn btn-info calculate">
-					Calculate
-				</button>
-				<button type="button" class="btn btn-danger">
-					Back
-				</button>
-			</form>
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    Value <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu pull-right">
+                    <li>
+                        <a href="#">kWh</a>
+                    </li>
+                    <li>
+                        <a href="#">USD($)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br/>
 
-		</div>
+        <div id="natGasChoice" class="input-group">
+            <input id="natGas" type="number" class="form-control" placeholder="Natural Gas">
 
-		<script type="text/javascript">
-			$(".dropdown-menu li a").click(function() {
-				var selText = $(this).text();
-				$(this).parents('.input-group-btn').find('.dropdown-toggle').html(selText + ' <span class="caret"></span>');
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    Value <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu pull-right">
+                    <li>
+                        <a href="#">kWh</a>
+                    </li>
+                    <li>
+                        <a href="#">therms</a>
+                    </li>
+                    <li>
+                        <a href="#">USD($)</a>
+                    </li>
+                </ul>
+            </div>
 
-			});
-			$(".calculate").click(function() {
-				var myValues = new Array([]);
-				
-				var elecVal = $("#elecChoice > div > button").text();
-				var natGasVal = $("#natGasChoice > div > button").text();
-				var oilVal = $("#oilChoice > div > button").text();
-				var coalVal = $("#coalChoice > div > button").text();
-				var lpgVal = $("#lpgChoice > div > button").text();
-				var propVal = $("#propaneChoice > div > button").text();
-				var woodPelletsVal = "Metric Tons";
+        </div>
+        <br/>
 
-				var elecAmt = $("#electricity").val();
-				var natGasAmt = $("#natGas").val();
-				var oilAmt = $("#oil").val();
-				var coalAmt = $("#coal").val();
-				var lpgAmt = $("#woodPellets").val();
-				var propaneAmt = $("#propane").val();
-				var woodPelletsAmt = $("#woodPellets").val();
-				console.log(elecAmt + elecVal + natGasAmt + natGasVal + oilAmt + oilVal + coalAmt + coalVal + lpgAmt + lpgVal + propaneAmt + propVal + woodPelletsAmt + woodPelletsVal);
-				var CO2perkWh = .00070555;
-				var CO2perGall = .00892;
-				var CO2perTherm = .005306;
-				var CO2perGallOil = .01023809523;
+        <div id="oilChoice" class="input-group">
 
-			});
+            <input id="oil" type="number" class="form-control" placeholder="Heating Oil">
 
-		</script>
-	</body>
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    Value <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu pull-right">
+                    <li>
+                        <a href="#">kWh</a>
+                    </li>
+                    <li>
+                        <a href="#">litres</a>
+                    </li>
+                    <li>
+                        <a href="#">Metric Tons</a>
+                    </li>
+                    <li>
+                        <a href="#">US Gallons</a>
+                    </li>
+                </ul>
+            </div>
+            <br/>
+        </div>
+        <br/>
+
+        <div id="coalChoice" class="input-group">
+            <input id="coal" type="number" class="form-control" placeholder="Coal">
+
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    Value <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu pull-right">
+                    <li>
+                        <a href="#">kWh</a>
+                    </li>
+                    <li>
+                        <a href="#">Metric Tons</a>
+                    </li>
+                    <li>
+                        <a href="#">x 10kg bags</a>
+                    </li>
+                    <li>
+                        <a href="#">x 20kg bags</a>
+                    </li>
+                    <li>
+                        <a href="#">x 25kg bags</a>
+                    </li>
+                    <li>
+                        <a href="#">x 50kg bags</a>
+                    </li>
+                </ul>
+            </div>
+            <br/>
+        </div>
+        <br/>
+
+        <div id="lpgChoice" class="input-group">
+            <input id="lpg" type="number" class="form-control" placeholder="LPG">
+
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    Value <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu pull-right">
+                    <li>
+                        <a href="#">kWh</a>
+                    </li>
+                    <li>
+                        <a href="#">litres</a>
+                    </li>
+                    <li>
+                        <a href="#">Metric Tons</a>
+                    </li>
+                    <li>
+                        <a href="#">US Gallons</a>
+                    </li>
+                </ul>
+            </div>
+            <br/>
+        </div>
+        <br/>
+
+        <div id="propaneChoice" class="input-group">
+            <input id="propane" type="number" class="form-control" placeholder="Propane">
+
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    Value <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu pull-right">
+                    <li>
+                        <a href="#">litres</a>
+                    </li>
+                    <li>
+                        <a href="#">US Gallons</a>
+                    </li>
+                </ul>
+            </div>
+            <br/>
+        </div>
+        <br/>
+
+        <div id="woodPelletsChoice" class="input-group">
+            <input id="woodPellets" type="number" class="form-control" placeholder="Wood Pellets">
+            <span class="input-group-addon">Metric Tons</span>
+            <br/>
+        </div>
+        <br/>
+        <br/>
+        <button type="submit" class="btn btn-primary">
+            Submit
+        </button>
+        <button type="button" class="btn btn-info calculate">
+            Calculate
+        </button>
+        <button type="button" class="btn btn-danger">
+            Back
+        </button>
+    </form>
+
+</div>
+
+<script type="text/javascript">
+    $(".dropdown-menu li a").click(function () {
+        var selText = $(this).text();
+        $(this).parents('.input-group-btn').find('.dropdown-toggle').html(selText + ' <span class="caret"></span>');
+
+    });
+    $(".calculate").click(function () {
+        var myValues = new Array([]);
+
+        var elecVal = $("#elecChoice > div > button").text();
+        var natGasVal = $("#natGasChoice > div > button").text();
+        var oilVal = $("#oilChoice > div > button").text();
+        var coalVal = $("#coalChoice > div > button").text();
+        var lpgVal = $("#lpgChoice > div > button").text();
+        var propVal = $("#propaneChoice > div > button").text();
+        var woodPelletsVal = "Metric Tons";
+
+        var elecAmt = $("#electricity").val();
+        var natGasAmt = $("#natGas").val();
+        var oilAmt = $("#oil").val();
+        var coalAmt = $("#coal").val();
+        var lpgAmt = $("#woodPellets").val();
+        var propaneAmt = $("#propane").val();
+        var woodPelletsAmt = $("#woodPellets").val();
+        console.log(elecAmt + elecVal + natGasAmt + natGasVal + oilAmt + oilVal + coalAmt + coalVal + lpgAmt + lpgVal + propaneAmt + propVal + woodPelletsAmt + woodPelletsVal);
+        var CO2perkWh = .00070555;
+        var CO2perGall = .00892;
+        var CO2perTherm = .005306;
+        var CO2perGallOil = .01023809523;
+
+    });
+
+</script>
+</body>
 </html>
