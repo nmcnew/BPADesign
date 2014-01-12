@@ -10,15 +10,7 @@
 
     <mvc:annotation-driven />
 
-    <mvc:resources mapping="/public/**" location="/public/" />
-
-    <bean id="multipartResolver"
-          class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-
-
-        <!-- one of the properties available; the maximum file size in bytes -->
-        <property name="maxUploadSize" value="1073741824"/>
-    </bean>
+    <mvc:resources mapping="/public/**" location="/public/" ></mvc:resources>
 
     <!-- also add the following beans to get rid of some exceptions -->
     <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
