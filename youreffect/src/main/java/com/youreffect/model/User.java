@@ -7,33 +7,17 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class User {
 
     @Id
-    private long userId;
+    private String userId;
     private String username;
     private String email;
     private String password;
     private String country;
 
-    public User() {
-        this.userId = 0;
-        this.username = "";
-        this.email = "";
-        this.password = "";
-        this.country = "";
-    }
-
-    public User(String username, String email, String password, String country) {
-        this.userId = hashCode();
-        this.username = username;
-        this.email = email;
-        this.password = password;
-        this.country = country;
-    }
-
-    public long getUserId() {
+    public String getUserId() {
         return userId;
     }
 
-    public void setUserId(long userId) {
+    public void setUserId(String userId) {
         this.userId = userId;
     }
 

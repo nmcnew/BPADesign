@@ -27,6 +27,16 @@
         <constructor-arg index="0" ref="mongofactory"/>
     </bean>
 
+    <bean id="userdaoimpl" class="com.youreffect.dao.UserDaoImpl">
+        <property name="mongoTemplate" ref="mongotemplate"/>
+    </bean>
+
+    <bean id="userservice" class="com.youreffect.service.UserService">
+        <property name="userDaoImpl" ref="userdaoimpl"/>
+    </bean>
+
+    <bean id="hashservice" class="com.youreffect.service.HashService" />
+
     <!-- also add the following beans to get rid of some exceptions -->
     <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
     <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping">

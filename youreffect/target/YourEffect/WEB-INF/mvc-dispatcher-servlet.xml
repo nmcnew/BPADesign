@@ -13,6 +13,30 @@
 
     <mvc:resources mapping="/public/**" location="/public/" />
 
+    <bean id="mongo" class="com.mongodb.Mongo">
+        <constructor-arg index="0" value="localhost"/>
+        <constructor-arg index="1" value="27017"/>
+    </bean>
+
+    <bean id="mongofactory" class="org.springframework.data.mongodb.core.SimpleMongoDbFactory">
+        <constructor-arg index="0" ref="mongo"/>
+        <constructor-arg index="1" value="mydb"/>
+    </bean>
+
+    <bean id="mongotemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+        <constructor-arg index="0" ref="mongofactory"/>
+    </bean>
+
+    <bean id="userdaoimpl" class="com.youreffect.dao.UserDaoImpl">
+        <property name="mongoTemplate" ref="mongotemplate"/>
+    </bean>
+
+    <bean id="userservice" class="com.youreffect.service.UserService">
+        <property name="userDaoImpl" ref="userdaoimpl"/>
+    </bean>
+
+    <bean id="hashservice" class="com.youreffect.service.HashService" />
+
     <!-- also add the following beans to get rid of some exceptions -->
     <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
     <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping">
