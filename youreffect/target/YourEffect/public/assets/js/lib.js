@@ -11,3 +11,17 @@ function register(username, email, password, country) {
         }
     });
 }
+
+function login(username, password) {
+    var user = new User(username, '', password, '');
+    $.ajax({
+        url: '/user/login',
+        type: 'POST',
+        dataType: 'json',
+        data: JSON.stringify(user),
+        contentType: "application/json; charset=utf-8",
+        success: function(data) {
+            console.log(data);
+        }
+    });
+}

@@ -35,7 +35,16 @@
         <property name="userDaoImpl" ref="userdaoimpl"/>
     </bean>
 
-    <bean id="hashservice" class="com.youreffect.service.HashService" />
+    <bean id="gson" class="com.google.gson.Gson"></bean>
+
+    <bean id="hashservice" class="com.youreffect.service.HashService" >
+        <property name="salt" value="qwerty12345!@#$%" />
+    </bean>
+
+    <bean id="responserservice" class="com.youreffect.service.ResponseService" >
+        <constructor-arg index="0" value=""/>
+        <constructor-arg index="1" value=""/>
+    </bean>
 
     <!-- also add the following beans to get rid of some exceptions -->
     <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />

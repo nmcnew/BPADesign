@@ -22,9 +22,16 @@ public class UserDaoImpl implements UserDao{
     }
 
     @Override
-    public User readUser(User user) {
-        Query query = new Query(Criteria.where("username").is(user.getUsername()).andOperator(Criteria.where("password").is(user.getPassword())));
-        user = mongoTemplate.findOne(query, User.class);
+     public User readUser(String id, String password) {
+        Query query = new Query(Criteria.where("_id").is(id).andOperator(Criteria.where("password").is(password)));
+        User user = mongoTemplate.findOne(query, User.class);
+        return user;
+    }
+
+    @Override
+    public User readUser(String id) {
+        Query query = new Query(Criteria.where("_id").is(id));
+        User user = mongoTemplate.findOne(query, User.class);
         return user;
     }
 
