@@ -1,19 +1,40 @@
 package com.youreffect.model;
 
-import com.google.gson.Gson;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
+@Document(collection = "users")
 public class User {
 
+    @Id
+    private long userId;
     private String username;
     private String email;
     private String password;
     private String country;
 
+    public User() {
+        this.userId = 0;
+        this.username = "";
+        this.email = "";
+        this.password = "";
+        this.country = "";
+    }
+
     public User(String username, String email, String password, String country) {
+        this.userId = hashCode();
         this.username = username;
         this.email = email;
         this.password = password;
         this.country = country;
+    }
+
+    public long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(long userId) {
+        this.userId = userId;
     }
 
     public String getUsername() {
@@ -49,6 +70,8 @@ public class User {
     }
 
     public String toString() {
-        return new Gson().toJson(this);
+        return String.format(
+                "User[id=%s, username='%s', email='%s', password='%s']",
+                userId, username, email, password);
     }
 }

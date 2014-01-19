@@ -2,19 +2,29 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:mongo="http://www.springframework.org/schema/data/mongo"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd
-        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/data/mongo http://www.springframework.org/schema/data/mongo/spring-mongo.xsd">
 
     <context:component-scan base-package="com.youreffect"/>
 
     <mvc:annotation-driven />
 
-    <mvc:resources mapping="/public/**" location="/public/" ></mvc:resources>
+    <mvc:resources mapping="/public/**" location="/public/" />
 
-    <!-- also add the following beans to get rid of some exceptions -->
-    <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
-    <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping">
+    <bean id="mongo" class="com.mongodb.Mongo">
+        <constructor-arg index="0" value="localhost"/>
+        <constructor-arg index="1" value="27017"/>
+    </bean>
+
+    <bean id="mongofactory" class="org.springframework.data.mongodb.core.SimpleMongoDbFactory">
+        <constructor-arg index="0" ref="mongo"/>
+        <constructor-arg index="1" value="mydb"/>
+    </bean>
+
+    <bean id="mongotemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+        <constructor-arg index="0" ref="mongofactory"/>
     </bean>
 
     <!-- also add the following beans to get rid of some exceptions -->
