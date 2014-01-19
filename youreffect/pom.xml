@@ -73,7 +73,7 @@
     </dependencies>
 
     <build>
-        <finalName>YourEffect</finalName>
+        <finalName>ROOT##0.0.9</finalName>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
