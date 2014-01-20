@@ -7,6 +7,7 @@
 		<link href="../assets/css/hover.css" rel="stylesheet">
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script src="../assets/bs/js/bootstrap.min.js"></script>
+		<script src="../assets/js/add.js"></script>
 	</head>
 	<body>
 		<nav class="navbar navbar-inverse center" role="navigation">
@@ -33,29 +34,90 @@
 
 		<div class="body">
 			<h2>Item Specifics</h2>
-			<ul class="nav nav-pills">
-				<li >
-					<a href="lightbulbs.html">Lightbulbs</a>
-				</li>
-			</ul>
 			<br/>
 			<form class="form" onsubmit="return false" role="form">
-			
-				<div class="input-group cloneable">
-					<span class="input-group-addon"><span class="glyphicon glyphicon-usd"></span></span>
-					<input  type="number" class="form-control pull-right" placeholder="Electricity">
+				<div class="input-group">
+					<div class="input-group-btn">
+						<button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+							<span class="glyphicon glyphicon-plus-sign"></span> Add <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#" data-toggle="modal" data-target="#electricOptions">Electricity</a>
+							</li>
+							<li>
+								<a href="#" data-toggle="modal" data-target="#gasOptions">Gasoline</a>
+							</li>
+						</ul>
+					</div>
 				</div>
+				<!--<div class="input-group cloneable">
+				<span class="input-group-addon"><span class="glyphicon glyphicon-usd"></span></span>
+				<input  type="number" class="form-control pull-right" placeholder="Electricity">
+				</div>-->
 				<br/>
 
 			</form>
+
+			<!--Electric Modal -->
+			<div class="modal fade" id="electricOptions" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+								&times;
+							</button>
+							<h4 class="modal-title" id="myModalLabel">Electric Options</h4>
+						</div>
+						<div class="modal-body">
+							<form class="form" onsubmit="addOption()">
+								<input type="radio" name="eOptions" value="acCentral">Air Conditioning, Central<br/>
+								<input type="radio" name="eOptions" value="acRoom">Air Conditioning, Room<br/>
+								<input type="radio" name="eOptions" value="purifier">Air Purifier<br/>
+								<input type="radio" name="eOptions" value="washer">Clothes Washer<br/>
+								<input type="radio" name="eOptions" value="dehumidifier">Dehumidifier<br/>
+								<input type="radio" name="eOptions" value="dishwasher">Dishwasher<br/>
+								<input type="radio" name="eOptions" value="Freezer">Freezer<br/>
+								<input type="radio" name="eOptions" value="lightBulb">Light Bulb<br/>
+								<input type="radio" name="eOptions" value="fridge">Refigerator<br/>
+								<input type="radio" name="eOptions" value="compactFridge">Refrigerator - Compact<br/>
+								
+								<input type="submit" class="btn btn-primary" value="Submit">
+							</form>
+						</div>
+					</div><!-- /.modal-content -->
+				</div><!-- /.modal-dialog -->
+			</div>
+			<div class="modal fade" id="gasOptions" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+								&times;
+							</button>
+							<h4 class="modal-title" id="myModalLabel">Gas Options</h4>
+						</div>
+						<div class="modal-body">
+							<form class="form" onsubmit="addOption()">
+								<input type="radio" name="eOptions" value="acCentral">Air Conditioning, Central<br/>
+								<input type="radio" name="eOptions" value="acRoom">Air Conditioning, Room<br/>
+								<input type="radio" name="eOptions" value="purifier">Air Purifier<br/>
+								<input type="radio" name="eOptions" value="washer">Clothes Washer<br/>
+								<input type="radio" name="eOptions" value="dehumidifier">Dehumidifier<br/>
+								<input type="radio" name="eOptions" value="dishwasher">Dishwasher<br/>
+								<input type="radio" name="eOptions" value="Freezer">Freezer<br/>
+								<input type="radio" name="eOptions" value="lightBulb">Light Bulb<br/>
+								<input type="radio" name="eOptions" value="fridge">Refigerator<br/>
+								<input type="radio" name="eOptions" value="compactFridge">Refrigerator - Compact<br/>
+								
+								<input type="submit" class="btn btn-primary" value="Submit">
+							</form>
+						</div>
+					</div><!-- /.modal-content -->
+				</div><!-- /.modal-dialog -->
+			</div>
 		</div>
 		<script>
-			$(".dropdown-menu li a").click(function() {
-				var selText = $(this).text();
-				$(this).parents('.input-group-btn').find('.dropdown-toggle').html(selText + ' <span class="caret"></span>');
-
-			});
-			
 		</script>
 
 	</body>
