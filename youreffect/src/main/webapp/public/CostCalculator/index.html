@@ -35,7 +35,7 @@
 		<div class="body">
 			<h2>Item Specifics</h2>
 			<br/>
-			<form class="form" onsubmit="return false" role="form">
+			<form class="form mainForm" onsubmit="return false" role="form">
 				<div class="input-group">
 					<div class="input-group-btn">
 						<button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
@@ -49,7 +49,12 @@
 								<a href="#" data-toggle="modal" data-target="#gasOptions">Gasoline</a>
 							</li>
 						</ul>
+						<button type="button" class="btn btn-info">
+							<span class="glyphicon glyphicon-pencil"></span> Edit
+						</button>
 					</div>
+					<br/>
+					
 				</div>
 				<!--<div class="input-group cloneable">
 				<span class="input-group-addon"><span class="glyphicon glyphicon-usd"></span></span>
@@ -70,19 +75,19 @@
 							<h4 class="modal-title" id="myModalLabel">Electric Options</h4>
 						</div>
 						<div class="modal-body">
-							<form class="form" onsubmit="addOption()">
+							<form id="elecForm" class="form">
 								<input type="radio" name="eOptions" value="acCentral">Air Conditioning, Central<br/>
 								<input type="radio" name="eOptions" value="acRoom">Air Conditioning, Room<br/>
 								<input type="radio" name="eOptions" value="purifier">Air Purifier<br/>
 								<input type="radio" name="eOptions" value="washer">Clothes Washer<br/>
 								<input type="radio" name="eOptions" value="dehumidifier">Dehumidifier<br/>
 								<input type="radio" name="eOptions" value="dishwasher">Dishwasher<br/>
-								<input type="radio" name="eOptions" value="Freezer">Freezer<br/>
+								<input type="radio" name="eOptions" value="freezer">Freezer<br/>
 								<input type="radio" name="eOptions" value="lightBulb">Light Bulb<br/>
 								<input type="radio" name="eOptions" value="fridge">Refigerator<br/>
 								<input type="radio" name="eOptions" value="compactFridge">Refrigerator - Compact<br/>
 								
-								<input type="submit" class="btn btn-primary" value="Submit">
+								<button type="button" onclick="addOptionElec()"  class="btn btn-primary" data-dismiss="modal">Submit</button>
 							</form>
 						</div>
 					</div><!-- /.modal-content -->
