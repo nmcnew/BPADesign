@@ -14,8 +14,8 @@
     <mvc:resources mapping="/public/**" location="/public/" />
 
     <bean id="mongo" class="com.mongodb.Mongo">
-        <constructor-arg index="0" value="${db.host}" type="java.lang.String"/>
-        <constructor-arg index="1" value="${db.port}" type="int"/>
+        <constructor-arg index="0" value="localhost" type="java.lang.String"/>
+        <constructor-arg index="1" value="27017" type="int"/>
     </bean>
 
     <bean id="mongofactory" class="org.springframework.data.mongodb.core.SimpleMongoDbFactory">
