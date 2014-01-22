@@ -1,6 +1,7 @@
 package com.youreffect.controller;
 
 import com.google.gson.Gson;
+import com.youreffect.exception.LoginException;
 import com.youreffect.exception.RegisterException;
 import com.youreffect.model.User;
 import com.youreffect.service.HashService;
@@ -12,8 +13,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import javax.security.auth.login.LoginException;
 
 @Controller
 @RequestMapping("/user")
@@ -70,4 +69,5 @@ public class UserController {
         responseService.setData(user);
         return responseService.toString();
     }
+
 }

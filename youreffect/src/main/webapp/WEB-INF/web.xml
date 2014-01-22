@@ -15,4 +15,15 @@
 		<servlet-name>mvc-dispatcher</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
+
+    <filter>
+        <filter-name>myFilter</filter-name>
+        <filter-class>com.youreffect.filter.SimpleCORSFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>myFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
 </web-app>
