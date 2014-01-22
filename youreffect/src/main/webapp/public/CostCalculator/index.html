@@ -34,7 +34,7 @@
 			<br />
 			<div class="input-group">
 				<div class="input-group-btn">
-					<button type="button" class="btn btn-success dropdown-toggle"
+					<button type="button" class="btn btn-success dropdown-toggle "
 						data-toggle="dropdown">
 						<span class="glyphicon glyphicon-plus-sign"></span> Add <span
 							class="caret"></span>
@@ -45,7 +45,7 @@
 						<li><a href="#" data-toggle="modal" data-target="#gasOptions">Gasoline</a>
 						</li>
 					</ul>
-					<button type="button" class="btn btn-info">
+					<button type="button" class="btn btn-info editButton">
 						<span class="glyphicon glyphicon-pencil"></span> Edit
 					</button>
 				</div>
@@ -76,10 +76,10 @@
 							Conditioning, Central<br /> <input type="radio" name="eOptions"
 								value="acRoom">Air Conditioning, Room<br /> <input
 								type="radio" name="eOptions" value="purifier">Air
-							Purifier<br /> <input type="radio" name="eOptions" value="washer">Clothes
-							Washer<br /> <input type="radio" name="eOptions"
-								value="dehumidifier">Dehumidifier<br /> <input
-								type="radio" name="eOptions" value="dishwasher">Dishwasher<br />
+							Purifier<br /> <input type="radio" name="eOptions"
+								value="washer">Clothes Washer<br /> <input type="radio"
+								name="eOptions" value="dehumidifier">Dehumidifier<br />
+							<input type="radio" name="eOptions" value="dishwasher">Dishwasher<br />
 							<input type="radio" name="eOptions" value="freezer">Freezer<br />
 							<input type="radio" name="eOptions" value="lightBulb">Light
 							Bulb<br /> <input type="radio" name="eOptions" value="fridge">Refigerator<br />
@@ -110,10 +110,10 @@
 							Conditioning, Central<br /> <input type="radio" name="eOptions"
 								value="acRoom">Air Conditioning, Room<br /> <input
 								type="radio" name="eOptions" value="purifier">Air
-							Purifier<br /> <input type="radio" name="eOptions" value="washer">Clothes
-							Washer<br /> <input type="radio" name="eOptions"
-								value="dehumidifier">Dehumidifier<br /> <input
-								type="radio" name="eOptions" value="dishwasher">Dishwasher<br />
+							Purifier<br /> <input type="radio" name="eOptions"
+								value="washer">Clothes Washer<br /> <input type="radio"
+								name="eOptions" value="dehumidifier">Dehumidifier<br />
+							<input type="radio" name="eOptions" value="dishwasher">Dishwasher<br />
 							<input type="radio" name="eOptions" value="Freezer">Freezer<br />
 							<input type="radio" name="eOptions" value="lightBulb">Light
 							Bulb<br /> <input type="radio" name="eOptions" value="fridge">Refigerator<br />
@@ -138,6 +138,9 @@
 									selText + ' <span class="caret"></span>');
 
 				});
+		$(".editButton").click(function() {
+			$(".removeable").fadeToggle();
+		});
 	</script>
 
 </body>
