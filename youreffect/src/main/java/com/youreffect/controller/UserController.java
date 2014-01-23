@@ -69,5 +69,4 @@ public class UserController {
         responseService.setData(user);
         return responseService.toString();
     }
-
 }

@@ -1,7 +1,22 @@
+function getContextRoot(key) {
+    var s = "";
+    var j = -1;
+    var frags = window.location.href.split("/");
+    for (var i = 0; i < frags.length; i ++) {
+        if (frags[i] == key) {
+            j = i;
+        }
+    }
+    for (var i = 0; i < j; i ++) {
+        s += frags[i] + '/';
+    }
+    return s.substr(0, s.length-1);
+}
+
 function register(username, email, password, country) {
     var user = new User(username, email, password, country);
     $.ajax({
-        url:  '/user/register',
+        url:  getContextRoot('public') + '/user/register',
         type: 'POST',
         dataType: 'json',
         data: JSON.stringify(user),
@@ -22,7 +37,7 @@ function register(username, email, password, country) {
 function login(username, password) {
     var user = new User(username, '', password, '');
     $.ajax({
-        url: '/user/login',
+        url: getContextRoot('public') + '/user/login',
         type: 'POST',
         dataType: 'json',
         data: JSON.stringify(user),
