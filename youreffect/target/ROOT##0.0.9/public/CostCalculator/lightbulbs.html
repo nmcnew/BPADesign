@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Your Effect</title>
+<link href="../assets/bs/css/bootstrap.min.css" rel="stylesheet">
+<link href="../assets/css/MainStyles.css" rel="stylesheet">
+<link href="../assets/css/hover.css" rel="stylesheet">
+<script type="text/javascript"
+	src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="../assets/bs/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-inverse center" role="navigation">
+		<div class="navbar-inner">
+			<ul class="nav navbar-nav">
+				<li><a href="../">Home</a></li>
+				<li class="active"><a href="index.html">Cost Calculator</a></li>
+				<li><a href="../CO2Checker/">Carbon Footprint</a></li>
+				<li><a href="#">Check Stats</a></li>
+				<li><a href="../register/">Register</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="body">
+		<h2>Cost Calculator</h2>
+		<ul class="nav nav-pills">
+			<li class="active"><a href="lightbulbs.html">Lightbulbs</a></li>
+		</ul>
+		<br />
+
+		<form class="form">
+			<div class="lBulbCover">
+				<h3 >Light Bulbs</h3>
+				<div class="input-group removeable ">
+
+					<button type="button" class="btn btn-danger">
+						<span class="glyphicon glyphicon-minus-sign"></span> Remove
+					</button>
+				</div>
+				<div class="input-group">
+					<input type="number" class="form-control" placeholder="Quantity">
+				</div>
+				<br />
+				<div class="input-group">
+					<input type="number" class="form-control "
+						placeholder="Average Daily Use (hours)">
+				</div>
+				<br />
+				<div class="input-group">
+					<div class="input-group-btn">
+						<button type="button" class="btn btn-default dropdown-toggle "
+							data-toggle="dropdown">
+							75 W Incandescent <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu optionable">
+							<li><a href="#">40 W incandescent</a></li>
+							<li><a href="#">60 W incandescent</a></li>
+							<li><a href="#">75 W incandescent</a></li>
+							<li><a href="#">100 W incandescent</a></li>
+							<li><a href="#">150 W incandescent</a></li>
+							<li><a href="#">29 W Halogen(40 W Equivalent)</a></li>
+							<li><a href="#">43 W Halogen(60 W Equivalent)</a></li>
+							<li><a href="#">53 W Halogen(75 W Equivalent)</a></li>
+							<li><a href="#">72 W Halogen(100 W Equivalent)</a></li>
+						</ul>
+					</div>
+				</div>
+				<br />
+
+			</div>
+			<br />
+			<div class="accWrapper">
+				<h3>Central Air Conditioning</h3>
+				<div class="input-group removeable pull-right">
+
+					<button type="button" class="btn btn-danger">
+						<span class="glyphicon glyphicon-minus-sign"></span> Remove
+					</button>
+				</div>
+				<div class="input-group ">
+					<input type="number" class="form-control"
+						placeholder="Number of Units">
+				</div>
+				<br />
+				<div class="input-group ">
+					<input type="number" class="form-control" placeholder="SEER Rating">
+				</div>
+				<br />
+				<div class="input-group">
+					<div class="input-group-btn ">
+						<button type="button" class="btn btn-default dropdown-toggle "
+							data-toggle="dropdown">
+							Cooling Capacity (Btu/hr) <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu optionable">
+							<li><a href="#">2.5 ton</a></li>
+							<li><a href="#">3.0 ton</a></li>
+							<li><a href="#">3.5 ton</a></li>
+							<li><a href="#">4.0 ton</a></li>
+							<li><a href="#">5.0 ton</a></li>
+						</ul>
+					</div>
+				</div>
+				<br />
+				<div class="input-group">
+					<div class="input-group-btn">
+						<button type="button" class="btn btn-default dropdown-toggle "
+							data-toggle="dropdown">
+							Thermostat? <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu optionable">
+							<li style="color: #101010">Thermostat?</li>
+							<li><a href="#">Yes</a></li>
+							<li><a href="#">No</a></li>
+						</ul>
+					</div>
+				</div>
+				<br />
+
+
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript">
+		$(".dropdown-menu li a").click(
+				function() {
+					var selText = $(this).text();
+					$(this).parents('.input-group-btn')
+							.find('.dropdown-toggle').html(
+									selText + ' <span class="caret"></span>');
+
+				});
+	</script>
+</body>
+</html>
