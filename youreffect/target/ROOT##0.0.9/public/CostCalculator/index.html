@@ -19,6 +19,16 @@
 				<li><a href="../CO2Checker/">Carbon Footprint</a></li>
 				<li><a href="#">Check Stats</a></li>
 				<li><a href="../register/">Register</a></li>
+                <li>
+                    <div class="navbar-text navbar-left small">Logged in
+                        as:&nbsp;&nbsp;</div>
+
+                    <div id="curLogin" class="navbar-text small"></div> <script
+                        type="text/javascript">
+                    document.getElementById("curLogin").innerHTML = (JSON
+                            .parse(localStorage.getItem("curUser")).username);
+                </script>
+                </li>
 			</ul>
 		</div>
 	</nav>
