@@ -47,6 +47,6 @@ function addOptionElec() {
 function removeButt(domElement) {
 	$(domElement).parents(".formWrapper").siblings(".break").remove();
 	$(domElement).parents(".formWrapper").fadeOut(300, function() {
-		$(this).remove;
+		$(domElement).parents(".formWrapper").remove();
 	});
 }
