@@ -26,10 +26,26 @@
             <li class="active">
                 <a href="#">Register</a>
             </li>
+            <li>
+                <div class="small">Logged in as:&nbsp;&nbsp;</div>
+            </li>
+            <li>
+                <div id="curLogin"></div>
+                <script type="text/javascript">
+                    document.getElementById("curLogin").innerHTML = (JSON.parse(localStorage.getItem("curUser")).username);
+                </script>
+            </li>
         </ul>
     </div>
 </nav>
 <div class="body">
+<div id="dialog" class="panel panel-default hidden">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <div id="cmd" class="panel-heading"></div>
+    <div class="panel-body">
+        <p class="text-info" id="response"></p>
+    </div>
+</div>
 <div class="forms">
 <form onsubmit="return false;" role="form" class="registerForm">
     <h3>Register<br/>
