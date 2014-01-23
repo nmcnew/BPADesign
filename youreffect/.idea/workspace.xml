@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="06063096-bfe1-4e35-9f05-404f1a450a95" name="Default" comment="">
+    <list default="true" id="06063096-bfe1-4e35-9f05-404f1a450a95" name="Default" comment="deleted repeat dependency. planning work on commenting and documenting code.">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/youreffect/controller/HelloController.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="YourEffect.iws" />
@@ -66,28 +67,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="mvc-dispatcher-servlet.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="mvc-dispatcher-servlet.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="42" selection-start="972" selection-end="972" vertical-scroll-proportion="0.52816904" vertical-offset="0" max-vertical-offset="990">
+            <state line="9" column="30" selection-start="786" selection-end="786" vertical-scroll-proportion="-5.4" vertical-offset="0" max-vertical-offset="990">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lib.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
+      <file leaf-file-name="IndexController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/IndexController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="13" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.0" vertical-offset="271" max-vertical-offset="735">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="22" selection-start="594" selection-end="594" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+            <state line="16" column="36" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
               <folding />
             </state>
           </provider>
@@ -96,7 +88,34 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/public/register/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="29" selection-start="1769" selection-end="1769" vertical-scroll-proportion="-5.0" vertical-offset="660" max-vertical-offset="5310">
+            <state line="335" column="28" selection-start="14138" selection-end="14138" vertical-scroll-proportion="-204.375" vertical-offset="120" max-vertical-offset="5280">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="70" column="21" selection-start="2289" selection-end="2289" vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="1500">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="112" column="18" selection-start="5984" selection-end="5984" vertical-scroll-proportion="-13.573009" vertical-offset="7815" max-vertical-offset="20625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="YourEffect.iml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/YourEffect.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="38" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1140">
               <folding />
             </state>
           </provider>
@@ -110,6 +129,11 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Deeban Ramalingam" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitLogSettings">
@@ -134,7 +158,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/public/navbar.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/CO2Checker/index.html" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/youreffect/SimpleCORSFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/youreffect/filter/CorsFilter.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/add.js" />
@@ -145,6 +168,10 @@
         <option value="$PROJECT_DIR$/src/main/webapp/public/register/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/controller/HelloController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/controller/IndexController.java" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
       </list>
     </option>
   </component>
@@ -211,7 +238,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -345,144 +371,31 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CostCalculator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YourEffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YourEffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YourEffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YourEffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YourEffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YourEffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YourEffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YourEffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="youreffect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YourEffect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YourEffect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".idea" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -971,7 +884,10 @@
       <workItem from="1390359825079" duration="9117000" />
       <workItem from="1390456625501" duration="6460000" />
       <workItem from="1390463458550" duration="177000" />
-      <workItem from="1390463738245" duration="226000" />
+      <workItem from="1390463738245" duration="331000" />
+      <workItem from="1390501783835" duration="1967000" />
+      <workItem from="1390506957471" duration="98000" />
+      <workItem from="1390507058151" duration="788000" />
     </task>
     <task id="LOCAL-00001" summary="setting up spring mvc">
       <created>1389477332614</created>
@@ -993,7 +909,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30784000" />
+    <option name="totallyTimeSpent" value="33742000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="802" extended-state="6" />
@@ -1013,13 +929,13 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24583334" sideWeight="0.670088" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3287858" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287858" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39972714" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32844576" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32742155" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1034,6 +950,9 @@
       <window_info id="Mongo Runner" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USERS">
@@ -1050,7 +969,8 @@
     <MESSAGE value="setting up spring mvc" />
     <MESSAGE value="completed integration of front-end" />
     <MESSAGE value="working on register use backend" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on register use backend" />
+    <MESSAGE value="deleted repeat dependency. planning work on commenting and documenting code." />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted repeat dependency. planning work on commenting and documenting code." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1060,32 +980,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/register/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="29" selection-start="1769" selection-end="1769" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="5310">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="13" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="735">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/register/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="96" selection-start="1461" selection-end="1461" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="5310">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="8" selection-start="585" selection-end="585" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="510">
-          <folding />
-        </state>
+        <state line="18" column="8" selection-start="585" selection-end="585" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="510" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
@@ -1111,9 +1008,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="21" selection-start="638" selection-end="638" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="525">
-          <folding />
-        </state>
+        <state line="21" column="21" selection-start="638" selection-end="638" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="525" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java">
@@ -1132,9 +1027,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="22" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="495">
-          <folding />
-        </state>
+        <state line="18" column="22" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="495" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
@@ -1156,7 +1049,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/HelloController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="37" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="285" />
       </provider>
@@ -1168,9 +1061,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="30" selection-start="2309" selection-end="2309" vertical-scroll-proportion="0.0" vertical-offset="1065" max-vertical-offset="1485">
-          <folding />
-        </state>
+        <state line="71" column="30" selection-start="2309" selection-end="2309" vertical-scroll-proportion="0.0" vertical-offset="1065" max-vertical-offset="1485" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
@@ -1301,18 +1192,6 @@
         <state line="27" column="43" selection-start="880" selection-end="880" vertical-scroll-proportion="0.7613636" vertical-offset="70" max-vertical-offset="1545" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/HelloController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="37" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="24" selection-start="726" selection-end="726" vertical-scroll-proportion="0.6465517" vertical-offset="0" max-vertical-offset="1485">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/add.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="59" selection-start="271" selection-end="271" vertical-scroll-proportion="0.06430155" vertical-offset="76" max-vertical-offset="600" />
@@ -1332,35 +1211,66 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/model/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="16" selection-start="293" selection-end="293" vertical-scroll-proportion="0.25531915" vertical-offset="0" max-vertical-offset="705">
-          <folding />
-        </state>
+        <state line="12" column="16" selection-start="293" selection-end="293" vertical-scroll-proportion="0.25531915" vertical-offset="0" max-vertical-offset="705" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="13" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="735">
-          <folding />
-        </state>
+        <state line="33" column="13" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.65957445" vertical-offset="30" max-vertical-offset="735" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="22" selection-start="594" selection-end="594" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/register/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="29" selection-start="1769" selection-end="1769" vertical-scroll-proportion="-5.0" vertical-offset="660" max-vertical-offset="5310">
+        <state line="16" column="22" selection-start="594" selection-end="594" vertical-scroll-proportion="0.34042552" vertical-offset="0" max-vertical-offset="705">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="42" selection-start="972" selection-end="972" vertical-scroll-proportion="0.52816904" vertical-offset="0" max-vertical-offset="990">
+        <state line="9" column="30" selection-start="786" selection-end="786" vertical-scroll-proportion="-5.4" vertical-offset="0" max-vertical-offset="990">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/register/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="335" column="28" selection-start="14138" selection-end="14138" vertical-scroll-proportion="-204.375" vertical-offset="120" max-vertical-offset="5280">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="36" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YourEffect.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="38" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1140">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/copyright/profiles_settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="21" selection-start="2289" selection-end="2289" vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="1500">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="112" column="18" selection-start="5984" selection-end="5984" vertical-scroll-proportion="-13.573009" vertical-offset="7815" max-vertical-offset="20625">
           <folding />
         </state>
       </provider>
