@@ -10,9 +10,10 @@ function register(username, email, password, country) {
             console.log(data);
             if($("#dialog").hasClass("hidden")) {
                 $("#dialog").removeClass("hidden");
+                $("#dialog").addClass(".alert-info");
+                $("#response-title").text("Register");
             }
-            $("#cmd").html("Register");
-            $("#response").html(data.message);
+            $("#response-text").html(data.message);
 
         }
     });
@@ -30,13 +31,17 @@ function login(username, password) {
             console.log(data);
             if(data.message.toString().indexOf('successful') != -1) {
                 localStorage.setItem("curUser",JSON.stringify(data.data));
+                $("#dialog").addClass("alert-success");
+                $("#response-title").text("Success!");
 
+            }
+            else{
+            	 $("#dialog").addClass("alert-danger");
             }
             if($("#dialog").hasClass("hidden")) {
                 $("#dialog").removeClass("hidden");
             }
-            $("#cmd").html("Login");
-            $("#response").html(data.message);
+            $("#response-text").html(data.message);
 
         }
     });
