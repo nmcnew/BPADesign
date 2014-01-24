@@ -1,18 +1,15 @@
 package com.youreffect.exception;
 
+/**
+ * @author Deeban Ramalingam
+ * RegisterException thrown when an error occurs during register process
+ */
 public class RegisterException extends Exception {
-    public RegisterException() {
-    }
-
-    public RegisterException(String s) {
-        super(s);
-    }
-
-    public RegisterException(String s, Throwable throwable) {
-        super(s, throwable);
-    }
-
-    public RegisterException(Throwable throwable) {
-        super(throwable);
+    /**
+     * construct exception with reason for error
+     * @param message reason for error
+     */
+    public RegisterException(String message) {
+        super(message);
     }
 }

@@ -14,35 +14,44 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+/**
+ * @author Deeban Ramalingam
+ * UserController directs all CRUD operations pertaining to User based on the request URL
+ */
 @Controller
 @RequestMapping("/user")
 public class UserController {
 
+    /** abstract out user CRUD operations */
     @Autowired
     private UserService userService;
 
+    /** hash away critical data */
     @Autowired
     private HashService hashService;
 
+    /** convert JAVA objects into JSON */
     @Autowired
     private Gson gson;
 
+    /** provide a format for sending responses to clients */
     @Autowired
     private ResponseService responseService;
 
+    /**
+     * registers user
+     * @param data JSON from client
+     * @return JSON to client
+     */
     @RequestMapping(value = "/register", method = RequestMethod.POST)
     public @ResponseBody String register(@RequestBody String data) {
-        //creates user from client data
         User user = gson.fromJson(data, User.class);
-        //hashes username and password
         user.setUserId(hashService.md5(user.getUsername()));
         user.setPassword(hashService.md5(user.getPassword()));
         try {
-            //if user already exists
             if(userService.exists(user.getUserId())) {
                 throw new RegisterException("failed to register new user because username already exists");
             }
-            //register new user
             userService.registerUser(user);
             responseService.setMessage("new user successfully registered");
         } catch (RegisterException re) {
@@ -52,6 +61,11 @@ public class UserController {
         return responseService.toString();
     }
 
+    /**
+     * logs in user
+     * @param data JSON from client
+     * @return JSON to client
+     */
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public @ResponseBody String login(@RequestBody String data) {
         User user = gson.fromJson(data, User.class);

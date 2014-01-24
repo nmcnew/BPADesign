@@ -1,18 +1,15 @@
 package com.youreffect.exception;
 
+/**
+ * @author Deeban Ramalingam
+ * LoginException thrown when an error occurs during login process
+ */
 public class LoginException extends Exception {
-    public LoginException() {
-    }
-
-    public LoginException(String s) {
-        super(s);
-    }
-
-    public LoginException(String s, Throwable throwable) {
-        super(s, throwable);
-    }
-
-    public LoginException(Throwable throwable) {
-        super(throwable);
+    /**
+     * construct exception with reason for error
+     * @param message reason for error
+     */
+    public LoginException(String message) {
+        super(message);
     }
 }

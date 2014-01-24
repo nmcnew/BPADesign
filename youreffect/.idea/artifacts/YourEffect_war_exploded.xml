@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" build-on-make="true" name="YourEffect:war exploded">
-    <output-path>$PROJECT_DIR$/target/ROOT##0.0.9</output-path>
+    <output-path>$PROJECT_DIR$/target/ROOT</output-path>
     <root id="root">
       <element id="javaee-facet-resources" facet="YourEffect/web/Web" />
       <element id="directory" name="WEB-INF">

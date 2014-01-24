@@ -13,8 +13,8 @@ function getContextRoot(key) {
     return s.substr(0, s.length-1);
 }
 
-function register(username, email, password, country) {
-    var user = new User(username, email, password, country);
+function register(username, email, password, state) {
+    var user = new User(username, email, password, state);
     $.ajax({
         url:  getContextRoot('public') + '/user/register',
         type: 'POST',
@@ -29,7 +29,6 @@ function register(username, email, password, country) {
                 $("#response-title").text("Register");
             }
             $("#response-text").html(data.message);
-
         }
     });
 }
@@ -57,7 +56,6 @@ function login(username, password) {
                 $("#dialog").removeClass("hidden");
             }
             $("#response-text").html(data.message);
-
         }
     });
 }

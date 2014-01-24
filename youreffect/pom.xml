@@ -73,7 +73,7 @@
     </dependencies>
 
     <build>
-        <finalName>ROOT##0.0.9</finalName>
+        <finalName>ROOT</finalName>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>

@@ -36,12 +36,6 @@
 			<div id="response">
 				<strong id="response-title"></strong> <p class="response-text"></p>
 			</div>
-			<!-- 
-			<div id="cmd" class="panel-heading"></div>
-			<div class="panel-body">
-				<p class="text-info" id="response"></p>
-			</div>
-			 -->
 		</div>
 		<div class="forms">
 			<form onsubmit="return false;" role="form" class="registerForm">
@@ -69,7 +63,7 @@
 						placeholder="Retype Password">
 				</div>
 				<div>
-					<select id="reg_country" name="country" class="">
+					<select id="reg_state" name="state" class="">
 						<option value="">Country...</option>
 						<option value="US">United States of America</option>
 						<option value="AF">Afghanistan</option>
@@ -322,7 +316,7 @@
 				</div>
 				<br />
 				<button
-					onclick="register($('#reg_username').val(),$('#reg_email').val(),$('#reg_password').val(),$('#reg_country').val());"
+					onclick="register($('#reg_username').val(),$('#reg_email').val(),$('#reg_password').val(),$('#reg_state').val());"
 					type="submit" class="btn btn-default ">Register</button>
 			</form>
 			<form onsubmit="return false;" role="form" class="loginForm">

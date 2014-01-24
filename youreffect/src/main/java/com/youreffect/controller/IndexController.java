@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
  * @author Deeban Ramalingam
- * @version 0.0.9
  * IndexController redirects web ROOT to /public/ directory
  */
 @Controller

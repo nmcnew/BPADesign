@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
   <artifact type="war" build-on-make="true" name="YourEffect:war">
     <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="ROOT##0.0.9.war">
+    <root id="archive" name="ROOT.war">
       <element id="artifact" artifact-name="YourEffect:war exploded" />
     </root>
   </artifact>
