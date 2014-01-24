@@ -65,7 +65,7 @@
 				<input type="text" id="rateOfElectricity" class="form-control"
 					placeholder="Electric Rate kWh">
 			</div>
-			<br />
+			<br/>
 		</form>
 
 		<div class="modal fade" id="electricOptions" tabindex="-1"
@@ -111,10 +111,21 @@
 					</div>
 					<div class="modal-body">
 						<form class="form">
-							<input type="radio" name="gOptions" value="furn">Furnace<br />
+							<input type="radio" name="eOptions" value="acCentral">Air
+							Conditioning, Central<br /> <input type="radio" name="eOptions"
+								value="acRoom">Air Conditioning, Room<br /> <input
+								type="radio" name="eOptions" value="purifier">Air
+							Purifier<br /> <input type="radio" name="eOptions"
+								value="washer">Clothes Washer<br /> <input type="radio"
+								name="eOptions" value="dehumidifier">Dehumidifier<br />
+							<input type="radio" name="eOptions" value="dishwasher">Dishwasher<br />
+							<input type="radio" name="eOptions" value="Freezer">Freezer<br />
+							<input type="radio" name="eOptions" value="lightBulb">Light
+							Bulb<br /> <input type="radio" name="eOptions" value="fridge">Refigerator<br />
+							<input type="radio" name="eOptions" value="compactFridge">Refrigerator
+							- Compact<br />
 
-							<button type="button" onclick="addOptionGas()"
-								class="btn btn-primary" data-dismiss="modal">Add</button>
+							<button type="button" class="btn btn-primary">Add</button>
 						</form>
 					</div>
 				</div>
@@ -122,7 +133,7 @@
 		</div>
 	</div>
 	<script>
-		$(".optionable .item").click(
+		$(".optionable li a").click(
 				function() {
 					var selText = $(this).text();
 					$(this).parents('.input-group-btn')
