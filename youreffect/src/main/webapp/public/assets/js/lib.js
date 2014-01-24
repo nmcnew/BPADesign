@@ -23,11 +23,13 @@ function register(username, email, password, state) {
 		contentType : "application/json; charset=utf-8",
 		success : function(data) {
 			console.log(data);
+			removeAlertClass();
 			if (data.message.toString().indexOf('successful') != -1) {
 				$("#dialog").addClass("alert-success");
 				$("#response-title").text("Success!");
 
 			} else {
+				
 				$("#dialog").addClass("alert-danger");
 				$("#response-title").text("Failure!");
 			}
@@ -55,6 +57,8 @@ function login(username, password) {
 		contentType : "application/json; charset=utf-8",
 		success : function(data) {
 			console.log(data);
+
+			removeAlertClass();
 			if (data.message.toString().indexOf('successful') != -1) {
 				localStorage.setItem("curUser", JSON.stringify(data.data));
 				$("#dialog").addClass("alert-success");
@@ -146,4 +150,11 @@ function removeButt(domElement) {
 
 		$(domElement).parents(".formWrapper").remove();
 	});
+}
+function removeAlertClass(){
+	$("#dialog").removeClass("alert-success");
+	$("#dialog").removeClass("alert-info");
+	$("#dialog").removeClass("alert-danger");
+	$("#dialog").removeClass("alert-warning");
+	
 }
