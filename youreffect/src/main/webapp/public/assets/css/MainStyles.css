@@ -82,3 +82,15 @@ footer {
 .input-group{
 	margin-right: 5px;
 }
+.optionable > .item {
+	color:#101010;
+	padding:3px 20px;
+	clear: both;
+	white-space:nowrap;
+	
+}
+.optionable > .item:hover {
+	background-color:rgb(0,127,205);
+	color:#fff;
+	
+}
