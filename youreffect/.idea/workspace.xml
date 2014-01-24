@@ -66,30 +66,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="lib.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="lib.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="39" selection-start="603" selection-end="603" vertical-scroll-proportion="-3.2239468" vertical-offset="1799" max-vertical-offset="2265">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2265">
               <folding>
-                <marker date="1390535411000" expanded="true" signature="6272:6286" placeholder="..." />
+                <marker date="1390540602000" expanded="false" signature="6272:6286" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/public/register/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="49" selection-start="3954" selection-end="3954" vertical-scroll-proportion="-51.458332" vertical-offset="175" max-vertical-offset="2325">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mvc-dispatcher-servlet.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="11" selection-start="2122" selection-end="2122" vertical-scroll-proportion="-25.84" vertical-offset="29" max-vertical-offset="990">
+            <state line="11" column="34" selection-start="447" selection-end="447" vertical-scroll-proportion="0.375" vertical-offset="0" max-vertical-offset="2325">
               <folding />
             </state>
           </provider>
@@ -214,8 +205,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -444,6 +433,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -472,9 +463,13 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/public/register" />
       <recent name="$PROJECT_DIR$/src/main/webapp/public/assets/js" />
       <recent name="$PROJECT_DIR$/src/main" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.youreffect" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
@@ -483,126 +478,6 @@
       <recent name="$PROJECT_DIR$/src/main" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.youreffect" />
-    </key>
-  </component>
-  <component name="RestoreUpdateTree">
-    <UpdateInfo date="Moments ago" ActionInfo="_Update">
-      <UpdatedFiles>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated from server" />
-          <option name="myStatusName" value="Changed on server" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CHANGED_ON_SERVER" />
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Updated" />
-            <option name="myStatusName" value="Changed" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="UPDATED" />
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/public/CostCalculator/lightbulbs.html</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/public/assets/css/MainStyles.css</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/com.springapp/YourEffect/pom.properties</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/com.springapp/YourEffect/pom.xml</PATH>
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Created" />
-            <option name="myStatusName" value="Created" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="CREATED" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Deleted" />
-            <option name="myStatusName" value="Deleted" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="true" />
-            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Restored" />
-            <option name="myStatusName" value="Will be restored" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="RESTORED" />
-          </FILE-GROUP>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Modified" />
-          <option name="myStatusName" value="Modified" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MODIFIED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Skipped" />
-          <option name="myStatusName" value="Skipped" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SKIPPED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with conflicts" />
-          <option name="myStatusName" value="Will be merged with conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_CONFLICTS" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with tree conflicts" />
-          <option name="myStatusName" value="Merged with tree conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with property conflicts" />
-          <option name="myStatusName" value="Will be merged with property conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged" />
-          <option name="myStatusName" value="Will be merged" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Not in repository" />
-          <option name="myStatusName" value="Not in repository" />
-          <option name="mySupportsDeletion" value="true" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UNKNOWN" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally added" />
-          <option name="myStatusName" value="Locally added" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_ADDED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally removed" />
-          <option name="myStatusName" value="Locally removed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_REMOVED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Switched" />
-          <option name="myStatusName" value="Switched" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SWITCHED" />
-        </FILE-GROUP>
-      </UpdatedFiles>
-    </UpdateInfo>
   </component>
   <component name="RunManager" selected="Tomcat Server.Apache Tomcat 7">
     <configuration default="false" name="UserDaoImpl" type="Application" factoryName="Application" temporary="true">
@@ -1055,7 +930,8 @@
       <workItem from="1390506957471" duration="98000" />
       <workItem from="1390507058151" duration="15726000" />
       <workItem from="1390532596750" duration="241000" />
-      <workItem from="1390532932778" duration="4027000" />
+      <workItem from="1390532932778" duration="4412000" />
+      <workItem from="1390539791496" duration="865000" />
     </task>
     <task id="LOCAL-00001" summary="setting up spring mvc">
       <created>1389477332614</created>
@@ -1085,7 +961,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52948000" />
+    <option name="totallyTimeSpent" value="54198000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="802" extended-state="6" />
@@ -1159,15 +1035,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="21" selection-start="638" selection-end="638" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="525">
-          <folding>
-            <marker date="1390535411000" expanded="true" signature="6272:6286" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="77" column="26" selection-start="3108" selection-end="3108" vertical-scroll-proportion="0.0" vertical-offset="1155" max-vertical-offset="1275">
@@ -1182,25 +1049,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="22" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="495">
-          <folding>
-            <marker date="1390535411000" expanded="true" signature="6272:6286" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="0" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="375">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="20" selection-start="536" selection-end="536" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
@@ -1223,11 +1076,6 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="71" column="30" selection-start="2309" selection-end="2309" vertical-scroll-proportion="0.0" vertical-offset="1065" max-vertical-offset="1485" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="14" selection-start="524" selection-end="524" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
@@ -1266,16 +1114,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="22" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1170" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/register/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="22" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="5025" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="19" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="495" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/service/UserService.java">
@@ -1327,9 +1165,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="18" selection-start="5771" selection-end="5771" vertical-scroll-proportion="3.691796" vertical-offset="0" max-vertical-offset="20670">
-          <folding />
-        </state>
+        <state line="111" column="18" selection-start="5771" selection-end="5771" vertical-scroll-proportion="3.691796" vertical-offset="0" max-vertical-offset="20670" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html">
@@ -1366,9 +1202,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="29" selection-start="1007" selection-end="1007" vertical-scroll-proportion="-9.583333" vertical-offset="235" max-vertical-offset="900">
-          <folding />
-        </state>
+        <state line="31" column="29" selection-start="1007" selection-end="1007" vertical-scroll-proportion="-9.583333" vertical-offset="235" max-vertical-offset="900" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/index.html">
@@ -1385,37 +1219,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="97" selection-end="97" vertical-scroll-proportion="0.12765957" vertical-offset="0" max-vertical-offset="705">
-          <folding />
-        </state>
+        <state line="6" column="0" selection-start="97" selection-end="97" vertical-scroll-proportion="0.12765957" vertical-offset="0" max-vertical-offset="705" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/lightbulbs.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.8678415" vertical-offset="2634" max-vertical-offset="3315">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.8678415" vertical-offset="2634" max-vertical-offset="3315" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/model/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="100" selection-start="190" selection-end="190" vertical-scroll-proportion="0.25862068" vertical-offset="0" max-vertical-offset="525">
-          <folding />
-        </state>
+        <state line="8" column="100" selection-start="190" selection-end="190" vertical-scroll-proportion="0.25862068" vertical-offset="0" max-vertical-offset="525" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="20" selection-start="1725" selection-end="1725" vertical-scroll-proportion="0.12715517" vertical-offset="1051" max-vertical-offset="1515">
-          <folding />
-        </state>
+        <state line="91" column="20" selection-start="1725" selection-end="1725" vertical-scroll-proportion="0.12715517" vertical-offset="1051" max-vertical-offset="1515" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="12" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1035">
-          <folding />
-        </state>
+        <state line="27" column="12" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1035" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java">
@@ -1427,28 +1251,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1200">
-          <folding />
-        </state>
+        <state line="10" column="0" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1200" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/com.springapp/YourEffect/pom.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="464">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="464" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="76" column="47" selection-start="2377" selection-end="2377" vertical-scroll-proportion="2.4568965" vertical-offset="0" max-vertical-offset="1500">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/register/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="49" selection-start="3954" selection-end="3954" vertical-scroll-proportion="-51.458332" vertical-offset="175" max-vertical-offset="2325">
           <folding />
         </state>
       </provider>
@@ -1462,17 +1275,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="11" selection-start="2122" selection-end="2122" vertical-scroll-proportion="-25.84" vertical-offset="29" max-vertical-offset="990">
+        <state line="45" column="11" selection-start="2122" selection-end="2122" vertical-scroll-proportion="0.0" vertical-offset="29" max-vertical-offset="990">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="39" selection-start="603" selection-end="603" vertical-scroll-proportion="-3.2239468" vertical-offset="1799" max-vertical-offset="2265">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2265">
           <folding>
-            <marker date="1390535411000" expanded="true" signature="6272:6286" placeholder="..." />
+            <marker date="1390540602000" expanded="false" signature="6272:6286" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/register/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="34" selection-start="447" selection-end="447" vertical-scroll-proportion="0.375" vertical-offset="0" max-vertical-offset="2325">
+          <folding />
         </state>
       </provider>
     </entry>
