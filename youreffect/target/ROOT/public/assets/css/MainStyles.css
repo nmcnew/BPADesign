@@ -82,6 +82,9 @@ footer {
 .input-group{
 	margin-right: 5px;
 }
+.optionable > li {
+	color:#101010;
+}
 .optionable > .item {
 	color:#101010;
 	padding:3px 20px;

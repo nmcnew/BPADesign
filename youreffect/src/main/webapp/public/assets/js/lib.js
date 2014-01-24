@@ -57,7 +57,31 @@ function login(username, password) {
 				$("#dialog").removeClass("alert-danger");
 				$("#dialog").addClass("alert-success");
 				$("#response-title").text("Success!");
-
+    var user = new User(username, '', password, '');
+    $.ajax({
+        url: getContextRoot('public') + '/user/login',
+        type: 'POST',
+        dataType: 'json',
+        data: JSON.stringify(user),
+        contentType: "application/json; charset=utf-8",
+        success: function(data) {
+            console.log(data);
+            if (data.message.toString().indexOf('successful') != -1) {
+                localStorage.setItem("curUser", JSON.stringify(data.data));
+                $("#dialog").removeClass("alert-info");
+                $("#dialog").removeClass("alert-danger");
+                $("#dialog").addClass("alert-success");
+                $("#response-title").text("Success!");
+                document.getElementById("curLogin").innerHTML = (JSON
+                    .parse(localStorage.getItem("curUser")).username);
+            } else {
+				$("#dialog").removeClass("alert-info");
+				$("#dialog").removeClass("alert-success");
+				$("#dialog").addClass("alert-danger");
+				$("#response-title").text("Failure!");
+			}
+			if ($("#dialog").hasClass("hidden")) {
+				$("#dialog").removeClass("hidden");
 			}
 			else {
 		    var user = new User(username, '', password, '');
