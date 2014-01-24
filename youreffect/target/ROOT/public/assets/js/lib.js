@@ -57,7 +57,8 @@ function login(username, password) {
                 $("#dialog").removeClass("alert-danger");
                 $("#dialog").addClass("alert-success");
                 $("#response-title").text("Success!");
-
+                document.getElementById("curLogin").innerHTML = (JSON
+                    .parse(localStorage.getItem("curUser")).username);
             } else {
 
                 $("#dialog").removeClass("alert-info");
