@@ -29,20 +29,21 @@
 		<br />
 
 		<form class="form">
-			<div class="lBulbCover formWrapper">
+			<div id="lBulbWrapper" class=" formWrapper">
 				<h3>Light Bulbs</h3>
 				<div class="input-group removeable pull-right">
 
-					<button type="button" class="btn btn-danger " onclick="removeButt($(this))">
+					<button type="button" class="btn btn-danger "
+						onclick="removeButt($(this))">
 						<span class="glyphicon glyphicon-minus-sign"></span> Remove
 					</button>
 				</div>
 				<div class="input-group">
-					<input type="number" class="form-control" placeholder="Quantity">
+					<input id="bulbQuantity" type="number" class="form-control" placeholder="Quantity">
 				</div>
 				<br />
 				<div class="input-group">
-					<input type="number" class="form-control "
+					<input id="bulbAvgDailyUse" type="number" class="form-control "
 						placeholder="Average Daily Use (hours)">
 				</div>
 				<br />
@@ -52,7 +53,7 @@
 							data-toggle="dropdown">
 							75 W Incandescent <span class="caret"></span>
 						</button>
-						<ul class="dropdown-menu optionable">
+						<ul class="dropdown-menu optionable" id="bulbType">
 							<li class="item">40 W incandescent</a></li>
 							<li class="item">60 W incandescent</a></li>
 							<li class="item">75 W incandescent</a></li>
@@ -69,26 +70,27 @@
 
 			</div>
 			<br class="break" />
-			<div class="accWrapper formWrapper">
+			<div id="accWrapper" class="formWrapper">
 				<h3>Central Air Conditioning</h3>
-				<div class="input-group removeable pull-right" onclick="removeButt($(this))">
+				<div class="input-group removeable pull-right"
+					onclick="removeButt($(this))">
 
 					<button type="button" class="btn btn-danger">
 						<span class="glyphicon glyphicon-minus-sign"></span> Remove
 					</button>
 				</div>
 				<div class="input-group ">
-					<input type="number" class="form-control"
+					<input id="accNumOfUnits" type="number" class="form-control"
 						placeholder="Number of Units">
 				</div>
 				<br />
 				<div class="input-group ">
-					<input type="number" class="form-control" placeholder="SEER Rating">
+					<input id="seerRating" type="number" class="form-control" placeholder="SEER Rating">
 				</div>
 				<br />
 				<div class="input-group">
 					<div class="input-group-btn ">
-						<button type="button" class="btn btn-default dropdown-toggle "
+						<button id="accCoolCapacity"type="button" class="btn btn-default dropdown-toggle "
 							data-toggle="dropdown">
 							Cooling Capacity (Btu/hr) <span class="caret"></span>
 						</button>
@@ -104,7 +106,7 @@
 				<br />
 				<div class="input-group">
 					<div class="input-group-btn">
-						<button type="button" class="btn btn-default dropdown-toggle "
+						<button id="accThermo"type="button" class="btn btn-default dropdown-toggle "
 							data-toggle="dropdown">
 							Thermostat? <span class="caret"></span>
 						</button>
@@ -123,13 +125,14 @@
 				<!-- Remove Button -->
 				<div class="input-group removeable pull-right">
 
-					<button type="button" class="btn btn-danger" onclick="removeButt($(this))">
+					<button type="button" class="btn btn-danger"
+						onclick="removeButt($(this))">
 						<span class="glyphicon glyphicon-minus-sign"></span> Remove
 					</button>
 				</div>
-				<div id="fuelType" class="input-group">
+				<div  class="input-group">
 					<div class="input-group-btn ">
-						<button type="button" class="btn btn-default dropdown-toggle "
+						<button id="furnFuelType" type="button" class="btn btn-default dropdown-toggle "
 							data-toggle="dropdown">
 							Fuel <span class="caret"></span>
 						</button>
@@ -141,13 +144,13 @@
 				</div>
 				<br />
 				<div class="input-group ">
-					<input id="houseSize" type="number" class="form-control"
+					<input id="furnHouseSize" type="number" class="form-control"
 						placeholder="Size of Your House(Square Feet)">
 				</div>
 				<br />
-				<div id="houseEra" class="input-group">
+				<div  class="input-group">
 					<div class="input-group-btn ">
-						<button type="button" class="btn btn-default dropdown-toggle "
+						<button id="furnHouseEra" type="button" class="btn btn-default dropdown-toggle "
 							data-toggle="dropdown">
 							Era of House <span class="caret"></span>
 						</button>
@@ -197,6 +200,32 @@
 						</ul>
 					</div>
 				</div>
+			</div>
+			<div id="acrWrapper" class="formWrapper">
+				<h3>Personal Air Conditioner</h3>
+				<div class="input-group removeable pull-right"
+					onclick="removeButt($(this))">
+
+					<button type="button" class="btn btn-danger">
+						<span class="glyphicon glyphicon-minus-sign"></span> Remove
+					</button>
+				</div>
+				<div class="input-group ">
+					<input id="acrNumOfUnits" type="number" class="form-control"
+						placeholder="Number of Units">
+				</div>
+				<h4>EER Rating</h4>
+				<div class="input-group ">
+					<input id="eerRating " type="number" class="form-control"
+						placeholder="EER Rating">
+				</div>
+
+				<h4>Cooling Capacity</h4>
+				<div class="input-group ">
+					<input id="acrCoolCap " type="number" class="form-control"
+						placeholder="Cooling Capacity">
+				</div>
+
 			</div>
 		</form>
 	</div>
