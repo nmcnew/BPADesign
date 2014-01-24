@@ -42,6 +42,7 @@ function register(username, email, password, state) {
 }
 
 function login(username, password) {
+<<<<<<< HEAD
 	var user = new User(username, '', password, '');
 	$.ajax({
 		url : getContextRoot('public') + '/user/login',
@@ -57,6 +58,8 @@ function login(username, password) {
 				$("#dialog").removeClass("alert-danger");
 				$("#dialog").addClass("alert-success");
 				$("#response-title").text("Success!");
+=======
+>>>>>>> b091faba184f1c2a13608cba39d2bc8f913890da
     var user = new User(username, '', password, '');
     $.ajax({
         url: getContextRoot('public') + '/user/login',
