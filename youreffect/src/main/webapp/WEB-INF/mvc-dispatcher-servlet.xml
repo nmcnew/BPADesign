@@ -13,8 +13,8 @@
     <mvc:resources mapping="/public/**" location="/public/" />
 
     <bean id="mongo" class="com.mongodb.Mongo">
-        <constructor-arg index="0" value="54.214.154.98"/>
-        <constructor-arg index="1" value="27017"/>
+        <constructor-arg index="0" value="54.214.154.98" type="java.lang.String"/>
+        <constructor-arg index="1" value="27017" type="int"/>
     </bean>
 
     <bean id="mongofactory" class="org.springframework.data.mongodb.core.SimpleMongoDbFactory">

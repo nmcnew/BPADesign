@@ -1,0 +1,96 @@
+body {
+	min-width: 753px;
+	height: 100%;
+	background-color: #101010;
+	color: #fff;
+}
+
+.body {
+	margin-left: 17%;
+	margin-right: 17%;
+}
+
+.navbar {
+	margin-left: 12%;
+	margin-right: 12%;
+}
+
+footer {
+	color: #003a75;
+	font-size: small;
+}
+.select-option {
+	color: #D43F3A;
+	font-style: underline;
+}
+.select-option > a {
+	color: #D43F3A;
+	font-style: underline;
+}
+.eOptions > li > a:hover {
+
+	color: #D43F3A;
+}
+.modal-content {
+	background-color: #101010;
+}
+.navbar.center .navbar-inner {
+	text-align: center;
+}
+
+.navbar.center .navbar-inner .nav {
+	display: inline-block;
+	float: none;
+}
+
+.nav > li > a {
+	transition: all .5s ease;
+}
+
+.nav > li > a:hover {
+	transition: all .35s ease;
+}
+
+.imageContainer {
+	background-color: #aaa;
+	width: auto;
+	height: 250px;
+}
+
+.big-image {
+	display: block;
+	margin: 0 auto;
+	width: auto;
+	height: inherit;
+}
+
+.registerForm {
+	float: left;
+	clear: right;
+	width: 225px;
+}
+
+.loginForm {
+	margin-left: 10%;
+	float: left;
+	width: 225px;
+}
+
+.nav-pills {
+	margin: 0 auto;
+}
+.input-group{
+	margin-right: 5px;
+}
+.optionable > .item {
+	color:#101010;
+	padding:3px 20px;
+	clear: both;
+	white-space:nowrap;
+	
+}
+.optionable > .item:hover {
+	background-color:rgb(0,127,205);
+	color:#fff;
+	
+}

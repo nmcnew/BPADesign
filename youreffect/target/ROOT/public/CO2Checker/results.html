@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Effect</title>
+    <link href="../assets/bs/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/MainStyles.css" rel="stylesheet">
+
+    <body>
+    <nav class="navbar navbar-inverse center" role="navigation">
+        <div class="navbar-inner">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="../">Home</a>
+                </li>
+                <li class="active">
+                    <a href="#">Carbon Footprint</a>
+                </li>
+                <li>
+                    <a href="#">Check Stats</a>
+                </li>
+                <li>
+                    <a href="..//register">Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="body">
+        <ul class="nav nav-pills">
+            <li>
+                <a href="">Get Started!</a>
+            </li>
+            <li>
+                <a href="houseCO2.html">House</a>
+            </li>
+            <li>
+                <a href="flight.html">Flights</a>
+            </li>
+            <li>
+                <a href="car.html">Car</a>
+            </li>
+            <li>
+                <a href="motorbike.html">Motorbike</a>
+            </li>
+            <li>
+                <a href="busAndRail.html">Bus and Rail</a>
+            </li>
+            <li>
+                <a href="Secondary.html">Secondary</a>
+            </li>
+            <li class="active">
+                <a href="results.html">Results</a>
+            </li>
+        </ul>
+        <h2>Results!</h2>
+
+        <p>
+            Carbon Footprint for someVar between Date1 and Date2
+        </p>
+
+        <div>
+            <!--This will autofill based on JS Cookie-->
+            <table class="table">
+                <tr>
+                    <th>Type of Emission</th>
+                    <th>Your Values</th>
+                    <th>US Average</th>
+                    <th>World Average</th>
+                </tr>
+                <tr>
+                    <td>House</td>
+                    <td id="houseVal">Value</td>
+                    <td>usVal</td>
+                    <td>avgVal</td>
+                </tr>
+                <tr>
+                    <td>Flights</td>
+                    <td id="flightVal">Value</td>
+                    <td>usVal</td>
+                    <td>avgVal</td>
+                </tr>
+                <tr>
+                    <td>Car</td>
+                    <td id="carVal">Value</td>
+                    <td>usVal</td>
+                    <td>avgVal</td>
+                </tr>
+                <tr>
+                    <td>Motorbike</td>
+                    <td id="bikeVal">Value</td>
+                    <td>usVal</td>
+                    <td>avgVal</td>
+                </tr>
+                <tr>
+                    <td>Bus and Rail</td>
+                    <td id="busRailVal">Value</td>
+                    <td>usVal</td>
+                    <td>avgVal</td>
+                </tr>
+                <tr>
+                    <td>Secondary</td>
+                    <td id="secVal">Value</td>
+                    <td>usVal</td>
+                    <td>avgVal</td>
+                </tr>
+                <tr>
+                    <th> Total</th>
+                    <td id="totalCo2">Value</td>
+                    <td>usVal</td>
+                    <td>avgVal</td>
+                </tr>
+            </table>
+        </div>
+        <button type="button" class="btn btn-success">
+            Submit Stats
+        </button>
+        <br/>
+        <a href="../register">Create an account to keep track of your Stats!</a>
+
+        <hr/>
+        <footer>
+            Created by The Centennial High School BPA Chapter Web Applications Team.
+        </footer>
+    </div>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../assets/bs/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('.myTip').tooltip();
+        });
+    </script>
+</head>
+</body>
+</html>
