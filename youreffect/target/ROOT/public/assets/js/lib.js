@@ -65,9 +65,7 @@ function login(username, password) {
 				$("#dialog").addClass("alert-danger");
 				$("#response-title").text("Failure!");
 			}
-			if ($("#dialog").hasClass("hidden")) {
-				$("#dialog").removeClass("hidden");
-			}
+            $("#dialog").fadeIn();
 			$("#response-text").html(data.message);
 
 		}

@@ -1,149 +1,138 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Your Effect</title>
-<link href="../assets/css/bootstrap.min.css" rel="stylesheet">
-<link href="../assets/css/MainStyles.css" rel="stylesheet">
-<link href="../assets/css/hover.css" rel="stylesheet">
-<script type="text/javascript"
-	src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="../assets/js/bootstrap.min.js"></script>
-<script src="../assets/js/lib.js"></script>
+    <title>Your Effect</title>
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/MainStyles.css" rel="stylesheet">
+    <link href="../assets/css/hover.css" rel="stylesheet">
+    <script type="text/javascript"
+            src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/lib.js"></script>
 </head>
 <body>
-	<nav class="navbar navbar-inverse center" role="navigation">
-		<div class="navbar-inner">
-			<ul class="nav navbar-nav">
-				<li><a href="../">Home</a></li>
-				<li class="active"><a href="#">Cost Calculator</a></li>
-				<li><a href="#">Check Stats</a></li>
-				<li><a href="../register/">Register</a></li>
-				<li>
-					<div class="navbar-text navbar-left small">Logged in
-						as:&nbsp;&nbsp;</div>
+<nav class="navbar navbar-inverse center" role="navigation">
+    <div class="navbar-inner">
+        <ul class="nav navbar-nav">
+            <li><a href="../">Home</a></li>
+            <li class="active"><a href="#">Cost Calculator</a></li>
+            <li><a href="#">Check Stats</a></li>
+            <li><a href="../register/">Register</a></li>
+            <li>
+                <div class="navbar-text navbar-left small">Logged in
+                    as:&nbsp;&nbsp;</div>
 
-					<div id="curLogin" class="navbar-text small"></div> <script
-						type="text/javascript">
-						document.getElementById("curLogin").innerHTML = (JSON
-								.parse(localStorage.getItem("curUser")).username);
-					</script>
-				</li>
-			</ul>
-		</div>
-	</nav>
+                <div id="curLogin" class="navbar-text small"></div> <script
+                    type="text/javascript">
+                document.getElementById("curLogin").innerHTML = (JSON
+                        .parse(localStorage.getItem("curUser")).username);
+            </script>
+            </li>
+        </ul>
+    </div>
+</nav>
 
-	<div class="body">
-		<h2>Item Specifics</h2>
-		<br />
+<div class="body">
+    <h2>Item Specifics</h2>
+    <br />
 
 
 
-		<form class="form mainForm" onsubmit="return false" role="form">
+    <form class="form mainForm" onsubmit="return false" role="form">
 
-			<div class="input-group">
-				<div class="input-group-btn">
-					<button type="button" class="btn btn-success dropdown-toggle "
-						data-toggle="dropdown">
-						<span class="glyphicon glyphicon-plus-sign"></span> Add <span
-							class="caret"></span>
-					</button>
-					<ul class="dropdown-menu">
-						<li><a href="#" data-toggle="modal"
-							data-target="#electricOptions">Electricity</a></li>
-						<li><a href="#" data-toggle="modal" data-target="#gasOptions">Gasoline</a>
-						</li>
-					</ul>
-					<button type="button" class="btn btn-info editButton">
-						<span class="glyphicon glyphicon-pencil"></span> Edit
-					</button>
-				</div>
-				<br />
+        <div class="input-group">
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-success dropdown-toggle "
+                        data-toggle="dropdown">
+                    <span class="glyphicon glyphicon-plus-sign"></span> Add <span
+                        class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" data-toggle="modal"
+                           data-target="#electricOptions">Electricity</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#gasOptions">Gasoline</a>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-info editButton">
+                    <span class="glyphicon glyphicon-pencil"></span> Edit
+                </button>
+            </div>
+            <br />
 
-			</div>
-			<br />
-			<div class="input-group">
-				<input type="text" id="rateOfElectricity" class="form-control"
-					placeholder="Electric Rate kWh">
-			</div>
-			<br/>
-		</form>
+        </div>
+        <br />
+        <div class="input-group">
+            <input type="text" id="rateOfElectricity" class="form-control"
+                   placeholder="Electric Rate kWh">
+        </div>
+        <br />
+    </form>
 
-		<div class="modal fade" id="electricOptions" tabindex="-1"
-			role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal"
-							aria-hidden="true">&times;</button>
-						<h4 class="modal-title" id="myModalLabel">Electric Options</h4>
-					</div>
-					<div class="modal-body">
-						<form id="elecForm" class="form">
-							<input type="radio" name="eOptions" value="acCentral">Air
-							Conditioning, Central<br /> <input type="radio" name="eOptions"
-								value="acRoom">Air Conditioning, Room<br /> <input
-								type="radio" name="eOptions" value="purifier">Air
-							Purifier<br /> <input type="radio" name="eOptions"
-								value="washer">Clothes Washer<br /> <input type="radio"
-								name="eOptions" value="dehumidifier">Dehumidifier<br />
-							<input type="radio" name="eOptions" value="dishwasher">Dishwasher<br />
-							<input type="radio" name="eOptions" value="freezer">Freezer<br />
-							<input type="radio" name="eOptions" value="lightBulb">Light
-							Bulb<br /> <input type="radio" name="eOptions" value="fridge">Refigerator<br />
-							<input type="radio" name="eOptions" value="compactFridge">Refrigerator
-							- Compact<br />
+    <div class="modal fade" id="electricOptions" tabindex="-1"
+         role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"
+                            aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="eModalLabel">Electric Options</h4>
+                </div>
+                <div class="modal-body">
+                    <form id="elecForm" class="form">
+                        <input type="radio" name="eOptions" value="acCentral">Air
+                        Conditioning, Central<br /> <input type="radio" name="eOptions"
+                                                           value="acRoom">Air Conditioning, Room<br /> <input
+                            type="radio" name="eOptions" value="purifier">Air
+                        Purifier<br /> <input type="radio" name="eOptions"
+                                              value="washer">Clothes Washer<br /> <input type="radio"
+                                                                                         name="eOptions" value="dehumidifier">Dehumidifier<br />
+                        <input type="radio" name="eOptions" value="dishwasher">Dishwasher<br />
+                        <input type="radio" name="eOptions" value="freezer">Freezer<br />
+                        <input type="radio" name="eOptions" value="lightBulb">Light
+                        Bulb<br /> <input type="radio" name="eOptions" value="fridge">Refigerator<br />
+                        <input type="radio" name="eOptions" value="compactFridge">Refrigerator
+                        - Compact<br />
 
-							<button type="button" onclick="addOptionElec()"
-								class="btn btn-primary" data-dismiss="modal">Submit</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="modal fade" id="gasOptions" tabindex="-1" role="dialog"
-			aria-labelledby="myModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal"
-							aria-hidden="true">&times;</button>
-						<h4 class="modal-title" id="myModalLabel">Gas Options</h4>
-					</div>
-					<div class="modal-body">
-						<form class="form">
-							<input type="radio" name="eOptions" value="acCentral">Air
-							Conditioning, Central<br /> <input type="radio" name="eOptions"
-								value="acRoom">Air Conditioning, Room<br /> <input
-								type="radio" name="eOptions" value="purifier">Air
-							Purifier<br /> <input type="radio" name="eOptions"
-								value="washer">Clothes Washer<br /> <input type="radio"
-								name="eOptions" value="dehumidifier">Dehumidifier<br />
-							<input type="radio" name="eOptions" value="dishwasher">Dishwasher<br />
-							<input type="radio" name="eOptions" value="Freezer">Freezer<br />
-							<input type="radio" name="eOptions" value="lightBulb">Light
-							Bulb<br /> <input type="radio" name="eOptions" value="fridge">Refigerator<br />
-							<input type="radio" name="eOptions" value="compactFridge">Refrigerator
-							- Compact<br />
+                        <button type="button" onclick="addOptionElec()"
+                                class="btn btn-primary" data-dismiss="modal">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="gasOptions" tabindex="-1" role="dialog"
+         aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"
+                            aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="gasModalLabel">Gas Options</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form">
+                        <input type="radio" name="gOptions" value="furn">Furnace<br />
 
-							<button type="button" class="btn btn-primary">Add</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<script>
-		$(".optionable li a").click(
-				function() {
-					var selText = $(this).text();
-					$(this).parents('.input-group-btn')
-							.find('.dropdown-toggle').html(
-									selText + ' <span class="caret"></span>');
+                        <button type="button" onclick="addOptionGas()"
+                                class="btn btn-primary" data-dismiss="modal">Add</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(".item").click(
+            function() {
+                var selText = $(this).text();
+                $(this).parents('.input-group-btn')
+                        .find('.dropdown-toggle').html(
+                                selText + ' <span class="caret"></span>');
 
-				});
-		$(".editButton").click(function() {
-			$(".removeable").fadeToggle();
-		});
-	</script>
+            });
+    $(".editButton").click(function() {
+        $(".removeable").fadeToggle();
+    });
+</script>
 </body>
 </html>
