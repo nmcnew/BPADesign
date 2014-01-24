@@ -23,6 +23,11 @@ function register(username, email, password, country) {
         contentType: "application/json; charset=utf-8",
         success: function(data) {
             console.log(data);
+            if(data.message.toString().indexOf('successful') != -1) {
+                $("#dialog").addClass("alert-success");
+                $("#response-title").text("Success!");
+
+            }
             if($("#dialog").hasClass("hidden")) {
                 $("#dialog").removeClass("hidden");
                 $("#dialog").addClass(".alert-info");
@@ -52,6 +57,7 @@ function login(username, password) {
             }
             else{
             	 $("#dialog").addClass("alert-danger");
+                 $("#response-title").text("Failure!");
             }
             if($("#dialog").hasClass("hidden")) {
                 $("#dialog").removeClass("hidden");
