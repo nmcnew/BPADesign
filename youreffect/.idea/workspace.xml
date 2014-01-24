@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="06063096-bfe1-4e35-9f05-404f1a450a95" name="Default" comment="" />
+    <list default="true" id="06063096-bfe1-4e35-9f05-404f1a450a95" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="YourEffect.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,7 +69,7 @@
       <file leaf-file-name="lib.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="18" selection-start="280" selection-end="280" vertical-scroll-proportion="0.4323725" vertical-offset="0" max-vertical-offset="2265">
+            <state line="23" column="39" selection-start="603" selection-end="603" vertical-scroll-proportion="-3.2239468" vertical-offset="1799" max-vertical-offset="2265">
               <folding>
                 <marker date="1390535411000" expanded="true" signature="6272:6286" placeholder="..." />
               </folding>
@@ -1053,7 +1055,7 @@
       <workItem from="1390506957471" duration="98000" />
       <workItem from="1390507058151" duration="15726000" />
       <workItem from="1390532596750" duration="241000" />
-      <workItem from="1390532932778" duration="4014000" />
+      <workItem from="1390532932778" duration="4027000" />
     </task>
     <task id="LOCAL-00001" summary="setting up spring mvc">
       <created>1389477332614</created>
@@ -1083,7 +1085,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52935000" />
+    <option name="totallyTimeSpent" value="52948000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="802" extended-state="6" />
@@ -1467,7 +1469,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="18" selection-start="280" selection-end="280" vertical-scroll-proportion="0.4323725" vertical-offset="0" max-vertical-offset="2265">
+        <state line="23" column="39" selection-start="603" selection-end="603" vertical-scroll-proportion="-3.2239468" vertical-offset="1799" max-vertical-offset="2265">
           <folding>
             <marker date="1390535411000" expanded="true" signature="6272:6286" placeholder="..." />
           </folding>

@@ -15,7 +15,7 @@
 			<ul class="nav navbar-nav">
 				<li><a href="../">Home</a></li>
 				<li class="active"><a href="index.html">Cost Calculator</a></li>
-
+				<li><a href="../CO2Checker/">Carbon Footprint</a></li>
 				<li><a href="#">Check Stats</a></li>
 				<li><a href="../register/">Register</a></li>
 			</ul>
@@ -29,11 +29,11 @@
 		<br />
 
 		<form class="form">
-			<div class="lBulbCover formWrapper">
+			<div class="lBulbCover">
 				<h3>Light Bulbs</h3>
-				<div class="input-group removeable pull-right">
+				<div class="input-group removeable ">
 
-					<button type="button" class="btn btn-danger " onclick="removeButt($(this))">
+					<button type="button" class="btn btn-danger">
 						<span class="glyphicon glyphicon-minus-sign"></span> Remove
 					</button>
 				</div>
@@ -68,10 +68,10 @@
 				<br />
 
 			</div>
-			<br class="break" />
-			<div class="accWrapper formWrapper">
+			<br />
+			<div class="accWrapper">
 				<h3>Central Air Conditioning</h3>
-				<div class="input-group removeable pull-right" onclick="removeButt($(this))">
+				<div class="input-group removeable pull-right">
 
 					<button type="button" class="btn btn-danger">
 						<span class="glyphicon glyphicon-minus-sign"></span> Remove
@@ -115,6 +115,7 @@
 						</ul>
 					</div>
 				</div>
+				<br />
 
 
 			</div>
@@ -123,7 +124,7 @@
 				<!-- Remove Button -->
 				<div class="input-group removeable pull-right">
 
-					<button type="button" class="btn btn-danger" onclick="removeButt($(this))">
+					<button type="button" class="btn btn-danger">
 						<span class="glyphicon glyphicon-minus-sign"></span> Remove
 					</button>
 				</div>
@@ -164,22 +165,20 @@
 						</ul>
 					</div>
 				</div>
-				<br />
+				<br/>
 				<div id="unitEra" class="input-group">
 					<div class="input-group-btn ">
 						<button type="button" class="btn btn-default dropdown-toggle "
 							data-toggle="dropdown">
-							Era of Unit <span class="caret"></span>
+							Era of House <span class="caret"></span>
 						</button>
 						<ul class="dropdown-menu optionable" role="menu">
-							<li>Era of Unit</li>
+							<li>Era of House</li>
 							<li class="item">1960-1969</li>
 							<li class="item">1970-1974</li>
 							<li class="item">1975-1983</li>
-							<li class="item">1984-1987</li>
-							<li class="item">1988-1991</li>
-							<li class="item">After 1992</li>
-							<li class="item">New Unit</li>
+							<li class="item">1990-2000</li>
+							<li class="item">2000-Present</li>
 						</ul>
 					</div>
 				</div>
@@ -191,12 +190,15 @@
 							Thermostat? <span class="caret"></span>
 						</button>
 						<ul class="dropdown-menu optionable">
-							<li>Thermostat?</li>
+							<li style="color: #101010">Thermostat?</li>
 							<li class="item">Yes</a></li>
 							<li class="item">No</a></li>
 						</ul>
 					</div>
 				</div>
+				<br />
+
+
 			</div>
 		</form>
 	</div>
