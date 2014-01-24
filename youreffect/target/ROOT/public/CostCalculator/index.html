@@ -62,8 +62,8 @@
         </div>
         <br />
         <div class="input-group">
-            <input type="text" id="rateOfElectricity" class="form-control"
-                   placeholder="Electric Rate kWh">
+            <input type="text" id="rateOfElectricity" class="form-control "
+                   placeholder="Electric Rate kWh"> US Average: 0.1138
         </div>
         <br />
     </form>
@@ -122,8 +122,9 @@
     </div>
 </div>
 <script>
-    $(".item").click(
+    $(".mainForm").on("click",".formWrapper .input-group .input-group-btn .optionable .item",
             function() {
+                console.log("Working item");
                 var selText = $(this).text();
                 $(this).parents('.input-group-btn')
                         .find('.dropdown-toggle').html(
