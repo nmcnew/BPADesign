@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06063096-bfe1-4e35-9f05-404f1a450a95" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/public/register/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/public/register/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" afterPath="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/public/CostCalculator/lightbulbs.html" afterPath="$PROJECT_DIR$/src/main/webapp/public/CostCalculator/lightbulbs.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="YourEffect.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,7 +72,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="131" column="10" selection-start="5832" selection-end="5832" vertical-scroll-proportion="4.465909" vertical-offset="0" max-vertical-offset="2145">
+            <state line="128" column="26" selection-start="5801" selection-end="5801" vertical-scroll-proportion="0.45454547" vertical-offset="1720" max-vertical-offset="2160">
               <folding />
             </state>
           </provider>
@@ -1037,7 +1040,7 @@
       <workItem from="1390532596750" duration="241000" />
       <workItem from="1390532932778" duration="4412000" />
       <workItem from="1390539791496" duration="1375000" />
-      <workItem from="1390597736761" duration="1643000" />
+      <workItem from="1390597736761" duration="1803000" />
     </task>
     <task id="LOCAL-00001" summary="setting up spring mvc">
       <created>1389477332614</created>
@@ -1067,7 +1070,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56351000" />
+    <option name="totallyTimeSpent" value="56511000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="802" extended-state="6" />
@@ -1145,7 +1148,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2265">
           <folding>
-            <marker date="1390598299000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1390605118000" expanded="false" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1406,14 +1409,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="59" column="60" selection-start="1895" selection-end="1896" vertical-scroll-proportion="0.3317647" vertical-offset="744" max-vertical-offset="2235">
           <folding>
-            <marker date="1390598299000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1390605118000" expanded="false" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="10" selection-start="5832" selection-end="5832" vertical-scroll-proportion="4.465909" vertical-offset="0" max-vertical-offset="2145">
+        <state line="128" column="26" selection-start="5801" selection-end="5801" vertical-scroll-proportion="0.45454547" vertical-offset="1720" max-vertical-offset="2160">
           <folding />
         </state>
       </provider>

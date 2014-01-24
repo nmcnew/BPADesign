@@ -27,14 +27,18 @@ function register(username, email, password, state) {
 				$("#dialog").addClass("alert-success");
 				$("#response-title").text("Success!");
 
+			} else {
+				$("#dialog").addClass("alert-danger");
+				$("#response-title").text("Failure!");
 			}
-			if ($("#dialog").hasClass("hidden")) {
-				$("#dialog").removeClass("hidden");
-				$("#dialog").removeClass("alert-success");
-				$("#dialog").removeClass("alert-danger");
-				$("#dialog").addClass("alert-info");
-				$("#response-title").text("Register");
-			}
+			// if ($("#dialog").hasClass("hidden")) {
+			// $("#dialog").removeClass("hidden");
+			// $("#dialog").removeClass("alert-success");
+			// $("#dialog").removeClass("alert-danger");
+			// $("#dialog").addClass("alert-info");
+			// $("#response-title").text("Register");
+			// }
+			$("#dialog").fadeIn();
 			$("#response-text").html(data.message);
 
 		}
@@ -42,30 +46,26 @@ function register(username, email, password, state) {
 }
 
 function login(username, password) {
-    var user = new User(username, '', password, '');
-    $.ajax({
-        url: getContextRoot('public') + '/user/login',
-        type: 'POST',
-        dataType: 'json',
-        data: JSON.stringify(user),
-        contentType: "application/json; charset=utf-8",
-        success: function(data) {
-            console.log(data);
-            if (data.message.toString().indexOf('successful') != -1) {
-                localStorage.setItem("curUser", JSON.stringify(data.data));
-                $("#dialog").removeClass("alert-info");
-                $("#dialog").removeClass("alert-danger");
-                $("#dialog").addClass("alert-success");
-                $("#response-title").text("Success!");
-                document.getElementById("curLogin").innerHTML = (JSON
-                    .parse(localStorage.getItem("curUser")).username);
-            } else {
-				$("#dialog").removeClass("alert-info");
-				$("#dialog").removeClass("alert-success");
+	var user = new User(username, '', password, '');
+	$.ajax({
+		url : getContextRoot('public') + '/user/login',
+		type : 'POST',
+		dataType : 'json',
+		data : JSON.stringify(user),
+		contentType : "application/json; charset=utf-8",
+		success : function(data) {
+			console.log(data);
+			if (data.message.toString().indexOf('successful') != -1) {
+				localStorage.setItem("curUser", JSON.stringify(data.data));
+				$("#dialog").addClass("alert-success");
+				$("#response-title").text("Success!");
+				document.getElementById("curLogin").innerHTML = (JSON
+						.parse(localStorage.getItem("curUser")).username);
+			} else {
 				$("#dialog").addClass("alert-danger");
 				$("#response-title").text("Failure!");
 			}
-            $("#dialog").fadeIn();
+			$("#dialog").fadeIn();
 			$("#response-text").html(data.message);
 
 		}
@@ -105,8 +105,14 @@ function addOptionElec() {
 				.append(
 						'<div class="accWrapper formWrapper"><h3>Central Air Conditioning</h3><div class="input-group removeable pull-right"><button type="button" class="btn btn-danger" onclick="removeButt($(this))"><span class="glyphicon glyphicon-minus-sign"></span> Remove</button></div><div class="input-group "><input type="number" class="form-control"placeholder="Number of Units"></div><br /><div class="input-group "><input type="number" class="form-control" placeholder="SEER Rating"></div><br /><div class="input-group"><div class="input-group-btn "><button type="button" class="btn btn-default dropdown-toggle "data-toggle="dropdown">Cooling Capacity (Btu/hr) <span class="caret"></span></button><ul class="dropdown-menu optionable"><li class="item">2.5 ton</a></li><li class="item">3.0 ton</a></li><li class="item">3.5 ton</a></li><li class="item">4.0 ton</a></li><li class="item">5.0 ton</a></li></ul></div></div><br /><div class="input-group"><div class="input-group-btn"><button type="button" class="btn btn-default dropdown-toggle "data-toggle="dropdown">Thermostat? <span class="caret"></span></button><ul class="dropdown-menu optionable"><li style="color: #101010">Thermostat?</li><li class="item">Yes</a></li><li class="item">No</a></li></ul></div></div></div>');
 		$(".removeable").hide();
+		$(".accWrapper").hide();
+		$(".accWrapper").fadeIn();
 		break;
 	case "acRoom":
+		$(".mainForm").append('<div id="acrWrapper" class="formWrapper"><h3>Personal Air Conditioner</h3><div class="input-group removeable pull-right"onclick="removeButt($(this))"><button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-minus-sign"></span> Remove</button></div><div class="input-group "><input id="acrNumOfUnits" type="number" class="form-control"placeholder="Number of Units"></div><h4>EER Rating</h4><div class="input-group "><input id="eerRating " type="number" class="form-control"placeholder="EER Rating"></div><h4>Cooling Capacity</h4><div class="input-group "><input id="acrCoolCap " type="number" class="form-control"placeholder="Cooling Capacity"></div></div>');
+		$(".removeable").hide();
+		$("#acrWrapper").hide();
+		$("#acrWrapper").fadeIn();
 		break;
 	case "purifier":
 		break;
