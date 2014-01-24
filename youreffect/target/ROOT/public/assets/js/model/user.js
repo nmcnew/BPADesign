@@ -2,14 +2,14 @@ function User() {
     this.username = '';
     this.email = '';
     this.password = '';
-    this.country = '';
+    this.state = '';
 }
 
-function User(username, email, password, country) {
+function User(username, email, password, state) {
     this.username = username;
     this.email = email;
     this.password = password;
-    this.country = country;
+    this.state = state;
     console.log(this);
 }
 
@@ -25,6 +25,6 @@ User.prototype.password = function (password) {
     this.password = password;
 }
 
-User.prototype.country = function (country) {
-    this.country = country;
+User.prototype.state = function (state) {
+    this.state = state;
 }
