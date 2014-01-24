@@ -9,6 +9,11 @@
 	<script type="text/javascript"
 		src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="../assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#dialog").hide();
+		})
+	</script>
 </head>
 <body>
 	<nav class="navbar navbar-inverse center" role="navigation">
@@ -33,8 +38,8 @@
 		</div>
 	</nav>
 	<div class="body">
-		<div id="dialog" class="alert alert-dismissable hidden">
-			<button type="button" class="close" data-dismiss="alert"
+		<div id="dialog" class="alert alert-dismissable">
+			<button type="button" class="close" id="alertClose"
 				aria-hidden="true">&times;</button>
 			<div id="response">
 				<strong id="response-title"></strong>
@@ -146,5 +151,10 @@
 			</form>
 		</div>
 	</div>
+	<script type="text/javascript">
+		$("#alertClose").click(function(){
+			$("#dialog").fadeOut();
+		})
+	</script>
 </body>
 </html>
