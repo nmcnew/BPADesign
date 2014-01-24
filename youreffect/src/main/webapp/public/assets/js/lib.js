@@ -42,25 +42,6 @@ function register(username, email, password, state) {
 }
 
 function login(username, password) {
-<<<<<<< HEAD
-	var user = new User(username, '', password, '');
-	$.ajax({
-		url : getContextRoot('public') + '/user/login',
-		type : 'POST',
-		dataType : 'json',
-		data : JSON.stringify(user),
-		contentType : "application/json; charset=utf-8",
-		success : function(data) {
-			console.log(data);
-			if (data.message.toString().indexOf('successful') != -1) {
-				localStorage.setItem("curUser", JSON.stringify(data.data));
-				$("#dialog").removeClass("alert-info");
-				$("#dialog").removeClass("alert-danger");
-				$("#dialog").addClass("alert-success");
-				$("#response-title").text("Success!");
-
-			} else {
-=======
     var user = new User(username, '', password, '');
     $.ajax({
         url: getContextRoot('public') + '/user/login',
@@ -79,8 +60,6 @@ function login(username, password) {
                 document.getElementById("curLogin").innerHTML = (JSON
                     .parse(localStorage.getItem("curUser")).username);
             } else {
->>>>>>> cb81f919a82ace11c1fe3942efd84b8007d958be
-
 				$("#dialog").removeClass("alert-info");
 				$("#dialog").removeClass("alert-success");
 				$("#dialog").addClass("alert-danger");
