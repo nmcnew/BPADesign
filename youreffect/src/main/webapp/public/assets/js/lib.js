@@ -22,7 +22,6 @@ function register(username, email, password, state) {
 		data : JSON.stringify(user),
 		contentType : "application/json; charset=utf-8",
 		success : function(data) {
-			console.log(data);
 			removeAlertClass();
 			
 			if (data.message.toString().indexOf('successful') != -1) {
@@ -152,8 +151,6 @@ function checkReg() {
 	var ready = false;
 	var errorString = "";
 	//first checks username
-
-	console.log("ready " + ready);
 	if ($("#reg_username").val().length < 3) {
 		$("#reg_username").parents(".form-group").addClass("has-error");
 		removeAlertClass();
@@ -170,15 +167,12 @@ function checkReg() {
 	}
 
 	//then email stuff
-
-	console.log("ready " + ready);
 	if ($("#reg_email").val().length == 0) {
 		$("#reg_email").parents(".form-group").addClass("has-error");
 		removeAlertClass();
 		$("#dialog").addClass("alert-danger");
 		$("#response-title").text("Failure!");
 		errorString += "Email Invalid";
-		console.log($("#reg_email").val().indexOf("@"));
 		if($("#reg_email").val().indexOf("@") < 0){
 			errorString += ": Forgot the @";
 		}
@@ -191,10 +185,7 @@ function checkReg() {
 	}
 
 	//then password stuff
-
-	console.log("ready " + ready);
 	if ($("#reg_password").val() != $("#passwordCheck").val() | $("#reg_password").val() == "") {
-		console.log("PWord Don't match");
 		$("#reg_password").parents(".form-group").addClass("has-error");
 		$("#passwordCheck").parents(".form-group")
 				.addClass("has-error");
@@ -214,7 +205,6 @@ function checkReg() {
 	$("#response-text").html(errorString);
 
 	$("#dialog").fadeIn();
-	console.log("ready " + ready);
 	if (ready) {
 		register($('#reg_username').val(), $('#reg_email').val(), $(
 				'#reg_password').val(), $('#reg_state').val());
