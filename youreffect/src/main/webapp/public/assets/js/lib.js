@@ -146,6 +146,72 @@ function removeButt(domElement) {
 		$(domElement).parents(".formWrapper").remove();
 	});
 }
+function checkReg() {
+	var ready = false;
+	var errorString = "";
+	//first checks username
+	if ($("#reg_username").val().length < 3) {
+		$("#reg_username").parents(".form-group").addClass("has-error");
+		removeAlertClass();
+		$("#dialog").addClass("alert-danger");
+		$("#dialog").fadeIn();
+		$("#response-title").text("Failure!");
+		errorString += "Username Invalid<br/>";
+		ready = false;
+
+	} else {
+		$("#reg_username").parents(".form-group").removeClass(
+				"has-error");
+		dialogFadeOut();
+		ready = true;
+	}
+
+	//then email stuff
+	if ($("#reg_email").val().length == 0) {
+		$("#reg_email").parents(".form-group").addClass("has-error");
+		removeAlertClass();
+		$("#dialog").addClass("alert-danger");
+		$("#dialog").fadeIn();
+		$("#response-title").text("Failure!");
+		errorString += "Email Invalid<br/>";
+		ready = false;
+	} else {
+		$("#reg_email").parents(".form-group").removeClass("has-error");
+		dialogFadeOut();
+		ready = true;
+	}
+
+	//then password stuff
+	if ($("#reg_password").val() != $("passwordCheck")) {
+		console.log("PWord Don't match");
+		$("#reg_password").parents(".form-group").addClass("has-error");
+		$("#passwordCheck").parents(".form-group")
+				.addClass("has-error");
+		removeAlertClass();
+		$("#dialog").addClass("alert-danger");
+		$("#dialog").fadeIn();
+		$("#response-title").text("Failure!");
+		errorString +="Passwords Do not Match";
+		ready = false;
+	} else {
+		$("#reg_password").parents(".form-group").removeClass(
+				"has-error");
+		$("#passwordCheck").parents(".form-group").removeClass(
+				"has-error");
+		dialogFadeOut();
+		ready = true;
+	}
+	$("#response-text").html(errorString);
+	if (ready) {
+		register($('#reg_username').val(), $('#reg_email').val(), $(
+				'#reg_password').val(), $('#reg_state').val());
+	}
+}
+function dialogFadeOut(){
+	$("#dialog").fadeOut(300, function(){
+		removeAlertClass();
+	});
+}
 function removeAlertClass() {
 	$("#dialog").removeClass("alert-success");
 	$("#dialog").removeClass("alert-info");
