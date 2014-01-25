@@ -30,28 +30,25 @@
 
 		<form class="form">
 			<div id="lBulbWrapper" class=" formWrapper">
-				<h3>Light Bulbs</h3>
-				<div class="input-group removeable pull-right">
+				<h3>
+					Light Bulbs
 
-					<button type="button" class="btn btn-danger "
+					<button type="button" class="btn btn-danger pull-right"
 						onclick="removeButt($(this))">
 						<span class="glyphicon glyphicon-minus-sign"></span> Remove
 					</button>
-				</div>
-				<div class="input-group">
-					<input id="bulbQuantity" type="number" class="form-control"
-						placeholder="Quantity">
-				</div>
-				<br />
-				<div class="input-group">
-					<input id="bulbAvgDailyUse" type="number" class="form-control "
-						placeholder="Average Daily Use (hours)">
-				</div>
-				<br />
+				</h3>
+				<h4>Quantity</h4>
+				<input id="bulbQuantity" type="number" class="form-control"
+					placeholder="Quantity">
+				<h4>Average Daily Use</h4>
+				<input id="bulbAvgDailyUse" type="number" class="form-control "
+					placeholder="Average Daily Use (hours)">
+				<h4>Bulb Type</h4>
 				<div class="input-group">
 					<div class="input-group-btn">
-						<button type="button" class="btn btn-default dropdown-toggle "
-							data-toggle="dropdown">
+						<button id="bulbType" type="button"
+							class="btn btn-default dropdown-toggle " data-toggle="dropdown">
 							75 W Incandescent <span class="caret"></span>
 						</button>
 						<ul class="dropdown-menu optionable" id="bulbType">
@@ -72,29 +69,26 @@
 			</div>
 			<br class="break" />
 			<div id="accWrapper" class="formWrapper">
-				<h3>Central Air Conditioning</h3>
-				<div class="input-group removeable pull-right"
-					onclick="removeButt($(this))">
+				<h3>
+					Central Air Conditioning
 
-					<button type="button" class="btn btn-danger">
+					<button type="button" class="btn btn-danger pull-right"
+						onclick="removeButt($(this))">
 						<span class="glyphicon glyphicon-minus-sign"></span> Remove
 					</button>
-				</div>
-				<div class="input-group ">
-					<input id="accNumOfUnits" type="number" class="form-control"
-						placeholder="Number of Units">
-				</div>
-				<br />
-				<div class="input-group ">
-					<input id="seerRating" type="number" class="form-control"
-						placeholder="SEER Rating">
-				</div>
-				<br />
+				</h3>
+				<h4>Number of Units</h4>
+				<input id="accNumOfUnits" type="number" class="form-control"
+					placeholder="Number of Units">
+				<h4>SEER Rating</h4>
+				<input id="seerRating" type="number" class="form-control"
+					placeholder="SEER Rating">
+				<h4>Cooling Capcity (Btu/hr)</h4>
 				<div class="input-group">
 					<div class="input-group-btn ">
 						<button id="accCoolCapacity" type="button"
 							class="btn btn-default dropdown-toggle " data-toggle="dropdown">
-							Cooling Capacity (Btu/hr) <span class="caret"></span>
+							2.5 ton <span class="caret"></span>
 						</button>
 						<ul class="dropdown-menu optionable">
 							<li class="item">2.5 ton</a></li>
@@ -105,12 +99,12 @@
 						</ul>
 					</div>
 				</div>
-				<br />
+				<h4>Thermostat?</h4>
 				<div class="input-group">
 					<div class="input-group-btn">
 						<button id="accThermo" type="button"
 							class="btn btn-default dropdown-toggle " data-toggle="dropdown">
-							Thermostat? <span class="caret"></span>
+							Yes <span class="caret"></span>
 						</button>
 						<ul class="dropdown-menu optionable">
 							<li style="color: #101010">Thermostat?</li>
@@ -123,20 +117,21 @@
 
 			</div>
 			<div id="furnWrap" class="furnWrap formWrapper">
-				<h3>Furnace</h3>
-				<!-- Remove Button -->
-				<div class="input-group removeable pull-right">
+				<h3>
+					Furnace
+					<!-- Remove Button -->
 
-					<button type="button" class="btn btn-danger"
+					<button type="button" class="btn btn-danger pull-right"
 						onclick="removeButt($(this))">
 						<span class="glyphicon glyphicon-minus-sign"></span> Remove
 					</button>
-				</div>
+				</h3>
+				<h4>Fuel Type</h4>
 				<div class="input-group">
 					<div class="input-group-btn ">
 						<button id="furnFuelType" type="button"
 							class="btn btn-default dropdown-toggle " data-toggle="dropdown">
-							Fuel <span class="caret"></span>
+							Gas <span class="caret"></span>
 						</button>
 						<ul class="dropdown-menu optionable">
 							<li class="item">Gas</a></li>
@@ -144,17 +139,18 @@
 						</ul>
 					</div>
 				</div>
-				<br />
+				<h4>Size of Your House</h4>
 				<div class="input-group ">
 					<input id="furnHouseSize" type="number" class="form-control"
-						placeholder="Size of Your House(Square Feet)">
+						placeholder="Size of Your House(Square Feet)"> <span
+						class="input-group-addon">Feet &sup2;</span>
 				</div>
-				<br />
+				<h4>Era of your House</h4>
 				<div class="input-group">
 					<div class="input-group-btn ">
 						<button id="furnHouseEra" type="button"
 							class="btn btn-default dropdown-toggle " data-toggle="dropdown">
-							Era of House <span class="caret"></span>
+							2000-Present <span class="caret"></span>
 						</button>
 						<ul class="dropdown-menu optionable" role="menu">
 							<li>Era of House</li>
@@ -169,12 +165,12 @@
 						</ul>
 					</div>
 				</div>
-				<br />
-				<div id="unitEra" class="input-group">
+				<h4>Era of Furnace</h4>
+				<div id="furnEra" class="input-group">
 					<div class="input-group-btn ">
 						<button type="button" class="btn btn-default dropdown-toggle "
 							data-toggle="dropdown">
-							Era of Unit <span class="caret"></span>
+							New Unit <span class="caret"></span>
 						</button>
 						<ul class="dropdown-menu optionable" role="menu">
 							<li>Era of Unit</li>
@@ -188,12 +184,12 @@
 						</ul>
 					</div>
 				</div>
-				<br />
+				<h4>Thermostat?</h4>
 				<div class="input-group">
 					<div class="input-group-btn">
 						<button type="button" class="btn btn-default dropdown-toggle "
 							data-toggle="dropdown">
-							Thermostat? <span class="caret"></span>
+							No <span class="caret"></span>
 						</button>
 						<ul class="dropdown-menu optionable">
 							<li>Thermostat?</li>
@@ -204,45 +200,36 @@
 				</div>
 			</div>
 			<div id="acrWrapper" class="formWrapper">
-				<h3>Personal Air Conditioner</h3>
-				<div class="input-group removeable pull-right"
-					onclick="removeButt($(this))">
+				<h3>
+					Personal Air Conditioner
 
-					<button type="button" class="btn btn-danger">
+					<button type="button" class="btn btn-danger pull-right"
+						onclick="removeButt($(this))">
 						<span class="glyphicon glyphicon-minus-sign"></span> Remove
 					</button>
-				</div>
+				</h3>
 				<h4>Number of Units</h4>
-				<div class="input-group ">
-					<input id="acrNumOfUnits" type="number" class="form-control"
-						placeholder="Number of Units">
-				</div>
+				<input id="acrNumOfUnits" type="number" class="form-control"
+					placeholder="Number of Units">
 				<h4>EER Rating</h4>
-				<div class="input-group ">
+				<div class="input-group">
 					<input id="eerRating " type="number" class="form-control"
-						placeholder="EER Rating">
+						placeholder="EER Rating"> <span class="input-group-addon">Btu/hr</span>
 				</div>
-
 				<h4>Cooling Capacity</h4>
-				<div class="input-group ">
-					<input id="acrCoolCap " type="number" class="form-control"
-						placeholder="Cooling Capacity">
-				</div>
+				<input id="acrCoolCap " type="number" class="form-control"
+					placeholder="Cooling Capacity">
 
 			</div>
 			<div id="airPureWrapper" class="formWrapper">
-				
-				<h3 class=" pull-left ">Air Purifier</h3>
-				<button type="button" class="btn btn-danger test"
-					onclick="removeButt($(this))">
-					<span class="glyphicon glyphicon-minus-sign"></span> Remove
-				</button>
-				<script>
-				$(".test").hide();
-				</script>
-				<br/>
-				<br/>
-				<br/>
+
+				<h3>
+					Air Purifier
+					<button type="button" class="btn btn-danger pull-right"
+						onclick="removeButt($(this))">
+						<span class="glyphicon glyphicon-minus-sign"></span> Remove
+					</button>
+				</h3>
 				<h4>Capacity - Clean Air Delievery Rate</h4>
 				<div class="input-group">
 					<input id="airPureCap" type="number" class="form-control"
@@ -263,7 +250,7 @@
 				<h4>Average Daily Operation</h4>
 				<div class="input-group">
 					<input id="airPureHoursADay" type="number" class="form-control"
-						placeholder="Hours a Day"> <span class="input-group-addon">Hours/Day</span>
+						placeholder="Hours a Day"> <span class="input-group-addon">Hrs/Day</span>
 				</div>
 
 			</div>
