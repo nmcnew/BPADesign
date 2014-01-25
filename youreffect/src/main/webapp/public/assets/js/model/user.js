@@ -1,4 +1,5 @@
 function User() {
+    this.userId = '';
     this.username = '';
     this.email = '';
     this.password = '';
@@ -6,6 +7,7 @@ function User() {
 }
 
 function User(username, email, password, state) {
+    this.userId = '';
     this.username = username;
     this.email = email;
     this.password = password;
