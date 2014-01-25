@@ -1,5 +1,6 @@
 function Item() {
     this.itemId = '';
+    this.userId = '';
     this.name = '';
     this.energy = '';
     this.specs = [];
@@ -7,6 +8,7 @@ function Item() {
 
 function Item(name, energy) {
     this.itemId = '';
+    this.userId = '';
     this.name = name;
     this.energy = energy;
     this.specs = [];
