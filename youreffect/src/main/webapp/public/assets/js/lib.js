@@ -182,7 +182,7 @@ function checkReg() {
 	}
 
 	//then password stuff
-	if ($("#reg_password").val() != $("passwordCheck")) {
+	if ($("#reg_password").val() != $("#passwordCheck").val()) {
 		console.log("PWord Don't match");
 		$("#reg_password").parents(".form-group").addClass("has-error");
 		$("#passwordCheck").parents(".form-group")

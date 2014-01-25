@@ -12,6 +12,7 @@
 <script type="text/javascript">
 	$(function() {
 		$("#dialog").hide();
+		$("#errorLabel").hide();
 	})
 </script>
 </head>
@@ -39,8 +40,8 @@
 	</nav>
 	<div class="body">
 		<div id="dialog" class="alert alert-dismissable">
-			<button type="button" class="close"
-				onclick="dialogFadeOut()" aria-hidden="true">&times;</button>
+			<button type="button" class="close" onclick="dialogFadeOut()"
+				aria-hidden="true">&times;</button>
 			<div id="response">
 				<strong id="response-title"></strong>
 				<p id="response-text"></p>
@@ -62,8 +63,9 @@
 						placeholder="Enter email">
 				</div>
 				<div class="form-group">
-					<label for="reg_password">Password*</label> <input type="password"
-						class="form-control input-sm" id="reg_password"
+					<label id="errorLabel" class="control-label" for="reg_password"></label>
+					<br /> <label for="reg_password">Password*</label> <input
+						type="password" class="form-control input-sm" id="reg_password"
 						placeholder="Password">
 				</div>
 				<div class="form-group ">
@@ -150,7 +152,38 @@
 		</div>
 	</div>
 	<script type="text/javascript">
-		
+		$("#passwordCheck").focusout(
+				function() {
+					if ($("#reg_password").val() != $("#passwordCheck").val()) {
+						$("#reg_password").parents(".form-group").removeClass(
+								"has-success");
+						$("#passwordCheck").parents(".form-group").removeClass(
+								"has-success");
+						$("#reg_password").parents(".form-group").addClass(
+								"has-error");
+						$("#passwordCheck").parents(".form-group").addClass(
+								"has-error");
+						$("#reg_password").parents(".form-group").prepend('');
+						$("#errorLabel").fadeIn();
+
+					} else {
+						$("#reg_password").parents(".form-group").removeClass(
+								"has-error");
+						$("#passwordCheck").parents(".form-group").removeClass(
+								"has-error");
+						$("#reg_password").parents(".form-group").addClass(
+								"has-success");
+						$("#passwordCheck").parents(".form-group").addClass(
+								"has-success");
+						$("#errorLabel").text("Passwords Match!");
+						$("#errorLabel").fadeIn();
+					}
+
+				});
+		$("#passwordCheck").focusin(function() {
+			$("#errorLabel").fadeOut();
+
+		});
 		$("#alertClose").click(function() {
 			$("#dialog").fadeOut();
 		})
