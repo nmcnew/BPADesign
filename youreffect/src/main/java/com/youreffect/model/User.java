@@ -86,8 +86,6 @@ public class User {
         this.state = state;
     }
 
-
-
     /**
      * get user password
      * @return user password
