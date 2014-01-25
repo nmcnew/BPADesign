@@ -52,22 +52,20 @@
 							75 W Incandescent <span class="caret"></span>
 						</button>
 						<ul class="dropdown-menu optionable" id="bulbType">
-							<li class="item">40 W incandescent</a></li>
-							<li class="item">60 W incandescent</a></li>
-							<li class="item">75 W incandescent</a></li>
-							<li class="item">100 W incandescent</a></li>
-							<li class="item">150 W incandescent</a></li>
-							<li class="item">29 W Halogen(40 W Equivalent)</a></li>
-							<li class="item">43 W Halogen(60 W Equivalent)</a></li>
-							<li class="item">53 W Halogen(75 W Equivalent)</a></li>
-							<li class="item">72 W Halogen(100 W Equivalent)</a></li>
+							<li class="item">40 W incandescent</li>
+							<li class="item">60 W incandescent</li>
+							<li class="item">75 W incandescent</li>
+							<li class="item">100 W incandescent</li>
+							<li class="item">150 W incandescent</li>
+							<li class="item">29 W Halogen(40 W Equivalent)</li>
+							<li class="item">43 W Halogen(60 W Equivalent)</li>
+							<li class="item">53 W Halogen(75 W Equivalent)</li>
+							<li class="item">72 W Halogen(100 W Equivalent)</li>
 						</ul>
 					</div>
 				</div>
-				<br />
 
 			</div>
-			<br class="break" />
 			<div id="accWrapper" class="formWrapper">
 				<h3>
 					Central Air Conditioning
@@ -91,11 +89,11 @@
 							2.5 ton <span class="caret"></span>
 						</button>
 						<ul class="dropdown-menu optionable">
-							<li class="item">2.5 ton</a></li>
-							<li class="item">3.0 ton</a></li>
-							<li class="item">3.5 ton</a></li>
-							<li class="item">4.0 ton</a></li>
-							<li class="item">5.0 ton</a></li>
+							<li class="item">2.5 ton</li>
+							<li class="item">3.0 ton</li>
+							<li class="item">3.5 ton</li>
+							<li class="item">4.0 ton</li>
+							<li class="item">5.0 ton</li>
 						</ul>
 					</div>
 				</div>
@@ -108,8 +106,8 @@
 						</button>
 						<ul class="dropdown-menu optionable">
 							<li style="color: #101010">Thermostat?</li>
-							<li class="item">Yes</a></li>
-							<li class="item">No</a></li>
+							<li class="item">Yes</li>
+							<li class="item">No</li>
 						</ul>
 					</div>
 				</div>
@@ -134,8 +132,8 @@
 							Gas <span class="caret"></span>
 						</button>
 						<ul class="dropdown-menu optionable">
-							<li class="item">Gas</a></li>
-							<li class="item">Oil</a></li>
+							<li class="item">Gas</li>
+							<li class="item">Oil</li>
 						</ul>
 					</div>
 				</div>
@@ -193,8 +191,8 @@
 						</button>
 						<ul class="dropdown-menu optionable">
 							<li>Thermostat?</li>
-							<li class="item">Yes</a></li>
-							<li class="item">No</a></li>
+							<li class="item">Yes</li>
+							<li class="item">No</li>
 						</ul>
 					</div>
 				</div>
@@ -230,6 +228,9 @@
 						<span class="glyphicon glyphicon-minus-sign"></span> Remove
 					</button>
 				</h3>
+				<h4>Number of Units</h4>
+				<input id="airPureQuantity" type="number" class="form-control"
+					placeholder="Quantity of Air Purifiers">
 				<h4>Capacity - Clean Air Delievery Rate</h4>
 				<div class="input-group">
 					<input id="airPureCap" type="number" class="form-control"
@@ -253,6 +254,157 @@
 						placeholder="Hours a Day"> <span class="input-group-addon">Hrs/Day</span>
 				</div>
 
+			</div>
+			<!-- Clothes Washer Form -->
+			<div id="clothesWasherWrapper" class="formWrapper">
+
+				<h3>
+					Clothes Washer
+					<button type="button" class="btn btn-danger pull-right"
+						onclick="removeButt($(this))">
+						<span class="glyphicon glyphicon-minus-sign"></span> Remove
+					</button>
+				</h3>
+				<h4>Amount of Clothes Washers</h4>
+				<input id="clothesWasherAmount" type="number" class="form-control"
+					placeholder="Amount">
+				<h4>Average Loads Per Week</h4>
+				<input id="clothesWasherLoadsPerWeek" type="number"
+					class="form-control" placeholder="Loads Per Week">
+				<h4>Building Hot Water Fuel Type</h4>
+				<div class="input-group">
+					<div class="input-group-btn">
+						<button id="clothesWasherBuildFuelType" type="button"
+							class="btn btn-default dropdown-toggle " data-toggle="dropdown">
+							Electricity <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu optionable">
+							<li class="item">Natural Gas</li>
+							<li class="item">Electricity</li>
+						</ul>
+					</div>
+				</div>
+				<h4>Dryer Type</h4>
+				<div class="input-group">
+					<div class="input-group-btn">
+						<button id="clothesWasherDryerFuelType" type="button"
+							class="btn btn-default dropdown-toggle " data-toggle="dropdown">
+							Electricity <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu optionable">
+							<li class="item">Natural Gas</li>
+							<li class="item">Electricity</li>
+							<li class="item">Neither</li>
+						</ul>
+					</div>
+				</div>
+				<h4>Capicty</h4>
+				<div class="input-group">
+					<input id="clothesWasherCapacity" type="number"
+						class="form-control" placeholder="Capacity"> <span
+						class="input-group-addon">Feet &sup3;</span>
+				</div>
+				<h4>Modified Energy Factor</h4>
+				<div class="input-group">
+					<input id="clothesWasherMEF" type="number" class="form-control"
+						placeholder="MEF Value"> <span class="input-group-addon">MEF</span>
+				</div>
+				<h4>Water Factor</h4>
+				<div class="input-group">
+					<input id="clothesWasherHoursADay" type="number"
+						class="form-control" placeholder="WF Value"> <span
+						class="input-group-addon">WF</span>
+				</div>
+
+			</div>
+			<!-- Dehumidifier Form -->
+			<div id="dehumidWrapper" class="formWrapper">
+
+				<h3>
+					Dehumidifier
+					<button type="button" class="btn btn-danger pull-right"
+						onclick="removeButt($(this))">
+						<span class="glyphicon glyphicon-minus-sign"></span> Remove
+					</button>
+				</h3>
+				<h4>Quantity of Dehumidifiers</h4>
+				<input id="dehumidAmount" type="number" class="form-control"
+					placeholder="Amount">
+				<h4>Capacity</h4>
+				<div class="input-group">
+					<input id="dehmidCap" type="number" class="form-control"
+						placeholder="Capacity"> <span class="input-group-addon">Pints/Day</span>
+				</div>
+				<h4>Energy Factor</h4>
+				<div class="input-group">
+					<input id="dehumidEFactor" type="number" class="form-control"
+						placeholder="Energy Factor"> <span
+						class="input-group-addon">l/kWh</span>
+				</div>
+				<h4>Average Days of Operation</h4>
+				<div class="input-group">
+					<input id="dehumidDaysOfOp" type="number" class="form-control"
+						placeholder="Days of Operation"> <span
+						class="input-group-addon">Days/Year</span>
+				</div>
+				<h4>Average Daily Operation</h4>
+				<div class="input-group">
+					<input id="dehumidHoursOfOp" type="number" class="form-control"
+						placeholder="Hours of Operation"> <span
+						class="input-group-addon">Hours/Day</span>
+				</div>
+			</div>
+			<!-- Dishwasher Form -->
+			<div id="dishWashWrapper" class="formWrapper">
+				<h3>
+					Dishwasher
+					<button type="button" class="btn btn-danger pull-right"
+						onclick="removeButt($(this))">
+						<span class="glyphicon glyphicon-minus-sign"></span> Remove
+					</button>
+				</h3>
+				<h4>Quantity of Dishwashers</h4>
+				<input id="dishWashAmount" type="number" class="form-control"
+					placeholder="Amount">
+				<h4>Type of Dishwasher</h4>
+				<div class="input-group">
+					<div class="input-group-btn">
+						<button id="dishWashType" type="button"
+							class="btn btn-default dropdown-toggle " data-toggle="dropdown">
+							Standard <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu optionable">
+							<li class="item">Standard</li>
+							<li class="item">Compact</li>
+						</ul>
+					</div>
+				</div>
+				<h4>Average Cycles Per Week</h4>
+				<input id="dishWashCyclesPerWeek" type="number" class="form-control"
+					placeholder="Cycles">
+				<h4>Building Hot Water Fuel Type</h4>
+				<div class="input-group">
+					<div class="input-group-btn">
+						<button id="dishWashHotWaterFuelType" type="button"
+							class="btn btn-default dropdown-toggle " data-toggle="dropdown">
+							Electricity <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu optionable">
+							<li class="item">Natural Gas</li>
+							<li class="item">Electricity</li>
+						</ul>
+					</div>
+				</div>
+				<h4>Rated Electricity Consumption</h4>
+				<div class="input-group">
+					<input id="dishWashEConsumption" type="number" class="form-control"
+						placeholder="Capacity"> <span class="input-group-addon">kWh/Year</span>
+				</div>
+				<h4>Rated Water Consumption</h4>
+				<div class="input-group">
+					<input id="dishWashMEF" type="number" class="form-control"
+						placeholder="MEF Value"> <span class="input-group-addon">Gallons/Cycle</span>
+				</div>
 			</div>
 		</form>
 	</div>
