@@ -403,7 +403,178 @@
 				<h4>Rated Water Consumption</h4>
 				<div class="input-group">
 					<input id="dishWashMEF" type="number" class="form-control"
-						placeholder="MEF Value"> <span class="input-group-addon">Gallons/Cycle</span>
+						placeholder="Water Consumption"> <span
+						class="input-group-addon">Gallons/Cycle</span>
+				</div>
+			</div>
+			<!-- Dehumidifier Form -->
+			<div id="dehumidWrapper" class="formWrapper">
+
+				<h3>
+					Dehumidifier
+					<button type="button" class="btn btn-danger pull-right"
+						onclick="removeButt($(this))">
+						<span class="glyphicon glyphicon-minus-sign"></span> Remove
+					</button>
+				</h3>
+				<h4>Quantity of Dehumidifiers</h4>
+				<input id="dehumidAmount" type="number" class="form-control"
+					placeholder="Amount">
+				<h4>Capacity</h4>
+				<div class="input-group">
+					<input id="dehmidCap" type="number" class="form-control"
+						placeholder="Capacity"> <span class="input-group-addon">Pints/Day</span>
+				</div>
+				<h4>Energy Factor</h4>
+				<div class="input-group">
+					<input id="dehumidEFactor" type="number" class="form-control"
+						placeholder="Energy Factor"> <span
+						class="input-group-addon">l/kWh</span>
+				</div>
+				<h4>Average Days of Operation</h4>
+				<div class="input-group">
+					<input id="dehumidDaysOfOp" type="number" class="form-control"
+						placeholder="Days of Operation"> <span
+						class="input-group-addon">Days/Year</span>
+				</div>
+				<h4>Average Daily Operation</h4>
+				<div class="input-group">
+					<input id="dehumidHoursOfOp" type="number" class="form-control"
+						placeholder="Hours of Operation"> <span
+						class="input-group-addon">Hours/Day</span>
+				</div>
+			</div>
+			<!-- Refrigerator Form -->
+			<div id="fridgeWrapper" class="formWrapper">
+				<h3>
+					Refrigerator
+					<button type="button" class="btn btn-danger pull-right"
+						onclick="removeButt($(this))">
+						<span class="glyphicon glyphicon-minus-sign"></span> Remove
+					</button>
+				</h3>
+				<h4>Quantity of Refrigerators</h4>
+				<input id="fridgeAmount" type="number" class="form-control"
+					placeholder="Amount">
+				<h4>Type of Refrigerator</h4>
+				<div class="input-group">
+					<div class="input-group-btn">
+						<button id="fridgeType" type="button"
+							class="btn btn-default dropdown-toggle " data-toggle="dropdown">
+							Side-by-side (automatic defrost) <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu optionable">
+							<li class="item">Refrigerator-freezer or refrigerator only
+								(manual or partial-auto defrost)</li>
+							<li class="item">Top-mounted freezer or refrigerator only
+								(automatic defrost)</li>
+							<li class="item">Side-by-side with through-the-door ice
+								(automatic defrost)</li>
+							<li class="item">Side-by-side (automatic defrost)</li>
+							<li class="item">Bottom-mounted freezer (automatic defrost)</li>
+							<li class="item">Bottom-mounted freezer with
+								through-the-door ice (automatic defrost)</li>
+						</ul>
+					</div>
+				</div>
+				<h4>Volume</h4>
+				<div class="input-group">
+					<input id="fridgeVolume" type="number" class="form-control"
+						placeholder="Volume"> <span class="input-group-addon">Feet
+						&sup3;</span>
+				</div>
+				<h4>Rated Electricity Consumption</h4>
+				<div class="input-group">
+					<input id="fridgeEConsumption" type="number" class="form-control"
+						placeholder="Electricity Consumption"> <span
+						class="input-group-addon">kWh/Year</span>
+				</div>
+			</div>
+			<!-- Refrigerator - Compact Form -->
+			<div id="cFridgeWrapper" class="formWrapper">
+				<h3>
+					Refrigerator - Compact
+					<button type="button" class="btn btn-danger pull-right"
+						onclick="removeButt($(this))">
+						<span class="glyphicon glyphicon-minus-sign"></span> Remove
+					</button>
+				</h3>
+				<h4>Quantity of Compact Refrigerators</h4>
+				<input id="cFridgeAmount" type="number" class="form-control"
+					placeholder="Amount">
+				<h4>Type of Compact Refrigerator</h4>
+				<div class="input-group">
+					<div class="input-group-btn">
+						<button id="cFridgeType" type="button"
+							class="btn btn-default dropdown-toggle " data-toggle="dropdown">
+							Compact refrigerator or compact refrigerator-freezer (manual
+							defrost) <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu optionable">
+							<li class="item">Compact refrigerator or compact
+								refrigerator-freezer (manual defrost)</li>
+							<li class="item">Compact refrigerator-freezer (partial
+								automatic defrost)</li>
+							<li class="item">Compact top-mounted freezer or refrigerator
+								only (automatic defrost)</li>
+							<li class="item">Compact bottom-mounted freezer (automatic
+								defrost)</li>
+						</ul>
+					</div>
+				</div>
+				<h4>Volume</h4>
+				<div class="input-group">
+					<input id="cFridgeVolume" type="number" class="form-control"
+						placeholder="Volume"> <span class="input-group-addon">Feet
+						&sup3;</span>
+				</div>
+				<h4>Rated Electricity Consumption</h4>
+				<div class="input-group">
+					<input id="cFridgeEConsumption" type="number" class="form-control"
+						placeholder="Electricity Consumption"> <span
+						class="input-group-addon">kWh/Year</span>
+				</div>
+			</div>
+			<!-- Freezer Form -->
+			<div id="freezerWrapper" class="formWrapper">
+				<h3>
+					Freezer
+					<button type="button" class="btn btn-danger pull-right"
+						onclick="removeButt($(this))">
+						<span class="glyphicon glyphicon-minus-sign"></span> Remove
+					</button>
+				</h3>
+				<h4>Quantity of Freezers</h4>
+				<input id="freezerAmount" type="number" class="form-control"
+					placeholder="Amount">
+				<h4>Type of Freezer</h4>
+				<div class="input-group">
+					<div class="input-group-btn">
+						<button id="freezerType" type="button"
+							class="btn btn-default dropdown-toggle " data-toggle="dropdown">
+							Chest <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu optionable">
+							<li class="item">Chest</li>
+							<li class="item">Compact chest</li>
+							<li class="item">Compact upright (manual defrost)</li>
+							<li class="item">Compact upright (auto defrost)</li>
+							<li class="item">Upright (manual defrost)</li>
+							<li class="item">Upright (auto defrost)</li>
+						</ul>
+					</div>
+				</div>
+				<h4>Volume</h4>
+				<div class="input-group">
+					<input id="freezerVolume" type="number" class="form-control"
+						placeholder="Volume"> <span class="input-group-addon">Feet
+						&sup3;</span>
+				</div>
+				<h4>Rated Electricity Consumption</h4>
+				<div class="input-group">
+					<input id="freezereEConsumption" type="number" class="form-control"
+						placeholder="Electricity Consumption"> <span
+						class="input-group-addon">kWh/Year</span>
 				</div>
 			</div>
 		</form>
