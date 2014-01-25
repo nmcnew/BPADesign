@@ -907,7 +907,7 @@
       <workItem from="1390532932778" duration="4412000" />
       <workItem from="1390539791496" duration="1375000" />
       <workItem from="1390597736761" duration="7676000" />
-      <workItem from="1390615692639" duration="728000" />
+      <workItem from="1390615692639" duration="738000" />
     </task>
     <task id="LOCAL-00001" summary="setting up spring mvc">
       <created>1389477332614</created>
@@ -941,11 +941,15 @@
       <created>1390615704436</created>
       <updated>1390615704436</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added item.js&#10;">
+      <created>1390616453503</created>
+      <updated>1390616453503</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63112000" />
+    <option name="totallyTimeSpent" value="63122000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="802" extended-state="6" />
