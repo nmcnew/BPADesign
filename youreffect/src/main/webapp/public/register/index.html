@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Your Effect</title>
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../assets/css/MainStyles.css" rel="stylesheet">
-    <script src="../assets/js/lib.js"></script>
-    <script src="../assets/js/model/user.js"></script>
-    <script type="text/javascript"
-            src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="../assets/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-        $(function() {
-            $("#dialog").hide();
-        })
-    </script>
+<title>Your Effect</title>
+<link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="../assets/css/MainStyles.css" rel="stylesheet">
+<script src="../assets/js/lib.js"></script>
+<script src="../assets/js/model/user.js"></script>
+<script type="text/javascript"
+	src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$("#dialog").hide();
+	})
+</script>
 </head>
 <body>
-<<<<<<< HEAD
 	<nav class="navbar navbar-inverse center" role="navigation">
 		<div class="navbar-inner">
 			<ul class="nav navbar-nav">
@@ -226,172 +225,5 @@
 			$("#dialog").fadeOut();
 		})
 	</script>
-=======
-<nav class="navbar navbar-inverse center" role="navigation">
-    <div class="navbar-inner">
-        <ul class="nav navbar-nav">
-            <li><a href="../">Home</a></li>
-            <li><a href="../CostCalculator/">Cost Calculator</a></li>
-            <li><a href="../">Check Stats</a></li>
-            <li class="active"><a href="#">Register</a></li>
-            <li>
-                <div class="navbar-text navbar-left small">Logged in
-                    as:&nbsp;&nbsp;</div>
-            </li>
-            <li>
-                <div id="curLogin" class="navbar-text small"></div> <script
-                    type="text/javascript">
-                document.getElementById("curLogin").innerHTML = (JSON
-                        .parse(localStorage.getItem("curUser")).username);
-            </script>
-            </li>
-        </ul>
-    </div>
-</nav>
-<div class="body">
-    <div id="dialog" class="alert alert-dismissable">
-        <button type="button" class="close" id="alertClose"
-                aria-hidden="true">&times;</button>
-        <div id="response">
-            <strong id="response-title"></strong>
-            <p id="response-text"></p>
-        </div>
-    </div>
-    <div class="forms">
-        <form onsubmit="return false;" role="form" class="registerForm">
-            <h3>
-                Register<br /> <small>Keep Track of your stats!</small>
-            </h3>
-            <div class="form-group ">
-                <label for="reg_username">Username*</label> <input type="text"
-                                                                   class="form-control input-sm" id="reg_username"
-                                                                   placeholder="username">
-            </div>
-            <div class="form-group ">
-                <label for="reg_email">Email address*</label> <input type="email"
-                                                                     class="form-control input-sm" id="reg_email"
-                                                                     placeholder="Enter email">
-            </div>
-            <div class="form-group">
-                <label for="reg_password">Password*</label> <input type="password"
-                                                                   class="form-control input-sm" id="reg_password"
-                                                                   placeholder="Password">
-            </div>
-            <div class="form-group ">
-                <label for="passwordCheck">Password Check*</label> <input
-                    type="password" class="form-control input-sm" id="passwordCheck"
-                    placeholder="Retype Password">
-            </div>
-            <div>
-                <select id="reg_state" name="state" class="input-sm">
-                    <option value="">State</option>
-                    <option value="AL">Alabama</option>
-                    <option value="AK">Alaska</option>
-                    <option value="AZ">Arizona</option>
-                    <option value="AR">Arkansas</option>
-                    <option value="CA">California</option>
-                    <option value="CO">Colorado</option>
-                    <option value="CT">Connecticut</option>
-                    <option value="DE">Delaware</option>
-                    <option value="FL">Florida</option>
-                    <option value="GA">Georgia</option>
-                    <option value="HI">Hawaii</option>
-                    <option value="ID">Idaho</option>
-                    <option value="IL">Illinois</option>
-                    <option value="IN">Indiana</option>
-                    <option value="IA">Iowa</option>
-                    <option value="KS">Kansas</option>
-                    <option value="KY">Kentucky</option>
-                    <option value="LA">Louisiana</option>
-                    <option value="ME">Maine</option>
-                    <option value="MD">Maryland</option>
-                    <option value="MA">Massachusetts</option>
-                    <option value="MI">Michigan</option>
-                    <option value="MN">Minnesota</option>
-                    <option value="MS">Mississippi</option>
-                    <option value="MO">Missouri</option>
-                    <option value="MT">Montana</option>
-                    <option value="NE">Nebraska</option>
-                    <option value="NV">Nevada</option>
-                    <option value="NH">New Hampshire</option>
-                    <option value="NJ">New Jersey</option>
-                    <option value="NM">New Mexico</option>
-                    <option value="NY">New York</option>
-                    <option value="NC">North Carolina</option>
-                    <option value="ND">North Dakota</option>
-                    <option value="OH">Ohio</option>
-                    <option value="OK">Oklahoma</option>
-                    <option value="OR">Oregon</option>
-                    <option value="PA">Pennsylvania</option>
-                    <option value="RI">Rhode Island</option>
-                    <option value="SC">South Carolina</option>
-                    <option value="SD">South Dakota</option>
-                    <option value="TN">Tennessee</option>
-                    <option value="TX">Texas</option>
-                    <option value="UT">Utah</option>
-                    <option value="VT">Vermont</option>
-                    <option value="VA">Virginia</option>
-                    <option value="WA">Washington</option>
-                    <option value="WV">West Virginia</option>
-                    <option value="WI">Wisconsin</option>
-                    <option value="WY">Wyoming</option>
-                </select>
-            </div>
-            <br />
-            <button onclick="checkReg()" type="submit" class="btn btn-default ">Register</button>
-        </form>
-        <form onsubmit="return false;" role="form" class="loginForm">
-            <h3>
-                Login <br /> <small>Access Your Account</small>
-            </h3>
-            <div class="form-group ">
-                <label for="login_username">Username</label> <input type="text"
-                                                                    class="form-control input-sm" id="login_username"
-                                                                    placeholder="username">
-            </div>
-            <div class="form-group ">
-                <label for="login_password">Password</label> <input type="password"
-                                                                    class="form-control input-sm" id="login_password"
-                                                                    placeholder="Password">
-            </div>
-            <button
-                    onclick="login($('#login_username').val(),$('#login_password').val())"
-                    type="submit" class="btn btn-default ">Login</button>
-        </form>
-    </div>
-</div>
-<script type="text/javascript">
-    $("#alertClose").click(function(){
-
-        $("#dialog").removeClass("alert-success");
-        $("#dialog").removeClass("alert-info");
-        $("#dialog").removeClass("alert-danger");
-        $("#dialog").removeClass("alert-warning");
-    });
-    function checkReg() {
-        if ($("#reg_username").val().length < 3) {
-            //do something
-            $("#reg_username").parents(".form-group").addClass("has-error");
-
-            $("#response-title").text("Failure!");
-            $("#response-text").text("Username Invalid");
-
-        }
-        else if($("#reg_password").val() != $("passwordCheck")){
-            console.log("PWord Don't match");
-            $("#reg_password").parents(".form-group").addClass("has-error");
-
-            $("#passwordCheck").parents(".form-group").addClass("has-error");
-        }
-        else {
-            register($('#reg_username').val(), $('#reg_email').val(), $(
-                    '#reg_password').val(), $('#reg_state').val());
-        }
-    }
-    $("#alertClose").click(function() {
-        $("#dialog").fadeOut();
-    })
-</script>
->>>>>>> d7d131c98d9252ce462a0d725aea7e8420c19491
 </body>
 </html>
