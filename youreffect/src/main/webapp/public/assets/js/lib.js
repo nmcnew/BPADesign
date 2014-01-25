@@ -24,6 +24,7 @@ function register(username, email, password, state) {
 		success : function(data) {
 			console.log(data);
 			removeAlertClass();
+			
 			if (data.message.toString().indexOf('successful') != -1) {
 				$("#dialog").addClass("alert-success");
 				$("#response-title").text("Success!");
@@ -52,6 +53,7 @@ function login(username, password) {
 			console.log(data);
 
 			removeAlertClass();
+			
 			if (data.message.toString().indexOf('successful') != -1) {
 				localStorage.setItem("curUser", JSON.stringify(data.data));
 				$("#dialog").addClass("alert-success");
@@ -150,11 +152,12 @@ function checkReg() {
 	var ready = false;
 	var errorString = "";
 	//first checks username
+
+	console.log("ready " + ready);
 	if ($("#reg_username").val().length < 3) {
 		$("#reg_username").parents(".form-group").addClass("has-error");
 		removeAlertClass();
 		$("#dialog").addClass("alert-danger");
-		$("#dialog").fadeIn();
 		$("#response-title").text("Failure!");
 		errorString += "Username Invalid<br/>";
 		ready = false;
@@ -167,29 +170,36 @@ function checkReg() {
 	}
 
 	//then email stuff
+
+	console.log("ready " + ready);
 	if ($("#reg_email").val().length == 0) {
 		$("#reg_email").parents(".form-group").addClass("has-error");
 		removeAlertClass();
 		$("#dialog").addClass("alert-danger");
-		$("#dialog").fadeIn();
 		$("#response-title").text("Failure!");
-		errorString += "Email Invalid<br/>";
+		errorString += "Email Invalid";
+		console.log($("#reg_email").val().indexOf("@"));
+		if($("#reg_email").val().indexOf("@") < 0){
+			errorString += ": Forgot the @";
+		}
+		errorString +="<br/>";
 		ready = false;
-	} else {
+	} else { 
 		$("#reg_email").parents(".form-group").removeClass("has-error");
 		dialogFadeOut();
 		ready = true;
 	}
 
 	//then password stuff
-	if ($("#reg_password").val() != $("#passwordCheck").val()) {
+
+	console.log("ready " + ready);
+	if ($("#reg_password").val() != $("#passwordCheck").val() | $("#reg_password").val() == "") {
 		console.log("PWord Don't match");
 		$("#reg_password").parents(".form-group").addClass("has-error");
 		$("#passwordCheck").parents(".form-group")
 				.addClass("has-error");
 		removeAlertClass();
 		$("#dialog").addClass("alert-danger");
-		$("#dialog").fadeIn();
 		$("#response-title").text("Failure!");
 		errorString +="Passwords Do not Match";
 		ready = false;
@@ -202,6 +212,9 @@ function checkReg() {
 		ready = true;
 	}
 	$("#response-text").html(errorString);
+
+	$("#dialog").fadeIn();
+	console.log("ready " + ready);
 	if (ready) {
 		register($('#reg_username').val(), $('#reg_email').val(), $(
 				'#reg_password').val(), $('#reg_state').val());
