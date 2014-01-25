@@ -23,7 +23,6 @@ function register(username, email, password, state) {
 		contentType : "application/json; charset=utf-8",
 		success : function(data) {
 			removeAlertClass();
-			
 			if (data.message.toString().indexOf('successful') != -1) {
 				$("#dialog").addClass("alert-success");
 				$("#response-title").text("Success!");
@@ -166,24 +165,6 @@ function checkReg() {
 		ready = true;
 	}
 
-	//then email stuff
-	if ($("#reg_email").val().length == 0) {
-		$("#reg_email").parents(".form-group").addClass("has-error");
-		removeAlertClass();
-		$("#dialog").addClass("alert-danger");
-		$("#response-title").text("Failure!");
-		errorString += "Email Invalid";
-		if($("#reg_email").val().indexOf("@") < 0){
-			errorString += ": Forgot the @";
-		}
-		errorString +="<br/>";
-		ready = false;
-	} else { 
-		$("#reg_email").parents(".form-group").removeClass("has-error");
-		dialogFadeOut();
-		ready = true;
-	}
-
 	//then password stuff
 	if ($("#reg_password").val() != $("#passwordCheck").val() | $("#reg_password").val() == "") {
 		$("#reg_password").parents(".form-group").addClass("has-error");
@@ -192,13 +173,30 @@ function checkReg() {
 		removeAlertClass();
 		$("#dialog").addClass("alert-danger");
 		$("#response-title").text("Failure!");
-		errorString +="Passwords Do not Match";
+		errorString +="Passwords Do not Match/Not Long Enough<br/>";
 		ready = false;
 	} else {
 		$("#reg_password").parents(".form-group").removeClass(
 				"has-error");
 		$("#passwordCheck").parents(".form-group").removeClass(
 				"has-error");
+		dialogFadeOut();
+		ready = true;
+	}
+
+	//then email stuff
+	if ($("#reg_email").val().length == 0 | $("#reg_email").val().indexOf("@") < 0) {
+		$("#reg_email").parents(".form-group").addClass("has-error");
+		removeAlertClass();
+		$("#dialog").addClass("alert-danger");
+		$("#response-title").text("Failure!");
+		errorString += "Email Invalid";
+		if($("#reg_email").val().indexOf("@") < 0){
+			errorString += ": Forgot the @";
+		}
+		ready = false;
+	} else { 
+		$("#reg_email").parents(".form-group").removeClass("has-error");
 		dialogFadeOut();
 		ready = true;
 	}
@@ -211,11 +209,10 @@ function checkReg() {
 	}
 }
 function dialogFadeOut(){
-	$("#dialog").fadeOut(300, function(){
-		removeAlertClass();
-	});
+	$("#dialog").fadeOut();
 }
 function removeAlertClass() {
+	console.log("what");
 	$("#dialog").removeClass("alert-success");
 	$("#dialog").removeClass("alert-info");
 	$("#dialog").removeClass("alert-danger");

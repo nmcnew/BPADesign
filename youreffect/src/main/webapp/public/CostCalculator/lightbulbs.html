@@ -231,36 +231,41 @@
 
 			</div>
 			<div id="airPureWrapper" class="formWrapper">
-				<h3>Air Purifier</h3>
-				<div class="input-group removeable pull-right"
+				
+				<h3 class=" pull-left ">Air Purifier</h3>
+				<button type="button" class="btn btn-danger test"
 					onclick="removeButt($(this))">
-
-					<button type="button" class="btn btn-danger">
-						<span class="glyphicon glyphicon-minus-sign"></span> Remove
-					</button>
-				</div>
-				<h4>Capacity - Clean Air Delievery Rate (CADR)</h4>
+					<span class="glyphicon glyphicon-minus-sign"></span> Remove
+				</button>
+				<script>
+				$(".test").hide();
+				</script>
+				<br/>
+				<br/>
+				<br/>
+				<h4>Capacity - Clean Air Delievery Rate</h4>
 				<div class="input-group">
 					<input id="airPureCap" type="number" class="form-control"
-						placeholder="Capicty">
+						placeholder="Capicty"> <span class="input-group-addon">CADR</span>
 				</div>
+				<h4>Efficiency</h4>
 				<div class="input-group">
-					<input id="airPureNumOfUnits" type="number" class="form-control"
-						placeholder="Number of Units">
+					<input id="airPureEff" type="number" class="form-control"
+						placeholder="Efficiency"> <span class="input-group-addon">Dust
+						CADR/Watt</span>
 				</div>
+				<h4>Average Annual Days of Operation</h4>
 				<div class="input-group">
-					<input id="airPureNumOfUnits" type="number" class="form-control"
-						placeholder="Number of Units">
+					<input id="airPureDaysOfOp" type="number" class="form-control"
+						placeholder="Days of Operation"> <span
+						class="input-group-addon">Days/Year</span>
 				</div>
+				<h4>Average Daily Operation</h4>
 				<div class="input-group">
-					<input id="airPureNumOfUnits" type="number" class="form-control"
-						placeholder="Number of Units">
+					<input id="airPureHoursADay" type="number" class="form-control"
+						placeholder="Hours a Day"> <span class="input-group-addon">Hours/Day</span>
 				</div>
-				<div class="input-group">
-					<input id="airPureNumOfUnits" type="number" class="form-control"
-						placeholder="Number of Units">
-				</div>
-				
+
 			</div>
 		</form>
 	</div>
