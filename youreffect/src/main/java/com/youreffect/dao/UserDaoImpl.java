@@ -21,6 +21,7 @@ public class UserDaoImpl implements UserDao{
      * @param mongoTemplate Mongo Template pseudo-ORM tool
      */
     public void setMongoTemplate(MongoTemplate mongoTemplate) {
+
         this.mongoTemplate = mongoTemplate;
     }
 

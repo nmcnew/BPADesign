@@ -68,6 +68,7 @@ function login(username, password) {
 		}
 	});
 }
+
 function addOptionGas() {
 	var radios = document.getElementsByName("gOptions");
 	var selected = "";
