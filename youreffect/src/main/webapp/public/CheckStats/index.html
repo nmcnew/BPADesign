@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Your Effect</title>
+		<link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../assets/css/MainStyles.css" rel="stylesheet">
+		<link href="../assets/css/hover.css" rel="stylesheet">
+		<script type="text/javascript"
+		src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="../assets/js/bootstrap.min.js"></script>
+		<script src="../assets/js/lib.js"></script>
+		<script src="../assets/js/model/item.js"></script>
+		<script src="../assets/js/json2.js"></script>
+		<script src="../assets/js/calculate.js"></script>
+	</head>
+	<body>
+		<!-- Header -->
+		<nav class="navbar navbar-inverse center" role="navigation">
+			<div class="navbar-inner">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="../">Home</a>
+					</li>
+					<li>
+						<a href="../CostCalculator">Cost Calculator</a>
+					</li>
+					<li class="active">
+						<a href="../CheckStats">Check Stats</a>
+					</li>
+					<li>
+						<a href="../register/">Register</a>
+					</li>
+					<li>
+						<div class="navbar-text navbar-left small">
+							Logged in
+							as:&nbsp;&nbsp;
+						</div>
+
+						<div id="curLogin" class="navbar-text small"></div>
+						<script
+						type="text/javascript">
+							document.getElementById("curLogin").innerHTML = (JSON.parse(localStorage.getItem("curUser")).username);
+						</script>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- Actual Body -->
+		<div class="body">
+			
+		</div>
+		<script>
+		</script>
+	</body>
+</html>
