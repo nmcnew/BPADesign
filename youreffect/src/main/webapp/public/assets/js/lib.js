@@ -1,4 +1,8 @@
-var curUser = new User();
+try {
+    var curUser = JSON.parse(localStorage.getItem("curUser"));
+} catch (e) {
+    var curUser = new User();
+}
 
 function getContextRoot(key) {
 	var s = "";

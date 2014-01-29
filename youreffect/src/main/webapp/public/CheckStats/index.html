@@ -10,7 +10,6 @@
 		<script src="../assets/js/bootstrap.min.js"></script>
 		<script src="../assets/js/lib.js"></script>
 		<script src="../assets/js/model/item.js"></script>
-		<script src="../assets/js/json2.js"></script>
 		<script src="../assets/js/calculate.js"></script>
 	</head>
 	<body>
@@ -25,7 +24,7 @@
 						<a href="../CostCalculator">Cost Calculator</a>
 					</li>
 					<li class="active">
-						<a href="../CheckStats">Check Stats</a>
+						<a href="../CheckStats/">Check Stats</a>
 					</li>
 					<li>
 						<a href="../register/">Register</a>
@@ -47,9 +46,29 @@
 		</nav>
 		<!-- Actual Body -->
 		<div class="body">
-			
+            <table class="table">
+                <tr>
+                    <td>Username</td>
+                    <td><div id="stat-username"></div></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><div id="stat-email"></div></td>
+                </tr>
+                <tr>
+                    <td>State</td>
+                    <td><div id="stat-state"></div></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><div></div></td>
+                </tr>
+            </table>
 		</div>
 		<script>
+            $("#stat-username").html(curUser.username);
+            $("#stat-email").html(curUser.email);
+            $("#stat-state").html(curUser.state);
 		</script>
 	</body>
 </html>

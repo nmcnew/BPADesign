@@ -35,13 +35,18 @@ public class ItemController {
     @Autowired
     private ResponseService responseService;
 
-    @RequestMapping(value = "/create", method = RequestMethod.POST)
-    public String createItem(@RequestBody String data) {
+    /**
+     * adds item to user
+     * @param data JSON from client
+     * @return
+     */
+    @RequestMapping(value = "/save", method = RequestMethod.POST)
+    public String saveItem(@RequestBody String data) {
         Item item = gson.fromJson(data, Item.class);
         item.setItemId(hashService.md5(item.getName() + item.getEnergy() + item.getSpecsStr()));
         itemService.insertItem(item);
         responseService.setData(item);
-        responseService.setMessage("item successfully persisted");
+        responseService.setMessage("item successfully saved");
         return responseService.toString();
     }
 }

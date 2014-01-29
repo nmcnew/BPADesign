@@ -1,6 +1,7 @@
 package com.youreffect.dao;
 
 import com.youreffect.model.Item;
+import com.youreffect.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
@@ -31,7 +32,10 @@ public class ItemDaoImpl implements ItemDao{
      */
     @Override
     public void createItem(Item item) {
-        mongoTemplate.insert(item);
+        Query query = new Query(Criteria.where("_id").is(item.getUserId()));
+        User user = mongoTemplate.findOne(query, User.class);
+        user.addItem(item);
+        mongoTemplate.save(user);
     }
 
     /**
@@ -41,9 +45,7 @@ public class ItemDaoImpl implements ItemDao{
      */
     @Override
     public Item readItem(String id) {
-        Query query = new Query(Criteria.where("_id").is(id));
-        Item item = mongoTemplate.findOne(query, Item.class);
-        return item;
+        return null;
     }
 
     /**
@@ -61,8 +63,6 @@ public class ItemDaoImpl implements ItemDao{
      */
     @Override
     public void deleteItem(String id) {
-        Query query = new Query(Criteria.where("_id").is(id));
-        Item item = mongoTemplate.findOne(query, Item.class);
-        mongoTemplate.remove(item);
+
     }
 }
