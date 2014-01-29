@@ -1,3 +1,9 @@
+try {
+    var curUser = JSON.parse(localStorage.getItem("curUser"));
+} catch (e) {
+    var curUser = new User();
+}
+
 function getContextRoot(key) {
 	var s = "";
 	var j = -1;
@@ -13,8 +19,88 @@ function getContextRoot(key) {
 	return s.substr(0, s.length - 1);
 }
 
-function register(username, email, password, state) {
+function checkReg() {
+    var ready = false;
+    var errorString = "";
+    //first checks username
+    if ($("#reg_username").val().length < 3) {
+        $("#reg_username").parents(".form-group").addClass("has-error");
+        removeAlertClass();
+        $("#dialog").addClass("alert-danger");
+        $("#response-title").text("Failure!");
+        errorString += "Username Invalid<br/>";
+        ready = false;
 
+    } else {
+        $("#reg_username").parents(".form-group").removeClass("has-error");
+        dialogFadeOut();
+        ready = true;
+    }
+
+    //then password stuff
+    if ($("#reg_password").val() != $("#passwordCheck").val() | $("#reg_password").val() == "") {
+        $("#reg_password").parents(".form-group").addClass("has-error");
+        $("#passwordCheck").parents(".form-group").addClass("has-error");
+        removeAlertClass();
+        $("#dialog").addClass("alert-danger");
+        $("#response-title").text("Failure!");
+        errorString += "Passwords Do not Match/Not Long Enough<br/>";
+        ready = false;
+    } else {
+        $("#reg_password").parents(".form-group").removeClass("has-error");
+        $("#passwordCheck").parents(".form-group").removeClass("has-error");
+        dialogFadeOut();
+        ready = true;
+    }
+
+    //then email stuff
+    if ($("#reg_email").val().length == 0 | $("#reg_email").val().indexOf("@") < 0) {
+        $("#reg_email").parents(".form-group").addClass("has-error");
+        removeAlertClass();
+        $("#dialog").addClass("alert-danger");
+        $("#response-title").text("Failure!");
+        errorString += "Email Invalid";
+        if ($("#reg_email").val().indexOf("@") < 0) {
+            errorString += ": Forgot the @";
+        }
+        ready = false;
+    } else {
+        $("#reg_email").parents(".form-group").removeClass("has-error");
+        dialogFadeOut();
+        ready = true;
+    }
+    $("#response-text").html(errorString);
+
+    $("#dialog").fadeIn();
+    if (ready) {
+        register($('#reg_username').val(), $('#reg_email').val(), $('#reg_password').val(), $('#reg_state').val());
+    }
+}
+
+function register(username, email, password, state) {
+    var user = new User(username, email, password, state);
+    $.ajax({
+        url : getContextRoot('public') + '/user/register',
+        type : 'POST',
+        dataType : 'json',
+        data : JSON.stringify(user),
+        contentType : "application/json; charset=utf-8",
+        success : function(data) {
+            removeAlertClass();
+            if (data.message.toString().indexOf('successful') != -1) {
+                $("#dialog").addClass("alert-success");
+                $("#response-title").text("Success!");
+
+            } else {
+
+                $("#dialog").addClass("alert-danger");
+                $("#response-title").text("Failure!");
+            }
+            $("#dialog").fadeIn();
+            $("#response-text").html(data.message);
+
+        }
+    });
 }
 
 function login(username, password) {
@@ -35,6 +121,7 @@ function login(username, password) {
 				$("#dialog").addClass("alert-success");
 				$("#response-title").text("Success!");
 				document.getElementById("curLogin").innerHTML = (JSON.parse(localStorage.getItem("curUser")).username);
+                curUser = JSON.parse(localStorage.getItem("curUser"));
 			} else {
 				$("#dialog").addClass("alert-danger");
 				$("#response-title").text("Failure!");
@@ -42,8 +129,25 @@ function login(username, password) {
 			$("#dialog").fadeIn();
 			$("#response-text").html(data.message);
 
+
 		}
 	});
+}
+
+function persistItem(name, energy) {
+    var item = new Item(name, energy);
+    item.userId = curUser.userId;
+    $.ajax({
+        url : getContextRoot('public') + '/item/save',
+        type : 'POST',
+        data : JSON.stringify(item),
+        contentType : "application/json; charset=utf-8",
+        success : function(data) {
+            console.log(data);
+            removeAlertClass();
+            $("#response-text").html(data.message);
+        }
+    })
 }
 
 function addOptionGas() {
@@ -57,10 +161,8 @@ function addOptionGas() {
 	}
 	switch (selected) {
 		case "furn":
-			$(".mainForm").append('<div id="furnWrap" class="furnWrap formWrapper"><h3> Furnace <button type="button" class="btn btn-danger pull-right removeable"onclick="removeButt($(this))"><span class="glyphicon glyphicon-minus-sign"></span> Remove</button></h3><h4>Fuel Type</h4><select name="furnFuelType" id="furnFuelType" class="form-control"><option value="gas">Gas</option><option value="oil">Oil</option></select><h4>Size of Your House</h4><div class="input-group "><input name="furnHouseSize" id="furnHouseSize" type="number" class="form-control"placeholder="Size of Your House(Square Feet)"><span class="input-group-addon">Feet &sup2;</span></div><h4>Era of your House</h4><select name="furnHouseEra" id="furnHouseEra" class="form-control"><option value="pre40">Before 1940</option><option value="40to49">1940-1949</option><option value="50to59">1950-1959</option><option value="60to69">1960-1969</option><option value="70to79">1970-1979</option><option value="80to89">1980-1989</option><option value="90to00">1990-2000</option><option value="present">2000-Present</option></select><h4>Era of Furnace</h4><select name="furnEra" id="furnEra" class="form-control"><option value="1960-1969">1960-1969</option><option value="1970-1974">1970-1974</option><option value="1975-1983">1975-1983</option><option value="1984-1987">1984-1987</option><option value="1988-1991">1988-1991</option><option value="After 1992">After 1992</option><option value="New Unit">New Unit</option></select><h4>Thermostat?</h4><select name="furnThermos" id="furnThermos" class="form-control"><option value="1">Yes</option><option value="0">No</option></select></div>');
+			$(".mainForm").append('<div id="furnWrap" class="furnWrap formWrapper"><h3> Furnace <button type="button" class="btn btn-danger pull-right"onclick="removeButt($(this))"><span class="glyphicon glyphicon-minus-sign"></span> Remove</button></h3><h4>Fuel Type</h4><select name="furnFuelType" id="furnFuelType" class="form-control"><option value="gas">Gas</option><option value="oil">Oil</option></select><h4>Size of Your House</h4><div class="input-group "><input name="furnHouseSize" id="furnHouseSize" type="number" class="form-control"placeholder="Size of Your House(Square Feet)"><spanclass="input-group-addon">Feet &sup2;</span></div><h4>Era of your House</h4><select name="furnHouseEra" id="furnHouseEra" class="form-control"><option value="pre40">Before 1940</option><option value="40to49">1940-1949</option><option value="50to59">1950-1959</option><option value="60to69">1960-1969</option><option value="70to79">1970-1979</option><option value="80to89">1980-1989</option><option value="90to00">1990-2000</option><option value="present">2000-Present</option></select><h4>Era of Furnace</h4><select name="furnEra" id="furnEra" class="form-control"><option value="1960-1969">1960-1969</option><option value="1970-1974">1970-1974</option><option value="1975-1983">1975-1983</option><option value="1984-1987">1984-1987</option><option value="1988-1991">1988-1991</option><option value="After 1992">After 1992</option><option value="New Unit">New Unit</option></select><h4>Thermostat?</h4><select name="furnThermos" id="furnThermos" class="form-control"><option value="1">Yes</option><option value="0">No</option></select></div>');
 			$(".removeable").hide();
-			$("#furnWrap").hide();
-			$("#furnWrap").fadeIn();
 			break;
 	}
 }
@@ -96,7 +198,7 @@ function addOptionElec() {
 
 			break;
 		case "washer":
-			$(".mainForm").append('<div id="clothesWasherWrapper" class="formWrapper"><h3> Clothes Washer<button type="button" class="btn btn-danger pull-right removeable"onclick="removeButt($(this))"><span class="glyphicon glyphicon-minus-sign"></span> Remove</button></h3><h4>Amount of Clothes Washers</h4><input name="airPureHoursADay" id="clothesWasherQuantity" type="number" class="form-control"placeholder="Amount"><h4>Average Loads Per Week</h4><input name="clothesWasherLoadsPerWeek" id="clothesWasherLoadsPerWeek" type="number"class="form-control" placeholder="Loads Per Week"><h4>Building Hot Water Fuel Type</h4><select name="clothesWasherBuildFuelType" id="clothesWasherBuildFuelType" class="form-control"><option value="natGas">Natural Gas</option><option value="elec">Electricity</option></select><h4>Dryer Type</h4><select name="clothesWasherDryerFuelType" id="clothesWasherDryerFuelType" class="form-control"><option value="natGas">Natural Gas</option><option value="elec">Electricity</option><option value="none">Neither</option></select><h4>Capacity</h4><div class="input-group"><input name="clothesWasherCapacity" id="clothesWasherCapacity" type="number"class="form-control" placeholder="Capacity"><span class="input-group-addon">Feet &sup3;</span></div><h4>Modified Energy Factor</h4><div class="input-group"><input name="clothesWasherMEF" id="clothesWasherMEF" type="number" class="form-control"placeholder="MEF Value"><span class="input-group-addon">MEF</span></div><h4>Water Factor</h4><div class="input-group"><input name="clothesWasherHoursADay" id="clothesWasherHoursADay" type="number"class="form-control" placeholder="WF Value"><span class="input-group-addon">WF</span></div></div>');
+			$(".mainForm").append('<div id="clothesWasherWrapper" class="formWrapper"><h3> Clothes Washer<button type="button" class="btn btn-danger pull-right removeable"onclick="removeButt($(this))"><span class="glyphicon glyphicon-minus-sign"></span> Remove</button></h3><h4>Amount of Clothes Washers</h4><input name="airPureHoursADay" id="clothesWasherQuantity" type="number" class="form-control"placeholder="Amount"><h4>Average Loads Per Week</h4><input name="clothesWasherLoadsPerWeek" id="clothesWasherLoadsPerWeek" type="number"class="form-control" placeholder="Loads Per Week"><h4>Building Hot Water Fuel Type</h4><select name="clothesWasherBuildFuelType" id="clothesWasherBuildFuelType" class="form-control"><option value="natGas">Natural Gas</option><option value="elec">Electricity</option></select><h4>Dryer Type</h4><select name="clothesWasherDryerFuelType" id="clothesWasherDryerFuelType" class="form-control"><option value="natGas">Natural Gas</option><option value="elec">Electricity</option><option value="none">Neither</option></select><h4>Capacity</h4><div class="input-group"><input name="clothesWasherCapacity" id="clothesWasherCapacity" type="number"class="form-control" placeholder="Capacity"><span class="input-group-addon">Feet &sup3;</span></div><h4>Modified Energy Factor</h4><div class="input-group"><input name="clothesWasherMEF" id="clothesWasherMEF" type="number" class="form-control"placeholder="MEF Value"><span class="input-group-addon">MEF</span></div><h4>Water Factor</h4><div class="input-group"><input name="clothesWasherHoursADay" id="clothesWasherHoursADay" type="number"class="form-control" placeholder="WF Value"><spanclass="input-group-addon">WF</span></div></div>');
 			$(".removeable").hide();
 			$("#clothesWasherWrapper").hide();
 			$("#clothesWasherWrapper").fadeIn();
@@ -140,95 +242,15 @@ function addOptionElec() {
 	}
 }
 
-function removeButt(domElement) {
-	$(domElement).parents(".formWrapper").fadeOut(300, function() {
-
-		$(domElement).parents(".formWrapper").remove();
-	});
-}
-
-function checkReg() {
-	var ready = false;
-	var errorString = "";
-	//first checks username
-	if ($("#reg_username").val().length < 3) {
-		$("#reg_username").parents(".form-group").addClass("has-error");
-		removeAlertClass();
-		$("#dialog").addClass("alert-danger");
-		$("#response-title").text("Failure!");
-		errorString += "Username Invalid<br/>";
-		ready = false;
-
-	} else {
-		$("#reg_username").parents(".form-group").removeClass("has-error");
-		dialogFadeOut();
-		ready = true;
-	}
-
-	//then password stuff
-	if ($("#reg_password").val() != $("#passwordCheck").val() | $("#reg_password").val() == "") {
-		$("#reg_password").parents(".form-group").addClass("has-error");
-		$("#passwordCheck").parents(".form-group").addClass("has-error");
-		removeAlertClass();
-		$("#dialog").addClass("alert-danger");
-		$("#response-title").text("Failure!");
-		errorString += "Passwords Do not Match/Not Long Enough<br/>";
-		ready = false;
-	} else {
-		$("#reg_password").parents(".form-group").removeClass("has-error");
-		$("#passwordCheck").parents(".form-group").removeClass("has-error");
-		dialogFadeOut();
-		ready = true;
-	}
-
-	//then email stuff
-	if ($("#reg_email").val().length == 0 | $("#reg_email").val().indexOf("@") < 0) {
-		$("#reg_email").parents(".form-group").addClass("has-error");
-		removeAlertClass();
-		$("#dialog").addClass("alert-danger");
-		$("#response-title").text("Failure!");
-		errorString += "Email Invalid";
-		if ($("#reg_email").val().indexOf("@") < 0) {
-			errorString += ": Forgot the @";
-		}
-		ready = false;
-	} else {
-		$("#reg_email").parents(".form-group").removeClass("has-error");
-		dialogFadeOut();
-		ready = true;
-	}
-	$("#response-text").html(errorString);
-
-	$("#dialog").fadeIn();
-	if (ready) {
-		var user = new User($('#reg_username').val(), $('#reg_email').val(), $('#reg_password').val(), $('#reg_state').val());
-		$.ajax({
-			url : getContextRoot('public') + '/user/register',
-			type : 'POST',
-			dataType : 'json',
-			data : JSON.stringify(user),
-			contentType : "application/json; charset=utf-8",
-			success : function(data) {
-				removeAlertClass();
-				if (data.message.toString().indexOf('successful') != -1) {
-					$("#dialog").addClass("alert-success");
-					$("#response-title").text("Success!");
-
-				} else {
-
-					$("#dialog").addClass("alert-danger");
-					$("#response-title").text("Failure!");
-				}
-				$("#dialog").fadeIn();
-				$("#response-text").html(data.message);
-
-			}
-		});
-	}
-}
-
 function dialogFadeOut() {
 	$("#dialog").fadeOut();
+}
+
+function removeButt(domElement) {
+    $(domElement).parents(".formWrapper").fadeOut(300, function() {
+
+        $(domElement).parents(".formWrapper").remove();
+    });
 }
 
 function removeAlertClass() {
