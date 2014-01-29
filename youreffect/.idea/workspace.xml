@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="06063096-bfe1-4e35-9f05-404f1a450a95" name="Default" comment="">
+    <list default="true" id="06063096-bfe1-4e35-9f05-404f1a450a95" name="Default" comment="added curUser global variable to conveniently access client-side data&#10;">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/public/CheckStats/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/public/CheckStats/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" afterPath="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="YourEffect.iws" />
@@ -78,7 +80,7 @@
       <file leaf-file-name="lib.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="84" selection-start="159" selection-end="159" vertical-scroll-proportion="0.23230088" vertical-offset="0" max-vertical-offset="3855">
+            <state line="13" column="73" selection-start="265" selection-end="265" vertical-scroll-proportion="0.43141592" vertical-offset="0" max-vertical-offset="3855">
               <folding />
             </state>
           </provider>
@@ -1041,7 +1043,7 @@
       <workItem from="1390970711243" duration="6433000" />
       <workItem from="1390979762662" duration="667000" />
       <workItem from="1391034391999" duration="47000" />
-      <workItem from="1391034450660" duration="2101000" />
+      <workItem from="1391034450660" duration="2256000" />
     </task>
     <task id="LOCAL-00001" summary="setting up spring mvc">
       <created>1389477332614</created>
@@ -1115,11 +1117,15 @@
       <created>1390980352118</created>
       <updated>1390980352118</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="added curUser global variable to conveniently access client-side data&#10;">
+      <created>1391036700323</created>
+      <updated>1391036700323</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84231000" />
+    <option name="totallyTimeSpent" value="84386000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="802" extended-state="6" />
@@ -1192,7 +1198,8 @@
     <MESSAGE value="modularized reg_check function (client-side), modified back-end setup and relationship between user and item" />
     <MESSAGE value="fixed relative links to check stats, added content to checkstats, need Nick to add styles to checkstats (front-end)" />
     <MESSAGE value="Need Nick to add styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Need Nick to add styles" />
+    <MESSAGE value="added curUser global variable to conveniently access client-side data&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="added curUser global variable to conveniently access client-side data&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1476,7 +1483,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="84" selection-start="159" selection-end="159" vertical-scroll-proportion="0.23230088" vertical-offset="0" max-vertical-offset="3855">
+        <state line="13" column="73" selection-start="265" selection-end="265" vertical-scroll-proportion="0.43141592" vertical-offset="0" max-vertical-offset="3855">
           <folding />
         </state>
       </provider>

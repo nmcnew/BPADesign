@@ -1,3 +1,13 @@
+var curUser = new User();
+
+init();
+
+function init() {
+    try {
+        curUser = JSON.parse(localStorage.getItem("curUser"));
+    } catch (e) {console.log(e)}
+}
+
 function getContextRoot(key) {
 	var s = "";
 	var j = -1;
