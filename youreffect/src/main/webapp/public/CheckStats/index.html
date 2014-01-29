@@ -46,50 +46,49 @@
 		</nav>
 		<!-- Actual Body -->
 		<div class="body">
-            Your Information
-            <table class="table">
-                <tr>
-                    <td>Username</td>
-                    <td><div id="stat-username"></div></td>
-                </tr>
-                <tr>
-                    <td>Email</td>
-                    <td><div id="stat-email"></div></td>
-                </tr>
-                <tr>
-                    <td>State</td>
-                    <td><div id="stat-state"></div></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><div></div></td>
-                </tr>
-            </table>
-            Your Items
-            <form>
-                Search <input type="text" />
-                <button>Submit</button>
-            </form>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <td>
-                            Name
-                        </td>
-                        <td>
-                            Energy
-                        </td>
-                        <td>
-                            Quantity
-                        </td>
-                    </tr>
-                </thead>
-            </table>
+			<h2>Your Information</h2>
+			<table class="table">
+
+				<thead>
+					<tr>
+						<th>Username</th>
+						<th>Email</th>
+						<th>State</th>
+
+					</tr>
+				</thead>
+				<tr>
+					<td><div id="stat-username"></div></td>
+					<td><div id="stat-email"></div></td>
+					<td><div id="stat-state"></div></td>
+				</tr>
+			</table>
+			<h2>Your Items</h2>
+			<form>
+
+				<h4>Search</h4>
+				<div class="col-lg-6">
+					<input type="text" class="form-control" placeholder="Search through your Items">
+
+				</div>
+				<button type="button" class="btn btn-success" >
+					Submit
+				</button>
+			</form>
+			<table class="table">
+				<thead>
+					<tr>
+						<th> Name </th>
+						<th> Energy </th>
+						<th> Quantity </th>
+					</tr>
+				</thead>
+			</table>
 		</div>
 		<script>
-            $("#stat-username").html(curUser.username);
-            $("#stat-email").html(curUser.email);
-            $("#stat-state").html(curUser.state);
+			$("#stat-username").html(curUser.username);
+			$("#stat-email").html(curUser.email);
+			$("#stat-state").html(curUser.state);
 		</script>
 	</body>
 </html>

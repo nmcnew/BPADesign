@@ -3,7 +3,6 @@ function Item() {
     this.userId = '';
     this.name = '';
     this.energy = '';
-    this.quantity = 1;
     this.specs = [];
 }
 
@@ -12,7 +11,6 @@ function Item(name, energy) {
     this.userId = '';
     this.name = name;
     this.energy = energy;
-    this.quantity = 1;
     this.specs = [];
     console.log(this);
 }
