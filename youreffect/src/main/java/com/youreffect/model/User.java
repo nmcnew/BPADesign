@@ -3,6 +3,8 @@ package com.youreffect.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.HashMap;
+
 /**
  * @author Deeban Ramalingam
  * User POJO
@@ -21,6 +23,8 @@ public class User {
     private String password;
     /** user's state */
     private String state;
+    /** user's item map */
+    private HashMap<String, Item> items;
 
     /**
      * get user id
@@ -110,5 +114,42 @@ public class User {
         return String.format(
                 "User[id=%s, username='%s', email='%s', state='%s', password='%s']",
                 userId, username, email, state, password);
+    }
+
+    /**
+     * get user items
+     * @return user items
+     */
+    public HashMap getItems() {
+        return items;
+    }
+
+    /**
+     * set user items
+     * @param items set user items to this
+     */
+    public void setItems(HashMap items) {
+        this.items = items;
+    }
+
+    /**
+     * add item to items map
+     * @param item to add to items map
+     */
+    public void addItem(Item item) {
+        if (items.containsKey(item.getItemId())) {
+            items.get(item.getItemId()).addToQuantity(item.getQuantity());
+        }
+        else {
+            items.put(item.getItemId(), item);
+        }
+    }
+
+    /**
+     * remove item from items map
+     * @param item to remove from items map
+     */
+    public void rmvItem(Item item) {
+        items.remove(item.getItemId());
     }
 }

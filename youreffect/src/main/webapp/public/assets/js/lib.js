@@ -1,3 +1,5 @@
+var curUser = new User();
+
 function getContextRoot(key) {
 	var s = "";
 	var j = -1;
@@ -13,8 +15,88 @@ function getContextRoot(key) {
 	return s.substr(0, s.length - 1);
 }
 
-function register(username, email, password, state) {
+function checkReg() {
+    var ready = false;
+    var errorString = "";
+    //first checks username
+    if ($("#reg_username").val().length < 3) {
+        $("#reg_username").parents(".form-group").addClass("has-error");
+        removeAlertClass();
+        $("#dialog").addClass("alert-danger");
+        $("#response-title").text("Failure!");
+        errorString += "Username Invalid<br/>";
+        ready = false;
 
+    } else {
+        $("#reg_username").parents(".form-group").removeClass("has-error");
+        dialogFadeOut();
+        ready = true;
+    }
+
+    //then password stuff
+    if ($("#reg_password").val() != $("#passwordCheck").val() | $("#reg_password").val() == "") {
+        $("#reg_password").parents(".form-group").addClass("has-error");
+        $("#passwordCheck").parents(".form-group").addClass("has-error");
+        removeAlertClass();
+        $("#dialog").addClass("alert-danger");
+        $("#response-title").text("Failure!");
+        errorString += "Passwords Do not Match/Not Long Enough<br/>";
+        ready = false;
+    } else {
+        $("#reg_password").parents(".form-group").removeClass("has-error");
+        $("#passwordCheck").parents(".form-group").removeClass("has-error");
+        dialogFadeOut();
+        ready = true;
+    }
+
+    //then email stuff
+    if ($("#reg_email").val().length == 0 | $("#reg_email").val().indexOf("@") < 0) {
+        $("#reg_email").parents(".form-group").addClass("has-error");
+        removeAlertClass();
+        $("#dialog").addClass("alert-danger");
+        $("#response-title").text("Failure!");
+        errorString += "Email Invalid";
+        if ($("#reg_email").val().indexOf("@") < 0) {
+            errorString += ": Forgot the @";
+        }
+        ready = false;
+    } else {
+        $("#reg_email").parents(".form-group").removeClass("has-error");
+        dialogFadeOut();
+        ready = true;
+    }
+    $("#response-text").html(errorString);
+
+    $("#dialog").fadeIn();
+    if (ready) {
+        register($('#reg_username').val(), $('#reg_email').val(), $('#reg_password').val(), $('#reg_state').val());
+    }
+}
+
+function register(username, email, password, state) {
+    var user = new User(username, email, password, state);
+    $.ajax({
+        url : getContextRoot('public') + '/user/register',
+        type : 'POST',
+        dataType : 'json',
+        data : JSON.stringify(user),
+        contentType : "application/json; charset=utf-8",
+        success : function(data) {
+            removeAlertClass();
+            if (data.message.toString().indexOf('successful') != -1) {
+                $("#dialog").addClass("alert-success");
+                $("#response-title").text("Success!");
+
+            } else {
+
+                $("#dialog").addClass("alert-danger");
+                $("#response-title").text("Failure!");
+            }
+            $("#dialog").fadeIn();
+            $("#response-text").html(data.message);
+
+        }
+    });
 }
 
 function login(username, password) {
@@ -35,6 +117,7 @@ function login(username, password) {
 				$("#dialog").addClass("alert-success");
 				$("#response-title").text("Success!");
 				document.getElementById("curLogin").innerHTML = (JSON.parse(localStorage.getItem("curUser")).username);
+                curUser = JSON.parse(localStorage.getItem("curUser"));
 			} else {
 				$("#dialog").addClass("alert-danger");
 				$("#response-title").text("Failure!");
@@ -42,8 +125,25 @@ function login(username, password) {
 			$("#dialog").fadeIn();
 			$("#response-text").html(data.message);
 
+
 		}
 	});
+}
+
+function persistItem(name, energy) {
+    var item = new Item(name, energy);
+    item.userId = curUser.userId;
+    $.ajax({
+        url : getContextRoot('public') + '/item/save',
+        type : 'POST',
+        data : JSON.stringify(item),
+        contentType : "application/json; charset=utf-8",
+        success : function(data) {
+            console.log(data);
+            removeAlertClass();
+            $("#response-text").html(data.message);
+        }
+    })
 }
 
 function addOptionGas() {
@@ -138,95 +238,15 @@ function addOptionElec() {
 	}
 }
 
-function removeButt(domElement) {
-	$(domElement).parents(".formWrapper").fadeOut(300, function() {
-
-		$(domElement).parents(".formWrapper").remove();
-	});
-}
-
-function checkReg() {
-	var ready = false;
-	var errorString = "";
-	//first checks username
-	if ($("#reg_username").val().length < 3) {
-		$("#reg_username").parents(".form-group").addClass("has-error");
-		removeAlertClass();
-		$("#dialog").addClass("alert-danger");
-		$("#response-title").text("Failure!");
-		errorString += "Username Invalid<br/>";
-		ready = false;
-
-	} else {
-		$("#reg_username").parents(".form-group").removeClass("has-error");
-		dialogFadeOut();
-		ready = true;
-	}
-
-	//then password stuff
-	if ($("#reg_password").val() != $("#passwordCheck").val() | $("#reg_password").val() == "") {
-		$("#reg_password").parents(".form-group").addClass("has-error");
-		$("#passwordCheck").parents(".form-group").addClass("has-error");
-		removeAlertClass();
-		$("#dialog").addClass("alert-danger");
-		$("#response-title").text("Failure!");
-		errorString += "Passwords Do not Match/Not Long Enough<br/>";
-		ready = false;
-	} else {
-		$("#reg_password").parents(".form-group").removeClass("has-error");
-		$("#passwordCheck").parents(".form-group").removeClass("has-error");
-		dialogFadeOut();
-		ready = true;
-	}
-
-	//then email stuff
-	if ($("#reg_email").val().length == 0 | $("#reg_email").val().indexOf("@") < 0) {
-		$("#reg_email").parents(".form-group").addClass("has-error");
-		removeAlertClass();
-		$("#dialog").addClass("alert-danger");
-		$("#response-title").text("Failure!");
-		errorString += "Email Invalid";
-		if ($("#reg_email").val().indexOf("@") < 0) {
-			errorString += ": Forgot the @";
-		}
-		ready = false;
-	} else {
-		$("#reg_email").parents(".form-group").removeClass("has-error");
-		dialogFadeOut();
-		ready = true;
-	}
-	$("#response-text").html(errorString);
-
-	$("#dialog").fadeIn();
-	if (ready) {
-		var user = new User($('#reg_username').val(), $('#reg_email').val(), $('#reg_password').val(), $('#reg_state').val());
-		$.ajax({
-			url : getContextRoot('public') + '/user/register',
-			type : 'POST',
-			dataType : 'json',
-			data : JSON.stringify(user),
-			contentType : "application/json; charset=utf-8",
-			success : function(data) {
-				removeAlertClass();
-				if (data.message.toString().indexOf('successful') != -1) {
-					$("#dialog").addClass("alert-success");
-					$("#response-title").text("Success!");
-
-				} else {
-
-					$("#dialog").addClass("alert-danger");
-					$("#response-title").text("Failure!");
-				}
-				$("#dialog").fadeIn();
-				$("#response-text").html(data.message);
-
-			}
-		});
-	}
-}
-
 function dialogFadeOut() {
 	$("#dialog").fadeOut();
+}
+
+function removeButt(domElement) {
+    $(domElement).parents(".formWrapper").fadeOut(300, function() {
+
+        $(domElement).parents(".formWrapper").remove();
+    });
 }
 
 function removeAlertClass() {

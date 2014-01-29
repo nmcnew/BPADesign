@@ -1,22 +1,19 @@
 package com.youreffect.model;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
-
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by deebanramalingam on 1/24/14.
+ * @author Deeban Ramalingam
+ * Item POJO
  */
-@Document(collection = "items")
 public class Item {
 
-    @Id
     private String itemId;
     private String userId;
     private String name;
     private String energy;
+    private int quantity;
     private HashMap<String,Object> specs;
 
     public String getItemId() {
@@ -68,7 +65,23 @@ public class Item {
         this.specs = specs;
     }
 
+    public int getQuantity () {
+        return quantity;
+    }
+
+    public void setQuantity (int quantity) {
+        this.quantity = quantity;
+    }
+
+    public void addToQuantity (int toAdd) {
+        this.quantity += toAdd;
+    }
+
+    public void subFromQuantity (int subFrom) {
+        this.quantity -= subFrom;
+    }
+
     public String toString() {
-        return String.format("Item[id=%s, userId='%s', name='%s', energy='%s'", itemId, userId, name, energy);
+        return String.format("Item[id=%s, name='%s', energy='%s', quantity='%s', specs='%s']", itemId, name, energy, quantity, getSpecsStr());
     }
 }
