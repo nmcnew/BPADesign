@@ -12,7 +12,6 @@ function User(username, email, password, state) {
     this.email = email;
     this.password = password;
     this.state = state;
-    console.log(this);
 }
 
 User.prototype.username = function (username) {

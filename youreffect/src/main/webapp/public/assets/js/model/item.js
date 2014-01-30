@@ -12,7 +12,6 @@ function Item(name, energy) {
     this.name = name;
     this.energy = energy;
     this.specs = [];
-    console.log(this);
 }
 
 Item.prototype.name = function (name) {
@@ -26,5 +25,4 @@ Item.prototype.energy = function (energy) {
 Item.prototype.addSpec = function (key, val) {
     var pair = {key:val};
     this.spec.push(pair);
-    console.log('pushed ' + key + " => " + val);
 }
