@@ -3,9 +3,11 @@ var curUser = new User();
 init();
 
 function init() {
-    try {
-        curUser = JSON.parse(localStorage.getItem("curUser"));
-    } catch (e) {console.log(e)}
+	try {
+		curUser = JSON.parse(localStorage.getItem("curUser"));
+	} catch (e) {
+		console.log(e)
+	}
 }
 
 function getContextRoot(key) {
@@ -24,7 +26,31 @@ function getContextRoot(key) {
 }
 
 function register(username, email, password, state) {
+	if (checkReg()) {
+		var user = new User($('#reg_username').val(), $('#reg_email').val(), $('#reg_password').val(), $('#reg_state').val());
+		$.ajax({
+			url : getContextRoot('public') + '/user/register',
+			type : 'POST',
+			dataType : 'json',
+			data : JSON.stringify(user),
+			contentType : "application/json; charset=utf-8",
+			success : function(data) {
+				removeAlertClass();
+				if (data.message.toString().indexOf('successful') != -1) {
+					$("#dialog").addClass("alert-success");
+					$("#response-title").text("Success!");
 
+				} else {
+
+					$("#dialog").addClass("alert-danger");
+					$("#response-title").text("Failure!");
+				}
+				$("#dialog").fadeIn();
+				$("#response-text").html(data.message);
+
+			}
+		});
+	}
 }
 
 function login(username, password) {
@@ -210,31 +236,7 @@ function checkReg() {
 	$("#response-text").html(errorString);
 
 	$("#dialog").fadeIn();
-	if (ready) {
-		var user = new User($('#reg_username').val(), $('#reg_email').val(), $('#reg_password').val(), $('#reg_state').val());
-		$.ajax({
-			url : getContextRoot('public') + '/user/register',
-			type : 'POST',
-			dataType : 'json',
-			data : JSON.stringify(user),
-			contentType : "application/json; charset=utf-8",
-			success : function(data) {
-				removeAlertClass();
-				if (data.message.toString().indexOf('successful') != -1) {
-					$("#dialog").addClass("alert-success");
-					$("#response-title").text("Success!");
-
-				} else {
-
-					$("#dialog").addClass("alert-danger");
-					$("#response-title").text("Failure!");
-				}
-				$("#dialog").fadeIn();
-				$("#response-text").html(data.message);
-
-			}
-		});
-	}
+	return ready;
 }
 
 function dialogFadeOut() {
