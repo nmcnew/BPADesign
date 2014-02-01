@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06063096-bfe1-4e35-9f05-404f1a450a95" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/public/assets/js/model/item.js" afterPath="$PROJECT_DIR$/src/main/webapp/public/assets/js/model/item.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="YourEffect.iws" />
@@ -84,19 +85,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lib.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="lib.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="16" selection-start="1551" selection-end="1551" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="4185">
+            <state line="85" column="35" selection-start="2133" selection-end="2133" vertical-scroll-proportion="0.44921875" vertical-offset="930" max-vertical-offset="4170">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="item.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="item.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/model/item.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="74" selection-start="402" selection-end="402" vertical-scroll-proportion="0.3841229" vertical-offset="0" max-vertical-offset="781">
+            <state line="3" column="22" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
               <folding />
             </state>
           </provider>
@@ -171,8 +172,8 @@
         <option value="$PROJECT_DIR$/src/main/webapp/public/register/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/model/user.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/model/item.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" />
       </list>
     </option>
   </component>
@@ -988,7 +989,7 @@
       <workItem from="1391050613786" duration="2761000" />
       <workItem from="1391222988785" duration="539000" />
       <workItem from="1391227931248" duration="9000" />
-      <workItem from="1391227947673" duration="1929000" />
+      <workItem from="1391227947673" duration="2033000" />
     </task>
     <task id="LOCAL-00001" summary="setting up spring mvc">
       <created>1389477332614</created>
@@ -1090,11 +1091,15 @@
       <created>1391229857635</created>
       <updated>1391229857635</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="added another constructor to item.js">
+      <created>1391230084678</created>
+      <updated>1391230084678</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90444000" />
+    <option name="totallyTimeSpent" value="90548000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1436" height="878" extended-state="6" />
@@ -1172,7 +1177,8 @@
     <MESSAGE value="added saveItem() to lib.js&#10;" />
     <MESSAGE value="modified saveItem(), added param specs. this function accepts (name,energy,specs) or two strings and a javascript map (array)" />
     <MESSAGE value="modified saveItem(), added param specs. this function accepts (name,energy,specs) or two strings and a javascript map (array)&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified saveItem(), added param specs. this function accepts (name,energy,specs) or two strings and a javascript map (array)&#10;" />
+    <MESSAGE value="added another constructor to item.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="added another constructor to item.js" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1449,16 +1455,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/model/item.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="16" selection-start="1551" selection-end="1551" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="4185">
+        <state line="3" column="22" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/model/item.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="74" selection-start="402" selection-end="402" vertical-scroll-proportion="0.3841229" vertical-offset="0" max-vertical-offset="781">
+        <state line="85" column="35" selection-start="2133" selection-end="2133" vertical-scroll-proportion="0.44921875" vertical-offset="930" max-vertical-offset="4170">
           <folding />
         </state>
       </provider>

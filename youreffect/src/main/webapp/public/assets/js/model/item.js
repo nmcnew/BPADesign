@@ -6,6 +6,14 @@ function Item() {
     this.specs = [];
 }
 
+function Item(name, energy) {
+    this.itemId = '';
+    this.userId = '';
+    this.name = name;
+    this.energy = energy;
+    this.specs = [];
+}
+
 function Item(name, energy, specs) {
     this.itemId = '';
     this.userId = '';
