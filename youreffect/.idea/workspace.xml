@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="06063096-bfe1-4e35-9f05-404f1a450a95" name="Default" comment="">
+    <list default="true" id="06063096-bfe1-4e35-9f05-404f1a450a95" name="Default" comment="modified submit form method. need to fix two problems. make current searcher smarter by adding his ability to go deeper into nodes to extract input fields. Also, it is unable to get the energy, figure out a way to get the energy.&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" afterPath="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/public/CostCalculator/testPage.html" afterPath="$PROJECT_DIR$/src/main/webapp/public/CostCalculator/testPage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -71,25 +71,27 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="33" selection-start="5665" selection-end="5665" vertical-scroll-proportion="-31.791666" vertical-offset="1037" max-vertical-offset="2205">
+            <state line="43" column="9" selection-start="1555" selection-end="1555" vertical-scroll-proportion="-0.625" vertical-offset="630" max-vertical-offset="2205">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testPage.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="testPage.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/testPage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="84" selection-start="3310" selection-end="3310" vertical-scroll-proportion="0.25695932" vertical-offset="1215" max-vertical-offset="6705">
-              <folding />
+            <state line="144" column="28" selection-start="5547" selection-end="5547" vertical-scroll-proportion="-3.1" vertical-offset="2005" max-vertical-offset="6720">
+              <folding>
+                <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lib.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="lib.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="111" column="32" selection-start="4972" selection-end="4975" vertical-scroll-proportion="-6.1153846" vertical-offset="1506" max-vertical-offset="4830">
+            <state line="279" column="42" selection-start="10070" selection-end="10070" vertical-scroll-proportion="0.24951644" vertical-offset="4056" max-vertical-offset="4875">
               <folding />
             </state>
           </provider>
@@ -154,8 +156,8 @@
         <option value="$PROJECT_DIR$/src/main/webapp/public/CheckStats/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/register/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/model/user.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/model/item.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/CostCalculator/testPage.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" />
       </list>
@@ -225,7 +227,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -421,6 +422,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -935,7 +937,8 @@
       <workItem from="1391050613786" duration="2761000" />
       <workItem from="1391222988785" duration="539000" />
       <workItem from="1391227931248" duration="9000" />
-      <workItem from="1391227947673" duration="10383000" />
+      <workItem from="1391227947673" duration="10474000" />
+      <workItem from="1391283787303" duration="7390000" />
     </task>
     <task id="LOCAL-00001" summary="setting up spring mvc">
       <created>1389477332614</created>
@@ -1073,15 +1076,19 @@
       <created>1391234176404</created>
       <updated>1391234176404</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="modified submit form method. need to fix two problems. make current searcher smarter by adding his ability to go deeper into nodes to extract input fields. Also, it is unable to get the energy, figure out a way to get the energy.">
+      <created>1391238854765</created>
+      <updated>1391238854765</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98898000" />
+    <option name="totallyTimeSpent" value="106379000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1436" height="878" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -1096,7 +1103,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287858" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24582173" sideWeight="0.670088" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24582173" sideWeight="0.670088" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3263288" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1134,7 +1141,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="working on register use backend" />
     <MESSAGE value="deleted repeat dependency. planning work on commenting and documenting code." />
     <MESSAGE value="added getContextRoot() method to lib.js&#10;" />
     <MESSAGE value="added java docs and changed country to state&#10;" />
@@ -1159,7 +1165,8 @@
     <MESSAGE value="modified item.js typo causing error with pushing specs in the addSpec method" />
     <MESSAGE value="modified addSpec method in item.js, fixed error of failing to put key value pairs in map" />
     <MESSAGE value="modified addSpec method in item.js, fixed error of failing to put key value pairs in map&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified addSpec method in item.js, fixed error of failing to put key value pairs in map&#10;" />
+    <MESSAGE value="modified submit form method. need to fix two problems. make current searcher smarter by adding his ability to go deeper into nodes to extract input fields. Also, it is unable to get the energy, figure out a way to get the energy." />
+    <option name="LAST_COMMIT_MESSAGE" value="modified submit form method. need to fix two problems. make current searcher smarter by adding his ability to go deeper into nodes to extract input fields. Also, it is unable to get the energy, figure out a way to get the energy." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1419,9 +1426,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/model/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="23" selection-start="312" selection-end="312" vertical-scroll-proportion="0.3326886" vertical-offset="23" max-vertical-offset="540">
-          <folding />
-        </state>
+        <state line="13" column="23" selection-start="312" selection-end="312" vertical-scroll-proportion="0.3326886" vertical-offset="23" max-vertical-offset="540" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/model/item.js">
@@ -1433,21 +1438,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="33" selection-start="5665" selection-end="5665" vertical-scroll-proportion="-31.791666" vertical-offset="1037" max-vertical-offset="2205">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="32" selection-start="4972" selection-end="4975" vertical-scroll-proportion="-6.1153846" vertical-offset="1506" max-vertical-offset="4830">
+        <state line="43" column="9" selection-start="1555" selection-end="1555" vertical-scroll-proportion="-0.625" vertical-offset="630" max-vertical-offset="2205">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/testPage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="84" selection-start="3310" selection-end="3310" vertical-scroll-proportion="0.25695932" vertical-offset="1215" max-vertical-offset="6705">
+        <state line="144" column="28" selection-start="5547" selection-end="5547" vertical-scroll-proportion="-3.1" vertical-offset="2005" max-vertical-offset="6720">
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="279" column="42" selection-start="10070" selection-end="10070" vertical-scroll-proportion="0.24951644" vertical-offset="4056" max-vertical-offset="4875">
           <folding />
         </state>
       </provider>
