@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="06063096-bfe1-4e35-9f05-404f1a450a95" name="Default" comment="modified addSpec method in item.js, fixed error of failing to put key value pairs in map&#10;">
+    <list default="true" id="06063096-bfe1-4e35-9f05-404f1a450a95" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" afterPath="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="YourEffect.iws" />
@@ -78,7 +79,7 @@
       <file leaf-file-name="lib.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="254" column="6" selection-start="21901" selection-end="21902" vertical-scroll-proportion="0.3452381" vertical-offset="3636" max-vertical-offset="4380">
+            <state line="259" column="42" selection-start="22055" selection-end="22055" vertical-scroll-proportion="0.52380955" vertical-offset="3621" max-vertical-offset="4380">
               <folding />
             </state>
           </provider>
@@ -924,7 +925,7 @@
       <workItem from="1391050613786" duration="2761000" />
       <workItem from="1391222988785" duration="539000" />
       <workItem from="1391227931248" duration="9000" />
-      <workItem from="1391227947673" duration="5989000" />
+      <workItem from="1391227947673" duration="6020000" />
     </task>
     <task id="LOCAL-00001" summary="setting up spring mvc">
       <created>1389477332614</created>
@@ -1054,11 +1055,15 @@
       <created>1391233950729</created>
       <updated>1391233950729</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="modified addSpec method in item.js, fixed error of failing to put key value pairs in map&#10;">
+      <created>1391234143145</created>
+      <updated>1391234143145</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94504000" />
+    <option name="totallyTimeSpent" value="94535000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1436" height="878" extended-state="6" />
@@ -1428,7 +1433,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="254" column="6" selection-start="21901" selection-end="21902" vertical-scroll-proportion="0.3452381" vertical-offset="3636" max-vertical-offset="4380">
+        <state line="259" column="42" selection-start="22055" selection-end="22055" vertical-scroll-proportion="0.52380955" vertical-offset="3621" max-vertical-offset="4380">
           <folding />
         </state>
       </provider>

@@ -267,7 +267,8 @@ function submitMainForm(){
             item.addSpec('accThermos',$('#accThermos').val());
             console.log(item);
 
-            //saveItem(name,energy,arrayValues); maybe?
+            //do not uncomment this yet
+            //saveItem(item);
 
         }
     }
