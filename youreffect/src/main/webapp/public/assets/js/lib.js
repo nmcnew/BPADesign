@@ -255,21 +255,51 @@ function checkReg() {
     $("#dialog").fadeIn();
     return ready;
 }
+
 function submitMainForm(){
     var myForms = $("div[id$='Wrapper']");
-    for(var i = 0; i <= myForms.length; i++ ){
-        if($(myForms[i]).get(0).id.indexOf("accWrapper") > -1){
-            var item = new Item("Air Conditioner","electricity");
-            item.specs = [];
-            item.addSpec('accQuantity',$('#accQuantity').val())
-            item.addSpec('seerRating',$('#seerRating').val());
-            item.addSpec('accCoolCapacity',$("#accCoolCapacity").val());
-            item.addSpec('accThermos',$('#accThermos').val());
-            console.log(item);
+    // iterates through all forms.
+    for(var i = 0; i < myForms.length; i++ ){
+        var item = new Item();
+        item.specs = [];
+        var form = myForms[i];
+        var children = form.childNodes;
+        // gets all input name/value pairs and select name/value pairs
+        for(var j = 0; j < children.length; j++) {
+            var node = $(children[j]);
+            if (j == 0) {
+                var name = $(node).html().split('<')[0];
+                item.name = $.trim(name);
+            }
+            if (node.is('input')) {
+                console.log($(node).attr('name'));
+                if ($(node).attr('name') == 'energy') {
+                    item.energy = $(node).val();
+                }
+                else {
+                    var key = $(node).attr('name');
+                    var val = $(node).val();
+                    item.addSpec(key,val);
+                }
+            }
+            if (node.is('select')) {
+                var key = $(node).attr('name');
+                var val = $(node).val();
+                item.addSpec(key,val);
+            }
+            if (node.hasClass('input-group')) {
+                var grandchildren = node.childNodes;
+                if (grandchildren.length != 'undefined' && grandchildren.length >= 0) {
+                    for (var k = 0; k < grandchildren.length; k++) {
+                        if (grandchildren[k].is('input')) {
+                            var key = $(grandchildren[k]).attr('name');
+                            var val = $(grandchildren[k]).val();
+                            item.addSpec(key,val);
 
-            //do not uncomment this yet
-            //saveItem(item);
-
+                        }
+                    }
+                }
+            }
         }
     }
 }
