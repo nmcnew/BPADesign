@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06063096-bfe1-4e35-9f05-404f1a450a95" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/public/assets/js/model/item.js" afterPath="$PROJECT_DIR$/src/main/webapp/public/assets/js/model/item.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="YourEffect.iws" />
@@ -88,7 +87,7 @@
       <file leaf-file-name="lib.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="16" selection-start="1551" selection-end="1551" vertical-scroll-proportion="0.0" vertical-offset="945" max-vertical-offset="4185">
+            <state line="66" column="16" selection-start="1551" selection-end="1551" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="4185">
               <folding />
             </state>
           </provider>
@@ -97,7 +96,7 @@
       <file leaf-file-name="item.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/model/item.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="36" selection-start="256" selection-end="256" vertical-scroll-proportion="0.23047376" vertical-offset="0" max-vertical-offset="781">
+            <state line="20" column="74" selection-start="402" selection-end="402" vertical-scroll-proportion="0.3841229" vertical-offset="0" max-vertical-offset="781">
               <folding />
             </state>
           </provider>
@@ -989,7 +988,7 @@
       <workItem from="1391050613786" duration="2761000" />
       <workItem from="1391222988785" duration="539000" />
       <workItem from="1391227931248" duration="9000" />
-      <workItem from="1391227947673" duration="1709000" />
+      <workItem from="1391227947673" duration="1929000" />
     </task>
     <task id="LOCAL-00001" summary="setting up spring mvc">
       <created>1389477332614</created>
@@ -1087,15 +1086,19 @@
       <created>1391229705308</created>
       <updated>1391229705308</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="modified saveItem(), added param specs. this function accepts (name,energy,specs) or two strings and a javascript map (array)&#10;">
+      <created>1391229857635</created>
+      <updated>1391229857635</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90224000" />
+    <option name="totallyTimeSpent" value="90444000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1436" height="878" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -1110,7 +1113,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287858" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24582173" sideWeight="0.670088" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24582173" sideWeight="0.670088" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32742155" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1448,14 +1451,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="16" selection-start="1551" selection-end="1551" vertical-scroll-proportion="0.0" vertical-offset="945" max-vertical-offset="4185">
+        <state line="66" column="16" selection-start="1551" selection-end="1551" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="4185">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/model/item.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="36" selection-start="256" selection-end="256" vertical-scroll-proportion="0.23047376" vertical-offset="0" max-vertical-offset="781">
+        <state line="20" column="74" selection-start="402" selection-end="402" vertical-scroll-proportion="0.3841229" vertical-offset="0" max-vertical-offset="781">
           <folding />
         </state>
       </provider>
