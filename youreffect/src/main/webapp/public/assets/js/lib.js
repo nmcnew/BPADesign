@@ -82,8 +82,8 @@ function login(username, password) {
 	});
 }
 
-function saveItem(name, energy) {
-    var item = new Item(name, energy);
+function saveItem(name, energy, specs) {
+    var item = new Item(name, energy, specs);
     item.userId = curUser.userId;
     $.ajax({
         url : getContextRoot('public') + '/item/save',
