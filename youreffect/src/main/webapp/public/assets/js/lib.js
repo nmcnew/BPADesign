@@ -192,12 +192,14 @@ function addOptionElec() {
             $(".removeable").hide();
             $("#fridgeWrapper").hide();
             $("#fridgeWrapper").fadeIn();
+            break;
         case "compactFridge":
             $(".mainForm").append('<div></div>');
             $($(".mainForm")[0].childNodes[$(".mainForm")[0].childNodes.length - 1]).load('testPage.html #cFridgeWrapper');
             $(".removeable").hide();
             $("#cFridgeWrapper").hide();
             $("#cFridgeWrapper").fadeIn();
+            break;
     }
 }
 

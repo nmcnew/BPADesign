@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="06063096-bfe1-4e35-9f05-404f1a450a95" name="Default" comment="modified submit form method. need to fix two problems. make current searcher smarter by adding his ability to go deeper into nodes to extract input fields. Also, it is unable to get the energy, figure out a way to get the energy.&#10;">
+    <list default="true" id="06063096-bfe1-4e35-9f05-404f1a450a95" name="Default" comment="modified costcalc/index.html made it so that only the testPage.html needs to be modified  (no more copying and pasting html).&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" afterPath="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/public/CostCalculator/testPage.html" afterPath="$PROJECT_DIR$/src/main/webapp/public/CostCalculator/testPage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -80,9 +80,19 @@
       <file leaf-file-name="testPage.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/testPage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="144" column="28" selection-start="5547" selection-end="5547" vertical-scroll-proportion="-3.1" vertical-offset="2005" max-vertical-offset="6720">
+            <state line="439" column="34" selection-start="17836" selection-end="17836" vertical-scroll-proportion="-46.24" vertical-offset="4273" max-vertical-offset="6930">
               <folding>
+                <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#2;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#3;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#4;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#5;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#6;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#7;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#8;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#9;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#10;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -91,7 +101,7 @@
       <file leaf-file-name="lib.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="279" column="42" selection-start="10070" selection-end="10070" vertical-scroll-proportion="0.24951644" vertical-offset="4056" max-vertical-offset="4875">
+            <state line="113" column="17" selection-start="3511" selection-end="3511" vertical-scroll-proportion="0.13346228" vertical-offset="1626" max-vertical-offset="4905">
               <folding />
             </state>
           </provider>
@@ -938,7 +948,7 @@
       <workItem from="1391222988785" duration="539000" />
       <workItem from="1391227931248" duration="9000" />
       <workItem from="1391227947673" duration="10474000" />
-      <workItem from="1391283787303" duration="7390000" />
+      <workItem from="1391283787303" duration="7765000" />
     </task>
     <task id="LOCAL-00001" summary="setting up spring mvc">
       <created>1389477332614</created>
@@ -1080,15 +1090,19 @@
       <created>1391238854765</created>
       <updated>1391238854765</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="modified costcalc/index.html made it so that only the testPage.html needs to be modified  (no more copying and pasting html).">
+      <created>1391291257746</created>
+      <updated>1391291257746</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106379000" />
+    <option name="totallyTimeSpent" value="106754000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1436" height="878" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -1103,7 +1117,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287858" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24582173" sideWeight="0.670088" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24582173" sideWeight="0.670088" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3263288" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1141,7 +1155,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="deleted repeat dependency. planning work on commenting and documenting code." />
     <MESSAGE value="added getContextRoot() method to lib.js&#10;" />
     <MESSAGE value="added java docs and changed country to state&#10;" />
     <MESSAGE value="added java docs and change country to state&#10;" />
@@ -1166,7 +1179,8 @@
     <MESSAGE value="modified addSpec method in item.js, fixed error of failing to put key value pairs in map" />
     <MESSAGE value="modified addSpec method in item.js, fixed error of failing to put key value pairs in map&#10;" />
     <MESSAGE value="modified submit form method. need to fix two problems. make current searcher smarter by adding his ability to go deeper into nodes to extract input fields. Also, it is unable to get the energy, figure out a way to get the energy." />
-    <option name="LAST_COMMIT_MESSAGE" value="modified submit form method. need to fix two problems. make current searcher smarter by adding his ability to go deeper into nodes to extract input fields. Also, it is unable to get the energy, figure out a way to get the energy." />
+    <MESSAGE value="modified costcalc/index.html made it so that only the testPage.html needs to be modified  (no more copying and pasting html)." />
+    <option name="LAST_COMMIT_MESSAGE" value="modified costcalc/index.html made it so that only the testPage.html needs to be modified  (no more copying and pasting html)." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1445,16 +1459,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/testPage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="28" selection-start="5547" selection-end="5547" vertical-scroll-proportion="-3.1" vertical-offset="2005" max-vertical-offset="6720">
+        <state line="439" column="34" selection-start="17836" selection-end="17836" vertical-scroll-proportion="-46.24" vertical-offset="4273" max-vertical-offset="6930">
           <folding>
+            <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#2;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#3;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#4;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#5;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#6;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#7;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#8;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#9;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#10;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="279" column="42" selection-start="10070" selection-end="10070" vertical-scroll-proportion="0.24951644" vertical-offset="4056" max-vertical-offset="4875">
+        <state line="113" column="17" selection-start="3511" selection-end="3511" vertical-scroll-proportion="0.13346228" vertical-offset="1626" max-vertical-offset="4905">
           <folding />
         </state>
       </provider>
