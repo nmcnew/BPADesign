@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06063096-bfe1-4e35-9f05-404f1a450a95" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/public/CostCalculator/testPage.html" afterPath="$PROJECT_DIR$/src/main/webapp/public/CostCalculator/testPage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="YourEffect.iws" />
@@ -79,7 +78,7 @@
       <file leaf-file-name="item.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/model/item.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="18" selection-start="567" selection-end="567" vertical-scroll-proportion="0.8994197" vertical-offset="0" max-vertical-offset="630">
+            <state line="27" column="36" selection-start="498" selection-end="498" vertical-scroll-proportion="0.78336555" vertical-offset="0" max-vertical-offset="517">
               <folding />
             </state>
           </provider>
@@ -88,7 +87,7 @@
       <file leaf-file-name="lib.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="267" column="35" selection-start="22484" selection-end="22484" vertical-scroll-proportion="0.0" vertical-offset="3552" max-vertical-offset="4350">
+            <state line="267" column="21" selection-start="22503" selection-end="22503" vertical-scroll-proportion="0.0" vertical-offset="3612" max-vertical-offset="4365">
               <folding />
             </state>
           </provider>
@@ -154,8 +153,8 @@
         <option value="$PROJECT_DIR$/src/main/webapp/public/register/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/model/user.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/CostCalculator/testPage.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/model/item.js" />
       </list>
     </option>
@@ -972,7 +971,7 @@
       <workItem from="1391050613786" duration="2761000" />
       <workItem from="1391222988785" duration="539000" />
       <workItem from="1391227931248" duration="9000" />
-      <workItem from="1391227947673" duration="2967000" />
+      <workItem from="1391227947673" duration="4772000" />
     </task>
     <task id="LOCAL-00001" summary="setting up spring mvc">
       <created>1389477332614</created>
@@ -1086,11 +1085,15 @@
       <created>1391230975604</created>
       <updated>1391230975604</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="modified item.js typo causing error with pushing specs in the addSpec method">
+      <created>1391231133499</created>
+      <updated>1391231133499</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91482000" />
+    <option name="totallyTimeSpent" value="93287000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1436" height="878" extended-state="6" />
@@ -1171,7 +1174,8 @@
     <MESSAGE value="added another constructor to item.js" />
     <MESSAGE value="modified saveItem() to take in Item.js as first and only argument" />
     <MESSAGE value="modified submitMainForm" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified submitMainForm" />
+    <MESSAGE value="modified item.js typo causing error with pushing specs in the addSpec method" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified item.js typo causing error with pushing specs in the addSpec method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1443,7 +1447,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="267" column="35" selection-start="22484" selection-end="22484" vertical-scroll-proportion="0.0" vertical-offset="3552" max-vertical-offset="4350">
+        <state line="267" column="21" selection-start="22503" selection-end="22503" vertical-scroll-proportion="0.0" vertical-offset="3612" max-vertical-offset="4365">
           <folding />
         </state>
       </provider>
@@ -1457,7 +1461,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/model/item.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="18" selection-start="567" selection-end="567" vertical-scroll-proportion="0.8994197" vertical-offset="0" max-vertical-offset="630">
+        <state line="27" column="36" selection-start="498" selection-end="498" vertical-scroll-proportion="0.78336555" vertical-offset="0" max-vertical-offset="517">
           <folding />
         </state>
       </provider>
