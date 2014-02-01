@@ -82,6 +82,22 @@ function login(username, password) {
 	});
 }
 
+function saveItem(name, energy) {
+    var item = new Item(name, energy);
+    item.userId = curUser.userId;
+    $.ajax({
+        url : getContextRoot('public') + '/item/save',
+        type : 'POST',
+        data : JSON.stringify(item),
+        contentType : "application/json; charset=utf-8",
+        success : function(data) {
+            console.log(data);
+            removeAlertClass();
+            $("#response-text").html(data.message);
+        }
+    })
+}
+
 function addOptionGas() {
 	var radios = document.getElementsByName("gOptions");
 	var selected = "";
