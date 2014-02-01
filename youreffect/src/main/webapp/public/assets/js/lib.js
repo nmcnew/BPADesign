@@ -90,9 +90,8 @@ function saveItem(item) {
         data : JSON.stringify(item),
         contentType : "application/json; charset=utf-8",
         success : function(data) {
+            var data = JSON.parse(data);
             console.log(data);
-            removeAlertClass();
-            $("#response-text").html(data.message);
         }
     });
 }
@@ -271,7 +270,7 @@ function submitMainForm(){
     // iterates through all forms.
     for(var i = 0; i < myForms.length; i++ ){
         var item = new Item();
-        item.specs = [];
+        item.specs = {};
         var form = myForms[i];
         var children = form.childNodes;
         // gets all input name/value pairs and select name/value pairs
@@ -296,16 +295,19 @@ function submitMainForm(){
                 item.addSpec(key,val);
             }
             if (node.is('div') && $(node).hasClass('input-group')) {
-                //having trouble with input groups
-                console.log($(node));
-                var key = $(node.childNodes[0]).attr('name');
-                var val = $(node.childNodes[0]).val();
-                item.addSpec(key,val);
+                //having trouble with input group
+                var arr = $(node).children();
+                for(var k = 0; k < arr.length; k ++) {
+                    if ($(arr[k]).is('input')) {
+                        var key = $(arr[k]).attr('name');
+                        var val = $(arr[k]).val();
+                        item.addSpec(key,val);
+                    }
+                }
             }
-
         }
         console.log(item);
-
+        saveItem(item);
     }
 }
 function dialogFadeOut() {
@@ -313,7 +315,6 @@ function dialogFadeOut() {
 }
 
 function removeAlertClass() {
-    console.log("what");
     $("#dialog").removeClass("alert-success");
     $("#dialog").removeClass("alert-info");
     $("#dialog").removeClass("alert-danger");

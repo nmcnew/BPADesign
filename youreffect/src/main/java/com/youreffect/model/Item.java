@@ -82,6 +82,6 @@ public class Item {
     }
 
     public String toString() {
-        return String.format("Item[id=%s, name='%s', energy='%s', quantity='%s', specs='%s']", itemId, name, energy, quantity, getSpecsStr());
+        return String.format("Item[id=%s, userId='%s', name='%s', energy='%s', quantity='%s', specs='%s']", itemId, userId, name, energy, quantity, getSpecsStr());
     }
 }

@@ -4,6 +4,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author Deeban Ramalingam
@@ -112,8 +113,24 @@ public class User {
      */
     public String toString() {
         return String.format(
-                "User[id=%s, username='%s', email='%s', state='%s', password='%s']",
-                userId, username, email, state, password);
+                "User[id=%s, username='%s', email='%s', state='%s', password='%s', \nitems='%s'",
+                userId, username, email, state, password, getItemsStr());
+    }
+
+    public String getItemsStr() {
+        String s = "";
+        s += "[";
+        if (items == null) {
+            items = new HashMap<String, Item>();
+            s += "]";
+        }
+        else {
+            for (Map.Entry<String,Item> pair : items.entrySet()) {
+                s += pair.getKey() + " => " + pair.getValue() + ", ";
+            }
+            s = s.substring(0, s.length() - 2) + "]";
+        }
+        return s;
     }
 
     /**
@@ -137,6 +154,10 @@ public class User {
      * @param item to add to items map
      */
     public void addItem(Item item) {
+        System.out.println(item);
+        if (items == null) {
+            items = new HashMap<String, Item>();
+        }
         if (items.containsKey(item.getItemId())) {
             items.get(item.getItemId()).addToQuantity(item.getQuantity());
         }

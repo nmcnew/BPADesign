@@ -10,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * @author Deeban Ramalingam
@@ -41,7 +42,7 @@ public class ItemController {
      * @return
      */
     @RequestMapping(value = "/save", method = RequestMethod.POST)
-    public String saveItem(@RequestBody String data) {
+    public @ResponseBody String saveItem(@RequestBody String data) {
         Item item = gson.fromJson(data, Item.class);
         item.setItemId(hashService.md5(item.getName() + item.getEnergy() + item.getSpecsStr()));
         itemService.insertItem(item);
