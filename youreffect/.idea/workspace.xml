@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="06063096-bfe1-4e35-9f05-404f1a450a95" name="Default" comment="">
+    <list default="true" id="06063096-bfe1-4e35-9f05-404f1a450a95" name="Default" comment="modified addSpec method in item.js, fixed error of failing to put key value pairs in map&#10;">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/public/assets/js/model/item.js" afterPath="$PROJECT_DIR$/src/main/webapp/public/assets/js/model/item.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" afterPath="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="YourEffect.iws" />
@@ -78,7 +80,7 @@
       <file leaf-file-name="item.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/model/item.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="36" selection-start="498" selection-end="498" vertical-scroll-proportion="0.78336555" vertical-offset="0" max-vertical-offset="517">
+            <state line="21" column="59" selection-start="426" selection-end="426" vertical-scroll-proportion="0.60928434" vertical-offset="0" max-vertical-offset="517">
               <folding />
             </state>
           </provider>
@@ -971,7 +973,7 @@
       <workItem from="1391050613786" duration="2761000" />
       <workItem from="1391222988785" duration="539000" />
       <workItem from="1391227931248" duration="9000" />
-      <workItem from="1391227947673" duration="4772000" />
+      <workItem from="1391227947673" duration="4847000" />
     </task>
     <task id="LOCAL-00001" summary="setting up spring mvc">
       <created>1389477332614</created>
@@ -1089,15 +1091,19 @@
       <created>1391231133499</created>
       <updated>1391231133499</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="modified addSpec method in item.js, fixed error of failing to put key value pairs in map">
+      <created>1391232966865</created>
+      <updated>1391232966865</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93287000" />
+    <option name="totallyTimeSpent" value="93362000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1436" height="878" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -1112,7 +1118,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287858" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24582173" sideWeight="0.670088" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24582173" sideWeight="0.670088" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3263288" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1150,7 +1156,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="setting up spring mvc" />
     <MESSAGE value="completed integration of front-end" />
     <MESSAGE value="working on register use backend" />
     <MESSAGE value="deleted repeat dependency. planning work on commenting and documenting code." />
@@ -1175,7 +1180,8 @@
     <MESSAGE value="modified saveItem() to take in Item.js as first and only argument" />
     <MESSAGE value="modified submitMainForm" />
     <MESSAGE value="modified item.js typo causing error with pushing specs in the addSpec method" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified item.js typo causing error with pushing specs in the addSpec method" />
+    <MESSAGE value="modified addSpec method in item.js, fixed error of failing to put key value pairs in map" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified addSpec method in item.js, fixed error of failing to put key value pairs in map" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1461,7 +1467,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/model/item.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="36" selection-start="498" selection-end="498" vertical-scroll-proportion="0.78336555" vertical-offset="0" max-vertical-offset="517">
+        <state line="21" column="59" selection-start="426" selection-end="426" vertical-scroll-proportion="0.60928434" vertical-offset="0" max-vertical-offset="517">
           <folding />
         </state>
       </provider>

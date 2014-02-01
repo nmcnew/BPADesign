@@ -3,7 +3,7 @@ function Item() {
     this.userId = '';
     this.name = '';
     this.energy = '';
-    this.specs = [];
+    this.specs = {};
 }
 
 function Item(name, energy) {
@@ -11,7 +11,7 @@ function Item(name, energy) {
     this.userId = '';
     this.name = name;
     this.energy = energy;
-    this.specs = [];
+    this.specs = {};
 }
 
 function Item(name, energy, specs) {
@@ -22,15 +22,6 @@ function Item(name, energy, specs) {
     this.specs = specs;
 }
 
-Item.prototype.name = function (name) {
-    this.name = name;
-}
-
-Item.prototype.energy = function (energy) {
-    this.energy = energy;
-}
-
-Item.prototype.addSpec = function (key, val) {
-    var pair = {key:val};
-    this.spec.push(pair);
+Item.prototype.addSpec = function (k, v) {
+    this.specs[k] = v;
 }

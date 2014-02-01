@@ -260,6 +260,7 @@ function submitMainForm(){
     for(var i = 0; i <= myForms.length; i++ ){
         if($(myForms[i]).get(0).id.indexOf("accWrapper") > -1){
             var item = new Item("Air Conditioner","electricity");
+            item.specs = [];
             item.addSpec('accQuantity',$('#accQuantity').val())
             item.addSpec('seerRating',$('#seerRating').val());
             item.addSpec('accCoolCapacity',$("#accCoolCapacity").val());
