@@ -6,12 +6,12 @@ function Item() {
     this.specs = [];
 }
 
-function Item(name, energy) {
+function Item(name, energy, specs) {
     this.itemId = '';
     this.userId = '';
     this.name = name;
     this.energy = energy;
-    this.specs = [];
+    this.specs = specs;
 }
 
 Item.prototype.name = function (name) {
