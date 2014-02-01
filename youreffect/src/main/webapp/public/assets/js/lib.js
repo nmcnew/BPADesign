@@ -254,7 +254,11 @@ function checkReg() {
 	$("#dialog").fadeIn();
 	return ready;
 }
-
+function submitMainForm(){
+	if ($("#lBulbWrapper").length == 0){
+		
+	}
+}
 function dialogFadeOut() {
 	$("#dialog").fadeOut();
 }
