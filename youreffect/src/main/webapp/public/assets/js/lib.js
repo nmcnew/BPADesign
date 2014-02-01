@@ -95,7 +95,7 @@ function saveItem(name, energy, specs) {
             removeAlertClass();
             $("#response-text").html(data.message);
         }
-    })
+    });
 }
 
 function addOptionGas() {
@@ -168,6 +168,8 @@ function addOptionElec() {
 		case "freezer":
 			$(".mainForm").append('<div id="freezerWrapper" class="formWrapper"><h3> Freezer<button type="button" class="btn btn-danger pull-right removeable"onclick="removeButt($(this))"><span class="glyphicon glyphicon-minus-sign"></span> Remove</button></h3><h4>Quantity of Freezers</h4><input name="freezerAmount" id="freezerAmount" type="number" class="form-control"placeholder="Amount"><h4>Type of Freezer</h4><select name="freezerType" id="freezerType" class="form-control"><option value="type1">Chest</option><option value="type2">Compact Chest</option><option value="type3">Compact Upright (manual defrost)</option><option value="type4">Compact upright (auto defrost)</option><option value="type5">Upright (manual defrost)</option><option value="type6">Upright (auto defrost)</option></select><h4>Volume</h4><div class="input-group"><input name="freezerVolume" id="freezerVolume" type="number" class="form-control"placeholder="Volume"><span class="input-group-addon">Feet&sup3;</span></div><h4>Rated Electricity Consumption</h4><div class="input-group"><input name="freezereEConsumption" id="freezereEConsumption" type="number" class="form-control"placeholder="Electricity Consumption"><span class="input-group-addon">kWh/Year</span></div></div>');
 			$(".removeable").hide();
+			$("#freezerWrapper").hide();
+			$("#freezerWrapper").fadeIn();
 			break;
 		case "lightBulb":
 			if ($(".mainForm").children("#lBulbWrapper").length == 0) {
@@ -255,8 +257,21 @@ function checkReg() {
 	return ready;
 }
 function submitMainForm(){
-	if ($("#lBulbWrapper").length == 0){
-		
+	var myForms = $("div[id$='Wrapper']");
+	for(var i = 0; i <= myForms.length; i++ ){
+		if($(myForms[i]).get(0).id.indexOf("accWrapper") > -1){
+			item = new Item();
+			var airConditioningValues = new Array();
+			
+			var pair1 =  {"accQuantity" : $("#accQuantity").val()};
+			var pair2 = {"seerRating" : $("#seerRating").val()};
+			airConditioningValues["accCoolCapacity"] = $("#accCoolCapacity").val();
+			airConditioningValues["accThermos"] = $("#accThermos").val();
+			var pairs = [pair1, pair2];
+			console.log(JSON.stringify(pairs));
+			//saveItem(name,energy,arrayValues); maybe? 
+			
+		}
 	}
 }
 function dialogFadeOut() {
