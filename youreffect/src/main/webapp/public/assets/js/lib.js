@@ -283,6 +283,10 @@ function submitMainForm(){
                 if ($(node).attr('name') == 'energy') {
                     item.energy = $(node).val();
                 }
+                else if ($(node).attr('name').indexOf('uantity') != -1) {
+                    var val = $(node).val();
+                    item.quantity = $(node).val();
+                }
                 else {
                     var key = $(node).attr('name');
                     var val = $(node).val();
@@ -295,7 +299,6 @@ function submitMainForm(){
                 item.addSpec(key,val);
             }
             if (node.is('div') && $(node).hasClass('input-group')) {
-                //having trouble with input group
                 var arr = $(node).children();
                 for(var k = 0; k < arr.length; k ++) {
                     if ($(arr[k]).is('input')) {

@@ -3,6 +3,7 @@ function Item(name, energy) {
     this.userId = '';
     this.name = name;
     this.energy = energy;
+    this.quantity = 0;
     this.specs = new Object();
 }
 
