@@ -27,7 +27,8 @@ function getContextRoot(key) {
 
 function register(username, email, password, state) {
     if (checkReg()) {
-        var user = new User($('#reg_username').val(), $('#reg_email').val(), $('#reg_password').val(), $('#reg_state').val());
+        var user = new User(username, email, password, state);
+        console.log(user);
         $.ajax({
             url : getContextRoot('public') + '/user/register',
             type : 'POST',
@@ -35,6 +36,7 @@ function register(username, email, password, state) {
             data : JSON.stringify(user),
             contentType : "application/json; charset=utf-8",
             success : function(data) {
+                console.log(data);
                 removeAlertClass();
                 if (data.message.toString().indexOf('successful') != -1) {
                     $("#dialog").addClass("alert-success");
@@ -220,7 +222,6 @@ function checkReg() {
         $("#response-title").text("Failure!");
         errorString += "Username Invalid<br/>";
         ready = false;
-
     } else {
         $("#reg_username").parents(".form-group").removeClass("has-error");
         dialogFadeOut();
@@ -228,7 +229,7 @@ function checkReg() {
     }
 
     //then password stuff
-    if ($("#reg_password").val() != $("#passwordCheck").val() | $("#reg_password").val() == "") {
+    if (!($("#reg_password").val() == $("#passwordCheck").val() && $("#reg_password").val().length > 0)) {
         $("#reg_password").parents(".form-group").addClass("has-error");
         $("#passwordCheck").parents(".form-group").addClass("has-error");
         removeAlertClass();
@@ -244,13 +245,13 @@ function checkReg() {
     }
 
     //then email stuff
-    if ($("#reg_email").val().length == 0 | $("#reg_email").val().indexOf("@") < 0) {
+    if (!($("#reg_email").val().length > 1 && $("#reg_email").val().indexOf("@") != -1)) {
         $("#reg_email").parents(".form-group").addClass("has-error");
         removeAlertClass();
         $("#dialog").addClass("alert-danger");
         $("#response-title").text("Failure!");
         errorString += "Email Invalid";
-        if ($("#reg_email").val().indexOf("@") < 0) {
+        if ($("#reg_email").val().indexOf("@") == -1) {
             errorString += ": Forgot the @";
         }
         ready = false;
@@ -259,9 +260,11 @@ function checkReg() {
         dialogFadeOut();
         ready = true;
     }
+
     $("#response-text").html(errorString);
 
     $("#dialog").fadeIn();
+
     return ready;
 }
 

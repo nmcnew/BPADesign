@@ -131,7 +131,7 @@
                 </select>
             </div>
             <br />
-            <button onclick="checkReg()" type="submit" class="btn btn-default ">Register</button>
+            <button onclick="register($('#reg_username').val(),$('#reg_email').val(),$('#reg_password').val(),$('#reg_state').val())" type="submit" class="btn btn-default ">Register</button>
         </form>
         <form onsubmit="return false;" role="form" class="loginForm">
             <h3>
