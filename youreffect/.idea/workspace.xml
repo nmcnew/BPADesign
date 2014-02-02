@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06063096-bfe1-4e35-9f05-404f1a450a95" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/public/assets/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/src/main/webapp/public/assets/css/bootstrap.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="YourEffect.iws" />
@@ -78,7 +79,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CheckStats/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="39" selection-start="1749" selection-end="1749" vertical-scroll-proportion="0.19675456" vertical-offset="833" max-vertical-offset="1590">
+            <state line="63" column="16" selection-start="1771" selection-end="1771" vertical-scroll-proportion="0.22718053" vertical-offset="833" max-vertical-offset="1590">
               <folding />
             </state>
           </provider>
@@ -932,7 +933,7 @@
       <workItem from="1391315012788" duration="4994000" />
       <workItem from="1391366059841" duration="216000" />
       <workItem from="1391366378393" duration="139000" />
-      <workItem from="1391376697111" duration="83000" />
+      <workItem from="1391376697111" duration="111000" />
     </task>
     <task id="LOCAL-00001" summary="setting up spring mvc">
       <created>1389477332614</created>
@@ -1106,11 +1107,15 @@
       <created>1391366508936</created>
       <updated>1391366508937</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="css fixed&#10;">
+      <created>1391376793302</created>
+      <updated>1391376793302</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129386000" />
+    <option name="totallyTimeSpent" value="129414000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1436" height="878" extended-state="6" />
@@ -1167,7 +1172,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="edited CostCalculator/index.html (misspelling for refrigerator)&#10;" />
     <MESSAGE value="committing to stage" />
     <MESSAGE value="committing to stage&#10;" />
     <MESSAGE value="modularized reg_check function (client-side), modified back-end setup and relationship between user and item" />
@@ -1192,7 +1196,8 @@
     <MESSAGE value="added search by item name and search onkeyup&#10;" />
     <MESSAGE value="added energy filter, Nick I would like for you to style it up" />
     <MESSAGE value="accidentally messed up the styles. help!" />
-    <option name="LAST_COMMIT_MESSAGE" value="accidentally messed up the styles. help!" />
+    <MESSAGE value="css fixed&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="css fixed&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1480,7 +1485,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CheckStats/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="39" selection-start="1749" selection-end="1749" vertical-scroll-proportion="0.19675456" vertical-offset="833" max-vertical-offset="1590">
+        <state line="63" column="16" selection-start="1771" selection-end="1771" vertical-scroll-proportion="0.22718053" vertical-offset="833" max-vertical-offset="1590">
           <folding />
         </state>
       </provider>
