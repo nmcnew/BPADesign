@@ -2,9 +2,9 @@
 <html>
 	<head>
 		<title>Your Effect</title>
-		<link href="../assets/css/bootstrap.min.css" rel="stylesheet">
-		<link href="../assets/css/MainStyles.css" rel="stylesheet">
-		<link href="../assets/css/hover.css" rel="stylesheet">
+        <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../assets/css/MainStyles.css" rel="stylesheet">
+        <link href="../assets/css/hover.css" rel="stylesheet">
 		<script type="text/javascript"
 		src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script src="../assets/js/bootstrap.min.js"></script>
@@ -69,13 +69,14 @@
 
 				<h4>Search</h4>
 				<div class="col-lg-6">
-					<input onkeyup="populateFilteredList(search($(this).val()),$('#item-list'),$('#num-results'))" id="key" type="text" class="form-control" placeholder="Search through your Items">
+					<input onkeyup="triggerSearch()" id="key" type="text" class="form-control" placeholder="Search through your Items">
 				</div>
-                <!--
-				<button onclick="populateFilteredList(search($('#key').val()),$('#item-list'))" type="button" class="btn btn-success" >
-					Submit
-				</button>
-				-->
+                <select onchange="triggerSearch()" id="energy-filter" style="width:60%;height:5%" class="form-control">
+                    <option value="">Energy Filter</option>
+                    <option value="electricity">electricity</option>
+                    <option value="gasoline">gasoline</option>
+                </select>
+                <br/>
                 <div id="num-results" class="col-lg-12"></div>
 			</form>
 			<table class="table">
@@ -89,6 +90,9 @@
 			$("#stat-email").html(curUser.email);
 			$("#stat-state").html(curUser.state);
             populateList($('#item-list'),$("#num-results"));
+            function triggerSearch() {
+                populateFilteredList(search($("#key").val(),$('#energy-filter').val()),$('#item-list'),$('#num-results'));
+            }
 		</script>
 	</body>
 </html>

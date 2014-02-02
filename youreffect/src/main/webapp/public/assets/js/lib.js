@@ -328,11 +328,11 @@ function removeAlertClass() {
 
 }
 
-function search(key) {
+function search(key, filter) {
     var items = curUser.items;
     var hits = [];
     $.each(items, function (itemId, item) {
-        if(item.name.toLowerCase().indexOf(key.toLowerCase()) != -1) {
+        if(item.name.toLowerCase().indexOf(key.toLowerCase()) != -1 && (filter.length == 0 || (filter.length > 0 && item.energy == filter))) {
             hits.push(item);
         }
     });

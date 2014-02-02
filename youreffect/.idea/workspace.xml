@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06063096-bfe1-4e35-9f05-404f1a450a95" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gitignore" afterPath="$PROJECT_DIR$/../.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/public/assets/css/bootstrap-responsive.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/public/assets/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/src/main/webapp/public/assets/css/bootstrap.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/public/CheckStats/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/public/CheckStats/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" afterPath="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/public/assets/js/model/user.js" afterPath="$PROJECT_DIR$/src/main/webapp/public/assets/js/model/user.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="YourEffect.iws" />
@@ -74,7 +73,7 @@
       <file leaf-file-name="lib.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="369" column="24" selection-start="12730" selection-end="12730" vertical-scroll-proportion="0.0" vertical-offset="5078" max-vertical-offset="5670">
+            <state line="333" column="43" selection-start="11700" selection-end="11700" vertical-scroll-proportion="0.0" vertical-offset="4834" max-vertical-offset="5670">
               <folding />
             </state>
           </provider>
@@ -83,8 +82,31 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CheckStats/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="45" selection-start="2312" selection-end="2312" vertical-scroll-proportion="0.53125" vertical-offset="915" max-vertical-offset="1485">
-              <folding />
+            <state line="73" column="96" selection-start="2140" selection-end="2140" vertical-scroll-proportion="0.26977688" vertical-offset="962" max-vertical-offset="1545">
+              <folding>
+                <element signature="n#style#0;n#select#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testPage.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/testPage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="22" selection-start="29" selection-end="29" vertical-scroll-proportion="38.1" vertical-offset="1935" max-vertical-offset="6930">
+              <folding>
+                <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#2;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#3;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#4;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#5;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#6;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#7;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#8;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#9;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#10;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -329,6 +351,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="CostCalculator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YourEffect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YourEffect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="CheckStats" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -396,14 +448,6 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -432,6 +476,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -485,13 +533,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/public/assets/css" />
       <recent name="$PROJECT_DIR$/src/main/webapp/public/register" />
       <recent name="$PROJECT_DIR$/src/main/webapp/public/assets/js" />
       <recent name="$PROJECT_DIR$/src/main" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.youreffect" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
@@ -499,6 +545,9 @@
       <recent name="$PROJECT_DIR$/src/main/java/com/youreffect" />
       <recent name="$PROJECT_DIR$/src/main" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.youreffect" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Apache Tomcat 7">
@@ -972,7 +1021,8 @@
       <workItem from="1391222988785" duration="539000" />
       <workItem from="1391227931248" duration="9000" />
       <workItem from="1391227947673" duration="10474000" />
-      <workItem from="1391283787303" duration="24297000" />
+      <workItem from="1391283787303" duration="24965000" />
+      <workItem from="1391315012788" duration="1614000" />
     </task>
     <task id="LOCAL-00001" summary="setting up spring mvc">
       <created>1389477332614</created>
@@ -1134,11 +1184,15 @@
       <created>1391298491555</created>
       <updated>1391298491555</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="added search by item name and search onkeyup&#10;">
+      <created>1391310867715</created>
+      <updated>1391310867715</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123286000" />
+    <option name="totallyTimeSpent" value="125568000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1436" height="878" extended-state="6" />
@@ -1195,7 +1249,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="added item.js" />
     <MESSAGE value="added item.js&#10;" />
     <MESSAGE value="added mvc components for Item&#10;" />
     <MESSAGE value="edited CostCalculator/index.html (misspelling for refrigerator)&#10;" />
@@ -1220,7 +1273,8 @@
     <MESSAGE value="added break between fridges in lib.js" />
     <MESSAGE value="enhanced frontend logic, added item persistence feature&#10;" />
     <MESSAGE value="Fixed checkReg() and register()" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed checkReg() and register()" />
+    <MESSAGE value="added search by item name and search onkeyup&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="added search by item name and search onkeyup&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1232,28 +1286,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="30" selection-start="2309" selection-end="2309" vertical-scroll-proportion="0.0" vertical-offset="1065" max-vertical-offset="1485" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="52" selection-start="707" selection-end="707" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="480">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="46" selection-start="1105" selection-end="1105" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1005" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="35" selection-start="1254" selection-end="1254" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1005" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="35" selection-start="1254" selection-end="1254" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1005" />
@@ -1407,23 +1439,14 @@
         <state line="21" column="43" selection-start="720" selection-end="720" vertical-scroll-proportion="0.71428573" vertical-offset="0" max-vertical-offset="1545" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/bootstrap.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-17.949116" vertical-offset="8113" max-vertical-offset="8565" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/model/Item.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="23" selection-start="868" selection-end="868" vertical-scroll-proportion="0.08928572" vertical-offset="420" max-vertical-offset="1020">
-          <folding />
-        </state>
+        <state line="47" column="23" selection-start="868" selection-end="868" vertical-scroll-proportion="0.08928572" vertical-offset="420" max-vertical-offset="1020" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="31" selection-start="2841" selection-end="2841" vertical-scroll-proportion="0.4197292" vertical-offset="1373" max-vertical-offset="2310">
-          <folding />
-        </state>
+        <state line="130" column="31" selection-start="2841" selection-end="2841" vertical-scroll-proportion="0.4197292" vertical-offset="1373" max-vertical-offset="2310" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java">
@@ -1456,16 +1479,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/dao/ItemDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="33" selection-start="1159" selection-end="1159" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1005">
-          <folding />
-        </state>
+        <state line="36" column="33" selection-start="1159" selection-end="1159" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1005" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="18" selection-start="5622" selection-end="5622" vertical-scroll-proportion="1.5178572" vertical-offset="1035" max-vertical-offset="24375">
-          <folding />
-        </state>
+        <state line="120" column="18" selection-start="5622" selection-end="5622" vertical-scroll-proportion="1.5178572" vertical-offset="1035" max-vertical-offset="24375" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
@@ -1477,16 +1496,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/model/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="23" selection-start="722" selection-end="722" vertical-scroll-proportion="0.9419729" vertical-offset="38" max-vertical-offset="630">
-          <folding />
-        </state>
+        <state line="35" column="23" selection-start="722" selection-end="722" vertical-scroll-proportion="0.9419729" vertical-offset="38" max-vertical-offset="630" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/mongoSettings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="517">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="517" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/model/item.js">
@@ -1503,9 +1518,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="135" column="19" selection-start="6177" selection-end="6184" vertical-scroll-proportion="1.6745182" vertical-offset="1243" max-vertical-offset="2175">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8475">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/css/hover.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="347" column="18" selection-start="6911" selection-end="6911" vertical-scroll-proportion="0.0" vertical-offset="4920" max-vertical-offset="24975">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/css/bootstrap-responsive.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="10" selection-start="16840" selection-end="16840" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="27" selection-start="106006" selection-end="106006" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/css/MainStyles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1260">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="333" column="43" selection-start="11700" selection-end="11700" vertical-scroll-proportion="0.0" vertical-offset="4834" max-vertical-offset="5670">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/testPage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="339" column="39" selection-start="13572" selection-end="13572" vertical-scroll-proportion="0.36713997" vertical-offset="4904" max-vertical-offset="6930">
+        <state line="2" column="22" selection-start="29" selection-end="29" vertical-scroll-proportion="38.1" vertical-offset="1935" max-vertical-offset="6930">
           <folding>
             <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1522,24 +1586,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="19" selection-start="6177" selection-end="6184" vertical-scroll-proportion="1.6745182" vertical-offset="1243" max-vertical-offset="2175">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="369" column="24" selection-start="12730" selection-end="12730" vertical-scroll-proportion="0.0" vertical-offset="5078" max-vertical-offset="5670">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CheckStats/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="45" selection-start="2312" selection-end="2312" vertical-scroll-proportion="0.53125" vertical-offset="915" max-vertical-offset="1485">
-          <folding />
+        <state line="73" column="96" selection-start="2140" selection-end="2140" vertical-scroll-proportion="0.26977688" vertical-offset="962" max-vertical-offset="1545">
+          <folding>
+            <element signature="n#style#0;n#select#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
