@@ -341,7 +341,7 @@ function search(key, filter) {
 
 function populateFilteredList(hits, list, reply) {
     list.empty();
-    var s = "<tr><th> Name </th> <th> Energy </th><th> Quantity </th></tr>";
+    var s = "";
     for (var i in hits) {
         var item = hits[i];
         s += ("<tr>");
@@ -357,7 +357,7 @@ function populateFilteredList(hits, list, reply) {
 function populateList(list,reply) {
     var count = 0;
     var items = curUser.items;
-    var s = "<tr><th> Name </th> <th> Energy </th><th> Quantity </th></tr>";
+    var s = "";
     $.each(items, function (itemId, item) {
         s += ("<tr>");
         s += ("<td>"+item.name+"</td>");
