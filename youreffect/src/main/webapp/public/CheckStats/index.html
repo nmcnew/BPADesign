@@ -69,20 +69,18 @@
 
 				<h4>Search</h4>
 				<div class="col-lg-6">
-					<input type="text" class="form-control" placeholder="Search through your Items">
-
+					<input onkeyup="populateFilteredList(search($(this).val()),$('#item-list'),$('#num-results'))" id="key" type="text" class="form-control" placeholder="Search through your Items">
 				</div>
-				<button type="button" class="btn btn-success" >
+                <!--
+				<button onclick="populateFilteredList(search($('#key').val()),$('#item-list'))" type="button" class="btn btn-success" >
 					Submit
 				</button>
+				-->
+                <div id="num-results" class="col-lg-12"></div>
 			</form>
 			<table class="table">
-				<thead>
-					<tr>
-						<th> Name </th>
-						<th> Energy </th>
-						<th> Quantity </th>
-					</tr>
+				<thead id="item-list">
+
 				</thead>
 			</table>
 		</div>
@@ -90,6 +88,7 @@
 			$("#stat-username").html(curUser.username);
 			$("#stat-email").html(curUser.email);
 			$("#stat-state").html(curUser.state);
+            populateList($('#item-list'),$("#num-results"));
 		</script>
 	</body>
 </html>

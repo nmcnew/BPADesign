@@ -327,3 +327,46 @@ function removeAlertClass() {
     $("#dialog").removeClass("alert-warning");
 
 }
+
+function search(key) {
+    var items = curUser.items;
+    var hits = [];
+    $.each(items, function (itemId, item) {
+        if(item.name.toLowerCase().indexOf(key.toLowerCase()) != -1) {
+            hits.push(item);
+        }
+    });
+    return hits;
+}
+
+function populateFilteredList(hits, list, reply) {
+    list.empty();
+    var s = "<tr><th> Name </th> <th> Energy </th><th> Quantity </th></tr>";
+    for (var i in hits) {
+        var item = hits[i];
+        s += ("<tr>");
+        s += ("<td>"+item.name+"</td>");
+        s += ("<td>"+item.energy+"</td>");
+        s += ("<td>"+item.quantity+"</td>");
+        s += ("</tr>");
+    }
+    list.append(s);
+    reply.html(hits.length + " results");
+}
+
+function populateList(list,reply) {
+    var count = 0;
+    var items = curUser.items;
+    var s = "<tr><th> Name </th> <th> Energy </th><th> Quantity </th></tr>";
+    $.each(items, function (itemId, item) {
+        s += ("<tr>");
+        s += ("<td>"+item.name+"</td>");
+        s += ("<td>"+item.energy+"</td>");
+        s += ("<td>"+item.quantity+"</td>");
+        s += ("</tr>");
+        ++count;
+    });
+    list.append(s);
+    reply.html(count + " results");
+
+}
