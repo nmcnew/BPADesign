@@ -34,7 +34,6 @@ public class ItemDaoImpl implements ItemDao{
     public void createItem(Item item) {
         Query query = new Query(Criteria.where("_id").is(item.getUserId()));
         User user = mongoTemplate.findOne(query, User.class);
-        System.out.println(user);
         user.addItem(item);
         mongoTemplate.save(user);
     }
@@ -66,7 +65,6 @@ public class ItemDaoImpl implements ItemDao{
     public void deleteItem(String id) {
         Query query = new Query(Criteria.where("_id").is(id));
         User user = mongoTemplate.findOne(query, User.class);
-        System.out.println(user);
         user.rmvItem(id);
         mongoTemplate.save(user);
     }

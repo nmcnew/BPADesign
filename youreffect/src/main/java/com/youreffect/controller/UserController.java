@@ -53,6 +53,7 @@ public class UserController {
     @RequestMapping(value = "/register", method = RequestMethod.POST)
     public @ResponseBody String register(@RequestBody String data) {
         User user = gson.fromJson(data, User.class);
+        System.out.println(user);
         user.setUserId(hashService.md5(user.getUsername()));
         user.setPassword(hashService.md5(user.getPassword()));
         try {
@@ -60,7 +61,7 @@ public class UserController {
                 throw new RegisterException("failed to register new user because username already exists");
             }
             userService.registerUser(user);
-            user.setDateRegistered(new SimpleDateFormat("MM.dd.yyyy").format(new Date()));
+            user.setDateRegistered(new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss").format(new Date()));
             responseService.setMessage("new user successfully registered");
         } catch (RegisterException re) {
             responseService.setMessage(re.getMessage());
@@ -84,7 +85,7 @@ public class UserController {
                 throw new LoginException("login failed");
             }
             user = userService.loginUser(user.getUserId(), user.getPassword());
-            user.getDatesLoggedIn().add(new SimpleDateFormat("MM.dd.yyyy").format(new Date()));
+            user.getDatesLoggedIn().add(new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss").format(new Date()));
             responseService.setMessage("login was successful");
         } catch (LoginException le) {
             responseService.setMessage(le.getMessage());
@@ -114,6 +115,7 @@ public class UserController {
         user = gson.fromJson(data, User.class);
         userService.update(user);
         responseService.setData(user);
+        responseService.setMessage("user updated");
         return responseService.toString();
     }
 
@@ -123,6 +125,7 @@ public class UserController {
         user = gson.fromJson(data, User.class);
         userService.remove(user.getUserId(), user.getPassword());
         responseService.setData(user);
+        responseService.setMessage("user deleted");
         return responseService.toString();
     }
 }

@@ -57,6 +57,7 @@ function register(username, email, password, state) {
 
 function login(username, password) {
     var user = new User(username, '', password, '');
+    console.log(user);
     $.ajax({
         url : getContextRoot('public') + '/user/login',
         type : 'POST',
@@ -86,6 +87,8 @@ function login(username, password) {
 
 function updateUser(user) {
     var user = user;
+    console.log('user');
+    console.log(user);
     $.ajax({
         url : getContextRoot('public') + '/user/update',
         type : 'POST',
@@ -93,6 +96,7 @@ function updateUser(user) {
         data : JSON.stringify(user),
         contentType : "application/json; charset=utf-8",
         success : function(data) {
+            console.log('done');
             console.log(data);
             localStorage.setItem("curUser", JSON.stringify(data.data));
             curUser = JSON.parse(localStorage.getItem("curUser")).username;
@@ -110,6 +114,8 @@ function saveItem(item) {
         success : function(data) {
             var data = JSON.parse(data);
             console.log(data);
+            console.log('updating user');
+            updateUser(curUser);
         }
     });
 }
@@ -330,7 +336,6 @@ function submitMainForm(){
         }
         console.log(item);
         saveItem(item);
-        updateUser(curUser);
     }
 }
 function dialogFadeOut() {

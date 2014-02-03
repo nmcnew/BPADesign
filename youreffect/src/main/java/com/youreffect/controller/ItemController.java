@@ -55,30 +55,21 @@ public class ItemController {
         return responseService.toString();
     }
 
-    @RequestMapping(value = "/view", method = RequestMethod.POST)
-    public @ResponseBody String viewItem(@RequestBody String data) {
-        item = gson.fromJson(data, Item.class);
-        itemService.insertItem(item);
-        responseService.setData(item);
-        responseService.setMessage("item successfully saved");
-        return responseService.toString();
-    }
-
     @RequestMapping(value = "/update", method = RequestMethod.POST)
     public @ResponseBody String updateItem(@RequestBody String data) {
         item = gson.fromJson(data, Item.class);
-        itemService.insertItem(item);
+        itemService.updateItem(item);
         responseService.setData(item);
-        responseService.setMessage("item successfully saved");
+        responseService.setMessage("item successfully updated");
         return responseService.toString();
     }
 
     @RequestMapping(value = "/delete", method = RequestMethod.POST)
     public @ResponseBody String deleteItem(@RequestBody String data) {
         item = gson.fromJson(data, Item.class);
-        itemService.insertItem(item);
+        itemService.deleteItem(item);
         responseService.setData(item);
-        responseService.setMessage("item successfully saved");
+        responseService.setMessage("item successfully deleted");
         return responseService.toString();
     }
 }

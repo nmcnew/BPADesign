@@ -4,7 +4,6 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -119,14 +118,14 @@ public class User {
      */
     public String toString() {
         return String.format(
-                "User[id=%s, username='%s', email='%s', state='%s', password='%s', \nitems='%s'",
-                userId, username, email, state, password, getItemsStr());
+                "User[id=%s, username='%s', email='%s', state='%s', password='%s', dateRegistered='%s', datesLoggedIn='%s', \nitems='%s'",
+                userId, username, email, state, password, dateRegistered, datesLoggedIn, getItemsStr());
     }
 
     public String getItemsStr() {
         String s = "";
         s += "[";
-        if (items == null) {
+        if (items == null || items.isEmpty()) {
             items = new HashMap<String, Item>();
             s += "]";
         }
@@ -184,7 +183,9 @@ public class User {
             items.get(item.getItemId()).addToQuantity(item.getQuantity());
         }
         else {
+            System.out.println("putting");
             items.put(item.getItemId(), item);
+            System.out.println("done");
         }
     }
 
