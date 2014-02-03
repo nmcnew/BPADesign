@@ -3,8 +3,6 @@ package com.youreffect.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -28,10 +26,6 @@ public class User {
     private String state;
     /** user's item map */
     private HashMap<String, Item> items;
-    /** date registered */
-    private String dateRegistered;
-    /** login dates */
-    private ArrayList<String> datesLoggedIn;
 
     /**
      * get user id
@@ -155,22 +149,6 @@ public class User {
         this.items = items;
     }
 
-    public String getDateRegistered() {
-        return dateRegistered;
-    }
-
-    public void setDateRegistered(String dateRegistered) {
-        this.dateRegistered = dateRegistered;
-    }
-
-    public ArrayList<String> getDatesLoggedIn() {
-        return datesLoggedIn;
-    }
-
-    public void setDatesLoggedIn(ArrayList<String> datesLoggedIn) {
-        this.datesLoggedIn = datesLoggedIn;
-    }
-
     /**
      * add item to items map
      * @param item to add to items map
@@ -190,9 +168,9 @@ public class User {
 
     /**
      * remove item from items map
-     * @param id key to remove from items map
+     * @param item to remove from items map
      */
-    public void rmvItem(String id) {
-        items.remove(id);
+    public void rmvItem(Item item) {
+        items.remove(item.getItemId());
     }
 }

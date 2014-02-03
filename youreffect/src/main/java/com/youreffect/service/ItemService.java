@@ -18,14 +18,6 @@ public class ItemService {
         itemDaoImpl.createItem(item);
     }
 
-    public void deleteItem(Item item) {
-        itemDaoImpl.deleteItem(item.getItemId());
-    }
-
-    public void updateItem(Item item) {
-
-    }
-
     public void setItemDaoImpl(ItemDaoImpl itemDaoImpl) {
         this.itemDaoImpl = itemDaoImpl;
     }

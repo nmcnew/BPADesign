@@ -26,20 +26,12 @@
         <constructor-arg index="0" ref="mongofactory"/>
     </bean>
 
-    <bean id="user" class="com.youreffect.model.User">
-
-    </bean>
-
     <bean id="userdaoimpl" class="com.youreffect.dao.UserDaoImpl">
         <property name="mongoTemplate" ref="mongotemplate"/>
     </bean>
 
     <bean id="userservice" class="com.youreffect.service.UserService">
         <property name="userDaoImpl" ref="userdaoimpl"/>
-    </bean>
-
-    <bean id="item" class="com.youreffect.model.Item">
-
     </bean>
 
     <bean id="itemdaoimpl" class="com.youreffect.dao.ItemDaoImpl">

@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="06063096-bfe1-4e35-9f05-404f1a450a95" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/youreffect/controller/ItemController.java" afterPath="$PROJECT_DIR$/src/main/java/com/youreffect/controller/ItemController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/youreffect/dao/ItemDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/youreffect/dao/ItemDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/youreffect/service/ItemService.java" afterPath="$PROJECT_DIR$/src/main/java/com/youreffect/service/ItemService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/youreffect/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/youreffect/model/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" afterPath="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
-    <ignored path="YourEffect.iws" />
+    <list default="true" id="97712bb5-bda5-49ae-9d15-711cfe219217" name="Default" comment="" />
+    <ignored path="youreffect.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +18,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -63,81 +54,87 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="YourEffect" />
+    <favorites_list name="youreffect" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="lib.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="166" column="18" selection-start="5620" selection-end="5620" vertical-scroll-proportion="0.0" vertical-offset="2822" max-vertical-offset="6324">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="117" column="8" selection-start="5481" selection-end="5481" vertical-scroll-proportion="0.9288136" vertical-offset="1441" max-vertical-offset="2346">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mvc-dispatcher-servlet.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="0" selection-start="1295" selection-end="1295" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="1258">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application-config.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring/application-config.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="0" selection-start="626" selection-end="626" vertical-scroll-proportion="-8.16" vertical-offset="0" max-vertical-offset="306">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDao.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="3" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testPage.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/testPage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="31" selection-start="1030" selection-end="1058" vertical-scroll-proportion="0.0" vertical-offset="211" max-vertical-offset="7854">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
-  <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="Deeban Ramalingam" />
-      </list>
-    </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="GitLogSettings">
-    <option name="myDateState">
-      <MyDateState />
-    </option>
-  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/public/assets/information.txt" />
-        <option value="$PROJECT_DIR$/src/main/webapp/public/navbar.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/SimpleCORSFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/filter/CorsFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/add.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/filter/SimpleCORSFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/controller/HelloController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/controller/IndexController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/exception/RegisterException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/exception/LoginException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/service/HashService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/service/ResponseService.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/docs/stylesheet.css" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/dao/ItemDao.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/public/CostCalculator/lightbulbs.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/public/index.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/exception/ItemException.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/public/CO2Checker/index.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/public/CostCalculator/testPage.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/model/Item.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/model/item.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/public/register/index.html" />
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/model/user.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/public/assets/css/MainStyles.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/public/CheckStats/index.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/public/assets/css/bootstrap.min.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/public/admin/login.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/public/admin/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/controller/ItemController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/dao/ItemDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/service/ItemService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/public/CostCalculator/testPage.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserDao.java" />
       </list>
     </option>
   </component>
@@ -156,28 +153,12 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="4" />
-    <option name="y" value="22" />
-    <option name="width" value="1436" />
-    <option name="height" value="878" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1066" />
   </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>Abstraction issues</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -186,7 +167,7 @@
     <OptionsSetting value="true" id="Edit" />
     <OptionsSetting value="true" id="Undo Check Out" />
     <OptionsSetting value="true" id="Get Latest Version" />
-    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -205,6 +186,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -219,7 +202,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="YourEffect" />
+              <option name="myItemId" value="youreffect" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -229,7 +212,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="YourEffect" />
+              <option name="myItemId" value="youreffect" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -243,7 +226,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="YourEffect" />
+              <option name="myItemId" value="youreffect" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -269,7 +252,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="YourEffect" />
+              <option name="myItemId" value="youreffect" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -284,10 +267,6 @@
               <option name="myItemId" value="webapp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -295,7 +274,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="YourEffect" />
+              <option name="myItemId" value="youreffect" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -306,22 +285,6 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -329,37 +292,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="YourEffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
               <option name="myItemId" value="youreffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YourEffect" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -385,7 +318,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="YourEffect" />
+              <option name="myItemId" value="youreffect" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -405,133 +338,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
+              <option name="myItemId" value="dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="OverrideImplement.combined" value="true" />
-    <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.includeLibraries" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="recentsLimit" value="5" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
-    <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="restartRequiresConfirmation" value="true" />
-    <property name="SearchEverywhereHistory" value="" />
-    <property name="OverrideImplement.overriding.sorted" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="150" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="152" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="155" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="949" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="150" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="152" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="155" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="949" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/public/assets/css" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/public/register" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/public/assets/js" />
-      <recent name="$PROJECT_DIR$/src/main" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
-      <recent name="$PROJECT_DIR$/src/main/java" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/youreffect" />
-      <recent name="$PROJECT_DIR$/src/main" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.youreffect" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Tomcat Server.Apache Tomcat 7">
-    <configuration default="false" name="UserDaoImpl" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.youreffect.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.youreffect.dao.UserDaoImpl" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="YourEffect" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="HashService" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.youreffect.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.youreffect.service.HashService" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="YourEffect" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails" singleton="true">
-      <module name="" />
-      <setting name="vmparams" value="" />
-      <setting name="cmdLine" value="run-app" />
-      <setting name="depsClasspath" value="false" />
-      <setting name="passParentEnv" value="true" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <setting name="launchBrowser" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 7.0">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
       <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
@@ -541,22 +373,6 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -587,6 +403,34 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -610,202 +454,25 @@
     </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <deployment />
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="_YourEffect" />
-      </server-settings>
+      <server-settings />
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
       <predefined_log_file id="Tomcat Manager" enabled="false" />
       <predefined_log_file id="Tomcat Host Manager" enabled="false" />
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <RunnerSettings RunnerId="Cover" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="51778" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
       <method />
     </configuration>
-    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
-      <option name="BCName" value="" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browserFamily" value="FIREFOX" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="" />
-      <option name="overriddenMainClass" value="" />
-      <option name="overriddenOutputFileName" value="" />
-      <option name="overrideMainClass" value="false" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" output_log_level="null" package_name="" scope="Class">
-      <option name="BCName" value="" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browserFamily" value="FIREFOX" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
-        </LauncherParameters>
-      </option>
-      <option name="moduleName" value="" />
-      <option name="trusted" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="myFilePath" />
-      <option name="GLUE" />
-      <option name="myNameFilter" />
-      <option name="myGeneratedName" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Apache Tomcat 7" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
-      <option name="BROWSER_ID" value="Chrome" />
+    <configuration default="false" name="Tomcat 7.0" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0" ALTERNATIVE_JRE_ENABLED="false">
       <deployment>
-        <artifact name="YourEffect:war exploded">
+        <artifact name="youreffect:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_YourEffect" />
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_7_0_youreffect" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -813,43 +480,7 @@
       <predefined_log_file id="Tomcat Host Manager" enabled="false" />
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <RunnerSettings RunnerId="Cover" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="51104" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -865,333 +496,70 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-      <method />
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="youreffect:war exploded" />
+        </option>
+      </method>
     </configuration>
-    <list size="4">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="JUnit.AppTests" />
-      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.Apache Tomcat 7" />
-      <item index="2" class="java.lang.String" itemvalue="Application.UserDaoImpl" />
-      <item index="3" class="java.lang.String" itemvalue="Application.HashService" />
+      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 7.0" />
     </list>
-    <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Application.HashService" />
-        <item index="1" class="java.lang.String" itemvalue="Application.UserDaoImpl" />
-      </list>
-    </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
-    <option name="USER" value="" />
-    <option name="PASSWORD" value="" />
-    <option name="mySSHConnectionTimeout" value="30000" />
-    <option name="mySSHReadTimeout" value="30000" />
-    <option name="LAST_MERGED_REVISION" />
-    <option name="MERGE_DRY_RUN" value="false" />
-    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
-    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
-    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
-    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
-    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
-    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
-    <option name="FORCE_UPDATE" value="false" />
-    <option name="IGNORE_EXTERNALS" value="false" />
-    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="06063096-bfe1-4e35-9f05-404f1a450a95" name="Default" comment="" />
-      <created>1389477235206</created>
-      <updated>1389477235206</updated>
-      <workItem from="1390172789101" duration="3757000" />
-      <workItem from="1390180680995" duration="204000" />
-      <workItem from="1390181314577" duration="93000" />
-      <workItem from="1390202237024" duration="565000" />
-      <workItem from="1390275978866" duration="2067000" />
-      <workItem from="1390349797963" duration="1452000" />
-      <workItem from="1390351416157" duration="808000" />
-      <workItem from="1390352282002" duration="726000" />
-      <workItem from="1390353223675" duration="814000" />
-      <workItem from="1390354051149" duration="4318000" />
-      <workItem from="1390359825079" duration="9117000" />
-      <workItem from="1390456625501" duration="6460000" />
-      <workItem from="1390463458550" duration="177000" />
-      <workItem from="1390463738245" duration="331000" />
-      <workItem from="1390501783835" duration="1967000" />
-      <workItem from="1390506957471" duration="98000" />
-      <workItem from="1390507058151" duration="15726000" />
-      <workItem from="1390532596750" duration="241000" />
-      <workItem from="1390532932778" duration="4412000" />
-      <workItem from="1390539791496" duration="1375000" />
-      <workItem from="1390597736761" duration="7676000" />
-      <workItem from="1390615692639" duration="2165000" />
-      <workItem from="1390619598401" duration="6679000" />
-      <workItem from="1390627276985" duration="736000" />
-      <workItem from="1390681254901" duration="15000" />
-      <workItem from="1390681277544" duration="34000" />
-      <workItem from="1390687853962" duration="45000" />
-      <workItem from="1390865977023" duration="25000" />
-      <workItem from="1390954279701" duration="2900000" />
-      <workItem from="1390970711243" duration="6433000" />
-      <workItem from="1390979762662" duration="667000" />
-      <workItem from="1391034391999" duration="47000" />
-      <workItem from="1391034450660" duration="2277000" />
-      <workItem from="1391050524963" duration="77000" />
-      <workItem from="1391050613786" duration="2761000" />
-      <workItem from="1391222988785" duration="539000" />
-      <workItem from="1391227931248" duration="9000" />
-      <workItem from="1391227947673" duration="10474000" />
-      <workItem from="1391283787303" duration="24965000" />
-      <workItem from="1391315012788" duration="4994000" />
-      <workItem from="1391366059841" duration="216000" />
-      <workItem from="1391366378393" duration="139000" />
-      <workItem from="1391376697111" duration="761000" />
-      <workItem from="1391387541266" duration="9582000" />
+      <changelist id="97712bb5-bda5-49ae-9d15-711cfe219217" name="Default" comment="" />
+      <created>1391394064615</created>
+      <updated>1391394064615</updated>
+      <workItem from="1391394068741" duration="1294000" />
+      <workItem from="1391396725444" duration="409000" />
+      <workItem from="1391397773139" duration="52000" />
     </task>
-    <task id="LOCAL-00001" summary="setting up spring mvc">
-      <created>1389477332614</created>
-      <updated>1389477332614</updated>
-    </task>
-    <task id="LOCAL-00002" summary="setting up spring mvc">
-      <created>1389479068940</created>
-      <updated>1389479068940</updated>
-    </task>
-    <task id="LOCAL-00003" summary="setting up spring mvc">
-      <created>1389479605817</created>
-      <updated>1389479605817</updated>
-    </task>
-    <task id="LOCAL-00004" summary="completed integration of front-end">
-      <created>1389486713498</created>
-      <updated>1389486713498</updated>
-    </task>
-    <task id="LOCAL-00005" summary="deleted repeat dependency. planning work on commenting and documenting code.">
-      <created>1390507894374</created>
-      <updated>1390507894374</updated>
-    </task>
-    <task id="LOCAL-00006" summary="added java docs and changed country to state&#10;">
-      <created>1390532072187</created>
-      <updated>1390532072187</updated>
-    </task>
-    <task id="LOCAL-00007" summary="added item.js">
-      <created>1390615649885</created>
-      <updated>1390615649885</updated>
-    </task>
-    <task id="LOCAL-00008" summary="added item.js&#10;">
-      <created>1390615704436</created>
-      <updated>1390615704436</updated>
-    </task>
-    <task id="LOCAL-00009" summary="added item.js&#10;">
-      <created>1390616453503</created>
-      <updated>1390616453503</updated>
-    </task>
-    <task id="LOCAL-00010" summary="added item.js&#10;">
-      <created>1390616461437</created>
-      <updated>1390616461437</updated>
-    </task>
-    <task id="LOCAL-00011" summary="added item.js&#10;">
-      <created>1390617394156</created>
-      <updated>1390617394156</updated>
-    </task>
-    <task id="LOCAL-00012" summary="added mvc components for Item&#10;">
-      <created>1390627309840</created>
-      <updated>1390627309840</updated>
-    </task>
-    <task id="LOCAL-00013" summary="edited CostCalculator/index.html (misspelling for refrigerator)&#10;">
-      <created>1390627572382</created>
-      <updated>1390627572382</updated>
-    </task>
-    <task id="LOCAL-00014" summary="committing to stage">
-      <created>1390954772495</created>
-      <updated>1390954772495</updated>
-    </task>
-    <task id="LOCAL-00015" summary="committing to stage&#10;">
-      <created>1390955235587</created>
-      <updated>1390955235587</updated>
-    </task>
-    <task id="LOCAL-00016" summary="modularized reg_check function (client-side), modified back-end setup and relationship between user and item">
-      <created>1390976776157</created>
-      <updated>1390976776157</updated>
-    </task>
-    <task id="LOCAL-00017" summary="fixed relative links to check stats, added content to checkstats, need Nick to add styles to checkstats (front-end)">
-      <created>1390979302647</created>
-      <updated>1390979302647</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Need Nick to add styles">
-      <created>1390980352118</created>
-      <updated>1390980352118</updated>
-    </task>
-    <task id="LOCAL-00019" summary="added curUser global variable to conveniently access client-side data&#10;">
-      <created>1391036700323</created>
-      <updated>1391036700323</updated>
-    </task>
-    <task id="LOCAL-00020" summary="added curUser global variable to conveniently access client-side data&#10;">
-      <created>1391036822072</created>
-      <updated>1391036822072</updated>
-    </task>
-    <task id="LOCAL-00021" summary="added saveItem() to lib.js">
-      <created>1391051970667</created>
-      <updated>1391051970667</updated>
-    </task>
-    <task id="LOCAL-00022" summary="added saveItem() to lib.js&#10;">
-      <created>1391223009132</created>
-      <updated>1391223009132</updated>
-    </task>
-    <task id="LOCAL-00023" summary="modified saveItem(), added param specs. this function accepts (name,energy,specs) or two strings and a javascript map (array)">
-      <created>1391229560659</created>
-      <updated>1391229560659</updated>
-    </task>
-    <task id="LOCAL-00024" summary="modified saveItem(), added param specs. this function accepts (name,energy,specs) or two strings and a javascript map (array)&#10;">
-      <created>1391229705308</created>
-      <updated>1391229705308</updated>
-    </task>
-    <task id="LOCAL-00025" summary="modified saveItem(), added param specs. this function accepts (name,energy,specs) or two strings and a javascript map (array)&#10;">
-      <created>1391229857635</created>
-      <updated>1391229857635</updated>
-    </task>
-    <task id="LOCAL-00026" summary="added another constructor to item.js">
-      <created>1391230084678</created>
-      <updated>1391230084678</updated>
-    </task>
-    <task id="LOCAL-00027" summary="modified saveItem() to take in Item.js as first and only argument">
-      <created>1391230210145</created>
-      <updated>1391230210145</updated>
-    </task>
-    <task id="LOCAL-00028" summary="modified submitMainForm">
-      <created>1391230975604</created>
-      <updated>1391230975604</updated>
-    </task>
-    <task id="LOCAL-00029" summary="modified item.js typo causing error with pushing specs in the addSpec method">
-      <created>1391231133499</created>
-      <updated>1391231133499</updated>
-    </task>
-    <task id="LOCAL-00030" summary="modified addSpec method in item.js, fixed error of failing to put key value pairs in map">
-      <created>1391232966865</created>
-      <updated>1391232966865</updated>
-    </task>
-    <task id="LOCAL-00031" summary="modified addSpec method in item.js, fixed error of failing to put key value pairs in map&#10;">
-      <created>1391232999907</created>
-      <updated>1391232999907</updated>
-    </task>
-    <task id="LOCAL-00032" summary="modified addSpec method in item.js, fixed error of failing to put key value pairs in map&#10;">
-      <created>1391233950729</created>
-      <updated>1391233950729</updated>
-    </task>
-    <task id="LOCAL-00033" summary="modified addSpec method in item.js, fixed error of failing to put key value pairs in map&#10;">
-      <created>1391234143145</created>
-      <updated>1391234143145</updated>
-    </task>
-    <task id="LOCAL-00034" summary="modified addSpec method in item.js, fixed error of failing to put key value pairs in map&#10;">
-      <created>1391234176404</created>
-      <updated>1391234176404</updated>
-    </task>
-    <task id="LOCAL-00035" summary="modified submit form method. need to fix two problems. make current searcher smarter by adding his ability to go deeper into nodes to extract input fields. Also, it is unable to get the energy, figure out a way to get the energy.">
-      <created>1391238854765</created>
-      <updated>1391238854765</updated>
-    </task>
-    <task id="LOCAL-00036" summary="modified costcalc/index.html made it so that only the testPage.html needs to be modified  (no more copying and pasting html).">
-      <created>1391291257746</created>
-      <updated>1391291257746</updated>
-    </task>
-    <task id="LOCAL-00037" summary="added break between fridges in lib.js">
-      <created>1391291582260</created>
-      <updated>1391291582260</updated>
-    </task>
-    <task id="LOCAL-00038" summary="enhanced frontend logic, added item persistence feature&#10;">
-      <created>1391296519660</created>
-      <updated>1391296519660</updated>
-    </task>
-    <task id="LOCAL-00039" summary="enhanced frontend logic, added item persistence feature&#10;">
-      <created>1391296831518</created>
-      <updated>1391296831518</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Fixed checkReg() and register()">
-      <created>1391298491555</created>
-      <updated>1391298491555</updated>
-    </task>
-    <task id="LOCAL-00041" summary="added search by item name and search onkeyup&#10;">
-      <created>1391310867715</created>
-      <updated>1391310867715</updated>
-    </task>
-    <task id="LOCAL-00042" summary="added energy filter, Nick I would like for you to style it up">
-      <created>1391316672895</created>
-      <updated>1391316672895</updated>
-    </task>
-    <task id="LOCAL-00043" summary="accidentally messed up the styles. help!">
-      <created>1391366508936</created>
-      <updated>1391366508937</updated>
-    </task>
-    <task id="LOCAL-00044" summary="css fixed&#10;">
-      <created>1391376793302</created>
-      <updated>1391376793302</updated>
-    </task>
-    <task id="LOCAL-00045" summary="css fixed&#10;">
-      <created>1391376814789</created>
-      <updated>1391376814789</updated>
-    </task>
-    <task id="LOCAL-00046" summary="commented out edit button (did not find any use of it with new design)&#10;">
-      <created>1391389324577</created>
-      <updated>1391389324577</updated>
-    </task>
-    <task id="LOCAL-00047" summary="started admin but will work on it later with Nick">
-      <created>1391391530425</created>
-      <updated>1391391530425</updated>
-    </task>
-    <task id="LOCAL-00048" summary="added remove/update/view users on backend&#10;">
-      <created>1391395478862</created>
-      <updated>1391395478862</updated>
-    </task>
-    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139646000" />
+    <option name="totallyTimeSpent" value="1755000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="22" width="1436" height="878" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287858" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275649" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24582173" sideWeight="0.670088" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3263288" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39972714" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3263288" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287858" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Mongo Runner" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3291536" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
     </layout>
-  </component>
-  <component name="UpdateCopyrightCheckinHandler">
-    <option name="UPDATE_COPYRIGHT" value="true" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1205,353 +573,142 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <option name="USE_COMMIT_MESSAGE_MARGIN" value="true" />
-    <MESSAGE value="fixed relative links to check stats, added content to checkstats, need Nick to add styles to checkstats (front-end)" />
-    <MESSAGE value="Need Nick to add styles" />
-    <MESSAGE value="added curUser global variable to conveniently access client-side data&#10;" />
-    <MESSAGE value="added saveItem() to lib.js" />
-    <MESSAGE value="added saveItem() to lib.js&#10;" />
-    <MESSAGE value="modified saveItem(), added param specs. this function accepts (name,energy,specs) or two strings and a javascript map (array)" />
-    <MESSAGE value="modified saveItem(), added param specs. this function accepts (name,energy,specs) or two strings and a javascript map (array)&#10;" />
-    <MESSAGE value="added another constructor to item.js" />
-    <MESSAGE value="modified saveItem() to take in Item.js as first and only argument" />
-    <MESSAGE value="modified submitMainForm" />
-    <MESSAGE value="modified item.js typo causing error with pushing specs in the addSpec method" />
-    <MESSAGE value="modified addSpec method in item.js, fixed error of failing to put key value pairs in map" />
-    <MESSAGE value="modified addSpec method in item.js, fixed error of failing to put key value pairs in map&#10;" />
-    <MESSAGE value="modified submit form method. need to fix two problems. make current searcher smarter by adding his ability to go deeper into nodes to extract input fields. Also, it is unable to get the energy, figure out a way to get the energy." />
-    <MESSAGE value="modified costcalc/index.html made it so that only the testPage.html needs to be modified  (no more copying and pasting html)." />
-    <MESSAGE value="added break between fridges in lib.js" />
-    <MESSAGE value="enhanced frontend logic, added item persistence feature&#10;" />
-    <MESSAGE value="Fixed checkReg() and register()" />
-    <MESSAGE value="added search by item name and search onkeyup&#10;" />
-    <MESSAGE value="added energy filter, Nick I would like for you to style it up" />
-    <MESSAGE value="accidentally messed up the styles. help!" />
-    <MESSAGE value="css fixed&#10;" />
-    <MESSAGE value="commented out edit button (did not find any use of it with new design)&#10;" />
-    <MESSAGE value="started admin but will work on it later with Nick" />
-    <MESSAGE value="added remove/update/view users on backend&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="added remove/update/view users on backend&#10;" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="1" />
-    </breakpoint-manager>
+    <breakpoint-manager />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="52" selection-start="684" selection-end="684" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="22" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1170" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="22" selection-start="749" selection-end="749" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="645" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="27" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="255" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CO2Checker/houseCO2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="84" selection-start="1840" selection-end="1908" vertical-scroll-proportion="-1.875" vertical-offset="945" max-vertical-offset="4170" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CO2Checker/car.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="149" column="14" selection-start="1858" selection-end="5005" vertical-scroll-proportion="-17.083334" vertical-offset="1825" max-vertical-offset="2475" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/YourEffect.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="38" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1140" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/copyright/profiles_settings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/exception/RegisterException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="41" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/service/HashService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="55" selection-start="234" selection-end="234" vertical-scroll-proportion="0.19396552" vertical-offset="0" max-vertical-offset="765" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/service/ResponseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="41" selection-start="1252" selection-end="1252" vertical-scroll-proportion="0.61206895" vertical-offset="586" max-vertical-offset="1050" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/stylesheet.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="15" selection-start="535" selection-end="535" vertical-scroll-proportion="0.51724136" vertical-offset="0" max-vertical-offset="825" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="59" selection-start="482" selection-end="482" vertical-scroll-proportion="0.35147393" vertical-offset="25" max-vertical-offset="1185" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="47" selection-start="2377" selection-end="2377" vertical-scroll-proportion="2.4568965" vertical-offset="0" max-vertical-offset="1500">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CO2Checker/Secondary.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5070" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/com.springapp/YourEffect/pom.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="464" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/exception/LoginException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="187" selection-end="364" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/exception/ItemException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="20" selection-start="236" selection-end="236" vertical-scroll-proportion="0.19148937" vertical-offset="0" max-vertical-offset="705" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/assumptions.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1005" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/erd/erd.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CO2Checker/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="43" selection-start="720" selection-end="720" vertical-scroll-proportion="0.71428573" vertical-offset="0" max-vertical-offset="1545" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/model/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="23" selection-start="868" selection-end="868" vertical-scroll-proportion="0.08928572" vertical-offset="420" max-vertical-offset="1020" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/calculate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="78" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="18" selection-start="5622" selection-end="5622" vertical-scroll-proportion="1.5178572" vertical-offset="1035" max-vertical-offset="24375" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/model/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="23" selection-start="722" selection-end="722" vertical-scroll-proportion="0.9419729" vertical-offset="38" max-vertical-offset="630" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/mongoSettings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="517" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/model/item.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="22" selection-start="144" selection-end="144" vertical-scroll-proportion="0.14506769" vertical-offset="0" max-vertical-offset="517" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="22" selection-start="538" selection-end="538" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/bootstrap.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8475" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/testPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="22" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="1935" max-vertical-offset="6930">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/css/hover.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="347" column="18" selection-start="6911" selection-end="6911" vertical-scroll-proportion="-37.239845" vertical-offset="24458" max-vertical-offset="24975" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/css/MainStyles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="9" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1260">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="46" selection-start="3" selection-end="3" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
+        <state line="172" column="18" selection-start="5911" selection-end="5911" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6426">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="33" selection-start="1579" selection-end="1579" vertical-scroll-proportion="0.9127789" vertical-offset="195" max-vertical-offset="2205">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="17" selection-start="1133" selection-end="1133" vertical-scroll-proportion="0.26977688" vertical-offset="362" max-vertical-offset="855">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/register/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="67" selection-start="2266" selection-end="2266" vertical-scroll-proportion="-11.25" vertical-offset="585" max-vertical-offset="2985">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/admin/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="56" selection-start="215" selection-end="215" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="180">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/admin/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="315" selection-end="315" vertical-scroll-proportion="0.14807302" vertical-offset="47" max-vertical-offset="540">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="22" selection-start="594" selection-end="594" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+        <state line="126" column="8" selection-start="5855" selection-end="5855" vertical-scroll-proportion="0.0" vertical-offset="2142" max-vertical-offset="2499">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="46" selection-start="1804" selection-end="1804" vertical-scroll-proportion="-9.56" vertical-offset="331" max-vertical-offset="1230">
+        <state line="30" column="11" selection-start="1522" selection-end="1522" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1394">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/application-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="626" selection-end="626" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="306">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="29" selection-start="464" selection-end="464" vertical-scroll-proportion="0.46421662" vertical-offset="0" max-vertical-offset="517">
+        <state line="8" column="17" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="442">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CheckStats/index.html">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/testPage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="33" selection-start="58" selection-end="58" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="1590">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="20" selection-start="1729" selection-end="1729" vertical-scroll-proportion="0.0" vertical-offset="653" max-vertical-offset="1185">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/service/ItemService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="25" selection-start="659" selection-end="659" vertical-scroll-proportion="0.63829786" vertical-offset="0" max-vertical-offset="540">
-          <folding>
-            <element signature="e#738#739#0" expanded="true" />
-            <element signature="e#784#785#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/dao/ItemDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="29" selection-start="432" selection-end="432" vertical-scroll-proportion="0.46421662" vertical-offset="0" max-vertical-offset="517">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/dao/ItemDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="27" selection-start="1813" selection-end="1813" vertical-scroll-proportion="0.68085104" vertical-offset="548" max-vertical-offset="1065">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/ItemController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="39" selection-start="2062" selection-end="2062" vertical-scroll-proportion="0.30367506" vertical-offset="608" max-vertical-offset="1185">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="152" column="34" selection-start="3285" selection-end="3285" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2610">
-          <folding>
-            <element signature="e#3401#3402#0" expanded="true" />
-            <element signature="e#3438#3439#0" expanded="true" />
-            <element signature="e#3498#3499#0" expanded="true" />
-            <element signature="e#3550#3551#0" expanded="true" />
-            <element signature="e#3601#3602#0" expanded="true" />
-            <element signature="e#3637#3638#0" expanded="true" />
-            <element signature="e#3706#3707#0" expanded="true" />
-            <element signature="e#3756#3757#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="33" selection-start="1882" selection-end="1882" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1200">
+        <state line="30" column="31" selection-start="1030" selection-end="1058" vertical-scroll-proportion="0.0" vertical-offset="211" max-vertical-offset="7854">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="323" column="24" selection-start="11541" selection-end="11541" vertical-scroll-proportion="0.4777563" vertical-offset="4598" max-vertical-offset="5925">
+        <state line="172" column="40" selection-start="5945" selection-end="5945" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6324">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="23" selection-start="4031" selection-end="4031" vertical-scroll-proportion="0.24564797" vertical-offset="1253" max-vertical-offset="1770">
+        <state line="126" column="8" selection-start="5832" selection-end="5832" vertical-scroll-proportion="0.0" vertical-offset="2142" max-vertical-offset="2346">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/testPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="31" selection-start="1030" selection-end="1058" vertical-scroll-proportion="0.0" vertical-offset="211" max-vertical-offset="7854">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2686" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="616">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="10" selection-start="2965" selection-end="2965" vertical-scroll-proportion="0.0" vertical-offset="1016" max-vertical-offset="1700">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/testPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="31" selection-start="1030" selection-end="1058" vertical-scroll-proportion="0.0" vertical-offset="211" max-vertical-offset="7854">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="48" selection-start="1524" selection-end="1524" vertical-scroll-proportion="0.36650082" vertical-offset="306" max-vertical-offset="13685">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="3" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="1295" selection-end="1295" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="1258">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/application-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="626" selection-end="626" vertical-scroll-proportion="-8.16" vertical-offset="0" max-vertical-offset="306">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="166" column="18" selection-start="5620" selection-end="5620" vertical-scroll-proportion="0.0" vertical-offset="2822" max-vertical-offset="6324">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="117" column="8" selection-start="5481" selection-end="5481" vertical-scroll-proportion="0.9288136" vertical-offset="1441" max-vertical-offset="2346">
           <folding />
         </state>
       </provider>
@@ -1562,7 +719,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>YourEffect:war</last-edited>
+          <last-edited>youreffect:war</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1575,7 +732,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Hibernate</last-edited>
+          <last-edited>Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1587,7 +744,6 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>jquery</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1599,7 +755,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.6</last-edited>
+          <last-edited>1.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1611,7 +767,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring|YourEffect</last-edited>
+          <last-edited>Spring|youreffect</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1624,17 +780,6 @@
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
           <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

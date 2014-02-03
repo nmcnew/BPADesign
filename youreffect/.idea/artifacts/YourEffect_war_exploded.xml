@@ -1,11 +1,11 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" build-on-make="true" name="YourEffect:war exploded">
+  <artifact type="exploded-war" name="youreffect:war exploded">
     <output-path>$PROJECT_DIR$/target/ROOT</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="YourEffect/web/Web" />
+      <element id="javaee-facet-resources" facet="youreffect/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="YourEffect" />
+          <element id="module-output" name="youreffect" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.springframework:spring-core:3.2.0.RELEASE" />

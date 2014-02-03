@@ -4,14 +4,17 @@
     <title>Your Effect</title>
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="../assets/css/MainStyles.css" rel="stylesheet">
-    <script src="../assets/js/lib.js"></script>
-    <script src="../assets/js/model/user.js"></script>
     <script type="text/javascript"
             src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/model/user.js"></script>
+    <script src="../assets/js/model/item.js"></script>
+    <script src="../assets/js/lib.js"></script>
+    <script src="../assets/js/calculate.js"></script>
     <script type="text/javascript">
         $(function() {
             $("#dialog").hide();
+            $("#errorLabel").hide();
         })
     </script>
 </head>
@@ -21,7 +24,7 @@
         <ul class="nav navbar-nav">
             <li><a href="../">Home</a></li>
             <li><a href="../CostCalculator/">Cost Calculator</a></li>
-            <li><a href="../">Check Stats</a></li>
+            <li><a href="../CheckStats/">Check Stats</a></li>
             <li class="active"><a href="#">Register</a></li>
             <li>
                 <div class="navbar-text navbar-left small">Logged in
@@ -39,7 +42,7 @@
 </nav>
 <div class="body">
     <div id="dialog" class="alert alert-dismissable">
-        <button type="button" class="close" id="alertClose"
+        <button type="button" class="close" onclick="dialogFadeOut()"
                 aria-hidden="true">&times;</button>
         <div id="response">
             <strong id="response-title"></strong>
@@ -62,9 +65,10 @@
                                                                      placeholder="Enter email">
             </div>
             <div class="form-group">
-                <label for="reg_password">Password*</label> <input type="password"
-                                                                   class="form-control input-sm" id="reg_password"
-                                                                   placeholder="Password">
+                <label id="errorLabel" class="control-label" for="reg_password"></label>
+                <br /> <label for="reg_password">Password*</label> <input
+                    type="password" class="form-control input-sm" id="reg_password"
+                    placeholder="Password">
             </div>
             <div class="form-group ">
                 <label for="passwordCheck">Password Check*</label> <input
@@ -72,7 +76,7 @@
                     placeholder="Retype Password">
             </div>
             <div>
-                <select id="reg_state" name="state" class="input-sm">
+                <select id="reg_state" name="state" class="form-control input-sm">
                     <option value="">State</option>
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
@@ -127,7 +131,7 @@
                 </select>
             </div>
             <br />
-            <button onclick="checkReg()" type="submit" class="btn btn-default ">Register</button>
+            <button onclick="register($('#reg_username').val(),$('#reg_email').val(),$('#reg_password').val(),$('#reg_state').val())" type="submit" class="btn btn-default ">Register</button>
         </form>
         <form onsubmit="return false;" role="form" class="loginForm">
             <h3>
@@ -150,36 +154,41 @@
     </div>
 </div>
 <script type="text/javascript">
-    $("#alertClose").click(function(){
+    $("#passwordCheck").focusout(
+            function() {
+                if ($("#reg_password").val() != $("#passwordCheck").val()) {
+                    $("#reg_password").parents(".form-group").removeClass(
+                            "has-success");
+                    $("#passwordCheck").parents(".form-group").removeClass(
+                            "has-success");
+                    $("#reg_password").parents(".form-group").addClass(
+                            "has-error");
+                    $("#passwordCheck").parents(".form-group").addClass(
+                            "has-error");
+                    $("#reg_password").parents(".form-group").prepend('');
+                    $("#errorLabel").fadeIn();
 
-        $("#dialog").removeClass("alert-success");
-        $("#dialog").removeClass("alert-info");
-        $("#dialog").removeClass("alert-danger");
-        $("#dialog").removeClass("alert-warning");
+                } else {
+                    $("#reg_password").parents(".form-group").removeClass(
+                            "has-error");
+                    $("#passwordCheck").parents(".form-group").removeClass(
+                            "has-error");
+                    $("#reg_password").parents(".form-group").addClass(
+                            "has-success");
+                    $("#passwordCheck").parents(".form-group").addClass(
+                            "has-success");
+                    $("#errorLabel").text("Passwords Match!");
+                    $("#errorLabel").fadeIn();
+                }
+
+            });
+    $("#passwordCheck").focusin(function() {
+        $("#errorLabel").fadeOut();
+
     });
-    function checkReg() {
-        if ($("#reg_username").val().length < 3) {
-            //do something
-            $("#reg_username").parents(".form-group").addClass("has-error");
-
-            $("#response-title").text("Failure!");
-            $("#response-text").text("Username Invalid");
-
-        }
-        else if($("#reg_password").val() != $("passwordCheck")){
-            console.log("PWord Don't match");
-            $("#reg_password").parents(".form-group").addClass("has-error");
-
-            $("#passwordCheck").parents(".form-group").addClass("has-error");
-        }
-        else {
-            register($('#reg_username').val(), $('#reg_email').val(), $(
-                    '#reg_password').val(), $('#reg_state').val());
-        }
-    }
     $("#alertClose").click(function() {
         $("#dialog").fadeOut();
-    })
+    });
 </script>
 </body>
 </html>

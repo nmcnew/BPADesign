@@ -22,11 +22,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="YourEffect" />
+        <module name="youreffect" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="YourEffect" target="1.6" />
+      <module name="youreffect" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>

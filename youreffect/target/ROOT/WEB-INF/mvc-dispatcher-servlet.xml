@@ -34,6 +34,14 @@
         <property name="userDaoImpl" ref="userdaoimpl"/>
     </bean>
 
+    <bean id="itemdaoimpl" class="com.youreffect.dao.ItemDaoImpl">
+        <property name="mongoTemplate" ref="mongotemplate"/>
+    </bean>
+
+    <bean id="itemservice" class="com.youreffect.service.ItemService">
+        <property name="itemDaoImpl" ref="itemdaoimpl"/>
+    </bean>
+
     <bean id="gson" class="com.google.gson.Gson"></bean>
 
     <bean id="hashservice" class="com.youreffect.service.HashService" >

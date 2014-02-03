@@ -20,10 +20,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("/item")
 public class ItemController {
 
-    /** item reference */
-    @Autowired
-    private Item item;
-
     /** abstract out user CRUD operations */
     @Autowired
     private ItemService itemService;
@@ -47,35 +43,8 @@ public class ItemController {
      */
     @RequestMapping(value = "/save", method = RequestMethod.POST)
     public @ResponseBody String saveItem(@RequestBody String data) {
-        item = gson.fromJson(data, Item.class);
+        Item item = gson.fromJson(data, Item.class);
         item.setItemId(hashService.md5(item.getName() + item.getEnergy() + item.getSpecsStr()));
-        itemService.insertItem(item);
-        responseService.setData(item);
-        responseService.setMessage("item successfully saved");
-        return responseService.toString();
-    }
-
-    @RequestMapping(value = "/view", method = RequestMethod.POST)
-    public @ResponseBody String viewItem(@RequestBody String data) {
-        item = gson.fromJson(data, Item.class);
-        itemService.insertItem(item);
-        responseService.setData(item);
-        responseService.setMessage("item successfully saved");
-        return responseService.toString();
-    }
-
-    @RequestMapping(value = "/update", method = RequestMethod.POST)
-    public @ResponseBody String updateItem(@RequestBody String data) {
-        item = gson.fromJson(data, Item.class);
-        itemService.insertItem(item);
-        responseService.setData(item);
-        responseService.setMessage("item successfully saved");
-        return responseService.toString();
-    }
-
-    @RequestMapping(value = "/delete", method = RequestMethod.POST)
-    public @ResponseBody String deleteItem(@RequestBody String data) {
-        item = gson.fromJson(data, Item.class);
         itemService.insertItem(item);
         responseService.setData(item);
         responseService.setMessage("item successfully saved");

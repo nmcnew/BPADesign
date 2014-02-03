@@ -1,16 +1,19 @@
 function User() {
+    this.userId = '';
     this.username = '';
     this.email = '';
     this.password = '';
     this.state = '';
+    this.items = {};
 }
 
 function User(username, email, password, state) {
+    this.userId = '';
     this.username = username;
     this.email = email;
     this.password = password;
     this.state = state;
-    console.log(this);
+    this.items = {};
 }
 
 User.prototype.username = function (username) {
@@ -27,4 +30,8 @@ User.prototype.password = function (password) {
 
 User.prototype.state = function (state) {
     this.state = state;
+}
+
+User.prototype.items = function(items) {
+    this.items = items;
 }

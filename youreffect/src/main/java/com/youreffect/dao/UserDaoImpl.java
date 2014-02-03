@@ -65,7 +65,7 @@ public class UserDaoImpl implements UserDao{
      */
     @Override
     public void updateUser(User user) {
-        mongoTemplate.save(user);
+
     }
 
     /**
@@ -73,8 +73,8 @@ public class UserDaoImpl implements UserDao{
      * @param id user id
      */
     @Override
-    public void deleteUser(String id, String password) {
-        Query query = new Query(Criteria.where("_id").is(id).andOperator(Criteria.where("password").is(password)));
+    public void deleteUser(String id) {
+        Query query = new Query(Criteria.where("_id").is(id));
         User user = mongoTemplate.findOne(query, User.class);
         mongoTemplate.remove(user);
     }

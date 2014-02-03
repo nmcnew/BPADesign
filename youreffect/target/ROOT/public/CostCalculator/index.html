@@ -8,7 +8,10 @@
     <script type="text/javascript"
             src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/model/user.js"></script>
+    <script src="../assets/js/model/item.js"></script>
     <script src="../assets/js/lib.js"></script>
+    <script src="../assets/js/calculate.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-inverse center" role="navigation">
@@ -16,7 +19,7 @@
         <ul class="nav navbar-nav">
             <li><a href="../">Home</a></li>
             <li class="active"><a href="#">Cost Calculator</a></li>
-            <li><a href="#">Check Stats</a></li>
+            <li><a href="../CheckStats/">Check Stats</a></li>
             <li><a href="../register/">Register</a></li>
             <li>
                 <div class="navbar-text navbar-left small">Logged in
@@ -62,10 +65,11 @@
         </div>
         <br />
         <div class="input-group">
-            <input type="text" id="rateOfElectricity" class="form-control "
-                   placeholder="Electric Rate kWh"> US Average: 0.1138
+            <input type="text" id="rateOfElectricity" class="form-control"
+                   placeholder="Electric Rate kWh">
         </div>
         <br />
+        <button id="submitBtn" type="button" class="btn btn-success" onclick="submitMainForm()">Submit</button>
     </form>
 
     <div class="modal fade" id="electricOptions" tabindex="-1"
@@ -75,7 +79,7 @@
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal"
                             aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="eModalLabel">Electric Options</h4>
+                    <h4 class="modal-title" id="myModalLabel">Electric Options</h4>
                 </div>
                 <div class="modal-body">
                     <form id="elecForm" class="form">
@@ -107,12 +111,11 @@
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal"
                             aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="gasModalLabel">Gas Options</h4>
+                    <h4 class="modal-title" id="myModalLabel">Gas Options</h4>
                 </div>
                 <div class="modal-body">
                     <form class="form">
                         <input type="radio" name="gOptions" value="furn">Furnace<br />
-
                         <button type="button" onclick="addOptionGas()"
                                 class="btn btn-primary" data-dismiss="modal">Add</button>
                     </form>
@@ -122,15 +125,6 @@
     </div>
 </div>
 <script>
-    $(".mainForm").on("click",".formWrapper .input-group .input-group-btn .optionable .item",
-            function() {
-                console.log("Working item");
-                var selText = $(this).text();
-                $(this).parents('.input-group-btn')
-                        .find('.dropdown-toggle').html(
-                                selText + ' <span class="caret"></span>');
-
-            });
     $(".editButton").click(function() {
         $(".removeable").fadeToggle();
     });

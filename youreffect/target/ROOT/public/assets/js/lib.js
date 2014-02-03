@@ -1,3 +1,15 @@
+var curUser = new User();
+
+init();
+
+function init() {
+    try {
+        curUser = JSON.parse(localStorage.getItem("curUser"));
+    } catch (e) {
+        console.log(e)
+    }
+}
+
 function getContextRoot(key) {
     var s = "";
     var j = -1;
@@ -14,35 +26,33 @@ function getContextRoot(key) {
 }
 
 function register(username, email, password, state) {
-    var user = new User(username, email, password, state);
-    $.ajax({
-        url : getContextRoot('public') + '/user/register',
-        type : 'POST',
-        dataType : 'json',
-        data : JSON.stringify(user),
-        contentType : "application/json; charset=utf-8",
-        success : function(data) {
-            console.log(data);
-            if (data.message.toString().indexOf('successful') != -1) {
-                $("#dialog").addClass("alert-success");
-                $("#response-title").text("Success!");
+    if (checkReg()) {
+        var user = new User(username, email, password, state);
+        console.log(user);
+        $.ajax({
+            url : getContextRoot('public') + '/user/register',
+            type : 'POST',
+            dataType : 'json',
+            data : JSON.stringify(user),
+            contentType : "application/json; charset=utf-8",
+            success : function(data) {
+                console.log(data);
+                removeAlertClass();
+                if (data.message.toString().indexOf('successful') != -1) {
+                    $("#dialog").addClass("alert-success");
+                    $("#response-title").text("Success!");
 
-            } else {
-                $("#dialog").addClass("alert-danger");
-                $("#response-title").text("Failure!");
+                } else {
+
+                    $("#dialog").addClass("alert-danger");
+                    $("#response-title").text("Failure!");
+                }
+                $("#dialog").fadeIn();
+                $("#response-text").html(data.message);
+
             }
-            // if ($("#dialog").hasClass("hidden")) {
-            // $("#dialog").removeClass("hidden");
-            // $("#dialog").removeClass("alert-success");
-            // $("#dialog").removeClass("alert-danger");
-            // $("#dialog").addClass("alert-info");
-            // $("#response-title").text("Register");
-            // }
-            $("#dialog").fadeIn();
-            $("#response-text").html(data.message);
-
-        }
-    });
+        });
+    }
 }
 
 function login(username, password) {
@@ -55,12 +65,14 @@ function login(username, password) {
         contentType : "application/json; charset=utf-8",
         success : function(data) {
             console.log(data);
+
+            removeAlertClass();
+
             if (data.message.toString().indexOf('successful') != -1) {
                 localStorage.setItem("curUser", JSON.stringify(data.data));
                 $("#dialog").addClass("alert-success");
                 $("#response-title").text("Success!");
-                document.getElementById("curLogin").innerHTML = (JSON
-                    .parse(localStorage.getItem("curUser")).username);
+                document.getElementById("curLogin").innerHTML = (JSON.parse(localStorage.getItem("curUser")).username);
             } else {
                 $("#dialog").addClass("alert-danger");
                 $("#response-title").text("Failure!");
@@ -71,6 +83,21 @@ function login(username, password) {
         }
     });
 }
+
+function saveItem(item) {
+    item.userId = curUser.userId;
+    $.ajax({
+        url : getContextRoot('public') + '/item/save',
+        type : 'POST',
+        data : JSON.stringify(item),
+        contentType : "application/json; charset=utf-8",
+        success : function(data) {
+            var data = JSON.parse(data);
+            console.log(data);
+        }
+    });
+}
+
 function addOptionGas() {
     var radios = document.getElementsByName("gOptions");
     var selected = "";
@@ -82,13 +109,15 @@ function addOptionGas() {
     }
     switch (selected) {
         case "furn":
-            $(".mainForm")
-                .append(
-                    '<div id="furnWrap" class="furnWrap formWrapper"><h3>Furnace</h3><!-- Remove Button --><div class="input-group removeable pull-right"><button type="button" class="btn btn-danger " onclick="removeButt($(this))"><span class="glyphicon glyphicon-minus-sign"></span> Remove</button></div><div id="fuelType" class="input-group"><div class="input-group-btn "><button type="button" class="btn btn-default dropdown-toggle "data-toggle="dropdown">Fuel <span class="caret"></span></button><ul class="dropdown-menu optionable"><li class="item">Gas</a></li><li class="item">Oil</a></li></ul></div></div><br /><div class="input-group "><input id="houseSize" type="number" class="form-control"placeholder="Size of Your House(Square Feet)"></div><br /><div id="houseEra" class="input-group"><div class="input-group-btn "><button type="button" class="btn btn-default dropdown-toggle "data-toggle="dropdown">Era of House <span class="caret"></span></button><ul class="dropdown-menu optionable" role="menu"><li>Era of House</li><li class="item">Before 1940</li><li class="item">1940-1949</li><li class="item">1950-1959</li><li class="item">1960-1969</li><li class="item">1970-1979</li><li class="item">1980-1989</li><li class="item">1990-2000</li><li class="item">2000-Present</li></ul></div></div><br /><div id="unitEra" class="input-group"><div class="input-group-btn "><button type="button" class="btn btn-default dropdown-toggle "data-toggle="dropdown">Era of Unit <span class="caret"></span></button><ul class="dropdown-menu optionable" role="menu"><li>Era of Unit</li><li class="item">1960-1969</li><li class="item">1970-1974</li><li class="item">1975-1983</li><li class="item">1984-1987</li><li class="item">1988-1991</li><li class="item">After 1992</li><li class="item">New Unit</li></ul></div></div><br /><div class="input-group"><div class="input-group-btn"><button type="button" class="btn btn-default dropdown-toggle "data-toggle="dropdown">Thermostat? <span class="caret"></span></button><ul class="dropdown-menu optionable"><li>Thermostat?</li><li class="item">Yes</a></li><li class="item">No</a></li></ul></div></div></div>');
+            $(".mainForm").append('<div></div>');
+            $($(".mainForm")[0].childNodes[$(".mainForm")[0].childNodes.length - 1]).load('testPage.html #furnWrap');
             $(".removeable").hide();
+            $("#furnWrap").hide();
+            $("#furnWrap").fadeIn();
             break;
     }
 }
+
 function addOptionElec() {
     var radios = document.getElementsByName('eOptions');
     var selected = "";
@@ -101,49 +130,237 @@ function addOptionElec() {
     console.log(selected);
     switch (selected) {
         case "acCentral":
-            $(".mainForm")
-                .append(
-                    '<div class="accWrapper formWrapper"><h3>Central Air Conditioning</h3><div class="input-group removeable pull-right"><button type="button" class="btn btn-danger" onclick="removeButt($(this))"><span class="glyphicon glyphicon-minus-sign"></span> Remove</button></div><div class="input-group "><input type="number" class="form-control"placeholder="Number of Units"></div><br /><div class="input-group "><input type="number" class="form-control" placeholder="SEER Rating"></div><br /><div class="input-group"><div class="input-group-btn "><button type="button" class="btn btn-default dropdown-toggle "data-toggle="dropdown">Cooling Capacity (Btu/hr) <span class="caret"></span></button><ul class="dropdown-menu optionable"><li class="item">2.5 ton</a></li><li class="item">3.0 ton</a></li><li class="item">3.5 ton</a></li><li class="item">4.0 ton</a></li><li class="item">5.0 ton</a></li></ul></div></div><br /><div class="input-group"><div class="input-group-btn"><button type="button" class="btn btn-default dropdown-toggle "data-toggle="dropdown">Thermostat? <span class="caret"></span></button><ul class="dropdown-menu optionable"><li style="color: #101010">Thermostat?</li><li class="item">Yes</a></li><li class="item">No</a></li></ul></div></div></div>');
-            $(".removeable").hide();
-            $(".accWrapper").hide();
-            $(".accWrapper").fadeIn();
+            $(".mainForm").append('<div></div>');
+            $($(".mainForm")[0].childNodes[$(".mainForm")[0].childNodes.length - 1]).load('testPage.html #accWrapper');
+
+            $("#accWrapper").hide();
+            $("#accWrapper").fadeIn();
             break;
         case "acRoom":
-            $(".mainForm").append('<div id="acrWrapper" class="formWrapper"><h3>Personal Air Conditioner</h3><div class="input-group removeable pull-right"onclick="removeButt($(this))"><button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-minus-sign"></span> Remove</button></div><div class="input-group "><input id="acrNumOfUnits" type="number" class="form-control"placeholder="Number of Units"></div><h4>EER Rating</h4><div class="input-group "><input id="eerRating " type="number" class="form-control"placeholder="EER Rating"></div><h4>Cooling Capacity</h4><div class="input-group "><input id="acrCoolCap " type="number" class="form-control"placeholder="Cooling Capacity"></div></div>');
-            $(".removeable").hide();
+            $(".mainForm").append('<div></div>');
+            $($(".mainForm")[0].childNodes[$(".mainForm")[0].childNodes.length - 1]).load('testPage.html #acrWrapper');
             $("#acrWrapper").hide();
             $("#acrWrapper").fadeIn();
             break;
         case "purifier":
+            $(".mainForm").append('<div></div>');
+            $($(".mainForm")[0].childNodes[$(".mainForm")[0].childNodes.length - 1]).load('testPage.html #airPureWrapper');
+            $("#airPureWrapper").hide();
+            $("#airPureWrapper").fadeIn();
             break;
         case "washer":
+            $(".mainForm").append('<div></div>');
+            $($(".mainForm")[0].childNodes[$(".mainForm")[0].childNodes.length - 1]).load('testPage.html #clothesWasherWrapper');
+            $("#clothesWasherWrapper").hide();
+            $("#clothesWasherWrapper").fadeIn();
             break;
         case "dehumidifier":
+            $(".mainForm").append('<div></div>');
+            $($(".mainForm")[0].childNodes[$(".mainForm")[0].childNodes.length - 1]).load('testPage.html #dehumidWrapper');
+            $("#dehumidWrapper").hide(function(){
+                $(this).fadeIn();
+            });
             break;
         case "dishwasher":
+            $(".mainForm").append('<div></div>');
+            $($(".mainForm")[0].childNodes[$(".mainForm")[0].childNodes.length - 1]).load('testPage.html #dishWashWrapper');
+            $("#dishWashWrapper").hide();
+            $("#dishWashWrapper").fadeIn();
             break;
         case "freezer":
+            $(".mainForm").append('<div></div>');
+            $($(".mainForm")[0].childNodes[$(".mainForm")[0].childNodes.length - 1]).load('testPage.html #freezerWrapper');
+            $("#freezerWrapper").hide();
+            $("#freezerWrapper").fadeIn();
             break;
         case "lightBulb":
-            console.log($(".bulbWrap").length);
-            if ($(".mainForm").children(".bulbWrap").length == 0) {
-                $(".mainForm")
-                    .append(
-                        '<div class="lBulbCover formWrapper"><h3>Light Bulbs</h3><div class="input-group removeable pull-right"><button type="button" class="btn btn-danger" onclick="removeButt($(this))"><span class="glyphicon glyphicon-minus-sign"></span> Remove</button></div><div class="input-group"><input type="number" class="form-control" placeholder="Quantity"></div><br /><div class="input-group"><input type="number" class="form-control "placeholder="Average Daily Use (hours)"></div><br /><div class="input-group"><div class="input-group-btn"><button type="button" class="btn btn-default dropdown-toggle "data-toggle="dropdown">75 W Incandescent <span class="caret"></span></button><ul class="dropdown-menu optionable"><li class="item">40 W incandescent</a></li><li class="item">60 W incandescent</a></li><li class="item">75 W incandescent</a></li><li class="item">100 W incandescent</a></li><li class="item">150 W incandescent</a></li><li class="item">29 W Halogen(40 W Equivalent)</a></li><li class="item">43 W Halogen(60 W Equivalent)</a></li><li class="item">53 W Halogen(75 W Equivalent)</a></li><li class="item">72 W Halogen(100 W Equivalent)</a></li></ul></div></div></div>');
-                $(".removeable").hide();
+            if ($(".mainForm").children("#lBulbWrapper").length == 0) {
+                $(".mainForm").append('<div></div>');
+                $($(".mainForm")[0].childNodes[$(".mainForm")[0].childNodes.length - 1]).load('testPage.html #lBulbWrapper');
+                $("#lBulbWrapper").hide();
+                $("#lBulbWrapper").fadeIn();
             }
-
             break;
         case "fridge":
+            $(".mainForm").append('<div></div>');
+            $($(".mainForm")[0].childNodes[$(".mainForm")[0].childNodes.length - 1]).load('testPage.html #fridgeWrapper');
+            $("#fridgeWrapper").hide();
+            $("#fridgeWrapper").fadeIn();
             break;
         case "compactFridge":
-
+            $(".mainForm").append('<div></div>');
+            $($(".mainForm")[0].childNodes[$(".mainForm")[0].childNodes.length - 1]).load('testPage.html #cFridgeWrapper');
+            $("#cFridgeWrapper").hide();
+            $("#cFridgeWrapper").fadeIn();
             break;
+
     }
+    $(".removeable").hide();
 }
+
 function removeButt(domElement) {
     $(domElement).parents(".formWrapper").fadeOut(300, function() {
 
         $(domElement).parents(".formWrapper").remove();
     });
+}
+
+function checkReg() {
+    var ready = false;
+    var errorString = "";
+    //first checks username
+    if ($("#reg_username").val().length < 3) {
+        $("#reg_username").parents(".form-group").addClass("has-error");
+        removeAlertClass();
+        $("#dialog").addClass("alert-danger");
+        $("#response-title").text("Failure!");
+        errorString += "Username Invalid<br/>";
+        ready = false;
+    } else {
+        $("#reg_username").parents(".form-group").removeClass("has-error");
+        dialogFadeOut();
+        ready = true;
+    }
+
+    //then password stuff
+    if (!($("#reg_password").val() == $("#passwordCheck").val() && $("#reg_password").val().length > 0)) {
+        $("#reg_password").parents(".form-group").addClass("has-error");
+        $("#passwordCheck").parents(".form-group").addClass("has-error");
+        removeAlertClass();
+        $("#dialog").addClass("alert-danger");
+        $("#response-title").text("Failure!");
+        errorString += "Passwords Do not Match/Not Long Enough<br/>";
+        ready = false;
+    } else {
+        $("#reg_password").parents(".form-group").removeClass("has-error");
+        $("#passwordCheck").parents(".form-group").removeClass("has-error");
+        dialogFadeOut();
+        ready = true;
+    }
+
+    //then email stuff
+    if (!($("#reg_email").val().length > 1 && $("#reg_email").val().indexOf("@") != -1)) {
+        $("#reg_email").parents(".form-group").addClass("has-error");
+        removeAlertClass();
+        $("#dialog").addClass("alert-danger");
+        $("#response-title").text("Failure!");
+        errorString += "Email Invalid";
+        if ($("#reg_email").val().indexOf("@") == -1) {
+            errorString += ": Forgot the @";
+        }
+        ready = false;
+    } else {
+        $("#reg_email").parents(".form-group").removeClass("has-error");
+        dialogFadeOut();
+        ready = true;
+    }
+
+    $("#response-text").html(errorString);
+
+    $("#dialog").fadeIn();
+
+    return ready;
+}
+
+function submitMainForm(){
+    var myForms = $("div[id$='Wrapper']");
+    // iterates through all forms.
+    for(var i = 0; i < myForms.length; i++ ){
+        var item = new Item();
+        item.specs = {};
+        var form = myForms[i];
+        var children = form.childNodes;
+        // gets all input name/value pairs and select name/value pairs
+        for(var j = 0; j < children.length; j++) {
+            var node = $(children[j]);
+            if (node.is('h3')) {
+                item.name = $(node).html().split("<")[0].trim();
+            }
+            if (node.is('input')) {
+                if ($(node).attr('name') == 'energy') {
+                    item.energy = $(node).val();
+                }
+                else if ($(node).attr('name').indexOf('uantity') != -1) {
+                    var val = $(node).val();
+                    item.quantity = $(node).val();
+                }
+                else {
+                    var key = $(node).attr('name');
+                    var val = $(node).val();
+                    item.addSpec(key,val);
+                }
+            }
+            if (node.is('select')) {
+                var key = $(node).attr('name');
+                var val = $(node).val();
+                item.addSpec(key,val);
+            }
+            if (node.is('div') && $(node).hasClass('input-group')) {
+                var arr = $(node).children();
+                for(var k = 0; k < arr.length; k ++) {
+                    if ($(arr[k]).is('input')) {
+                        var key = $(arr[k]).attr('name');
+                        var val = $(arr[k]).val();
+                        item.addSpec(key,val);
+                    }
+                }
+            }
+        }
+        console.log(item);
+        saveItem(item);
+    }
+}
+function dialogFadeOut() {
+    $("#dialog").fadeOut();
+}
+
+function removeAlertClass() {
+    $("#dialog").removeClass("alert-success");
+    $("#dialog").removeClass("alert-info");
+    $("#dialog").removeClass("alert-danger");
+    $("#dialog").removeClass("alert-warning");
+
+}
+
+function search(key, filter) {
+    var items = curUser.items;
+    var hits = [];
+    $.each(items, function (itemId, item) {
+        if(item.name.toLowerCase().indexOf(key.toLowerCase()) != -1 && (filter.length == 0 || (filter.length > 0 && item.energy == filter))) {
+            hits.push(item);
+        }
+    });
+    return hits;
+}
+
+function populateFilteredList(hits, list, reply) {
+    list.empty();
+    var s = "";
+    for (var i in hits) {
+        var item = hits[i];
+        s += ("<tr>");
+        s += ("<td>"+item.name+"</td>");
+        s += ("<td>"+item.energy+"</td>");
+        s += ("<td>"+item.quantity+"</td>");
+        s += ("</tr>");
+    }
+    list.append(s);
+    reply.html(hits.length + " results");
+}
+
+function populateList(list,reply) {
+    var count = 0;
+    var items = curUser.items;
+    var s = "";
+    $.each(items, function (itemId, item) {
+        s += ("<tr>");
+        s += ("<td>"+item.name+"</td>");
+        s += ("<td>"+item.energy+"</td>");
+        s += ("<td>"+item.quantity+"</td>");
+        s += ("</tr>");
+        ++count;
+    });
+    list.append(s);
+    reply.html(count + " results");
+
 }
