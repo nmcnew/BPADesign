@@ -57,11 +57,22 @@ public class UserService {
         return userDaoImpl.readUser(id, password);
     }
 
+    public void remove(String id, String password) {
+        userDaoImpl.deleteUser(id, password);
+    }
+
+    public void update(User user) {
+        userDaoImpl.updateUser(user);
+    }
+
     /**
      * sets UserDaoImpl
      * @param userDaoImpl performs database interactions
      */
     public void setUserDaoImpl(UserDaoImpl userDaoImpl) {
+
         this.userDaoImpl = userDaoImpl;
     }
+
+
 }

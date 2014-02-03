@@ -22,6 +22,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("/user")
 public class UserController {
 
+    /** user reference */
+    @Autowired
+    private User user;
+
     /** abstract out user CRUD operations */
     @Autowired
     private UserService userService;
@@ -68,7 +72,7 @@ public class UserController {
      */
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public @ResponseBody String login(@RequestBody String data) {
-        User user = gson.fromJson(data, User.class);
+        user = gson.fromJson(data, User.class);
         user.setUserId(hashService.md5(user.getUsername()));
         user.setPassword(hashService.md5(user.getPassword()));
         try {
@@ -80,6 +84,39 @@ public class UserController {
         } catch (LoginException le) {
             responseService.setMessage(le.getMessage());
         }
+        responseService.setData(user);
+        return responseService.toString();
+    }
+
+    @RequestMapping(value = "/view", method = RequestMethod.POST)
+    public @ResponseBody String view(@RequestBody String data) {
+        user = gson.fromJson(data, User.class);
+        try {
+            if(!userService.exists(user.getUserId(), user.getPassword())) {
+                throw new LoginException("login failed");
+            }
+            user = userService.loginUser(user.getUserId(), user.getPassword());
+            responseService.setMessage("login was successful");
+        } catch (LoginException le) {
+            responseService.setMessage(le.getMessage());
+        }
+        responseService.setData(user);
+        return responseService.toString();
+    }
+
+    @RequestMapping(value = "/update", method = RequestMethod.POST)
+    public @ResponseBody String update(@RequestBody String data) {
+        user = gson.fromJson(data, User.class);
+        userService.update(user);
+        responseService.setData(user);
+        return responseService.toString();
+    }
+
+
+    @RequestMapping(value = "/remove", method = RequestMethod.POST)
+    public @ResponseBody String remove(@RequestBody String data) {
+        user = gson.fromJson(data, User.class);
+        userService.remove(user.getUserId(), user.getPassword());
         responseService.setData(user);
         return responseService.toString();
     }
