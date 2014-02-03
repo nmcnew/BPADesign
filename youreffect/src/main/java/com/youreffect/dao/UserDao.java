@@ -16,5 +16,5 @@ public interface UserDao {
     /** update user by properties */
     void updateUser(User user);
     /** delete user based on id */
-    void deleteUser(String id);
+    void deleteUser(String id, String password);
 }

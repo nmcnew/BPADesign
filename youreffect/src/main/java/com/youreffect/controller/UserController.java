@@ -14,6 +14,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * @author Deeban Ramalingam
  * UserController directs all CRUD operations pertaining to User based on the request URL
@@ -21,6 +24,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 @RequestMapping("/user")
 public class UserController {
+
+    /** user reference */
+    @Autowired
+    private User user;
 
     /** abstract out user CRUD operations */
     @Autowired
@@ -53,6 +60,7 @@ public class UserController {
                 throw new RegisterException("failed to register new user because username already exists");
             }
             userService.registerUser(user);
+            user.setDateRegistered(new SimpleDateFormat("MM.dd.yyyy").format(new Date()));
             responseService.setMessage("new user successfully registered");
         } catch (RegisterException re) {
             responseService.setMessage(re.getMessage());
@@ -68,7 +76,7 @@ public class UserController {
      */
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public @ResponseBody String login(@RequestBody String data) {
-        User user = gson.fromJson(data, User.class);
+        user = gson.fromJson(data, User.class);
         user.setUserId(hashService.md5(user.getUsername()));
         user.setPassword(hashService.md5(user.getPassword()));
         try {
@@ -76,10 +84,44 @@ public class UserController {
                 throw new LoginException("login failed");
             }
             user = userService.loginUser(user.getUserId(), user.getPassword());
+            user.getDatesLoggedIn().add(new SimpleDateFormat("MM.dd.yyyy").format(new Date()));
             responseService.setMessage("login was successful");
         } catch (LoginException le) {
             responseService.setMessage(le.getMessage());
         }
+        responseService.setData(user);
+        return responseService.toString();
+    }
+
+    @RequestMapping(value = "/view", method = RequestMethod.POST)
+    public @ResponseBody String view(@RequestBody String data) {
+        user = gson.fromJson(data, User.class);
+        try {
+            if(!userService.exists(user.getUserId(), user.getPassword())) {
+                throw new LoginException("user does not exist");
+            }
+            user = userService.loginUser(user.getUserId(), user.getPassword());
+            responseService.setMessage("user found");
+        } catch (LoginException le) {
+            responseService.setMessage(le.getMessage());
+        }
+        responseService.setData(user);
+        return responseService.toString();
+    }
+
+    @RequestMapping(value = "/update", method = RequestMethod.POST)
+    public @ResponseBody String update(@RequestBody String data) {
+        user = gson.fromJson(data, User.class);
+        userService.update(user);
+        responseService.setData(user);
+        return responseService.toString();
+    }
+
+
+    @RequestMapping(value = "/remove", method = RequestMethod.POST)
+    public @ResponseBody String remove(@RequestBody String data) {
+        user = gson.fromJson(data, User.class);
+        userService.remove(user.getUserId(), user.getPassword());
         responseService.setData(user);
         return responseService.toString();
     }
