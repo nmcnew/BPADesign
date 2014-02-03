@@ -84,6 +84,22 @@ function login(username, password) {
     });
 }
 
+function updateUser(user) {
+    var user = user;
+    $.ajax({
+        url : getContextRoot('public') + '/user/update',
+        type : 'POST',
+        dataType: 'json',
+        data : JSON.stringify(user),
+        contentType : "application/json; charset=utf-8",
+        success : function(data) {
+            console.log(data);
+            localStorage.setItem("curUser", JSON.stringify(data.data));
+            curUser = JSON.parse(localStorage.getItem("curUser")).username;
+        }
+    })
+}
+
 function saveItem(item) {
     item.userId = curUser.userId;
     $.ajax({
@@ -314,6 +330,7 @@ function submitMainForm(){
         }
         console.log(item);
         saveItem(item);
+        updateUser(curUser);
     }
 }
 function dialogFadeOut() {

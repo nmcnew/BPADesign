@@ -64,6 +64,10 @@ public class ItemDaoImpl implements ItemDao{
      */
     @Override
     public void deleteItem(String id) {
-
+        Query query = new Query(Criteria.where("_id").is(id));
+        User user = mongoTemplate.findOne(query, User.class);
+        System.out.println(user);
+        user.rmvItem(id);
+        mongoTemplate.save(user);
     }
 }

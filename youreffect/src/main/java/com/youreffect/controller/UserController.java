@@ -14,6 +14,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * @author Deeban Ramalingam
  * UserController directs all CRUD operations pertaining to User based on the request URL
@@ -57,6 +60,7 @@ public class UserController {
                 throw new RegisterException("failed to register new user because username already exists");
             }
             userService.registerUser(user);
+            user.setDateRegistered(new SimpleDateFormat("MM.dd.yyyy").format(new Date()));
             responseService.setMessage("new user successfully registered");
         } catch (RegisterException re) {
             responseService.setMessage(re.getMessage());
@@ -80,6 +84,7 @@ public class UserController {
                 throw new LoginException("login failed");
             }
             user = userService.loginUser(user.getUserId(), user.getPassword());
+            user.getDatesLoggedIn().add(new SimpleDateFormat("MM.dd.yyyy").format(new Date()));
             responseService.setMessage("login was successful");
         } catch (LoginException le) {
             responseService.setMessage(le.getMessage());
@@ -93,10 +98,10 @@ public class UserController {
         user = gson.fromJson(data, User.class);
         try {
             if(!userService.exists(user.getUserId(), user.getPassword())) {
-                throw new LoginException("login failed");
+                throw new LoginException("user does not exist");
             }
             user = userService.loginUser(user.getUserId(), user.getPassword());
-            responseService.setMessage("login was successful");
+            responseService.setMessage("user found");
         } catch (LoginException le) {
             responseService.setMessage(le.getMessage());
         }

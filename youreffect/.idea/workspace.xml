@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="06063096-bfe1-4e35-9f05-404f1a450a95" name="Default" comment="started admin but will work on it later with Nick&#10;">
+    <list default="true" id="06063096-bfe1-4e35-9f05-404f1a450a95" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/youreffect/controller/ItemController.java" afterPath="$PROJECT_DIR$/src/main/java/com/youreffect/controller/ItemController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/youreffect/dao/ItemDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/youreffect/dao/ItemDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/youreffect/service/ItemService.java" afterPath="$PROJECT_DIR$/src/main/java/com/youreffect/service/ItemService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/youreffect/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/youreffect/model/User.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/youreffect/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/youreffect/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" afterPath="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="YourEffect.iws" />
@@ -70,44 +71,7 @@
     <favorites_list name="YourEffect" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="UserController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="36" selection-start="3404" selection-end="3404" vertical-scroll-proportion="0.0" vertical-offset="1133" max-vertical-offset="1740">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CheckStats/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="61" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.4259635" vertical-offset="285" max-vertical-offset="1590">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="23" selection-start="1568" selection-end="1568" vertical-scroll-proportion="0.0" vertical-offset="608" max-vertical-offset="1185">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserDaoImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="36" selection-start="1845" selection-end="1845" vertical-scroll-proportion="0.0" vertical-offset="683" max-vertical-offset="1200">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -148,21 +112,16 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/docs/stylesheet.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/youreffect/dao/ItemDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/service/ItemService.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/CostCalculator/lightbulbs.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/youreffect/exception/ItemException.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/CO2Checker/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/CostCalculator/testPage.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/youreffect/model/Item.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/dao/ItemDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/controller/ItemController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/model/item.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/register/index.html" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/model/user.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/assets/css/MainStyles.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/CheckStats/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/assets/css/bootstrap.min.css" />
@@ -173,7 +132,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/youreffect/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/controller/ItemController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/dao/ItemDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/service/ItemService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/model/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" />
       </list>
     </option>
   </component>
@@ -343,7 +307,105 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="youreffect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YourEffect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="youreffect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YourEffect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="youreffect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="youreffect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YourEffect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="youreffect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -888,7 +950,7 @@
       <workItem from="1391366059841" duration="216000" />
       <workItem from="1391366378393" duration="139000" />
       <workItem from="1391376697111" duration="761000" />
-      <workItem from="1391387541266" duration="7743000" />
+      <workItem from="1391387541266" duration="9582000" />
     </task>
     <task id="LOCAL-00001" summary="setting up spring mvc">
       <created>1389477332614</created>
@@ -1078,11 +1140,15 @@
       <created>1391391530425</created>
       <updated>1391391530425</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="added remove/update/view users on backend&#10;">
+      <created>1391395478862</created>
+      <updated>1391395478862</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137807000" />
+    <option name="totallyTimeSpent" value="139646000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1436" height="878" extended-state="6" />
@@ -1140,7 +1206,6 @@
       <TodoPanelSettings />
     </option>
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="true" />
-    <MESSAGE value="modularized reg_check function (client-side), modified back-end setup and relationship between user and item" />
     <MESSAGE value="fixed relative links to check stats, added content to checkstats, need Nick to add styles to checkstats (front-end)" />
     <MESSAGE value="Need Nick to add styles" />
     <MESSAGE value="added curUser global variable to conveniently access client-side data&#10;" />
@@ -1165,7 +1230,8 @@
     <MESSAGE value="css fixed&#10;" />
     <MESSAGE value="commented out edit button (did not find any use of it with new design)&#10;" />
     <MESSAGE value="started admin but will work on it later with Nick" />
-    <option name="LAST_COMMIT_MESSAGE" value="started admin but will work on it later with Nick" />
+    <MESSAGE value="added remove/update/view users on backend&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="added remove/update/view users on backend&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1259,16 +1325,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="464" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/service/ItemService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="23" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/dao/ItemDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="29" selection-start="298" selection-end="298" vertical-scroll-proportion="0.25531915" vertical-offset="0" max-vertical-offset="705" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/exception/LoginException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="0" selection-start="187" selection-end="364" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315" />
@@ -1299,26 +1355,9 @@
         <state line="47" column="23" selection-start="868" selection-end="868" vertical-scroll-proportion="0.08928572" vertical-offset="420" max-vertical-offset="1020" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="31" selection-start="2841" selection-end="2841" vertical-scroll-proportion="0.4197292" vertical-offset="1373" max-vertical-offset="2310" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/ItemController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="25" selection-start="1359" selection-end="1359" vertical-scroll-proportion="0.59381044" vertical-offset="203" max-vertical-offset="720">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/calculate.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="78" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/dao/ItemDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="33" selection-start="1159" selection-end="1159" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1005" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
@@ -1407,13 +1446,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="332" column="27" selection-start="11656" selection-end="11656" vertical-scroll-proportion="9.632495" vertical-offset="0" max-vertical-offset="5670">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/admin/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="315" selection-end="315" vertical-scroll-proportion="0.14807302" vertical-offset="47" max-vertical-offset="540">
@@ -1442,30 +1474,84 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CheckStats/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="33" selection-start="58" selection-end="58" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="1590">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="23" selection-start="1568" selection-end="1568" vertical-scroll-proportion="0.0" vertical-offset="608" max-vertical-offset="1185">
+        <state line="63" column="20" selection-start="1729" selection-end="1729" vertical-scroll-proportion="0.0" vertical-offset="653" max-vertical-offset="1185">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/service/ItemService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="25" selection-start="659" selection-end="659" vertical-scroll-proportion="0.63829786" vertical-offset="0" max-vertical-offset="540">
+          <folding>
+            <element signature="e#738#739#0" expanded="true" />
+            <element signature="e#784#785#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/dao/ItemDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="29" selection-start="432" selection-end="432" vertical-scroll-proportion="0.46421662" vertical-offset="0" max-vertical-offset="517">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/dao/ItemDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="27" selection-start="1813" selection-end="1813" vertical-scroll-proportion="0.68085104" vertical-offset="548" max-vertical-offset="1065">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/ItemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="39" selection-start="2062" selection-end="2062" vertical-scroll-proportion="0.30367506" vertical-offset="608" max-vertical-offset="1185">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="152" column="34" selection-start="3285" selection-end="3285" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2610">
+          <folding>
+            <element signature="e#3401#3402#0" expanded="true" />
+            <element signature="e#3438#3439#0" expanded="true" />
+            <element signature="e#3498#3499#0" expanded="true" />
+            <element signature="e#3550#3551#0" expanded="true" />
+            <element signature="e#3601#3602#0" expanded="true" />
+            <element signature="e#3637#3638#0" expanded="true" />
+            <element signature="e#3706#3707#0" expanded="true" />
+            <element signature="e#3756#3757#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="36" selection-start="1845" selection-end="1845" vertical-scroll-proportion="0.0" vertical-offset="683" max-vertical-offset="1200">
+        <state line="67" column="33" selection-start="1882" selection-end="1882" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1200">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="323" column="24" selection-start="11541" selection-end="11541" vertical-scroll-proportion="0.4777563" vertical-offset="4598" max-vertical-offset="5925">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="36" selection-start="3404" selection-end="3404" vertical-scroll-proportion="0.0" vertical-offset="1133" max-vertical-offset="1740">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CheckStats/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="61" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.4259635" vertical-offset="285" max-vertical-offset="1590">
+        <state line="107" column="23" selection-start="4031" selection-end="4031" vertical-scroll-proportion="0.24564797" vertical-offset="1253" max-vertical-offset="1770">
           <folding />
         </state>
       </provider>
