@@ -1,7 +1,5 @@
 package com.youreffect.model;
 
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * @author Deeban Ramalingam
@@ -14,7 +12,7 @@ public class Item {
     private String name;
     private String energy;
     private int quantity;
-    private HashMap<String,Object> specs;
+    private String specs;
 
     public String getItemId() {
         return itemId;
@@ -48,23 +46,6 @@ public class Item {
         this.energy = energy;
     }
 
-    public HashMap<String, Object> getSpecs() {
-        return specs;
-    }
-
-    public String getSpecsStr() {
-        String s = "[";
-        for (Map.Entry<String,Object> pair : specs.entrySet()) {
-            s += pair.getKey() + " => " + pair.getValue() + ", ";
-        }
-        s = s.substring(0, s.length() - 2) + "]";
-        return s;
-    }
-
-    public void setSpecs(HashMap<String, Object> specs) {
-        this.specs = specs;
-    }
-
     public int getQuantity () {
         return quantity;
     }
@@ -73,15 +54,15 @@ public class Item {
         this.quantity = quantity;
     }
 
-    public void addToQuantity (int toAdd) {
-        this.quantity += toAdd;
+    public String getSpecs() {
+        return specs;
     }
 
-    public void subFromQuantity (int subFrom) {
-        this.quantity -= subFrom;
+    public void setSpecs(String specs) {
+        this.specs = specs;
     }
 
     public String toString() {
-        return String.format("Item[id=%s, userId='%s', name='%s', energy='%s', quantity='%s', specs='%s']", itemId, userId, name, energy, quantity, getSpecsStr());
+        return String.format("Item[id=%s, userId='%s', name='%s', energy='%s', quantity='%s', specs='%s']", itemId, userId, name, energy, quantity, specs);
     }
 }

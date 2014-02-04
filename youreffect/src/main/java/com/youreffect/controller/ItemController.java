@@ -7,10 +7,7 @@ import com.youreffect.service.ItemService;
 import com.youreffect.service.ResponseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @author Deeban Ramalingam
@@ -45,31 +42,42 @@ public class ItemController {
      * @param data JSON from client
      * @return
      */
-    @RequestMapping(value = "/save", method = RequestMethod.POST)
+    @RequestMapping(value = "/create", method = RequestMethod.POST)
     public @ResponseBody String saveItem(@RequestBody String data) {
         item = gson.fromJson(data, Item.class);
-        item.setItemId(hashService.md5(item.getName() + item.getEnergy() + item.getSpecsStr()));
-        itemService.insertItem(item);
+        item.setItemId(hashService.md5(item.getName() + item.getEnergy() + item.getSpecs()));
+        itemService.create(item);
         responseService.setData(item);
         responseService.setMessage("item successfully saved");
+        item = null;
+        return responseService.toString();
+    }
+
+    @RequestMapping(value = "/view/{id}", method = RequestMethod.GET)
+    public @ResponseBody String view(@PathVariable String id) {
+        item = itemService.read(id);
+        responseService.setData(item);
+        responseService.setMessage("item successfully returned");
+        item = null;
         return responseService.toString();
     }
 
     @RequestMapping(value = "/update", method = RequestMethod.POST)
-    public @ResponseBody String updateItem(@RequestBody String data) {
+    public @ResponseBody String update(@RequestBody String data) {
         item = gson.fromJson(data, Item.class);
-        itemService.updateItem(item);
+        itemService.update(item);
         responseService.setData(item);
         responseService.setMessage("item successfully updated");
+        item = null;
         return responseService.toString();
     }
 
-    @RequestMapping(value = "/delete", method = RequestMethod.POST)
-    public @ResponseBody String deleteItem(@RequestBody String data) {
-        item = gson.fromJson(data, Item.class);
-        itemService.deleteItem(item);
+    @RequestMapping(value = "/delete/{id}", method = RequestMethod.POST)
+    public @ResponseBody String delete(@PathVariable String id) {
+        itemService.delete(id);
         responseService.setData(item);
         responseService.setMessage("item successfully deleted");
+        item = null;
         return responseService.toString();
     }
 }

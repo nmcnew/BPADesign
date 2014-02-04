@@ -1,21 +1,12 @@
 package com.youreffect.model;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * @author Deeban Ramalingam
  * User POJO
  */
-@Document(collection = "users")
 public class User {
 
-    /** unique user id for database indexing */
-    @Id
+    /** unique user id for spring.database indexing */
     private String userId;
     /** user's username */
     private String username;
@@ -25,12 +16,9 @@ public class User {
     private String password;
     /** user's state */
     private String state;
-    /** user's item map */
-    private HashMap<String, Item> items;
     /** date registered */
     private String dateRegistered;
-    /** login dates */
-    private ArrayList<String> datesLoggedIn;
+
 
     /**
      * get user id
@@ -112,48 +100,6 @@ public class User {
         this.password = password;
     }
 
-    /**
-     * string representation of User
-     * @return string representation of User
-     */
-    public String toString() {
-        return String.format(
-                "User[id=%s, username='%s', email='%s', state='%s', password='%s', dateRegistered='%s', datesLoggedIn='%s', \nitems='%s'",
-                userId, username, email, state, password, dateRegistered, datesLoggedIn, getItemsStr());
-    }
-
-    public String getItemsStr() {
-        String s = "";
-        s += "[";
-        if (items == null || items.isEmpty()) {
-            items = new HashMap<String, Item>();
-            s += "]";
-        }
-        else {
-            for (Map.Entry<String,Item> pair : items.entrySet()) {
-                s += pair.getKey() + " => " + pair.getValue() + ", ";
-            }
-            s = s.substring(0, s.length() - 2) + "]";
-        }
-        return s;
-    }
-
-    /**
-     * get user items
-     * @return user items
-     */
-    public HashMap getItems() {
-        return items;
-    }
-
-    /**
-     * set user items
-     * @param items set user items to this
-     */
-    public void setItems(HashMap items) {
-        this.items = items;
-    }
-
     public String getDateRegistered() {
         return dateRegistered;
     }
@@ -162,38 +108,14 @@ public class User {
         this.dateRegistered = dateRegistered;
     }
 
-    public ArrayList<String> getDatesLoggedIn() {
-        return datesLoggedIn;
-    }
-
-    public void setDatesLoggedIn(ArrayList<String> datesLoggedIn) {
-        this.datesLoggedIn = datesLoggedIn;
-    }
 
     /**
-     * add item to items map
-     * @param item to add to items map
+     * string representation of User
+     * @return string representation of User
      */
-    public void addItem(Item item) {
-        System.out.println(item);
-        if (items == null) {
-            items = new HashMap<String, Item>();
-        }
-        if (items.containsKey(item.getItemId())) {
-            items.get(item.getItemId()).addToQuantity(item.getQuantity());
-        }
-        else {
-            System.out.println("putting");
-            items.put(item.getItemId(), item);
-            System.out.println("done");
-        }
-    }
-
-    /**
-     * remove item from items map
-     * @param id key to remove from items map
-     */
-    public void rmvItem(String id) {
-        items.remove(id);
+    public String toString() {
+        return String.format(
+                "User[id=%s, username='%s', email='%s', state='%s', password='%s', dateRegistered='%s'",
+                userId, username, email, state, password, dateRegistered);
     }
 }

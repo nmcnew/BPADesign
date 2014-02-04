@@ -12,42 +12,60 @@
 
     <mvc:resources mapping="/public/**" location="/public/" />
 
-    <bean id="mongo" class="com.mongodb.Mongo">
-        <constructor-arg index="0" value="54.214.154.98" type="java.lang.String"/>
-        <constructor-arg index="1" value="27017" type="int"/>
+    <context:property-placeholder location="classpath:properties/database.properties"/>
+
+
+    <bean id="sessionFactory"
+          class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+
+        <property name="dataSource">
+            <ref bean="dataSource"/>
+        </property>
+        <property name="mappingLocations">
+            <list>
+                <value>classpath*:hibernate/User.hbm.xml</value>
+                <value>classpath*:hibernate/Item.hbm.xml</value>
+            </list>
+        </property>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+                <prop key="hibernate.show_sql">true</prop>
+                <prop key="hibernate.hbm2ddl.auto">create</prop>
+            </props>
+        </property>
     </bean>
 
-    <bean id="mongofactory" class="org.springframework.data.mongodb.core.SimpleMongoDbFactory">
-        <constructor-arg index="0" ref="mongo"/>
-        <constructor-arg index="1" value="mydb"/>
-    </bean>
-
-    <bean id="mongotemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
-        <constructor-arg index="0" ref="mongofactory"/>
+    <bean id="dataSource"
+          class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="${jdbc.driverClassName}" />
+        <property name="url" value="${jdbc.url}" />
+        <property name="username" value="${jdbc.username}" />
+        <property name="password" value="${jdbc.password}" />
     </bean>
 
     <bean id="user" class="com.youreffect.model.User">
 
     </bean>
 
-    <bean id="userdaoimpl" class="com.youreffect.dao.UserDaoImpl">
-        <property name="mongoTemplate" ref="mongotemplate"/>
+    <bean id="userDaoImpl" class="com.youreffect.impl.UserDaoImpl" >
+        <property name="sessionFactory" ref="sessionFactory"></property>
     </bean>
 
     <bean id="userservice" class="com.youreffect.service.UserService">
-        <property name="userDaoImpl" ref="userdaoimpl"/>
+        <property name="userDaoImpl" ref="userDaoImpl"/>
     </bean>
 
     <bean id="item" class="com.youreffect.model.Item">
 
     </bean>
 
-    <bean id="itemdaoimpl" class="com.youreffect.dao.ItemDaoImpl">
-        <property name="mongoTemplate" ref="mongotemplate"/>
+    <bean id="itemDaoImpl" class="com.youreffect.impl.ItemDaoImpl" >
+        <property name="sessionFactory" ref="sessionFactory"></property>
     </bean>
 
     <bean id="itemservice" class="com.youreffect.service.ItemService">
-        <property name="itemDaoImpl" ref="itemdaoimpl"/>
+        <property name="itemDaoImpl" ref="itemDaoImpl"/>
     </bean>
 
     <bean id="gson" class="com.google.gson.Gson"></bean>

@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97712bb5-bda5-49ae-9d15-711cfe219217" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/youreffect/controller/ItemController.java" afterPath="$PROJECT_DIR$/src/main/java/com/youreffect/controller/ItemController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/youreffect/dao/ItemDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/youreffect/dao/ItemDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/youreffect/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/youreffect/model/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" afterPath="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/public/assets/js/model/user.js" afterPath="$PROJECT_DIR$/src/main/webapp/public/assets/js/model/user.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="youreffect.iws" />
@@ -72,19 +66,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="lib.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
+      <file leaf-file-name="UserController.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="62" selection-start="63" selection-end="63" vertical-scroll-proportion="0.14563107" vertical-offset="0" max-vertical-offset="6000">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ItemController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/ItemController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="50" selection-start="1449" selection-end="1449" vertical-scroll-proportion="0.0" vertical-offset="460" max-vertical-offset="1050">
+            <state line="104" column="122" selection-start="3676" selection-end="3676" vertical-scroll-proportion="0.5390525" vertical-offset="959" max-vertical-offset="1740">
               <folding />
             </state>
           </provider>
@@ -103,18 +88,42 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/CostCalculator/testPage.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/model/user.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/dao/ItemDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/database/DataSource.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/database/HIbernate.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/User.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/mvc-dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/hibernate/User.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/hibernate/Item.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/database/HIbernate.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/beans/User.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/beans/Item.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/config/BeanLocations.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/model/Item.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/database/Hibernate.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/dao/ItemDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/database.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/User.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/impl/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/dao/ItemDao.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/Item.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/impl/ItemDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/service/ItemService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/youreffect/controller/ItemController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/properties/database.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/properties/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
       </list>
     </option>
   </component>
@@ -166,6 +175,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -220,30 +230,8 @@
               <option name="myItemId" value="webapp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="YourEffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YourEffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="WEB-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -272,14 +260,6 @@
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -299,53 +279,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YourEffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YourEffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -372,72 +306,11 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="youreffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YourEffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YourEffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youreffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YourEffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YourEffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youreffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -454,10 +327,23 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="options.lastSelected" value="project.propCompiler" />
+    <property name="options.lastSelected" value="project.propDebugger" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/hibernate" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/resources/properties" />
+      <recent name="$PROJECT_DIR$/src/main/resources/spring/beans" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+    </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 7.0">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
@@ -663,6 +549,12 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
+      <method />
+    </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -740,50 +632,57 @@
       <workItem from="1391396725444" duration="409000" />
       <workItem from="1391397773139" duration="52000" />
       <workItem from="1391398853077" duration="364000" />
-      <workItem from="1391399233724" duration="6753000" />
+      <workItem from="1391399233724" duration="13006000" />
+      <workItem from="1391478825189" duration="4799000" />
+      <workItem from="1391485049880" duration="3816000" />
     </task>
     <task id="LOCAL-00001" summary="integrated my updates to the synced project">
       <created>1391399472201</created>
       <updated>1391399472201</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="mongodb unable to stack requests in very short time intervals">
+      <created>1391406782106</created>
+      <updated>1391406782106</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8872000" />
+    <option name="totallyTimeSpent" value="23740000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1436" height="878" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880098" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880098" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32880098" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880098" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -800,7 +699,9 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="integrated my updates to the synced project" />
-    <option name="LAST_COMMIT_MESSAGE" value="integrated my updates to the synced project" />
+    <MESSAGE value="mongodb unable to stack requests in very short time intervals" />
+    <MESSAGE value="restructured entire backend to suit rdbms design for mysql" />
+    <option name="LAST_COMMIT_MESSAGE" value="restructured entire backend to suit rdbms design for mysql" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -810,6 +711,39 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/service/ItemService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="32" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/ItemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="20" selection-start="1572" selection-end="1572" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="1320">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="30" selection-start="1111" selection-end="1111" vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="1740">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="16" selection-start="817" selection-end="817" vertical-scroll-proportion="0.0" vertical-offset="33" max-vertical-offset="990">
+          <folding>
+            <element signature="e#1891#1916#0" expanded="true" />
+            <element signature="e#1955#1968#0" expanded="true" />
+            <element signature="e#2012#2030#0" expanded="true" />
+            <element signature="e#2074#2092#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="13" selection-start="868" selection-end="868" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1185">
@@ -826,15 +760,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="8" selection-start="5481" selection-end="5481" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2070">
-          <folding />
-        </state>
+        <state line="117" column="8" selection-start="5481" selection-end="5481" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2070" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="0" selection-start="1295" selection-end="1295" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1110">
-          <folding />
+          <folding>
+            <element signature="e#1891#1916#0" expanded="true" />
+            <element signature="e#1955#1968#0" expanded="true" />
+            <element signature="e#2012#2030#0" expanded="true" />
+            <element signature="e#2074#2092#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -847,9 +784,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/testPage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="31" selection-start="1030" selection-end="1058" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="6930">
-          <folding />
-        </state>
+        <state line="30" column="31" selection-start="1030" selection-end="1058" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="6930" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
@@ -861,15 +796,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="8" selection-start="5855" selection-end="5855" vertical-scroll-proportion="0.0" vertical-offset="2142" max-vertical-offset="2499">
-          <folding />
-        </state>
+        <state line="126" column="8" selection-start="5855" selection-end="5855" vertical-scroll-proportion="0.0" vertical-offset="2142" max-vertical-offset="2499" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="11" selection-start="1522" selection-end="1522" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1394">
-          <folding />
+          <folding>
+            <element signature="e#1891#1916#0" expanded="true" />
+            <element signature="e#1955#1968#0" expanded="true" />
+            <element signature="e#2012#2030#0" expanded="true" />
+            <element signature="e#2074#2092#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -882,9 +820,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/testPage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="31" selection-start="1030" selection-end="1058" vertical-scroll-proportion="0.0" vertical-offset="211" max-vertical-offset="7854">
-          <folding />
-        </state>
+        <state line="30" column="31" selection-start="1030" selection-end="1058" vertical-scroll-proportion="0.0" vertical-offset="211" max-vertical-offset="7854" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
@@ -896,14 +832,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="8" selection-start="5832" selection-end="5832" vertical-scroll-proportion="0.0" vertical-offset="2142" max-vertical-offset="2346">
-          <folding />
-        </state>
+        <state line="126" column="8" selection-start="5832" selection-end="5832" vertical-scroll-proportion="0.0" vertical-offset="2142" max-vertical-offset="2346" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/testPage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="31" selection-start="1030" selection-end="1058" vertical-scroll-proportion="0.0" vertical-offset="211" max-vertical-offset="7854">
+        <state line="30" column="31" selection-start="1030" selection-end="1058" vertical-scroll-proportion="0.0" vertical-offset="211" max-vertical-offset="7854" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/testPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="31" selection-start="1030" selection-end="1058" vertical-scroll-proportion="0.0" vertical-offset="211" max-vertical-offset="7854" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="48" selection-start="1524" selection-end="1524" vertical-scroll-proportion="-13.7749" vertical-offset="7380" max-vertical-offset="10365" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="56" selection-start="541" selection-end="541" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="2070" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/model/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="28" selection-start="472" selection-end="472" vertical-scroll-proportion="0.21359223" vertical-offset="175" max-vertical-offset="690" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="62" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6000">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="13" selection-start="355" selection-end="355" vertical-scroll-proportion="0.29126215" vertical-offset="0" max-vertical-offset="515">
           <folding />
         </state>
       </provider>
@@ -915,102 +881,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/testPage.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="31" selection-start="1030" selection-end="1058" vertical-scroll-proportion="0.0" vertical-offset="211" max-vertical-offset="7854">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="3" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="48" selection-start="1524" selection-end="1524" vertical-scroll-proportion="-13.7749" vertical-offset="7380" max-vertical-offset="10365">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="56" selection-start="541" selection-end="541" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="2070">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="23" selection-start="413" selection-end="413" vertical-scroll-proportion="0.17928287" vertical-offset="0" max-vertical-offset="1110">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="10" selection-start="2965" selection-end="2965" vertical-scroll-proportion="0.8737864" vertical-offset="960" max-vertical-offset="1500">
+        <state line="10" column="17" selection-start="201" selection-end="201" vertical-scroll-proportion="0.29126215" vertical-offset="0" max-vertical-offset="1545">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/model/Item.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0" vertical-offset="398" max-vertical-offset="1020">
+        <state line="31" column="22" selection-start="545" selection-end="545" vertical-scroll-proportion="0.687251" vertical-offset="0" max-vertical-offset="750">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="29" selection-start="4609" selection-end="4609" vertical-scroll-proportion="0.0" vertical-offset="1300" max-vertical-offset="1815">
+        <state line="66" column="22" selection-start="1821" selection-end="1821" vertical-scroll-proportion="0.3883495" vertical-offset="715" max-vertical-offset="1335">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="27" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.0" vertical-offset="615" max-vertical-offset="1200">
+        <state line="16" column="26" selection-start="461" selection-end="461" vertical-scroll-proportion="0.46601942" vertical-offset="0" max-vertical-offset="515">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/model/User.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate/User.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="44" selection-start="4263" selection-end="4263" vertical-scroll-proportion="4.4563107" vertical-offset="0" max-vertical-offset="2595">
+        <state line="4" column="30" selection-start="208" selection-end="208" vertical-scroll-proportion="0.116504855" vertical-offset="0" max-vertical-offset="515">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate/Item.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="50" selection-start="259" selection-end="259" vertical-scroll-proportion="0.14563107" vertical-offset="0" max-vertical-offset="515">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/impl/ItemDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="57" selection-start="810" selection-end="810" vertical-scroll-proportion="0.70873785" vertical-offset="100" max-vertical-offset="885">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/dao/ItemDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/dao/ItemDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="22" selection-start="639" selection-end="639" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1035">
+        <state line="10" column="15" selection-start="217" selection-end="217" vertical-scroll-proportion="0.29126215" vertical-offset="0" max-vertical-offset="515">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/model/user.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/service/ItemService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="28" selection-start="472" selection-end="472" vertical-scroll-proportion="0.21359223" vertical-offset="175" max-vertical-offset="690">
+        <state line="20" column="32" selection-start="604" selection-end="604" vertical-scroll-proportion="0.33009708" vertical-offset="130" max-vertical-offset="645">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/ItemController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="50" selection-start="1449" selection-end="1449" vertical-scroll-proportion="0.0" vertical-offset="460" max-vertical-offset="1050">
+        <state line="51" column="20" selection-start="1572" selection-end="1572" vertical-scroll-proportion="0.0" vertical-offset="700" max-vertical-offset="1215">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/properties/database.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="62" selection-start="63" selection-end="63" vertical-scroll-proportion="0.14563107" vertical-offset="0" max-vertical-offset="6000">
+        <state line="1" column="31" selection-start="74" selection-end="74" vertical-scroll-proportion="0.029126214" vertical-offset="0" max-vertical-offset="515">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="15" selection-start="3580" selection-end="3580" vertical-scroll-proportion="0.34951457" vertical-offset="1515" max-vertical-offset="2220">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/impl/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="0" selection-start="977" selection-end="977" vertical-scroll-proportion="0.33203885" vertical-offset="384" max-vertical-offset="975">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="71" selection-start="785" selection-end="785" vertical-scroll-proportion="0.25157234" vertical-offset="0" max-vertical-offset="1500">
+          <folding>
+            <element signature="e#1891#1916#0" expanded="true" />
+            <element signature="e#1955#1968#0" expanded="true" />
+            <element signature="e#2012#2030#0" expanded="true" />
+            <element signature="e#2074#2092#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="104" column="122" selection-start="3676" selection-end="3676" vertical-scroll-proportion="0.5390525" vertical-offset="959" max-vertical-offset="1740">
           <folding />
         </state>
       </provider>

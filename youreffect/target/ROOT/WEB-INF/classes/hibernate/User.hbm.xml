@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.youreffect.model.User" table="Users">
+        <meta attribute="class-description">
+            This class contains the user detail.
+        </meta>
+        <id name="userId" type="string" column="user_id" />
+        <property name="username" column="username" type="string"/>
+        <property name="email" column="email" type="string"/>
+        <property name="password" column="password" type="string"/>
+        <property name="state" column="state" type="string"/>
+        <property name="dateRegistered" column="date_reg" type="string"/>
+    </class>
+</hibernate-mapping>

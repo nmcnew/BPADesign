@@ -5,6 +5,8 @@ function User() {
     this.password = '';
     this.state = '';
     this.items = {};
+    this.dateRegistered = '';
+    this.datesLoggedIn = [];
 }
 
 function User(username, email, password, state) {
@@ -14,6 +16,8 @@ function User(username, email, password, state) {
     this.password = password;
     this.state = state;
     this.items = {};
+    this.dateRegistered = '';
+    this.datesLoggedIn = [];
 }
 
 User.prototype.username = function (username) {

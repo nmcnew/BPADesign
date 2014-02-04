@@ -8,11 +8,11 @@ import com.youreffect.model.Item;
  */
 public interface ItemDao {
     /** create item */
-    void createItem(Item item);
+    void create(Item item);
     /** read item data by on id */
-    Item readItem(String id);
+    Item read(String id);
     /** update item by properties */
-    void updateItem(Item item);
+    void update(Item item);
     /** delete item based on id */
-    void deleteItem(String id);
+    void delete(String id);
 }
