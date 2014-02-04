@@ -4,6 +4,8 @@ import com.youreffect.dao.UserDao;
 import com.youreffect.model.User;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 
+import java.util.List;
+
 /**
  * @author Deeban Ramalingam
  * UserDaoImpl performs CRUD operations for User
@@ -27,7 +29,8 @@ public class UserDaoImpl extends HibernateDaoSupport implements UserDao {
      */
     @Override
     public User readUser(String id, String password) {
-        return getHibernateTemplate().get(User.class, new Object[]{id,password});
+        List list = getHibernateTemplate().find("from User where user_id=? and password=?",new Object[]{id,password});
+        return (list.size() > 0) ? (User) list.get(0) : null;
     }
 
     /**
@@ -37,7 +40,8 @@ public class UserDaoImpl extends HibernateDaoSupport implements UserDao {
      */
     @Override
     public User readUser(String id) {
-        return getHibernateTemplate().get(User.class,id);
+        List list = getHibernateTemplate().find("from User where user_id=?",new Object[]{id});
+        return (list.size() > 0) ? (User) list.get(0) : null;
     }
 
     /**

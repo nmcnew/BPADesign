@@ -4,6 +4,9 @@ import com.youreffect.impl.UserDaoImpl;
 import com.youreffect.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * @author Deeban Ramalingam
  * UserService uses UserDaoImpl to interact with spring.database, abstract out CRUD operations, and perform basic User operations
@@ -53,6 +56,8 @@ public class UserService {
      * @param user User object
      */
     public void register (User user) {
+        user.setDateRegistered(new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss").format(new Date()));
+        System.out.println(user.getDateRegistered());
         create(user);
     }
 

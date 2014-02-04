@@ -11,9 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 /**
  * @author Deeban Ramalingam
  * UserController directs all CRUD operations pertaining to User based on the request URL
@@ -58,7 +55,6 @@ public class UserController {
                 throw new RegisterException("failed to register new user because username already exists");
             }
             userService.register(user);
-            user.setDateRegistered(new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss").format(new Date()));
             responseService.setMessage("new user successfully registered");
         } catch (RegisterException re) {
             responseService.setMessage(re.getMessage());

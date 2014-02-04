@@ -3,15 +3,15 @@
         "-//Hibernate/Hibernate Mapping DTD//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-    <class name="com.youreffect.model.User" table="Users">
+    <class name="com.youreffect.model.User" table="User">
         <meta attribute="class-description">
             This class contains the user detail.
         </meta>
-        <id name="userId" type="string" column="user_id" />
-        <property name="username" column="username" type="string"/>
-        <property name="email" column="email" type="string"/>
-        <property name="password" column="password" type="string"/>
-        <property name="state" column="state" type="string"/>
-        <property name="dateRegistered" column="date_reg" type="string"/>
+        <id name="userId" type="string" column="user_id"  />
+        <property name="username" column="username" type="string" not-null="true"/>
+        <property name="email" column="email" type="string" not-null="true"/>
+        <property name="password" column="password" type="string" not-null="true"/>
+        <property name="state" column="state" type="string" not-null="true"/>
+        <property name="dateRegistered" column="date_reg" type="string" not-null="true"/>
     </class>
 </hibernate-mapping>
