@@ -33,8 +33,7 @@
             <li>
                 <div id="curLogin" class="navbar-text small"></div> <script
                     type="text/javascript">
-                document.getElementById("curLogin").innerHTML = (JSON
-                        .parse(localStorage.getItem("curUser")).username);
+                document.getElementById("curLogin").innerHTML = curUser.username;
             </script>
             </li>
         </ul>

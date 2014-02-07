@@ -71,9 +71,11 @@ public class UserController {
      */
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public @ResponseBody String login(@RequestBody String data) {
+        System.out.println(data);
         user = gson.fromJson(data, User.class);
         user.setUserId(hashService.md5(user.getUsername()));
         user.setPassword(hashService.md5(user.getPassword()));
+        System.out.println(user);
         try {
             if(!userService.exists(user.getUserId(), user.getPassword())) {
                 throw new LoginException("login failed");

@@ -28,8 +28,8 @@ public class ItemDaoImpl extends HibernateDaoSupport implements ItemDao {
      */
     @Override
     public Item read(String id) {
-        List list = getHibernateTemplate().find("from Items where item_id=?", new Object[]{id});
-        return (Item)list.get(0);
+        List list = getHibernateTemplate().find("from Item where item_id=?", new Object[]{id});
+        return (list.size() > 0) ? (Item) list.get(0) : null;
     }
 
     /**

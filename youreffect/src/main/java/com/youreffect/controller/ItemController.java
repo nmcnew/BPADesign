@@ -46,7 +46,15 @@ public class ItemController {
     public @ResponseBody String saveItem(@RequestBody String data) {
         item = gson.fromJson(data, Item.class);
         item.setItemId(hashService.md5(item.getName() + item.getEnergy() + item.getSpecs()));
-        itemService.create(item);
+        if(itemService.read(item.getItemId()) != null) {
+            int oldQuantity = item.getQuantity();
+            item = itemService.read(item.getItemId());
+            item.setQuantity(oldQuantity + item.getQuantity());
+            itemService.update(item);
+        }
+        else {
+            itemService.create(item);
+        }
         responseService.setData(item);
         responseService.setMessage("item successfully saved");
         item = null;

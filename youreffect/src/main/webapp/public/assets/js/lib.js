@@ -1,14 +1,28 @@
+/** current logged in user */
+
+var curLogin = '';
+
 var curUser = new User();
 
 init();
 
 function init() {
     try {
-        curUser = JSON.parse(localStorage.getItem("curUser"));
-    } catch (e) {
-        console.log(e)
+        curLogin = localStorage.getItem('curLogin');
+        console.log(curLogin);
+        if (curLogin != null) {
+            console.log("initializing");
+            curUser = readUser(curLogin).data;
+            console.log("current user: ");
+            console.log(curUser);
+        }
+    }
+    catch (e) {
+        console.log('error');
     }
 }
+
+/** adjust context root to various subdomain structures */
 
 function getContextRoot(key) {
     var s = "";
@@ -25,100 +39,297 @@ function getContextRoot(key) {
     return s.substr(0, s.length - 1);
 }
 
+/** joint operations */
+
+/** validate registration */
+
+function checkReg() {
+    var ready = false;
+    var errorString = "";
+    //first checks username
+    if ($("#reg_username").val().length < 3) {
+        $("#reg_username").parents(".form-group").addClass("has-error");
+        removeAlertClass();
+        $("#dialog").addClass("alert-danger");
+        $("#response-title").text("Failure!");
+        errorString += "Username Invalid<br/>";
+        ready = false;
+    } else {
+        $("#reg_username").parents(".form-group").removeClass("has-error");
+        dialogFadeOut();
+        ready = true;
+    }
+
+    //then password stuff
+    if (!($("#reg_password").val() == $("#passwordCheck").val() && $("#reg_password").val().length > 0)) {
+        $("#reg_password").parents(".form-group").addClass("has-error");
+        $("#passwordCheck").parents(".form-group").addClass("has-error");
+        removeAlertClass();
+        $("#dialog").addClass("alert-danger");
+        $("#response-title").text("Failure!");
+        errorString += "Passwords Do not Match/Not Long Enough<br/>";
+        ready = false;
+    } else {
+        $("#reg_password").parents(".form-group").removeClass("has-error");
+        $("#passwordCheck").parents(".form-group").removeClass("has-error");
+        dialogFadeOut();
+        ready = true;
+    }
+
+    //then email stuff
+    if (!($("#reg_email").val().length > 1 && $("#reg_email").val().indexOf("@") != -1)) {
+        $("#reg_email").parents(".form-group").addClass("has-error");
+        removeAlertClass();
+        $("#dialog").addClass("alert-danger");
+        $("#response-title").text("Failure!");
+        errorString += "Email Invalid";
+        if ($("#reg_email").val().indexOf("@") == -1) {
+            errorString += ": Forgot the @";
+        }
+        ready = false;
+    } else {
+        $("#reg_email").parents(".form-group").removeClass("has-error");
+        dialogFadeOut();
+        ready = true;
+    }
+
+    $("#response-text").html(errorString);
+
+    $("#dialog").fadeIn();
+
+    return ready;
+}
+
+/** register user */
+
 function register(username, email, password, state) {
     if (checkReg()) {
         var user = new User(username, email, password, state);
         console.log(user);
-        $.ajax({
-            url : getContextRoot('public') + '/user/register',
-            type : 'POST',
-            dataType : 'json',
-            data : JSON.stringify(user),
-            contentType : "application/json; charset=utf-8",
-            success : function(data) {
-                console.log(data);
-                removeAlertClass();
-                if (data.message.toString().indexOf('successful') != -1) {
-                    $("#dialog").addClass("alert-success");
-                    $("#response-title").text("Success!");
+        var data = registerUser(user);
+        console.log(data);
+        removeAlertClass();
+        if (data.message.toString().indexOf('successful') != -1) {
+            $("#dialog").addClass("alert-success");
+            $("#response-title").text("Success!");
 
-                } else {
+        } else {
 
-                    $("#dialog").addClass("alert-danger");
-                    $("#response-title").text("Failure!");
-                }
-                $("#dialog").fadeIn();
-                $("#response-text").html(data.message);
-
-            }
-        });
+            $("#dialog").addClass("alert-danger");
+            $("#response-title").text("Failure!");
+        }
+        $("#dialog").fadeIn();
+        $("#response-text").html(data.message);
     }
 }
+
+/** user login */
 
 function login(username, password) {
     var user = new User(username, '', password, '');
     console.log(user);
-    $.ajax({
-        url : getContextRoot('public') + '/user/login',
-        type : 'POST',
-        dataType : 'json',
-        data : JSON.stringify(user),
-        contentType : "application/json; charset=utf-8",
-        success : function(data) {
-            console.log(data);
+    var data = loginUser(user);
+    console.log(data);
+    removeAlertClass();
+    if (data.message.toString().indexOf('successful') != -1) {
+        localStorage.setItem("curLogin", data.data.userId);
+        init();
+        $("#dialog").addClass("alert-success");
+        $("#response-title").text("Success!");
+        document.getElementById("curLogin").innerHTML = curUser.username;
+    } else {
+        $("#dialog").addClass("alert-danger");
+        $("#response-title").text("Failure!");
+    }
+    $("#dialog").fadeIn();
+    $("#response-text").html(data.message);
 
-            removeAlertClass();
-
-            if (data.message.toString().indexOf('successful') != -1) {
-                localStorage.setItem("curUser", JSON.stringify(data.data));
-                $("#dialog").addClass("alert-success");
-                $("#response-title").text("Success!");
-                document.getElementById("curLogin").innerHTML = (JSON.parse(localStorage.getItem("curUser")).username);
-            } else {
-                $("#dialog").addClass("alert-danger");
-                $("#response-title").text("Failure!");
-            }
-            $("#dialog").fadeIn();
-            $("#response-text").html(data.message);
-
-        }
-    });
 }
 
-function updateUser(user) {
-    var user = user;
-    console.log('user');
-    console.log(user);
-    $.ajax({
-        url : getContextRoot('public') + '/user/update',
-        type : 'POST',
-        dataType: 'json',
-        data : JSON.stringify(user),
-        contentType : "application/json; charset=utf-8",
-        success : function(data) {
-            console.log('done');
-            console.log(data);
-            localStorage.setItem("curUser", JSON.stringify(data.data));
-            curUser = JSON.parse(localStorage.getItem("curUser")).username;
-        }
-    })
-}
+/** joint operations */
 
 function saveItem(item) {
     item.userId = curUser.userId;
+    item.specs = JSON.stringify(item.specs);
+    createItem(item);
+}
+
+/** user operations */
+
+function registerUser(user) {
+    var response;
     $.ajax({
-        url : getContextRoot('public') + '/item/save',
+        async : false,
+        url : getContextRoot('public') + '/user/register',
+        type : 'POST',
+        data : JSON.stringify(user),
+        contentType : "application/json; charset=utf-8",
+        success : function(data) {
+            var data = JSON.parse(data);
+            console.log(data);
+            response = data;
+        }
+    });
+    return response;
+}
+
+function loginUser(user) {
+    var response;
+    $.ajax({
+        async : false,
+        url : getContextRoot('public') + '/user/login',
+        type : 'POST',
+        data : JSON.stringify(user),
+        contentType : "application/json; charset=utf-8",
+        success : function(data) {
+            var data = JSON.parse(data);
+            console.log(data);
+            response = data;
+        }
+    });
+    return response;
+}
+
+function createUser(user) {
+    var response;
+    $.ajax({
+        async : false,
+        url : getContextRoot('public') + '/user/create',
+        type : 'POST',
+        data : JSON.stringify(user),
+        contentType : "application/json; charset=utf-8",
+        success : function(data) {
+            var data = JSON.parse(data);
+            console.log(data);
+            response = data;
+        }
+    });
+    return response;
+}
+
+function readUser(id) {
+    var response;
+    console.log('reading ' + id);
+    $.ajax({
+        async : false,
+        url : getContextRoot('public') + '/user/view/'+id,
+        type : 'GET',
+        data : id,
+        contentType : "application/json; charset=utf-8",
+        success : function(data) {
+            var data = JSON.parse(data);
+            console.log(data);
+            response = data;
+        }
+    });
+    return response;
+}
+
+function updateUser(user) {
+    var response;
+    $.ajax({
+        async : false,
+        url : getContextRoot('public') + '/user/update',
+        type : 'POST',
+        data : JSON.stringify(user),
+        contentType : "application/json; charset=utf-8",
+        success : function(data) {
+            var data = JSON.parse(data);
+            console.log(data);
+            response = data;
+        }
+    });
+    return response;
+}
+
+function deleteUser(id) {
+    var response;
+    $.ajax({
+        async : false,
+        url : getContextRoot('public') + '/user/delete/' + id,
+        type : 'POST',
+        data : id,
+        contentType : "application/json; charset=utf-8",
+        success : function(data) {
+            var data = JSON.parse(data);
+            console.log(data);
+            respons = data;
+        }
+    });
+    return response;
+}
+
+/** item operations */
+
+function createItem(item) {
+    var response;
+    $.ajax({
+        async : false,
+        url : getContextRoot('public') + '/item/create',
         type : 'POST',
         data : JSON.stringify(item),
         contentType : "application/json; charset=utf-8",
         success : function(data) {
             var data = JSON.parse(data);
             console.log(data);
-            console.log('updating user');
-            updateUser(curUser);
+            response = data;
         }
     });
+    return response;
 }
+
+function readItem(id) {
+    var response;
+    $.ajax({
+        async : false,
+        url : getContextRoot('public') + '/item/view/'+id,
+        type : 'GET',
+        data : id,
+        contentType : "application/json; charset=utf-8",
+        success : function(data) {
+            var data = JSON.parse(data);
+            console.log(data);
+            response = data;
+        }
+    });
+    return response;
+}
+
+function updateItem(item) {
+    var response;
+    $.ajax({
+        async : false,
+        url : getContextRoot('public') + '/item/update',
+        type : 'POST',
+        data : JSON.stringify(item),
+        contentType : "application/json; charset=utf-8",
+        success : function(data) {
+            var data = JSON.parse(data);
+            console.log(data);
+            response = data;
+        }
+    });
+    return response;
+}
+
+function deleteItem(id) {
+    var response;
+    $.ajax({
+        async : false,
+        url : getContextRoot('public') + '/item/delete/' + id,
+        type : 'POST',
+        data : id,
+        contentType : "application/json; charset=utf-8",
+        success : function(data) {
+            var data = JSON.parse(data);
+            console.log(data);
+            response = data;
+        }
+    });
+    return response;
+}
+
+/** Gas Options */
 
 function addOptionGas() {
     var radios = document.getElementsByName("gOptions");
@@ -139,6 +350,8 @@ function addOptionGas() {
             break;
     }
 }
+
+/** Electricity Options */
 
 function addOptionElec() {
     var radios = document.getElementsByName('eOptions');
@@ -226,6 +439,8 @@ function addOptionElec() {
     }
 }
 
+/** DOM manipulations */
+
 function removeButt(domElement) {
     $(domElement).parents(".formWrapper").fadeOut(300, function() {
 
@@ -233,62 +448,19 @@ function removeButt(domElement) {
     });
 }
 
-function checkReg() {
-    var ready = false;
-    var errorString = "";
-    //first checks username
-    if ($("#reg_username").val().length < 3) {
-        $("#reg_username").parents(".form-group").addClass("has-error");
-        removeAlertClass();
-        $("#dialog").addClass("alert-danger");
-        $("#response-title").text("Failure!");
-        errorString += "Username Invalid<br/>";
-        ready = false;
-    } else {
-        $("#reg_username").parents(".form-group").removeClass("has-error");
-        dialogFadeOut();
-        ready = true;
-    }
-
-    //then password stuff
-    if (!($("#reg_password").val() == $("#passwordCheck").val() && $("#reg_password").val().length > 0)) {
-        $("#reg_password").parents(".form-group").addClass("has-error");
-        $("#passwordCheck").parents(".form-group").addClass("has-error");
-        removeAlertClass();
-        $("#dialog").addClass("alert-danger");
-        $("#response-title").text("Failure!");
-        errorString += "Passwords Do not Match/Not Long Enough<br/>";
-        ready = false;
-    } else {
-        $("#reg_password").parents(".form-group").removeClass("has-error");
-        $("#passwordCheck").parents(".form-group").removeClass("has-error");
-        dialogFadeOut();
-        ready = true;
-    }
-
-    //then email stuff
-    if (!($("#reg_email").val().length > 1 && $("#reg_email").val().indexOf("@") != -1)) {
-        $("#reg_email").parents(".form-group").addClass("has-error");
-        removeAlertClass();
-        $("#dialog").addClass("alert-danger");
-        $("#response-title").text("Failure!");
-        errorString += "Email Invalid";
-        if ($("#reg_email").val().indexOf("@") == -1) {
-            errorString += ": Forgot the @";
-        }
-        ready = false;
-    } else {
-        $("#reg_email").parents(".form-group").removeClass("has-error");
-        dialogFadeOut();
-        ready = true;
-    }
-
-    $("#response-text").html(errorString);
-
-    $("#dialog").fadeIn();
-
-    return ready;
+function dialogFadeOut() {
+    $("#dialog").fadeOut();
 }
+
+function removeAlertClass() {
+    $("#dialog").removeClass("alert-success");
+    $("#dialog").removeClass("alert-info");
+    $("#dialog").removeClass("alert-danger");
+    $("#dialog").removeClass("alert-warning");
+
+}
+
+/** get form data to create items */
 
 function submitMainForm(){
     var myForms = $("div[id$='Wrapper']");
@@ -338,17 +510,8 @@ function submitMainForm(){
         saveItem(item);
     }
 }
-function dialogFadeOut() {
-    $("#dialog").fadeOut();
-}
 
-function removeAlertClass() {
-    $("#dialog").removeClass("alert-success");
-    $("#dialog").removeClass("alert-info");
-    $("#dialog").removeClass("alert-danger");
-    $("#dialog").removeClass("alert-warning");
-
-}
+/** search functions */
 
 function search(key, filter) {
     var items = curUser.items;
