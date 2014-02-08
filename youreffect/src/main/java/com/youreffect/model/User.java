@@ -6,7 +6,7 @@ package com.youreffect.model;
  */
 public class User {
 
-    /** unique user id for spring.database indexing */
+    /** primary key user id for database indexing */
     private String userId;
     /** user's username */
     private String username;

@@ -11,18 +11,12 @@ init();
 function init() {
     try {
         curLogin = localStorage.getItem('curLogin');
-        console.log(curLogin);
         if (curLogin != null) {
-            console.log("initializing");
             curUser = readUser(curLogin).data;
             curItems = readItemList(curUser.userId).data;
-            console.log("current user: ");
-            console.log(curUser);
         }
     }
-    catch (e) {
-        console.log('error');
-    }
+    catch (e) {}
 }
 
 /** adjust context root to various subdomain structures */
@@ -108,9 +102,7 @@ function checkReg() {
 function register(username, email, password, state) {
     if (checkReg()) {
         var user = new User(username, email, password, state);
-        console.log(user);
         var data = registerUser(user);
-        console.log(data);
         removeAlertClass();
         if (data.message.toString().indexOf('successful') != -1) {
             $("#dialog").addClass("alert-success");
@@ -130,9 +122,7 @@ function register(username, email, password, state) {
 
 function login(username, password) {
     var user = new User(username, '', password, '');
-    console.log(user);
     var data = loginUser(user);
-    console.log(data);
     removeAlertClass();
     if (data.message.toString().indexOf('successful') != -1) {
         localStorage.setItem("curLogin", data.data.userId);
@@ -210,7 +200,6 @@ function createUser(user) {
 
 function readUser(id) {
     var response;
-    console.log('reading ' + id);
     $.ajax({
         async : false,
         url : getContextRoot('public') + '/user/view/'+id,
@@ -397,7 +386,6 @@ function addOptionElec() {
             break;
         }
     }
-    console.log(selected);
     switch (selected) {
         case "acCentral":
             $(".mainForm").append('<div></div>');
@@ -544,7 +532,6 @@ function submitMainForm(){
         }
         item.userId = curUser.userId;
         item.specs = JSON.stringify(item.specs);
-        console.log(item);
         items.push(item);
     }
     saveItems(items);

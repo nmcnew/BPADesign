@@ -82,6 +82,11 @@ public class UserService {
         return read(user.getUserId(), user.getPassword());
     }
 
+    /**
+     * create user
+     * @param user user
+     * @return user
+     */
     public User create(User user) {
         user.setDateRegistered(new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss").format(new Date()));
         user.setUserId(hashService.md5(user.getUsername()));
@@ -90,17 +95,37 @@ public class UserService {
         return user;
     }
 
+    /**
+     * read user
+     * @param id user id
+     * @param password user password
+     * @return user
+     */
     public User read(String id, String password) {
         return userDaoImpl.readUser(id, password);
     }
 
+    /**
+     * read user
+     * @param id user id
+     * @return user
+     */
     public User read(String id) {
         return userDaoImpl.readUser(id);
     }
 
+    /**
+     * update user
+     * @param user user
+     */
     public void update(User user) {
         userDaoImpl.updateUser(user);
     }
+
+    /**
+     * delete user
+     * @param id user id
+     */
     public void delete(String id) {
         userDaoImpl.deleteUser(id);
     }

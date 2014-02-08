@@ -48,33 +48,62 @@ function clothesWasher(){//completed User side
     //Electric and Gas Stuff
     var userGasCons;
     var userECons = userArc * .2 ;
-        //Hot water Heating Energy
-        if(userHotWaterFuel == "elec"){
-            userECons += .8 * userArc;
-        }
-        else if(userHotWaterFuel == "natGas"){
-            userGasCons += (.8 * userArc) / .78 * .0341; //.0341 is the therm/kWh converter
-        }
-        //Dryer Energy
-        if(userDryerType == "elec"){
-           userECons += userTotalEDryer - userArc;
-        }
-        else if(userDryerType == "natGas"){
-            userGasCons += (userTotalEDryer - userArc) * .03421;
-        }
+    //Hot water Heating Energy
+    if(userHotWaterFuel == "elec"){
+        userECons += .8 * userArc;
+    }
+    else if(userHotWaterFuel == "natGas"){
+        userGasCons += (.8 * userArc) / .78 * .0341; //.0341 is the therm/kWh converter
+    }
+    //Dryer Energy
+    if(userDryerType == "elec"){
+        userECons += userTotalEDryer - userArc;
+    }
+    else if(userDryerType == "natGas"){
+        userGasCons += (userTotalEDryer - userArc) * .03421;
+    }
     var userWaterConsumption = userWF * userCapacity * userLoadsAYear;
 
     return[];
 }
-function fridgeConsumption() {
 
-	var userOpt = "3";
-	console.log(value.assumptions[0].fridgeAssump.energyStar.volumes["type"+userOpt]);
-	
-	var userEnergyConsumption = 513;
-	//will be dynamically driven once item API is done, need to Finish ERD
-	var userVolume = 22.7;
-	var energyStarConsumption = assumptions.assumptions[0].fridgeAssump.energyStar.energyConsumption["type" + userOpt];
-	var savings = userEnergyConsumption - energyStarConsumption;
-	return [savings, savings*userECost, userEnergyConsumption,];
+function dehumidifierCalcs(){
+    var userCap ;
+    var userEF;
+    var userDays;
+    var userHours;
+    var usage = (userCap *.473)/userEF/24*userHours*userDays;
+    return usage;
+}
+function dishwasherCalcs(){
+    var userType;
+    var userCycles;
+    var userHotWaterFuel;
+    var userREC;
+    var userRWC;
+    var userGasCons;
+    //machine energy
+    var userEnergy= (userREC*(1 -.56))/215;
+    //Water Heater Energy
+    if(userHotWaterFuel == "elec"){
+        userEnergy += userREC*.56/215
+    }
+    else if(userHotWaterFuel == "natGas"){
+
+        userGasCons = (userREC*.56/.75*.0341/215)*userCycles*52;
+    }
+    userEnergy = userEnergy * userCycles * 52;
+    var userWC = userRWC * userCycles * 52;
+    //return calculated values
+}
+function fridgeConsumption() {
+    var value = getAssumptions();
+    var userOpt;
+    var userECons;
+    var energyStarConsumption = value.assumptions[0].fridgeAssump.energyStar.energyConsumption[userOpt];
+    var savings = userECons - energyStarConsumption;
+    return [savings, savings*userECost, userEnergyConsumption,];
+}
+function cFridgeCalcs(){
+
 }

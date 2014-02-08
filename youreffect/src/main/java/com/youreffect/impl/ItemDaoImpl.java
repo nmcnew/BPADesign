@@ -21,6 +21,10 @@ public class ItemDaoImpl extends HibernateDaoSupport implements ItemDao {
         getHibernateTemplate().save(item);
     }
 
+    /**
+     * create item list
+     * @param items item list
+     */
     public void createList(List<Item> items) {
         for (Item item : items) {
             create(item);
@@ -56,9 +60,12 @@ public class ItemDaoImpl extends HibernateDaoSupport implements ItemDao {
         getHibernateTemplate().delete(getHibernateTemplate().get(Item.class, id));
     }
 
+    /**
+     * read item list
+     * @param id user id
+     * @return item list
+     */
     public List<Item> readList(String id) {
-        List list = getHibernateTemplate().find("from Item where user_id=?", new Object[]{id});
-        System.out.println(list);
-        return (List<Item>) list;
+        return (List<Item>) getHibernateTemplate().find("from Item where user_id=?", new Object[]{id});
     }
 }

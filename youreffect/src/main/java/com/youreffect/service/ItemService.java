@@ -22,10 +22,19 @@ public class ItemService {
     @Autowired
     private HashService hashService;
 
+    /**
+     * sets ItemDaoImpl from spring config
+     * @param itemDaoImpl value from spring config
+     */
     public void setItemDaoImpl(ItemDaoImpl itemDaoImpl) {
         this.itemDaoImpl = itemDaoImpl;
     }
 
+    /**
+     * create item
+     * @param item item
+     * @return item
+     */
     public Item create(Item item) {
         item.setDateCreated(new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss").format(new Date()));
         item.setItemId(hashService.md5(item.getName() + item.getQuantity() + item.getEnergy() + item.getDateCreated() + item.getSpecs()));
@@ -33,6 +42,11 @@ public class ItemService {
         return item;
     }
 
+    /**
+     * create item list
+     * @param items item list
+     * @return item list
+     */
     public List<Item> createList(List<Item> items) {
         String dateCreated = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss").format(new Date());
         System.out.println(items);
@@ -44,18 +58,36 @@ public class ItemService {
         return items;
     }
 
+    /**
+     * read item
+     * @param id item id
+     * @return item
+     */
     public Item read(String id) {
         return itemDaoImpl.read(id);
     }
 
+    /**
+     * update item
+     * @param item item
+     */
     public void update(Item item) {
         itemDaoImpl.update(item);
     }
 
+    /**
+     * delete item
+     * @param id item id
+     */
     public void delete(String id) {
         itemDaoImpl.delete(id);
     }
 
+    /**
+     * read item list
+     * @param id user id
+     * @return item list
+     */
     public List<Item> readList(String id) {
         return itemDaoImpl.readList(id);
     }

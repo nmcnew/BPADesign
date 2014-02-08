@@ -9,7 +9,7 @@ import com.youreffect.model.User;
 public interface UserDao {
     /** create user */
     void createUser(User user);
-    /** read user data by on id */
+    /** read user data by id */
     User readUser(String id);
     /** read user data by id and hashed password */
     User readUser(String id, String password);

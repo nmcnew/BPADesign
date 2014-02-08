@@ -72,6 +72,11 @@ public class UserController {
         return responseService.toString();
     }
 
+    /**
+     * view item
+     * @param id item id
+     * @return JSON to client
+     */
     @RequestMapping(value = "/view/{id}", method = RequestMethod.GET)
     public @ResponseBody String view(@PathVariable String id) {
         user = userService.read(id);
@@ -81,6 +86,11 @@ public class UserController {
         return responseService.toString();
     }
 
+    /**
+     * update item
+     * @param data JSON from client
+     * @return JSON to client
+     */
     @RequestMapping(value = "/update", method = RequestMethod.POST)
     public @ResponseBody String update(@RequestBody String data) {
         user = gson.fromJson(data, User.class);
@@ -91,7 +101,11 @@ public class UserController {
         return responseService.toString();
     }
 
-
+    /**
+     * delete item
+     * @param id item id
+     * @return JSON to client
+     */
     @RequestMapping(value = "/delete/{id}", method = RequestMethod.POST)
     public @ResponseBody String remove(@PathVariable String id) {
         userService.delete(id);

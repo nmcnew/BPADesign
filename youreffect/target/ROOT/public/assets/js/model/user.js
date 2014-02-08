@@ -1,3 +1,7 @@
+/**
+ * user front-end model
+ * @constructor empty constructor for user
+ */
 function User() {
     this.userId = '';
     this.username = '';
@@ -9,6 +13,14 @@ function User() {
     this.datesLoggedIn = [];
 }
 
+/**
+ * user front-end model
+ * @param username
+ * @param email
+ * @param password
+ * @param state
+ * @constructor constructs user with username, email, password, and state
+ */
 function User(username, email, password, state) {
     this.userId = '';
     this.username = username;
@@ -18,24 +30,4 @@ function User(username, email, password, state) {
     this.items = {};
     this.dateRegistered = '';
     this.datesLoggedIn = [];
-}
-
-User.prototype.username = function (username) {
-    this.username = username;
-}
-
-User.prototype.email = function (email) {
-    this.email = email;
-}
-
-User.prototype.password = function (password) {
-    this.password = password;
-}
-
-User.prototype.state = function (state) {
-    this.state = state;
-}
-
-User.prototype.items = function(items) {
-    this.items = items;
 }

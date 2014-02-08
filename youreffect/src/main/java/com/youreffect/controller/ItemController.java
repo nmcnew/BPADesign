@@ -41,9 +41,9 @@ public class ItemController {
     private ResponseService responseService;
 
     /**
-     * adds item to user
+     * creates item
      * @param data JSON from client
-     * @return
+     * @return JSON to client
      */
     @RequestMapping(value = "/create", method = RequestMethod.POST)
     public @ResponseBody String saveItem(@RequestBody String data) {
@@ -55,6 +55,11 @@ public class ItemController {
         return responseService.toString();
     }
 
+    /**
+     * creates list of items
+     * @param data JSON from client
+     * @return JSON to client
+     */
     @RequestMapping(value = "/list/create", method = RequestMethod.POST)
     public @ResponseBody String saveItemList(@RequestBody String data) {
         System.out.println(data);
@@ -66,6 +71,11 @@ public class ItemController {
         return responseService.toString();
     }
 
+    /**
+     * views item
+     * @param id item id
+     * @return JSON to client
+     */
     @RequestMapping(value = "/view/{id}", method = RequestMethod.GET)
     public @ResponseBody String view(@PathVariable String id) {
         item = itemService.read(id);
@@ -75,6 +85,11 @@ public class ItemController {
         return responseService.toString();
     }
 
+    /**
+     * views list of items
+     * @param id item id
+     * @return JSON to client
+     */
     @RequestMapping(value = "/list/view/{id}", method = RequestMethod.GET)
     public @ResponseBody String listView(@PathVariable String id) {
         items = itemService.readList(id);
@@ -84,6 +99,11 @@ public class ItemController {
         return responseService.toString();
     }
 
+    /**
+     * update item
+     * @param data JSON from client
+     * @return JSON to client
+     */
     @RequestMapping(value = "/update", method = RequestMethod.POST)
     public @ResponseBody String update(@RequestBody String data) {
         item = gson.fromJson(data, Item.class);
@@ -94,6 +114,11 @@ public class ItemController {
         return responseService.toString();
     }
 
+    /**
+     * delete item
+     * @param id JSON from client
+     * @return JSON to client
+     */
     @RequestMapping(value = "/delete/{id}", method = RequestMethod.POST)
     public @ResponseBody String delete(@PathVariable String id) {
         itemService.delete(id);
