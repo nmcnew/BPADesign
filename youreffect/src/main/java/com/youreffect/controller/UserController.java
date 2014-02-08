@@ -4,7 +4,6 @@ import com.google.gson.Gson;
 import com.youreffect.exception.LoginException;
 import com.youreffect.exception.RegisterException;
 import com.youreffect.model.User;
-import com.youreffect.service.HashService;
 import com.youreffect.service.ResponseService;
 import com.youreffect.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,10 +26,6 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    /** hash away critical data */
-    @Autowired
-    private HashService hashService;
-
     /** convert JAVA objects into JSON */
     @Autowired
     private Gson gson;
@@ -46,15 +41,9 @@ public class UserController {
      */
     @RequestMapping(value = "/register", method = RequestMethod.POST)
     public @ResponseBody String register(@RequestBody String data) {
-        User user = gson.fromJson(data, User.class);
-        System.out.println(user);
-        user.setUserId(hashService.md5(user.getUsername()));
-        user.setPassword(hashService.md5(user.getPassword()));
+        user = gson.fromJson(data, User.class);
         try {
-            if(userService.exists(user.getUserId())) {
-                throw new RegisterException("failed to register new user because username already exists");
-            }
-            userService.register(user);
+            user = userService.register(user);
             responseService.setMessage("new user successfully registered");
         } catch (RegisterException re) {
             responseService.setMessage(re.getMessage());
@@ -71,17 +60,10 @@ public class UserController {
      */
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public @ResponseBody String login(@RequestBody String data) {
-        System.out.println(data);
         user = gson.fromJson(data, User.class);
-        user.setUserId(hashService.md5(user.getUsername()));
-        user.setPassword(hashService.md5(user.getPassword()));
-        System.out.println(user);
         try {
-            if(!userService.exists(user.getUserId(), user.getPassword())) {
-                throw new LoginException("login failed");
-            }
-            user = userService.login(user.getUserId(), user.getPassword());
-            responseService.setMessage("login was successful");
+            userService.login(user);
+            responseService.setMessage("user successfully logged in");
         } catch (LoginException le) {
             responseService.setMessage(le.getMessage());
         }

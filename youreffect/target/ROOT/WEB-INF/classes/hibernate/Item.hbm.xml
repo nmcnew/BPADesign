@@ -13,5 +13,6 @@
         <property name="energy" column="energy" type="string"/>
         <property name="quantity" column="quantity" type="int"/>
         <property name="specs" column="specs" type="string"/>
+        <property name="dateCreated" column="date_created" type="string"/>
     </class>
 </hibernate-mapping>

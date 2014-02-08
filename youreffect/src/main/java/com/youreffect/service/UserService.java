@@ -1,5 +1,7 @@
 package com.youreffect.service;
 
+import com.youreffect.exception.LoginException;
+import com.youreffect.exception.RegisterException;
 import com.youreffect.impl.UserDaoImpl;
 import com.youreffect.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +18,10 @@ public class UserService {
     /** perform spring.database interactions */
     @Autowired
     private UserDaoImpl userDaoImpl;
+
+    /** hash away critical data */
+    @Autowired
+    private HashService hashService;
 
     /**
      * sets UserDaoImpl
@@ -55,24 +61,33 @@ public class UserService {
      * registers user by creating user in spring.database
      * @param user User object
      */
-    public void register (User user) {
-        user.setDateRegistered(new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss").format(new Date()));
-        System.out.println(user.getDateRegistered());
-        create(user);
+    public User register (User user) throws RegisterException {
+        if(exists(user.getUserId())) {
+            throw new RegisterException("failed to register new user because username already exists");
+        }
+        return create(user);
     }
 
     /**
      * logs in user by indexing for a user by id and hashed password
-     * @param id user id
-     * @param password user password
+     * @param user user
      * @return User object
      */
-    public User login (String id, String password) {
-        return read(id, password);
+    public User login (User user) throws LoginException {
+        user.setUserId(hashService.md5(user.getUsername()));
+        user.setPassword(hashService.md5(user.getPassword()));
+        if(!exists(user.getUserId(), user.getPassword())) {
+            throw new LoginException("login failed");
+        }
+        return read(user.getUserId(), user.getPassword());
     }
 
-    public void create(User user) {
+    public User create(User user) {
+        user.setDateRegistered(new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss").format(new Date()));
+        user.setUserId(hashService.md5(user.getUsername()));
+        user.setPassword(hashService.md5(user.getPassword()));
         userDaoImpl.createUser(user);
+        return user;
     }
 
     public User read(String id, String password) {

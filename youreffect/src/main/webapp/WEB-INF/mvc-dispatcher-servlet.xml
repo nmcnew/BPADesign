@@ -60,6 +60,10 @@
 
     </bean>
 
+    <bean id="items" class="java.util.List" abstract="true">
+
+    </bean>
+
     <bean id="itemDaoImpl" class="com.youreffect.impl.ItemDaoImpl" >
         <property name="sessionFactory" ref="sessionFactory"></property>
     </bean>

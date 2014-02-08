@@ -4,6 +4,8 @@ var curLogin = '';
 
 var curUser = new User();
 
+var curItems = [];
+
 init();
 
 function init() {
@@ -13,6 +15,7 @@ function init() {
         if (curLogin != null) {
             console.log("initializing");
             curUser = readUser(curLogin).data;
+            curItems = readItemList(curUser.userId).data;
             console.log("current user: ");
             console.log(curUser);
         }
@@ -148,10 +151,8 @@ function login(username, password) {
 
 /** joint operations */
 
-function saveItem(item) {
-    item.userId = curUser.userId;
-    item.specs = JSON.stringify(item.specs);
-    createItem(item);
+function saveItems(items) {
+    createItemList(items);
 }
 
 /** user operations */
@@ -278,11 +279,45 @@ function createItem(item) {
     return response;
 }
 
+function createItemList(items) {
+    var response;
+    $.ajax({
+        async : false,
+        url : getContextRoot('public') + '/item/list/create',
+        type : 'POST',
+        data : JSON.stringify(items),
+        contentType : "application/json; charset=utf-8",
+        success : function(data) {
+            var data = JSON.parse(data);
+            console.log(data);
+            response = data;
+        }
+    });
+    return response;
+}
+
 function readItem(id) {
     var response;
     $.ajax({
         async : false,
         url : getContextRoot('public') + '/item/view/'+id,
+        type : 'GET',
+        data : id,
+        contentType : "application/json; charset=utf-8",
+        success : function(data) {
+            var data = JSON.parse(data);
+            console.log(data);
+            response = data;
+        }
+    });
+    return response;
+}
+
+function readItemList(id) {
+    var response;
+    $.ajax({
+        async : false,
+        url : getContextRoot('public') + '/item/list/view/'+id,
         type : 'GET',
         data : id,
         contentType : "application/json; charset=utf-8",
@@ -465,6 +500,7 @@ function removeAlertClass() {
 function submitMainForm(){
     var myForms = $("div[id$='Wrapper']");
     // iterates through all forms.
+    var items = new Array();
     for(var i = 0; i < myForms.length; i++ ){
         var item = new Item();
         item.specs = {};
@@ -506,15 +542,18 @@ function submitMainForm(){
                 }
             }
         }
+        item.userId = curUser.userId;
+        item.specs = JSON.stringify(item.specs);
         console.log(item);
-        saveItem(item);
+        items.push(item);
     }
+    saveItems(items);
 }
 
 /** search functions */
 
 function search(key, filter) {
-    var items = curUser.items;
+    var items = curItems;
     var hits = [];
     $.each(items, function (itemId, item) {
         if(item.name.toLowerCase().indexOf(key.toLowerCase()) != -1 && (filter.length == 0 || (filter.length > 0 && item.energy == filter))) {
@@ -541,7 +580,7 @@ function populateFilteredList(hits, list, reply) {
 
 function populateList(list,reply) {
     var count = 0;
-    var items = curUser.items;
+    var items = curItems;
     var s = "";
     $.each(items, function (itemId, item) {
         s += ("<tr>");
@@ -552,6 +591,6 @@ function populateList(list,reply) {
         ++count;
     });
     list.append(s);
-    reply.html(count + " results");
+    reply.html(count + " result(s)");
 
 }

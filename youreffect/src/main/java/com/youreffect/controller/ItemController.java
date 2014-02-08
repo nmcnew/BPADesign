@@ -1,13 +1,16 @@
 package com.youreffect.controller;
 
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import com.youreffect.model.Item;
-import com.youreffect.service.HashService;
 import com.youreffect.service.ItemService;
 import com.youreffect.service.ResponseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author Deeban Ramalingam
@@ -21,13 +24,13 @@ public class ItemController {
     @Autowired
     private Item item;
 
+    /** item list reference */
+    @Autowired
+    private List<Item> items;
+
     /** abstract out user CRUD operations */
     @Autowired
     private ItemService itemService;
-
-    /** hash away critical data */
-    @Autowired
-    private HashService hashService;
 
     /** convert JAVA objects into JSON */
     @Autowired
@@ -45,19 +48,21 @@ public class ItemController {
     @RequestMapping(value = "/create", method = RequestMethod.POST)
     public @ResponseBody String saveItem(@RequestBody String data) {
         item = gson.fromJson(data, Item.class);
-        item.setItemId(hashService.md5(item.getName() + item.getEnergy() + item.getSpecs()));
-        if(itemService.read(item.getItemId()) != null) {
-            int oldQuantity = item.getQuantity();
-            item = itemService.read(item.getItemId());
-            item.setQuantity(oldQuantity + item.getQuantity());
-            itemService.update(item);
-        }
-        else {
-            itemService.create(item);
-        }
+        item = itemService.create(item);
         responseService.setData(item);
         responseService.setMessage("item successfully saved");
         item = null;
+        return responseService.toString();
+    }
+
+    @RequestMapping(value = "/list/create", method = RequestMethod.POST)
+    public @ResponseBody String saveItemList(@RequestBody String data) {
+        System.out.println(data);
+        items = gson.fromJson(data, new TypeToken<ArrayList<Item>>() {}.getType());
+        items = itemService.createList(items);
+        responseService.setData(items);
+        responseService.setMessage("items successfully saved");
+        items = null;
         return responseService.toString();
     }
 
@@ -67,6 +72,15 @@ public class ItemController {
         responseService.setData(item);
         responseService.setMessage("item successfully returned");
         item = null;
+        return responseService.toString();
+    }
+
+    @RequestMapping(value = "/list/view/{id}", method = RequestMethod.GET)
+    public @ResponseBody String listView(@PathVariable String id) {
+        items = itemService.readList(id);
+        responseService.setData(items);
+        responseService.setMessage("items successfully returned");
+        items = null;
         return responseService.toString();
     }
 

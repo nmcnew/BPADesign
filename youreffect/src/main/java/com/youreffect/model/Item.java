@@ -13,6 +13,7 @@ public class Item {
     private String energy;
     private int quantity;
     private String specs;
+    private String dateCreated;
 
     public String getItemId() {
         return itemId;
@@ -63,6 +64,14 @@ public class Item {
     }
 
     public String toString() {
-        return String.format("Item[id=%s, userId='%s', name='%s', energy='%s', quantity='%s', specs='%s']", itemId, userId, name, energy, quantity, specs);
+        return String.format("Item[id=%s, userId='%s', name='%s', energy='%s', quantity='%s', dateCreated='%s', specs='%s']", itemId, userId, name, energy, quantity, dateCreated, specs);
+    }
+
+    public String getDateCreated() {
+        return dateCreated;
+    }
+
+    public void setDateCreated(String dateCreated) {
+        this.dateCreated = dateCreated;
     }
 }
