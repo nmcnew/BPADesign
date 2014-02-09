@@ -134,6 +134,14 @@
     </div>
 </div>
 <script>
+    function getElecRate() {
+        $("#elecRate").val((curUser.elecRate > 0) ? curUser.elecRate.toString() : '');
+    }
+    function getCostOfGas() {
+            $("#costOfGas").val((curUser.costOfGas > 0) ? curUser.costOfGas.toString() : '');
+    }
+    getElecRate();
+    getCostOfGas();
     $(".item").click(
             function() {
                 var selText = $(this).text();

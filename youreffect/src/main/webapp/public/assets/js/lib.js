@@ -489,7 +489,16 @@ function removeAlertClass() {
 
 /** get form data to create items */
 
-function submitMainForm(){
+function submitMainForm() {
+    var elecRate = $("#elecRate").val();
+    var costOfGas = $("#costOfGas").val();
+    if (elecRate.length > 0) {
+        curUser.elecRate = parseFloat(elecRate);
+    }
+    if (costOfGas.length > 0) {
+        curUser.costOfGas = parseFloat(costOfGas);
+    }
+    updateUser(curUser);
     var myForms = $("div[id$='Wrapper']");
     // iterates through all forms.
     var items = new Array();
