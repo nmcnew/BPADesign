@@ -586,6 +586,9 @@ function prepareRow(item, s) {
     s += ("<td>"+item.quantity+"</td>");
     s += ("<td>"+item.dateCreated.split("T")[0]+"</td>");
     s += ("<td><button data-toggle='modal' data-target='#myModal'>Specs</button></td>");
+
+    // i need the item cost to be calculated and replace the $0.00 with the actual cost :)
+
     s += ("<td>$0.00</td>");
     s += ("</tr>");
     return s;
