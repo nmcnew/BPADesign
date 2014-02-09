@@ -490,6 +490,15 @@ function removeAlertClass() {
 /** get form data to create items */
 
 function submitMainForm(){
+    var elecRate = $("#elecRate").val();
+    var costOfGas = $("#costOfGas").val();
+    if (elecRate.length > 0) {
+        curUser.elecRate = parseFloat(elecRate);
+    }
+    if (costOfGas.length > 0) {
+        curUser.costOfGas = parseFloat(costOfGas);
+    }
+    updateUser(curUser);
     var myForms = $("div[id$='Wrapper']");
     // iterates through all forms.
     var items = new Array();
@@ -587,39 +596,40 @@ function prepareRow(item, s) {
     s += ("<td>"+item.dateCreated.split("T")[0]+"</td>");
     s += ("<td><button data-toggle='modal' data-target='#myModal'>Specs</button></td>");
     var costOf = 0;
+    var mySpecs = JSON.parse(item.specs);
     switch(item.name){
         case("Light Bulbs"):
-            costOf = bulbCalc(specsStr, item.quantity);
+            costOf = bulbCalc(mySpecs, item.quantity);
             break;
         case("Central Air Conditioning"):
-            costOf = accCalcs(specsStr, item.quantity);
+            costOf = accCalcs(mySpecs, item.quantity);
             break;
         case("Furnace"):
-            costOf = furnaceCalcs(specsStr, item.quantity);
+            costOf = furnaceCalcs(mySpecs, item.quantity);
             break;
         case("Personal Air Conditioner"):
-            costOf = acrCalcs(specsStr, item.quantity);
+            costOf = acrCalcs(mySpecs, item.quantity);
             break;
         case("Air Purifier"):
-            costOf = airPure(specsStr,item.quantity);
+            costOf = airPure(mySpecs,item.quantity);
             break;
         case("Clothes Washer"):
-            costOf = clothesWasher(specsStr, item.quantity);
+            costOf = clothesWasher(mySpecs, item.quantity);
             break;
         case("Dehumidifier"):
-            costOf = dehumidifierCalcs(specsStr, item.quantity);
+            costOf = dehumidifierCalcs(mySpecs, item.quantity);
             break;
         case("Dishwasher"):
-            costOf = dishwasherCalcs(specsStr, item.quantity);
+            costOf = dishwasherCalcs(mySpecs, item.quantity);
             break;
         case("Refrigerator"):
-            costOf = fridgeConsumption(specsStr,item.quantity);
+            costOf = fridgeConsumption(mySpecs,item.quantity);
             break;
         case("Refrigerator - Compact"):
-            costOf = cFridgeCalcs(specsStr,item.quantity);
+            costOf = cFridgeCalcs(mySpecs,item.quantity);
             break;
         case("Freezer"):
-            costOf = freezerCalcs(specsStr,item.quantity);
+            costOf = freezerCalcs(mySpecs,item.quantity);
             break;
     }
     s += ("<td>$"+ (costOf).toFixed(2) +"</td>");

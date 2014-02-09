@@ -163,6 +163,6 @@ function bulbCalc(specs, quantity){
     var userBulbType = Number(specs.bulbType);
     var userHours = Number(specs.bulbAvgDailyUse);
     var userConsumption = (userHours/1000 *userBulbType * 365)*quantity;
-    return userConsumption*userECost;
+    return userConsumption*userECost * quantity;
 
 }
