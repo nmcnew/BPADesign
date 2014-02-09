@@ -595,10 +595,43 @@ function prepareRow(item, s) {
     s += ("<td>"+item.quantity+"</td>");
     s += ("<td>"+item.dateCreated.split("T")[0]+"</td>");
     s += ("<td><button data-toggle='modal' data-target='#myModal'>Specs</button></td>");
-
-    // i need the item cost to be calculated and replace the $0.00 with the actual cost :)
-
-    s += ("<td>$0.00</td>");
+    var costOf = 0;
+    switch(item.name){
+        case("Light Bulbs"):
+            costOf = bulbCalc(specsStr, item.quantity);
+            break;
+        case("Central Air Conditioning"):
+            costOf = accCalcs(specsStr, item.quantity);
+            break;
+        case("Furnace"):
+            costOf = furnaceCalcs(specsStr, item.quantity);
+            break;
+        case("Personal Air Conditioner"):
+            costOf = acrCalcs(specsStr, item.quantity);
+            break;
+        case("Air Purifier"):
+            costOf = airPure(specsStr,item.quantity);
+            break;
+        case("Clothes Washer"):
+            costOf = clothesWasher(specsStr, item.quantity);
+            break;
+        case("Dehumidifier"):
+            costOf = dehumidifierCalcs(specsStr, item.quantity);
+            break;
+        case("Dishwasher"):
+            costOf = dishwasherCalcs(specsStr, item.quantity);
+            break;
+        case("Refrigerator"):
+            costOf = fridgeConsumption(specsStr,item.quantity);
+            break;
+        case("Refrigerator - Compact"):
+            costOf = cFridgeCalcs(specsStr,item.quantity);
+            break;
+        case("Freezer"):
+            costOf = freezerCalcs(specsStr,item.quantity);
+            break;
+    }
+    s += ("<td>$"+ (costOf).toFixed(2) +"</td>");
     s += ("</tr>");
     return s;
 }
