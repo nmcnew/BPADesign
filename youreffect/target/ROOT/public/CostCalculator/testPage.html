@@ -42,16 +42,24 @@
 					class="form-control " placeholder="Average Daily Use (hours)">
 				<h4>Bulb Type</h4>
 				<select name="bulbType" id="bulbType" class="form-control">
-					<option value="40wI">40 W Incandescent</option>
-					<option value="60wI">60 W Incandescent</option>
-					<option value="75wI">75 W Incandescent</option>
-					<option value="100wI">100 W Incandescent</option>
-					<option value="150wI">150 W Incandescent</option>
-					<option value="29wH">29 W Halogen(40 W Equivalent)</option>
-					<option value="43wH">43 W Halogen(60 W Equivalent)</option>
-					<option value="53wH">53 W Halogen(75 W Equivalent)</option>
-					<option value="72wH">72 W Halogen(100 W Equivalent)</option>
+					<option value="40">40 W Incandescent</option>
+					<option value="60">60 W Incandescent</option>
+					<option value="75">75 W Incandescent</option>
+					<option value="100">100 W Incandescent</option>
+					<option value="150">150 W Incandescent</option>
+					<option value="29">29 W Halogen(40 W Equivalent)</option>
+					<option value="43">43 W Halogen(60 W Equivalent)</option>
+					<option value="53">53 W Halogen(75 W Equivalent)</option>
+					<option value="72">72 W Halogen(100 W Equivalent)</option>
 				</select>
+                <h4>Rated Lifetime</h4>
+                <select name="bulbLife" id="bulbLife" class="form-control">
+                    <option value="6000">6000</option>
+                    <option value="8000">8000</option>
+                    <option value="10000">10000</option>
+                    <option value="12000">12000</option>
+                    <option value="15000">15000</option>
+                </select>
 			</div>
 			<!-- Central Air Conditioning Form -->
 			<div id="accWrapper" class="formWrapper">
@@ -121,6 +129,7 @@
 				</select>
 				<h4>Era of Furnace</h4>
 				<select name="furnEra" id="furnEra" class="form-control">
+                    <option value="pre60">Before 1960</option>
 					<option value="1960-1969">1960-1969</option>
 					<option value="1970-1974">1970-1974</option>
 					<option value="1975-1983">1975-1983</option>

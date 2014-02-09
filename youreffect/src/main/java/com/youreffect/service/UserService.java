@@ -62,7 +62,8 @@ public class UserService {
      * @param user User object
      */
     public User register (User user) throws RegisterException {
-        if(exists(user.getUserId())) {
+        String checkCopyId = hashService.md5(user.getUsername());
+        if(exists(checkCopyId)) {
             throw new RegisterException("failed to register new user because username already exists");
         }
         return create(user);

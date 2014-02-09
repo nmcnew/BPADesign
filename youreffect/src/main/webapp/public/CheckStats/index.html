@@ -12,7 +12,8 @@
 		<script src="../assets/js/model/item.js"></script>
         <script src="../assets/js/lib.js"></script>
 		<script src="../assets/js/calculate.js"></script>
-	</head>
+        <script src="../assets/js/Chart.js"></script>
+    </head>
 	<body>
 		<!-- Header -->
 		<nav class="navbar navbar-inverse center" role="navigation">
@@ -47,13 +48,11 @@
 		<div class="body">
 			<h2>Your Information</h2>
 			<table class="table">
-
 				<thead>
 					<tr>
 						<th>Username</th>
 						<th>Email</th>
 						<th>State</th>
-
 					</tr>
 				</thead>
 				<tr>
@@ -62,9 +61,8 @@
 					<td><div id="stat-state"></div></td>
 				</tr>
 			</table>
-			<h2>Your Items</h2>
+			<h2>Entry Log</h2>
 			<form>
-
 				<h4>Search</h4>
 				<div class="col-lg-6">
 					<input onkeyup="triggerSearch()" id="key" type="text" class="form-control" placeholder="Search through your Items">
@@ -82,12 +80,15 @@
 			</form>
 			<table class="table table-hover">
 				<thead>
-                <tr><th> Name </th> <th> Energy </th><th> Quantity </th></tr>
+                <tr><th> Name </th> <th> Energy </th><th> Quantity </th><th> Date </th> <th> View Specs </th> <th> Cost </th></tr>
 				</thead>
                 <tbody id="item-list">
 
                 </tbody>
 			</table>
+        </div>
+        <div id="graph">
+            <canvas id="myChart" width="800" height="600"></canvas>
         </div>
 		<script>
 			$("#stat-username").html(curUser.username);
@@ -97,6 +98,128 @@
             function triggerSearch() {
                 populateFilteredList(search($("#key").val(),$('#energy-filter').val()),$('#item-list'),$('#num-results'));
             }
+
+            // iterate through list of
+
+            var data = {
+                labels : ["January","February","March","April","May","June","July"],
+                datasets : [
+                    {
+                        fillColor : "rgba(151,187,205,0.5)",
+                        strokeColor : "rgba(151,187,205,1)",
+                        pointColor : "rgba(151,187,205,1)",
+                        pointStrokeColor : "#fff",
+                        data : [28,28,234,25]
+                    }
+                ]
+            }
+
+            var options = {
+
+                //Boolean - If we show the scale above the chart data
+                scaleOverlay : false,
+
+                //Boolean - If we want to override with a hard coded scale
+                scaleOverride : false,
+
+                //** Required if scaleOverride is true **
+                //Number - The number of steps in a hard coded scale
+                scaleSteps : null,
+                //Number - The value jump in the hard coded scale
+                scaleStepWidth : null,
+                //Number - The scale starting value
+                scaleStartValue : null,
+
+                //String - Colour of the scale line
+                scaleLineColor : "rgba(255,255,255,.1)",
+
+                //Number - Pixel width of the scale line
+                scaleLineWidth : 1,
+
+                //Boolean - Whether to show labels on the scale
+                scaleShowLabels : true,
+
+                //Interpolated JS string - can access value
+                scaleLabel : "<%=value%>",
+
+                //String - Scale label font declaration for the scale label
+                scaleFontFamily : "'Arial'",
+
+                //Number - Scale label font size in pixels
+                scaleFontSize : 12,
+
+                //String - Scale label font weight style
+                scaleFontStyle : "normal",
+
+                //String - Scale label font colour
+                scaleFontColor : "#666",
+
+                ///Boolean - Whether grid lines are shown across the chart
+                scaleShowGridLines : true,
+
+                //String - Colour of the grid lines
+                scaleGridLineColor : "rgba(255,255,255,.05)",
+
+                //Number - Width of the grid lines
+                scaleGridLineWidth : 1,
+
+                //Boolean - Whether the line is curved between points
+                bezierCurve : true,
+
+                //Boolean - Whether to show a dot for each point
+                pointDot : true,
+
+                //Number - Radius of each point dot in pixels
+                pointDotRadius : 0,
+
+                //Number - Pixel width of point dot stroke
+                pointDotStrokeWidth : 1,
+
+                //Boolean - Whether to show a stroke for datasets
+                datasetStroke : true,
+
+                //Number - Pixel width of dataset stroke
+                datasetStrokeWidth : 2,
+
+                //Boolean - Whether to fill the dataset with a colour
+                datasetFill : true,
+
+                //Boolean - Whether to animate the chart
+                animation : true,
+
+                //Number - Number of animation steps
+                animationSteps : 60,
+
+                //String - Animation easing effect
+                animationEasing : "easeOutQuart",
+
+                //Function - Fires when the animation is complete
+                onAnimationComplete : null
+
+            }
+
+            //Get the context of the canvas element we want to select
+            var ctx = document.getElementById("myChart").getContext("2d");
+            var myNewChart = new Chart(ctx).Line(data,options);
+
 		</script>
+        <div id="myModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Item Specifications</h4>
+                    </div>
+                    <div class="modal-body">
+                        <br/>
+                        <table id="specs" class="table">
+
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 	</body>
 </html>

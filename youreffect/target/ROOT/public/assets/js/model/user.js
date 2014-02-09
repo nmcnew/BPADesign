@@ -8,9 +8,7 @@ function User() {
     this.email = '';
     this.password = '';
     this.state = '';
-    this.items = {};
     this.dateRegistered = '';
-    this.datesLoggedIn = [];
 }
 
 /**
@@ -27,7 +25,5 @@ function User(username, email, password, state) {
     this.email = email;
     this.password = password;
     this.state = state;
-    this.items = {};
     this.dateRegistered = '';
-    this.datesLoggedIn = [];
 }

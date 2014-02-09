@@ -11,12 +11,16 @@ init();
 function init() {
     try {
         curLogin = localStorage.getItem('curLogin');
-        if (curLogin != null) {
-            curUser = readUser(curLogin).data;
-            curItems = readItemList(curUser.userId).data;
-        }
+        curUser = readUser(curLogin).data;
+        curItems = readItemList(curUser.userId).data;
     }
-    catch (e) {}
+    catch (e) {
+        console.log('no login');
+        localStorage.removeItem('curLogin');
+        curLogin = '';
+        curUser = new User();
+        curItems = [];
+    }
 }
 
 /** adjust context root to various subdomain structures */
@@ -555,11 +559,7 @@ function populateFilteredList(hits, list, reply) {
     var s = "";
     for (var i in hits) {
         var item = hits[i];
-        s += ("<tr>");
-        s += ("<td>"+item.name+"</td>");
-        s += ("<td>"+item.energy+"</td>");
-        s += ("<td>"+item.quantity+"</td>");
-        s += ("</tr>");
+        s = prepareRow(item, s);
     }
     list.append(s);
     reply.html(hits.length + " results");
@@ -570,14 +570,35 @@ function populateList(list,reply) {
     var items = curItems;
     var s = "";
     $.each(items, function (itemId, item) {
-        s += ("<tr>");
-        s += ("<td>"+item.name+"</td>");
-        s += ("<td>"+item.energy+"</td>");
-        s += ("<td>"+item.quantity+"</td>");
-        s += ("</tr>");
+        s = prepareRow(item, s);
         ++count;
     });
     list.append(s);
     reply.html(count + " result(s)");
 
+}
+
+function prepareRow(item, s) {
+    var specsStr = JSON.stringify(item.specs);
+    s += ("<tr onmouseover='prepareSpecs("+specsStr+")'>");
+    s += ("<td>"+item.name+"</td>");
+    s += ("<td>"+item.energy+"</td>");
+    s += ("<td>"+item.quantity+"</td>");
+    s += ("<td>"+item.dateCreated.split("T")[0]+"</td>");
+    s += ("<td><button data-toggle='modal' data-target='#myModal'>Specs</button></td>");
+    s += ("<td>$0.00</td>");
+    s += ("</tr>");
+    return s;
+}
+
+function prepareSpecs(s) {
+    var r = "";
+    var obj = JSON.parse(s);
+    for (var prop in obj) {
+        if (obj.hasOwnProperty(prop)) {
+            r += "<tr><td>"+prop + "</td><td>" + obj[prop] + "</td></tr>";
+        }
+    }
+    r += "<tr><td></td><td></td></tr>"
+    $("#specs").html(r);
 }
