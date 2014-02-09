@@ -9,6 +9,8 @@ function User() {
     this.password = '';
     this.state = '';
     this.dateRegistered = '';
+    this.elecRate = 0;
+    this.costOfGas = 0;
 }
 
 /**
@@ -26,4 +28,6 @@ function User(username, email, password, state) {
     this.password = password;
     this.state = state;
     this.dateRegistered = '';
+    this.elecRate = 0;
+    this.costOfGas = 0;
 }

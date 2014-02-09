@@ -36,6 +36,20 @@
 </nav>
 
 <div class="body">
+
+    <h2>User Rates</h2>
+
+    <div class="input-group">
+        <input type="text" id="elecRate" class="form-control"
+               placeholder="Electricity Rate (kWh)">
+
+    </div>
+    <br/>
+    <div class="input-group">
+    <input type="text" id="costOfGas" class="form-control"
+           placeholder="Cost of Gas (USD/Cubic Feet)">
+    </div>
+
     <h2>Item Specifics</h2>
     <br />
 
@@ -64,11 +78,6 @@
             </div>
             <br />
 
-        </div>
-        <br />
-        <div class="input-group">
-            <input type="text" id="rateOfElectricity" class="form-control"
-                   placeholder="Electric Rate kWh">
         </div>
         <br />
         <button id="submitBtn" type="button" class="btn btn-success" onclick="submitMainForm()">Submit</button>
@@ -127,6 +136,14 @@
     </div>
 </div>
 <script>
+    function getElecRate() {
+        $("#elecRate").val((curUser.elecRate > 0) ? curUser.elecRate.toString() : '');
+    }
+    function getCostOfGas() {
+        $("#costOfGas").val((curUser.costOfGas > 0) ? curUser.costOfGas.toString() : '');
+    }
+    getElecRate();
+    getCostOfGas();
     $(".item").click(
             function() {
                 var selText = $(this).text();

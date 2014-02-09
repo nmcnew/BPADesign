@@ -16,5 +16,7 @@
         <property name="password" column="password" type="string" not-null="true"/>
         <property name="state" column="state" type="string" not-null="true"/>
         <property name="dateRegistered" column="date_reg" type="string" not-null="true"/>
+        <property name="elecRate" column="elec_rate" type="double" not-null="true"/>
+        <property name="costOfGas" column="cost_of_gas" type="double" not-null="true"/>
     </class>
 </hibernate-mapping>

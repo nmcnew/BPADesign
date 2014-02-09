@@ -20,7 +20,10 @@ public class User {
     private String dateRegistered;
     /** dates logged in */
     private String datesLoggedIn;
-
+    /** electricity rate in kilowatt-hr */
+    private double elecRate;
+    /** cost of gas us dollars per cost per cubic foot*/
+    private double costOfGas;
 
     /**
      * get user id
@@ -118,13 +121,29 @@ public class User {
         this.datesLoggedIn = datesLoggedIn;
     }
 
+    public double getCostOfGas() {
+        return costOfGas;
+    }
+
+    public void setCostOfGas(double costOfGas) {
+        this.costOfGas = costOfGas;
+    }
+
+    public double getElecRate() {
+        return elecRate;
+    }
+
+    public void setElecRate(double elecRate) {
+        this.elecRate = elecRate;
+    }
+
     /**
      * string representation of User
      * @return string representation of User
      */
     public String toString() {
         return String.format(
-                "User[id=%s, username='%s', email='%s', state='%s', password='%s', dateRegistered='%s', datesLoggedIn='%s'",
-                userId, username, email, state, password, dateRegistered, datesLoggedIn);
+                "User[id=%s, username='%s', email='%s', state='%s', password='%s', dateRegistered='%s', datesLoggedIn='%s', elecRate='%s', costOfGas='%s'",
+                userId, username, email, state, password, dateRegistered, datesLoggedIn, elecRate, costOfGas);
     }
 }
