@@ -36,20 +36,6 @@
 </nav>
 
 <div class="body">
-
-    <h2>User Rates</h2>
-
-    <div class="input-group">
-        <input type="text" id="elecRate" class="form-control"
-               placeholder="Electricity Rate (kWh)">
-
-    </div>
-    <br/>
-    <div class="input-group">
-    <input type="text" id="costOfGas" class="form-control"
-           placeholder="Cost of Gas (USD/Cubic Feet)">
-    </div>
-
     <h2>Item Specifics</h2>
     <br />
 
@@ -70,16 +56,24 @@
                     <li><a href="#" data-toggle="modal" data-target="#gasOptions">Gasoline</a>
                     </li>
                 </ul>
-                <!--
                 <button type="button" class="btn btn-info editButton">
                     <span class="glyphicon glyphicon-pencil"></span> Edit
                 </button>
-                -->
             </div>
             <br />
 
         </div>
         <br />
+        <div class="input-group">
+            <input type="text" name="elecRate" id="elecRate" class="form-control"
+                   placeholder="Electric Rate kWh">
+        </div>
+        <br />
+        <div class="input-group">
+            <input type="text" name="costOfGas" id="costOfGas" class="form-control"
+                   placeholder="$/therm">
+        </div>
+        <br/>
         <button id="submitBtn" type="button" class="btn btn-success" onclick="submitMainForm()">Submit</button>
     </form>
 
@@ -136,14 +130,6 @@
     </div>
 </div>
 <script>
-    function getElecRate() {
-        $("#elecRate").val((curUser.elecRate > 0) ? curUser.elecRate.toString() : '');
-    }
-    function getCostOfGas() {
-        $("#costOfGas").val((curUser.costOfGas > 0) ? curUser.costOfGas.toString() : '');
-    }
-    getElecRate();
-    getCostOfGas();
     $(".item").click(
             function() {
                 var selText = $(this).text();

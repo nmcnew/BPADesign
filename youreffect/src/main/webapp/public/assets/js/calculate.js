@@ -1,4 +1,4 @@
-var userECost;
+var userECost = curUser.elecRate;
 function getAssumptions(){
     $.ajax({
         url : '../assets/js/assumptions.json',
@@ -9,12 +9,12 @@ function getAssumptions(){
         }
     });
 }
-function airPure(){//Completed Energy Star and User Sides
+function airPure(specs, quantity){//Completed Energy Star and User Sides
     //load variables
-    var userCap;
-    var userEff;
-    var userHours;
-    var userDays;
+    var userCap = specs.airPureCap;
+    var userEff = specs.airPureEff;
+    var userHours = specs.airPureHoursADay;
+    var userDays = specs.airPureDaysOfOp;
     var userQuantity;
     //Operation Power, does not have a use other than in this calc
     var userOpPower = userCap/userEff/1000;
@@ -23,22 +23,16 @@ function airPure(){//Completed Energy Star and User Sides
     var eStarOpEnergy = .03 * userHours * userDays;
     //Standby Energy
     var userStandby = (8760- userHours * userDays)* .001;
-    var eStarStandby = (8760- userHours * userDays)* .6/1000;
-    //Annual Use
-    var userAnnual = userStandby + userOpEnergy;
-    var eStarAnnual = eStarStandby + eStarOpEnergy;
-    return[userOpEnergy * userQuantity * userECons,eStarOpEnergy * userQuantity * userECost, userAnnual * userQuantity * userEcost, eStarAnnual * userQuantity * userECost];
+    return (userOpEnergy*userStandby) * quantity * userECost;
 }
-function clothesWasher(){//completed User side
+function clothesWasher(specs, quantity){//completed User side
     //load vars
-    var userQuantity;
-    var userLoads;
-    var userHotWaterFuel;
-    var userREC;
-    var userDryerType;
-    var userCapacity;
-    var userMEF;
-    var userWF;
+    var userLoads = specs.clothesWasherLoadsPerWeek;
+    var userHotWaterFuel = specs.clothesWasherBuildFuelType;
+    var userREC = specs.clothesWasherECons;
+    var userDryerType = specs.clothesWasherDryerFuelType;
+    var userCapacity = specs.clothesWasherCapacity;
+    var userMEF = specs.clothesWasherMEF;
     //loads a year, used only in this calc
     var userLoadsAYear = userLoads*52;
     //adjusted rated unit electricity consumption, referred to as ARC
@@ -46,99 +40,81 @@ function clothesWasher(){//completed User side
     //Total Electricity, based on electric dryer
     var userTotalEDryer = userCapacity/userMEF*userLoadsAYear;
     //Electric and Gas Stuff
-    var userGasCons;
     var userECons = userArc * .2 ;
     //Hot water Heating Energy
     if(userHotWaterFuel == "elec"){
         userECons += .8 * userArc;
     }
-    else if(userHotWaterFuel == "natGas"){
-        userGasCons += (.8 * userArc) / .78 * .0341; //.0341 is the therm/kWh converter
-    }
     //Dryer Energy
     if(userDryerType == "elec"){
         userECons += userTotalEDryer - userArc;
     }
-    else if(userDryerType == "natGas"){
-        userGasCons += (userTotalEDryer - userArc) * .03421;
-    }
-    var userWaterConsumption = userWF * userCapacity * userLoadsAYear;
 
-    return [userECons * userECost, userGasCons, userWaterConsumption];
+    return userECons * userECost * quantity;
 }
 
-function dehumidifierCalcs(){
-    var userCap ;
-    var userEF;
-    var userDays;
-    var userHours;
+function dehumidifierCalcs(specs, quantity){
+    var userCap = specs.dehmidCap;
+    var userEF = specs.dehumidEFactor;
+    var userDays = specs.dehumidDaysOfOp;
+    var userHours = specs.dehumidHoursOfOp;
     var usage = (userCap *.473)/userEF/24*userHours*userDays;
-    return usage * userECost;
+    return usage * userECost * quantity;
 }
-function dishwasherCalcs(){
-    var userType;
-    var userCycles;
-    var userHotWaterFuel;
-    var userREC;
-    var userRWC;
-    var userGasCons;
+function dishwasherCalcs(specs, quantity){
+    var userCycles = specs.dishWashCyclesPerWeek;
+    var userHotWaterFuel = specs.dishWashHotWaterFuelType;
+    var userREC = specs.dishWashEConsumption;
     //machine energy
     var userEnergy= (userREC*(1 -.56))/215;
     //Water Heater Energy
     if(userHotWaterFuel == "elec"){
         userEnergy += userREC*.56/215
     }
-    else if(userHotWaterFuel == "natGas"){
-
-        userGasCons = (userREC*.56/.75*.0341/215)*userCycles*52;
-    }
     userEnergy = userEnergy * userCycles * 52;
-    var userWC = userRWC * userCycles * 52;
     //return calculated values
-    return [userEnergy * userECost, userWC, userGasCons]
+    return userEnergy * userECost * quantity;
 }
-function fridgeConsumption() {
+function fridgeConsumption(specs, quantity) {
     var value = getAssumptions();
-    var userOpt;
-    var userECons;
+    var userOpt = specs.fridgeType;
+    var userECons = specs.fridgeEConsumption;
     var energyStarConsumption = value.assumptions[0].fridgeAssump.energyStar.energyConsumption[userOpt];
     var savings = userECons - energyStarConsumption;
-    return savings*userECost;
+    return userECons*userECost;
 }
-function cFridgeCalcs(){
+function cFridgeCalcs(specs, quantity){
     var value = getAssumptions();
-    var userOpt;
-    var userECons;
+    var userOpt = specs.cFridgeType;
+    var userECons = specs.cFridgeEConsumption;
     var energyStarConsumption = value.assumptions[0].cFridgeAssump.energyStar.energyConsumption[userOpt];
     var savings = userECons - energyStarConsumption;
-    return savings*userECost;
+    return userECons*userECost;
 }
-function freezerCalcs(){
+function freezerCalcs(specs, quantity){
     var value = getAssumptions();
-    var userOpt;
-    var userECons;
+    var userOpt = specs.freezerType;
+    var userECons = specs.freezereEConsumption;
     var energyStarConsumption = value.assumptions[0].freezerAssump.energyStar.energyConsumption[userOpt];
     var savings = userECons - energyStarConsumption;
-    return savings*userECost;
+    return userECons*userECost;
 }
-function acrCalcs(){//Room Air conditioning
-    var userQuant;
-    var userCoolCap;
-    var userEER;
-    var userState;
+function acrCalcs(specs, quantity){//Room Air conditioning
+    var userCoolCap = specs.acrCoolCap;
+    var userEER = specs.eerRating;
+    var userState = curUser.state;
     var value = getAssumptions();
-    var userEnergyCons = (userQuant * (userCoolCap/userEER)*value.assumptions[0].roomACassumps.stateFullLoadCoolingHours[userState]);
-    return userEnergyCons * userECost;
+    var userEnergyCons = (quantity * (userCoolCap/userEER)*value.assumptions[0].roomACassumps.stateFullLoadCoolingHours[userState]);
+    return userEnergyCons * userECost * quantity;
 }
-function accCalcs(){
-    var userThermos;
-    var userQuant;
-    var userState;
-    var userSEER;
-    var userCoolCap;
+function accCalcs(specs, quantity){
+    var userThermos = specs.accThermos;
+    var userState = curUser.state;
+    var userSEER = specs.seerRating;
+    var userCoolCap = specs.accCoolCapacity;
     var calcCoolCap;
     var userEnergyCons;
-    switch(coolCap){
+    switch(userCoolCap){
         case(2.5):
             calcCoolCap = 30000;
             break;
@@ -156,23 +132,23 @@ function accCalcs(){
             break;
     }
     if(userThermos == 1){
-        userEnergyCons = .84*userQuant*userState*(1/userSEER)/1000;
+        userEnergyCons = .84*quantity*userState*(1/userSEER)/1000;
     }
     else{
-        userEnergyCons = userQuant*userState*(1/userSEER)/1000;
+        userEnergyCons = quantity*userState*(1/userSEER)/1000;
     }
     return userEnergyCons * userECost;
 }
-function furnaceCalcs(){
+function furnaceCalcs(specs, quantity){
     var value = getAssumptions();
-    var userHeatHouseFuel;
-    var userGasRate;
-    var userHouseSize;
-    var userHouseDate;
-    var userFuranceDate
-    var userThermos;
+    var userHeatHouseFuel = specs.furnFuelType;
+    var userGasRate = curUser.costOfGas;
+    var userHouseSize = specs.furnHouseSize;
+    var userHouseDate = specs.furnHouseEra;
+    var userFurnaceDate = specs.furnEra;
+    var userThermos = specs.furnThermos;
     var userECons;
-    var userMMBTU = userHouseSize * value.assumptions[0].HouseYear[userHouseDate] / value.assumptions[0].furnYear[userHeatHouseFuel][userFuranceDate];
+    var userMMBTU = userHouseSize * value.assumptions[0].HouseYear[userHouseDate] / value.assumptions[0].furnYear[userHeatHouseFuel][userFurnaceDate];
     if(userThermos == 1){
         userMMBTU = userMMBTU * (.86);
     }
@@ -182,14 +158,12 @@ function furnaceCalcs(){
     else if(userHeatHouseFuel == "oil"){
         userECons = userMMBTU/138690*1000000;
     }
-    return userECons * userGasRate;
+    return userECons * userGasRate * quantity;
 }
-function bulbCalc(){
-    var value = getAssumptions();
-    var userQuant;
-    var userBulbType;
-    var userHours;
-    var userConsumption = (userHours/1000 *userBulbType * 365)*userQuant;
+function bulbCalc(specs, quantity){
+    var userBulbType = specs.bulbType;
+    var userHours = specs.bulbAvgDailyUse;
+    var userConsumption = (userHours/1000 *userBulbType * 365)*quantity;
     return userConsumption*userECost;
 
 }
