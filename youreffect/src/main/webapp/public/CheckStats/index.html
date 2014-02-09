@@ -68,12 +68,15 @@
 				<h4>Search</h4>
 				<div class="col-lg-6">
 					<input onkeyup="triggerSearch()" id="key" type="text" class="form-control" placeholder="Search through your Items">
+
 				</div>
-                <select onchange="triggerSearch()" id="energy-filter" class="form-control">
-                    <option value="">Energy Filter</option>
-                    <option value="electricity">electricity</option>
-                    <option value="gasoline">gasoline</option>
-                </select>
+                <div class="col-lg-4">
+                    <select onchange="triggerSearch()" id="energy-filter" class="form-control">
+                        <option value="">Energy Filter</option>
+                        <option value="electricity">electricity</option>
+                        <option value="gasoline">gasoline</option>
+                    </select>
+                </div>
                 <br/>
                 <div id="num-results" class="col-lg-12"></div>
 			</form>
