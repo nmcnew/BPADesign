@@ -12,8 +12,7 @@
 
     <mvc:resources mapping="/public/**" location="/public/" />
 
-    <context:property-placeholder location="classpath:properties/database.properties"/>
-
+    <context:property-placeholder location="classpath:database/database.properties"/>
 
     <bean id="sessionFactory"
           class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">

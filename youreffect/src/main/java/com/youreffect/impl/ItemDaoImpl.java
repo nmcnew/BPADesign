@@ -43,7 +43,7 @@ public class ItemDaoImpl extends HibernateDaoSupport implements ItemDao {
     }
 
     /**
-     * update item by properties
+     * update item by database
      * @param item Item object
      */
     @Override

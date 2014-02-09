@@ -13,7 +13,7 @@ public interface UserDao {
     User readUser(String id);
     /** read user data by id and hashed password */
     User readUser(String id, String password);
-    /** update user by properties */
+    /** update user by database */
     void updateUser(User user);
     /** delete user based on id */
     void deleteUser(String id);

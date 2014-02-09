@@ -1,10 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97712bb5-bda5-49ae-9d15-711cfe219217" name="Default" comment="Added a few functions to calculate.js, must complete 5 functions to be ready for DB&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gitignore" afterPath="$PROJECT_DIR$/../.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/properties/database.properties" afterPath="$PROJECT_DIR$/src/main/resources/properties/database.properties" />
+    <list default="true" id="97712bb5-bda5-49ae-9d15-711cfe219217" name="Default" comment="added server logging">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/youreffect/controller/AdminController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/properties/database.properties" afterPath="$PROJECT_DIR$/src/main/resources/database/database.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/youreffect/controller/IndexController.java" afterPath="$PROJECT_DIR$/src/main/java/com/youreffect/controller/IndexController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/youreffect/controller/ItemController.java" afterPath="$PROJECT_DIR$/src/main/java/com/youreffect/controller/ItemController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/dao/ItemDao.html" afterPath="$PROJECT_DIR$/src/main/doc/com/youreffect/dao/ItemDao.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/youreffect/dao/ItemDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/youreffect/dao/ItemDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/impl/ItemDaoImpl.html" afterPath="$PROJECT_DIR$/src/main/doc/com/youreffect/impl/ItemDaoImpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/youreffect/impl/ItemDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/youreffect/impl/ItemDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/youreffect/service/ItemService.java" afterPath="$PROJECT_DIR$/src/main/java/com/youreffect/service/ItemService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/youreffect/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/youreffect/model/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/dao/UserDao.html" afterPath="$PROJECT_DIR$/src/main/doc/com/youreffect/dao/UserDao.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/impl/UserDaoImpl.html" afterPath="$PROJECT_DIR$/src/main/doc/com/youreffect/impl/UserDaoImpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/youreffect/impl/UserDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/youreffect/impl/UserDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/YourEffect_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/YourEffect_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/doc/index-files/index-13.html" afterPath="$PROJECT_DIR$/src/main/doc/index-files/index-13.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" afterPath="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/public/assets/js/model/user.js" afterPath="$PROJECT_DIR$/src/main/webapp/public/assets/js/model/user.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/youreffect.iml" afterPath="$PROJECT_DIR$/youreffect.iml" />
     </list>
     <ignored path="youreffect.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,17 +90,7 @@
     <favorites_list name="youreffect" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="calculate.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/calculate.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="15" selection-start="1114" selection-end="1114" vertical-scroll-proportion="-0.5285088" vertical-offset="1026" max-vertical-offset="1938">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -90,10 +103,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/public/CostCalculator/testPage.html" />
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/database/DataSource.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/database/HIbernate.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/User.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/mvc-dispatcher-servlet.xml" />
@@ -106,7 +115,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/database.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/User.hbm.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/Item.hbm.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/properties/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/youreffect/impl/UserDaoImpl.java" />
@@ -115,22 +123,37 @@
         <option value="$PROJECT_DIR$/src/main/java/com/youreffect/dao/ItemDao.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/calculate.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/CheckStats/index.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/controller/ItemController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/youreffect/impl/ItemDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/model/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/youreffect/model/Item.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/service/ItemService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/hibernate/User.hbm.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate/Item.hbm.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/model/item.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/model/user.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/public/register/index.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/properties/database.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/public/register/index.html" />
+        <option value="$PROJECT_DIR$/enunciate.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/swagger.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/config/NamedOperationComparator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/config/NameOperationComparator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/config/CustomDocumentationConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/config/NameEndPointComparator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/config/ExampleExtensibilityModule.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/properties/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/controller/IndexController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/service/ItemService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/youreffect/AppTests.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/controller/ItemController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/model/user.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/hibernate/User.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/controller/AdminController.java" />
+        <option value="$PROJECT_DIR$/../.gitignore" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
       </list>
     </option>
   </component>
@@ -149,10 +172,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1066" />
+    <option name="x" value="4" />
+    <option name="y" value="22" />
+    <option name="width" value="1436" />
+    <option name="height" value="878" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -182,220 +205,28 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="youreffect" />
+              <option name="myItemId" value="YourEffect" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="youreffect" />
+              <option name="myItemId" value="YourEffect" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="youreffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youreffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youreffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youreffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youreffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youreffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youreffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youreffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youreffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youreffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youreffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youreffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youreffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="properties" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youreffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youreffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youreffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youreffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="YourEffect" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -412,24 +243,141 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="options.lastSelected" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="options.lastSelected" value="preferences.externalResources" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
     <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/youreffect" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main" />
       <recent name="$PROJECT_DIR$/src/main/java" />
       <recent name="$PROJECT_DIR$/src/main/resources/hibernate" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/resources/properties" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree">
+    <UpdateInfo date="Moments ago" ActionInfo="_Update">
+      <UpdatedFiles>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated from server" />
+          <option name="myStatusName" value="Changed on server" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CHANGED_ON_SERVER" />
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Updated" />
+            <option name="myStatusName" value="Changed" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="UPDATED" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.gitignore</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Created" />
+            <option name="myStatusName" value="Created" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="CREATED" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Deleted" />
+            <option name="myStatusName" value="Deleted" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="true" />
+            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Restored" />
+            <option name="myStatusName" value="Will be restored" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="RESTORED" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Modified" />
+          <option name="myStatusName" value="Modified" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MODIFIED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Skipped" />
+          <option name="myStatusName" value="Skipped" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SKIPPED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with conflicts" />
+          <option name="myStatusName" value="Will be merged with conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_CONFLICTS" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with tree conflicts" />
+          <option name="myStatusName" value="Merged with tree conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with property conflicts" />
+          <option name="myStatusName" value="Will be merged with property conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged" />
+          <option name="myStatusName" value="Will be merged" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Not in repository" />
+          <option name="myStatusName" value="Not in repository" />
+          <option name="mySupportsDeletion" value="true" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UNKNOWN" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally added" />
+          <option name="myStatusName" value="Locally added" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_ADDED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally removed" />
+          <option name="myStatusName" value="Locally removed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_REMOVED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Switched" />
+          <option name="myStatusName" value="Switched" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SWITCHED" />
+        </FILE-GROUP>
+      </UpdatedFiles>
+    </UpdateInfo>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 7.0">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
@@ -745,8 +693,10 @@
       <workItem from="1391735023664" duration="96000" />
       <workItem from="1391735122794" duration="5207000" />
       <workItem from="1391749074562" duration="4442000" />
-      <workItem from="1391801594230" duration="19610000" />
-      <workItem from="1391829748338" duration="273000" />
+      <workItem from="1391801594230" duration="27159000" />
+      <workItem from="1391838063215" duration="4314000" />
+      <workItem from="1391896090781" duration="862000" />
+      <workItem from="1391899258309" duration="11260000" />
     </task>
     <task id="LOCAL-00001" summary="integrated my updates to the synced project">
       <created>1391399472201</created>
@@ -764,43 +714,45 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61138000" />
+    <option name="totallyTimeSpent" value="84850000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
+    <frame x="4" y="22" width="1436" height="878" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880098" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880098" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880098" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880098" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880098" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32880098" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973376" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32846716" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880098" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880098" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Hibernate Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880098" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hibernate Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
+      <window_info id="soapUI Navigator" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -820,7 +772,8 @@
     <MESSAGE value="restructured entire backend to suit rdbms design for mysql" />
     <MESSAGE value="fixed backend item creation problem" />
     <MESSAGE value="Fixed errors on item creation for backend" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed errors on item creation for backend" />
+    <MESSAGE value="added server logging" />
+    <option name="LAST_COMMIT_MESSAGE" value="added server logging" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -830,83 +783,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="9" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="6000" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="44" selection-start="1372" selection-end="1372" vertical-scroll-proportion="0.0" vertical-offset="705" max-vertical-offset="1485">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/service/ItemService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="32" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="645">
-          <folding>
-            <element signature="e#803#804#0" expanded="true" />
-            <element signature="e#849#850#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/ItemController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="20" selection-start="1572" selection-end="1572" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="1320">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="30" selection-start="1111" selection-end="1111" vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="1740">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="16" selection-start="817" selection-end="817" vertical-scroll-proportion="0.0" vertical-offset="33" max-vertical-offset="990">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="13" selection-start="868" selection-end="868" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1185">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="166" column="18" selection-start="5620" selection-end="5620" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5580" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="8" selection-start="5481" selection-end="5481" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2070" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="1295" selection-end="1295" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1110">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="3" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="390" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/testPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="31" selection-start="1030" selection-end="1058" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="6930" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="172" column="18" selection-start="5911" selection-end="5911" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6426" />
@@ -949,13 +825,6 @@
         <state line="30" column="31" selection-start="1030" selection-end="1058" vertical-scroll-proportion="0.0" vertical-offset="211" max-vertical-offset="7854" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="355" selection-end="355" vertical-scroll-proportion="0.29126215" vertical-offset="0" max-vertical-offset="515">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="616">
@@ -963,42 +832,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="15" selection-start="3580" selection-end="3580" vertical-scroll-proportion="0.34951457" vertical-offset="1515" max-vertical-offset="2220">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="48" selection-start="1599" selection-end="1599" vertical-scroll-proportion="0.74701196" vertical-offset="90" max-vertical-offset="21840" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-5.669903" vertical-offset="2920" max-vertical-offset="3435" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/assumptions.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="47" selection-start="879" selection-end="879" vertical-scroll-proportion="0.69450104" vertical-offset="454" max-vertical-offset="1005">
-          <folding />
-        </state>
+        <state line="53" column="47" selection-start="879" selection-end="879" vertical-scroll-proportion="0.69450104" vertical-offset="454" max-vertical-offset="1005" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/calculate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="19" selection-start="590" selection-end="590" vertical-scroll-proportion="0.23300971" vertical-offset="0" max-vertical-offset="1710">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/ItemController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1875">
-          <folding />
-        </state>
+        <state line="12" column="22" selection-start="326" selection-end="326" vertical-scroll-proportion="0.34951457" vertical-offset="0" max-vertical-offset="1710" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserDao.java">
@@ -1011,86 +852,14 @@
         <state line="12" column="27" selection-start="253" selection-end="253" vertical-scroll-proportion="0.34951457" vertical-offset="0" max-vertical-offset="515" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/impl/ItemDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/database/database.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="34" selection-start="1456" selection-end="1456" vertical-scroll-proportion="0.592233" vertical-offset="580" max-vertical-offset="1095">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/impl/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="14" selection-start="441" selection-end="441" vertical-scroll-proportion="0.37864077" vertical-offset="0" max-vertical-offset="1005">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/model/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="22" selection-start="102" selection-end="102" vertical-scroll-proportion="0.23904383" vertical-offset="0" max-vertical-offset="2250" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="20" selection-start="122" selection-end="122" vertical-scroll-proportion="0.08737864" vertical-offset="75" max-vertical-offset="1545" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/service/HashService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="256" selection-end="256" vertical-scroll-proportion="-0.19417475" vertical-offset="220" max-vertical-offset="735">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/service/ResponseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="161" selection-end="161" vertical-scroll-proportion="-0.57281554" vertical-offset="415" max-vertical-offset="930">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/service/ItemService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="10" selection-start="267" selection-end="267" vertical-scroll-proportion="0.14563107" vertical-offset="0" max-vertical-offset="1410">
-          <folding>
-            <element signature="e#803#804#0" expanded="true" />
-            <element signature="e#849#850#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="24" selection-start="3330" selection-end="3330" vertical-scroll-proportion="1.3980583" vertical-offset="900" max-vertical-offset="1935">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate/Item.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="30" selection-start="237" selection-end="237" vertical-scroll-proportion="0.17475729" vertical-offset="0" max-vertical-offset="515" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate/User.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="19" selection-start="237" selection-end="237" vertical-scroll-proportion="0.17475729" vertical-offset="0" max-vertical-offset="515" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/model/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="22" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570" />
+        <state line="0" column="49" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="515" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/model/item.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="4" selection-start="8" selection-end="8" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="46" selection-start="76" selection-end="76" vertical-scroll-proportion="0.116504855" vertical-offset="0" max-vertical-offset="8835">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/index.html">
@@ -1100,16 +869,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="23" selection-start="2476" selection-end="2476" vertical-scroll-proportion="0.7632743" vertical-offset="585" max-vertical-offset="2205">
-          <folding />
-        </state>
+        <state line="62" column="23" selection-start="2476" selection-end="2476" vertical-scroll-proportion="0.7632743" vertical-offset="585" max-vertical-offset="2205" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/register/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="127" column="46" selection-start="6362" selection-end="6366" vertical-scroll-proportion="0.3318584" vertical-offset="1755" max-vertical-offset="2970">
-          <folding />
-        </state>
+        <state line="127" column="46" selection-start="6362" selection-end="6366" vertical-scroll-proportion="0.3318584" vertical-offset="1755" max-vertical-offset="2970" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/testPage.html">
@@ -1122,23 +887,311 @@
         <state line="66" column="27" selection-start="1995" selection-end="1995" vertical-scroll-proportion="0.26881722" vertical-offset="865" max-vertical-offset="1560" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate/Item.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="47" selection-start="837" selection-end="837" vertical-scroll-proportion="0.52427185" vertical-offset="0" max-vertical-offset="515">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youreffect.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2295" />
+      </provider>
+    </entry>
+    <entry file="uml://MAVEN/com.springapp:YourEffect:1.0-SNAPSHOT">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>com.springapp:YourEffect:1.0-SNAPSHOT</OriginalElement>
+          <nodes>
+            <node x="" y="">org.springframework.data:spring-data-mongodb:jar:1.3.3.RELEASE/org.springframework:spring-tx:jar:3.1.4.RELEASE/org.springframework:spring-context:jar:3.1.4.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-mongodb:jar:1.3.3.RELEASE/org.springframework:spring-tx:jar:3.1.4.RELEASE/aopalliance:aopalliance:jar:1.0</node>
+            <node x="" y="">org.springframework:spring-web:jar:3.2.0.RELEASE/org.springframework:spring-aop:jar:3.2.0.RELEASE</node>
+            <node x="" y="">org.hibernate:hibernate-core:jar:3.6.10.Final/org.hibernate:hibernate-commons-annotations:jar:3.2.0.Final/org.slf4j:slf4j-api:jar:1.5.8</node>
+            <node x="" y="">com.google.code.gson:gson:jar:2.2.4</node>
+            <node x="" y="">com.springapp:YourEffect:1.0-SNAPSHOT</node>
+            <node x="" y="">org.springframework.data:spring-data-mongodb:jar:1.3.3.RELEASE/org.springframework:spring-beans:jar:3.1.4.RELEASE</node>
+            <node x="" y="">org.hibernate:hibernate-entitymanager:jar:3.6.10.Final/cglib:cglib:jar:2.2</node>
+            <node x="" y="">org.springframework.data:spring-data-mongodb:jar:1.3.3.RELEASE/org.slf4j:jcl-over-slf4j:jar:1.7.1/org.slf4j:slf4j-api:jar:1.7.1</node>
+            <node x="" y="">org.springframework:spring-jdbc:jar:2.0.6/org.springframework:spring-dao:jar:2.0.6</node>
+            <node x="" y="">org.hibernate:hibernate-entitymanager:jar:3.6.10.Final</node>
+            <node x="" y="">org.hibernate:hibernate-core:jar:3.6.10.Final/dom4j:dom4j:jar:1.6.1</node>
+            <node x="" y="">org.springframework:spring-web:jar:3.2.0.RELEASE</node>
+            <node x="" y="">junit:junit:jar:4.8.2</node>
+            <node x="" y="">org.springframework.data:spring-data-jpa:jar:1.0.0.RELEASE/org.slf4j:slf4j-api:jar:1.6.1</node>
+            <node x="" y="">org.springframework.data:spring-data-mongodb:jar:1.3.3.RELEASE/org.springframework:spring-tx:jar:3.1.4.RELEASE</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:3.2.0.RELEASE/org.springframework:spring-web:jar:3.2.0.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-jpa:jar:1.0.0.RELEASE/org.springframework.data:spring-data-commons-core:jar:1.1.0.RELEASE/org.springframework:spring-tx:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.hibernate:hibernate-core:jar:3.6.10.Final/javax.transaction:jta:jar:1.1</node>
+            <node x="" y="">org.springframework.data:spring-data-mongodb:jar:1.3.3.RELEASE/org.springframework.data:spring-data-commons:jar:1.6.3.RELEASE/org.springframework:spring-beans:jar:3.1.4.RELEASE</node>
+            <node x="" y="">org.springframework:spring-web:jar:3.2.0.RELEASE/org.springframework:spring-core:jar:3.2.0.RELEASE</node>
+            <node x="" y="">org.springframework:spring-jdbc:jar:2.0.6/org.springframework:spring-dao:jar:2.0.6/org.springframework:spring-beans:jar:2.0.6</node>
+            <node x="" y="">commons-dbcp:commons-dbcp:jar:1.0/commons-collections:commons-collections:jar:2.0</node>
+            <node x="" y="">org.hibernate:hibernate-entitymanager:jar:3.6.10.Final/org.hibernate:hibernate-core:jar:3.6.10.Final</node>
+            <node x="" y="">org.springframework.data:spring-data-jpa:jar:1.0.0.RELEASE/org.springframework:spring-orm:jar:3.0.5.RELEASE/org.springframework:spring-jdbc:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.springframework:spring-test:jar:3.2.0.RELEASE/org.springframework:spring-webmvc:jar:3.2.0.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-mongodb:jar:1.3.3.RELEASE/org.springframework.data:spring-data-commons:jar:1.6.3.RELEASE/org.springframework:spring-core:jar:3.1.4.RELEASE</node>
+            <node x="" y="">org.springframework:spring-jdbc:jar:2.0.6/org.springframework:spring-dao:jar:2.0.6/commons-logging:commons-logging:jar:1.1</node>
+            <node x="" y="">org.springframework.data:spring-data-mongodb:jar:1.3.3.RELEASE/org.springframework:spring-tx:jar:3.1.4.RELEASE/org.springframework:spring-aop:jar:3.1.4.RELEASE</node>
+            <node x="" y="">org.springframework:spring-jdbc:jar:2.0.6/org.springframework:spring-core:jar:2.0.6</node>
+            <node x="" y="">org.springframework.data:spring-data-mongodb:jar:1.3.3.RELEASE/org.springframework:spring-tx:jar:3.1.4.RELEASE/org.springframework:spring-beans:jar:3.1.4.RELEASE</node>
+            <node x="" y="">javax.servlet.jsp:jsp-api:jar:2.1</node>
+            <node x="" y="">org.springframework.data:spring-data-jpa:jar:1.0.0.RELEASE/org.springframework:spring-orm:jar:3.0.5.RELEASE/org.springframework:spring-beans:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.springframework:spring-web:jar:3.2.0.RELEASE/org.springframework:spring-context:jar:3.2.0.RELEASE/org.springframework:spring-expression:jar:3.2.0.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-jpa:jar:1.0.0.RELEASE/org.aspectj:aspectjrt:jar:1.6.8</node>
+            <node x="" y="">commons-dbcp:commons-dbcp:jar:1.0/junit:junit:jar:3.7</node>
+            <node x="" y="">org.springframework:spring-jdbc:jar:2.0.6/org.springframework:spring-dao:jar:2.0.6/org.springframework:spring-core:jar:2.0.6</node>
+            <node x="" y="">org.springframework.data:spring-data-mongodb:jar:1.3.3.RELEASE/org.springframework:spring-core:jar:3.1.4.RELEASE</node>
+            <node x="" y="">javax.servlet:servlet-api:jar:2.5</node>
+            <node x="" y="">org.springframework:spring-web:jar:3.2.0.RELEASE/aopalliance:aopalliance:jar:1.0</node>
+            <node x="" y="">org.hibernate:hibernate-core:jar:3.6.10.Final/commons-collections:commons-collections:jar:3.1</node>
+            <node x="" y="">org.springframework:spring-web:jar:3.2.0.RELEASE/org.springframework:spring-aop:jar:3.2.0.RELEASE/org.springframework:spring-core:jar:3.2.0.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-mongodb:jar:1.3.3.RELEASE/org.slf4j:jcl-over-slf4j:jar:1.7.1</node>
+            <node x="" y="">org.springframework.data:spring-data-jpa:jar:1.0.0.RELEASE/org.springframework:spring-core:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-mongodb:jar:1.3.3.RELEASE/org.springframework.data:spring-data-commons:jar:1.6.3.RELEASE/org.slf4j:slf4j-api:jar:1.7.1</node>
+            <node x="" y="">org.hibernate:hibernate-entitymanager:jar:3.6.10.Final/javassist:javassist:jar:3.12.0.GA</node>
+            <node x="" y="">org.hibernate:hibernate-core:jar:3.6.10.Final/antlr:antlr:jar:2.7.6</node>
+            <node x="" y="">commons-dbcp:commons-dbcp:jar:1.0</node>
+            <node x="" y="">org.hibernate:hibernate-core:jar:3.6.10.Final/org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.1.Final</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:3.2.0.RELEASE/org.springframework:spring-beans:jar:3.2.0.RELEASE</node>
+            <node x="" y="">org.springframework:spring-core:jar:3.2.0.RELEASE</node>
+            <node x="" y="">org.springframework:spring-jdbc:jar:2.0.6</node>
+            <node x="" y="">org.springframework:spring-web:jar:3.2.0.RELEASE/org.springframework:spring-beans:jar:3.2.0.RELEASE</node>
+            <node x="" y="">org.springframework:spring-core:jar:3.2.0.RELEASE/commons-logging:commons-logging:jar:1.1.1</node>
+            <node x="" y="">org.springframework:spring-web:jar:3.2.0.RELEASE/org.springframework:spring-context:jar:3.2.0.RELEASE/org.springframework:spring-beans:jar:3.2.0.RELEASE</node>
+            <node x="" y="">org.hibernate:hibernate-entitymanager:jar:3.6.10.Final/org.slf4j:slf4j-api:jar:1.6.1</node>
+            <node x="" y="">org.springframework.data:spring-data-mongodb:jar:1.3.3.RELEASE/org.slf4j:slf4j-api:jar:1.7.1</node>
+            <node x="" y="">org.springframework:spring-web:jar:3.2.0.RELEASE/org.springframework:spring-context:jar:3.2.0.RELEASE</node>
+            <node x="" y="">org.springframework:spring-web:jar:3.2.0.RELEASE/org.springframework:spring-aop:jar:3.2.0.RELEASE/org.springframework:spring-beans:jar:3.2.0.RELEASE</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:3.2.0.RELEASE/org.springframework:spring-context:jar:3.2.0.RELEASE</node>
+            <node x="" y="">mysql:mysql-connector-java:jar:5.1.6</node>
+            <node x="" y="">org.springframework.data:spring-data-jpa:jar:1.0.0.RELEASE/org.springframework.data:spring-data-commons-core:jar:1.1.0.RELEASE/org.springframework:spring-beans:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-jpa:jar:1.0.0.RELEASE/org.springframework:spring-orm:jar:3.0.5.RELEASE</node>
+            <node x="" y="">commons-dbcp:commons-dbcp:jar:1.0/xml-apis:xml-apis:jar:1.0.b2</node>
+            <node x="" y="">org.springframework:spring-jdbc:jar:2.0.6/org.springframework:spring-beans:jar:2.0.6</node>
+            <node x="" y="">org.springframework.data:spring-data-mongodb:jar:1.3.3.RELEASE/org.springframework.data:spring-data-commons:jar:1.6.3.RELEASE/org.slf4j:jcl-over-slf4j:jar:1.7.1</node>
+            <node x="" y="">org.springframework.data:spring-data-jpa:jar:1.0.0.RELEASE/org.springframework.data:spring-data-commons-core:jar:1.1.0.RELEASE</node>
+            <node x="" y="">org.springframework:spring-jdbc:jar:2.0.6/commons-logging:commons-logging:jar:1.1</node>
+            <node x="" y="">commons-collections:commons-collections:jar:3.2.1</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:3.2.0.RELEASE/org.springframework:spring-core:jar:3.2.0.RELEASE</node>
+            <node x="" y="">org.springframework:spring-web:jar:3.2.0.RELEASE/org.springframework:spring-aop:jar:3.2.0.RELEASE/aopalliance:aopalliance:jar:1.0</node>
+            <node x="" y="">org.springframework:spring-web:jar:3.2.0.RELEASE/org.springframework:spring-context:jar:3.2.0.RELEASE/org.springframework:spring-core:jar:3.2.0.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-mongodb:jar:1.3.3.RELEASE/org.springframework:spring-expression:jar:3.1.4.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-mongodb:jar:1.3.3.RELEASE</node>
+            <node x="" y="">org.springframework:spring-test:jar:3.2.0.RELEASE/org.springframework:spring-core:jar:3.2.0.RELEASE</node>
+            <node x="" y="">log4j:log4j:jar:1.2.17</node>
+            <node x="" y="">org.springframework.data:spring-data-jpa:jar:1.0.0.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-mongodb:jar:1.3.3.RELEASE/org.springframework.data:spring-data-commons:jar:1.6.3.RELEASE</node>
+            <node x="" y="">org.springframework:spring-jdbc:jar:2.0.6/org.springframework:spring-dao:jar:2.0.6/aopalliance:aopalliance:jar:1.0</node>
+            <node x="" y="">org.springframework.data:spring-data-mongodb:jar:1.3.3.RELEASE/org.springframework:spring-context:jar:3.1.4.RELEASE</node>
+            <node x="" y="">org.hibernate:hibernate-core:jar:3.6.10.Final/org.hibernate:hibernate-commons-annotations:jar:3.2.0.Final</node>
+            <node x="" y="">org.springframework.data:spring-data-mongodb:jar:1.3.3.RELEASE/org.mongodb:mongo-java-driver:jar:2.10.1</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:3.2.0.RELEASE/org.springframework:spring-expression:jar:3.2.0.RELEASE/org.springframework:spring-core:jar:3.2.0.RELEASE</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:3.2.0.RELEASE/org.springframework:spring-expression:jar:3.2.0.RELEASE</node>
+            <node x="" y="">org.hibernate:hibernate-core:jar:3.6.10.Final</node>
+            <node x="" y="">org.springframework.data:spring-data-jpa:jar:1.0.0.RELEASE/org.springframework:spring-orm:jar:3.0.5.RELEASE/org.springframework:spring-core:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.springframework:spring-web:jar:3.2.0.RELEASE/org.springframework:spring-beans:jar:3.2.0.RELEASE/org.springframework:spring-core:jar:3.2.0.RELEASE</node>
+            <node x="" y="">org.hibernate:hibernate-entitymanager:jar:3.6.10.Final/org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.1.Final</node>
+            <node x="" y="">org.hibernate:hibernate-core:jar:3.6.10.Final/org.slf4j:slf4j-api:jar:1.6.1</node>
+            <node x="" y="">org.springframework.data:spring-data-jpa:jar:1.0.0.RELEASE/org.slf4j:jcl-over-slf4j:jar:1.6.1</node>
+            <node x="" y="">org.springframework:spring-jdbc:jar:2.0.6/org.springframework:spring-dao:jar:2.0.6/org.springframework:spring-context:jar:2.0.6</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:3.2.0.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-mongodb:jar:1.3.3.RELEASE/org.springframework:spring-tx:jar:3.1.4.RELEASE/org.springframework:spring-core:jar:3.1.4.RELEASE</node>
+            <node x="" y="">org.hibernate:hibernate-entitymanager:jar:3.6.10.Final/cglib:cglib:jar:2.2/asm:asm:jar:3.1</node>
+            <node x="" y="">commons-dbcp:commons-dbcp:jar:1.0/commons-pool:commons-pool:jar:1.0</node>
+            <node x="" y="">org.springframework.data:spring-data-jpa:jar:1.0.0.RELEASE/org.springframework:spring-orm:jar:3.0.5.RELEASE/org.springframework:spring-tx:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.springframework:spring-test:jar:3.2.0.RELEASE</node>
+            <node x="" y="">org.springframework:spring-jdbc:jar:2.0.6/org.springframework:spring-context:jar:2.0.6</node>
+            <node x="" y="">commons-dbcp:commons-dbcp:jar:1.0/commons-lang:commons-lang:jar:1.0-b1</node>
+            <node x="" y="">commons-dbcp:commons-dbcp:jar:1.0/javax.sql:jdbc-stdext:jar:2.0</node>
+            <node x="" y="">org.springframework:spring-web:jar:3.2.0.RELEASE/org.springframework:spring-context:jar:3.2.0.RELEASE/org.springframework:spring-aop:jar:3.2.0.RELEASE</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.2470511140235911" x="329.0" y="3016.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>All</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.youreffect.controller.IndexController">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.youreffect.controller.IndexController</OriginalElement>
+          <nodes>
+            <node x="" y="">org.springframework.web.bind.annotation.RequestMapping</node>
+            <node x="" y="">org.springframework.stereotype.Controller</node>
+            <node x="" y="">com.youreffect.controller.IndexController</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="126.0" y="174.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Constructors</Category>
+            <Category>Fields</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="32" selection-start="3851" selection-end="3851" vertical-scroll-proportion="0.40460947" vertical-offset="1529" max-vertical-offset="2310">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/impl/ItemDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="34" selection-start="1454" selection-end="1454" vertical-scroll-proportion="1.1331626" vertical-offset="0" max-vertical-offset="1095">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/impl/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="14" selection-start="441" selection-end="441" vertical-scroll-proportion="-0.037131883" vertical-offset="224" max-vertical-offset="1005">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/service/HashService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/service/ItemService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="0" selection-start="1506" selection-end="1506" vertical-scroll-proportion="0.0" vertical-offset="584" max-vertical-offset="1365">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/service/ResponseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="930">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/youreffect/AppTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="72" selection-start="1169" selection-end="1169" vertical-scroll-proportion="0.407767" vertical-offset="0" max-vertical-offset="515">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="28" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.34591195" vertical-offset="150" max-vertical-offset="1560">
+        <state line="13" column="36" selection-start="881" selection-end="881" vertical-scroll-proportion="0.031446543" vertical-offset="180" max-vertical-offset="1545">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/properties/database.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/model/Item.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="24" selection-start="193" selection-end="193" vertical-scroll-proportion="0.09289618" vertical-offset="0" max-vertical-offset="732">
+        <state line="8" column="22" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1830">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/calculate.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="15" selection-start="1114" selection-end="1114" vertical-scroll-proportion="-0.5285088" vertical-offset="1026" max-vertical-offset="1938">
+        <state line="127" column="87" selection-start="2727" selection-end="2727" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1680">
+          <folding>
+            <element signature="e#2209#2210#0" expanded="true" />
+            <element signature="e#2245#2246#0" expanded="true" />
+            <element signature="e#2303#2304#0" expanded="true" />
+            <element signature="e#2353#2354#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="0" selection-start="2427" selection-end="2427" vertical-scroll-proportion="0.33203885" vertical-offset="894" max-vertical-offset="1935">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate/User.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="889" selection-end="889" vertical-scroll-proportion="0.52427185" vertical-offset="0" max-vertical-offset="515">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="14" selection-start="1230" selection-end="1230" vertical-scroll-proportion="0.3223301" vertical-offset="344" max-vertical-offset="1965">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="14" selection-start="388" selection-end="388" vertical-scroll-proportion="0.29126215" vertical-offset="0" max-vertical-offset="515">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/ItemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="27" selection-start="995" selection-end="995" vertical-scroll-proportion="-2.4368932" vertical-offset="1630" max-vertical-offset="2145">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="4" selection-start="297" selection-end="297" vertical-scroll-proportion="0.34951457" vertical-offset="0" max-vertical-offset="515">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="3450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="41" selection-start="9733" selection-end="9733" vertical-scroll-proportion="-41.280876" vertical-offset="21908" max-vertical-offset="22410">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="35" selection-start="256" selection-end="256" vertical-scroll-proportion="0.17475729" vertical-offset="0" max-vertical-offset="515">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/model/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="29" selection-start="623" selection-end="623" vertical-scroll-proportion="0.78640777" vertical-offset="0" max-vertical-offset="515">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="160" column="43" selection-start="4532" selection-end="4532" vertical-scroll-proportion="0.4485437" vertical-offset="2169" max-vertical-offset="8895">
           <folding />
         </state>
       </provider>

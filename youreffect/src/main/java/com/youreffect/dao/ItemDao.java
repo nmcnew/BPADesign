@@ -15,7 +15,7 @@ public interface ItemDao {
     Item read(String id);
     /** read list of item data owned by user with id */
     List<Item> readList(String id);
-    /** update item by properties */
+    /** update item by database */
     void update(Item item);
     /** delete item by id */
     void delete(String id);

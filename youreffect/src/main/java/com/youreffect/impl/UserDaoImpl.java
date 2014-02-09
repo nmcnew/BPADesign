@@ -45,7 +45,7 @@ public class UserDaoImpl extends HibernateDaoSupport implements UserDao {
     }
 
     /**
-     * update user by properties
+     * update user by database
      * @param user User reference
      */
     @Override

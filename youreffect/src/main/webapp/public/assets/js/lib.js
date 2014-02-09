@@ -11,12 +11,16 @@ init();
 function init() {
     try {
         curLogin = localStorage.getItem('curLogin');
-        if (curLogin != null) {
-            curUser = readUser(curLogin).data;
-            curItems = readItemList(curUser.userId).data;
-        }
+        curUser = readUser(curLogin).data;
+        curItems = readItemList(curUser.userId).data;
     }
-    catch (e) {}
+    catch (e) {
+        console.log('no login');
+        localStorage.removeItem('curLogin');
+        curLogin = '';
+        curUser = new User();
+        curItems = [];
+    }
 }
 
 /** adjust context root to various subdomain structures */

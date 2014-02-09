@@ -18,6 +18,8 @@ public class User {
     private String state;
     /** date registered */
     private String dateRegistered;
+    /** dates logged in */
+    private String datesLoggedIn;
 
 
     /**
@@ -108,6 +110,13 @@ public class User {
         this.dateRegistered = dateRegistered;
     }
 
+    public String getDatesLoggedIn() {
+        return datesLoggedIn;
+    }
+
+    public void setDatesLoggedIn(String datesLoggedIn) {
+        this.datesLoggedIn = datesLoggedIn;
+    }
 
     /**
      * string representation of User
@@ -115,7 +124,7 @@ public class User {
      */
     public String toString() {
         return String.format(
-                "User[id=%s, username='%s', email='%s', state='%s', password='%s', dateRegistered='%s'",
-                userId, username, email, state, password, dateRegistered);
+                "User[id=%s, username='%s', email='%s', state='%s', password='%s', dateRegistered='%s', datesLoggedIn='%s'",
+                userId, username, email, state, password, dateRegistered, datesLoggedIn);
     }
 }

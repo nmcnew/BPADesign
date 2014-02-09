@@ -6,6 +6,7 @@ import com.youreffect.exception.RegisterException;
 import com.youreffect.model.User;
 import com.youreffect.service.ResponseService;
 import com.youreffect.service.UserService;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -17,6 +18,8 @@ import org.springframework.web.bind.annotation.*;
 @Controller
 @RequestMapping("/user")
 public class UserController {
+
+    private static final Logger logger = Logger.getLogger(UserController.class);
 
     /** user reference */
     @Autowired
@@ -41,6 +44,7 @@ public class UserController {
      */
     @RequestMapping(value = "/register", method = RequestMethod.POST)
     public @ResponseBody String register(@RequestBody String data) {
+        logger.info("POST /user/register\n"+data);
         user = gson.fromJson(data, User.class);
         try {
             user = userService.register(user);
@@ -50,6 +54,7 @@ public class UserController {
         }
         responseService.setData(user);
         user = null;
+        logger.info(responseService.toString());
         return responseService.toString();
     }
 
@@ -60,6 +65,7 @@ public class UserController {
      */
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public @ResponseBody String login(@RequestBody String data) {
+        logger.info("POST /user/login\n"+data);
         user = gson.fromJson(data, User.class);
         try {
             userService.login(user);
@@ -69,6 +75,7 @@ public class UserController {
         }
         responseService.setData(user);
         user = null;
+        logger.info(responseService.toString());
         return responseService.toString();
     }
 
@@ -79,10 +86,17 @@ public class UserController {
      */
     @RequestMapping(value = "/view/{id}", method = RequestMethod.GET)
     public @ResponseBody String view(@PathVariable String id) {
+        logger.info("GET /user/view/"+id);
         user = userService.read(id);
         responseService.setData(user);
-        responseService.setMessage("user returned");
+        if (user == null) {
+            responseService.setMessage("no user returned");
+        }
+        else {
+            responseService.setMessage("user returned");
+        }
         user = null;
+        logger.info(responseService.toString());
         return responseService.toString();
     }
 
@@ -93,11 +107,13 @@ public class UserController {
      */
     @RequestMapping(value = "/update", method = RequestMethod.POST)
     public @ResponseBody String update(@RequestBody String data) {
+        logger.info("POST /user/update\n"+data);
         user = gson.fromJson(data, User.class);
         userService.update(user);
         responseService.setData(user);
         responseService.setMessage("user updated");
         user = null;
+        logger.info(responseService.toString());
         return responseService.toString();
     }
 
@@ -108,10 +124,12 @@ public class UserController {
      */
     @RequestMapping(value = "/delete/{id}", method = RequestMethod.POST)
     public @ResponseBody String remove(@PathVariable String id) {
+        logger.info("POST /user/delete/"+id);
         userService.delete(id);
         responseService.setData(id);
         responseService.setMessage("user deleted");
         user = null;
+        logger.info(responseService.toString());
         return responseService.toString();
     }
 }

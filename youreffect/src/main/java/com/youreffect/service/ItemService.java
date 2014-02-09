@@ -49,7 +49,6 @@ public class ItemService {
      */
     public List<Item> createList(List<Item> items) {
         String dateCreated = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss").format(new Date());
-        System.out.println(items);
         for (Item i : items) {
             i.setDateCreated(dateCreated);
             i.setItemId(hashService.md5(i.getName() + i.getQuantity() + i.getEnergy() + i.getDateCreated() + i.getSpecs()));
