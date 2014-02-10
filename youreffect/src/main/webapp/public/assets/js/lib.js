@@ -571,7 +571,6 @@ function populateFilteredList(hits, list, reply) {
     }
     list.append(s);
     reply.html(hits.length + " results");
-    generateGraph();
 }
 
 function populateList(list,reply) {
@@ -651,14 +650,8 @@ function prepareSpecs(s) {
 }
 
 function generateGraph() {
-
-    var yourData = [];
-
-    var total = 0;
-
     var monthtotals = [0,0,0,0,0,0,0,0,0,0,0,0];
 
-    // iterate through tr and td nodes and pull data from td
     var M = $("#item-list");
     var rows = M.children();
     for (var i = 0; i < rows.length; i ++) {
@@ -666,8 +659,6 @@ function generateGraph() {
         var cols = $(row).children();
         var cost = parseFloat(($(cols[cols.length-1]).html()).toString().split("$")[1]);
         var mo = parseInt(($(cols[cols.length-3]).html()).toString().split("-")[1])-1;
-        console.log(cost);
-        console.log(mo);
         monthtotals[mo] += cost;
     }
 
