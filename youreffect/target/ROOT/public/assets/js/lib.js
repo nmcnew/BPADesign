@@ -489,7 +489,7 @@ function removeAlertClass() {
 
 /** get form data to create items */
 
-function submitMainForm() {
+function submitMainForm(){
     var elecRate = $("#elecRate").val();
     var costOfGas = $("#costOfGas").val();
     if (elecRate.length > 0) {
@@ -596,7 +596,7 @@ function prepareRow(item, s) {
     s += ("<td>"+item.energy+"</td>");
     s += ("<td>"+item.quantity+"</td>");
     s += ("<td>"+item.dateCreated.split("T")[0]+"</td>");
-    s += ("<td><button data-toggle='modal' data-target='#myModal'>Specs</button></td>");
+    s += ("<td><button data-toggle='modal' class='btn btn-default' data-target='#myModal'>Specs</button></td>");
     var costOf = 0;
     var mySpecs = JSON.parse(item.specs);
     switch(item.name){

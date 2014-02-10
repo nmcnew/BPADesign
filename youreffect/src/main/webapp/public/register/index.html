@@ -5,7 +5,7 @@
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="../assets/css/MainStyles.css" rel="stylesheet">
     <script type="text/javascript"
-            src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+            src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/model/user.js"></script>
     <script src="../assets/js/model/item.js"></script>
@@ -26,15 +26,23 @@
             <li><a href="../CostCalculator/">Cost Calculator</a></li>
             <li><a href="../CheckStats/">Check Stats</a></li>
             <li class="active"><a href="#">Register</a></li>
-            <li>
+            <li >
                 <div class="navbar-text navbar-left small">Logged in
                     as:&nbsp;&nbsp;</div>
+
             </li>
             <li>
-                <div id="curLogin" class="navbar-text small"></div> <script
+                <div id="curLogin" class="navbar-text small"></div><form>
+
+
+            </form> <script
                     type="text/javascript">
                 document.getElementById("curLogin").innerHTML = curUser.username;
             </script>
+
+
+            </li>
+            <li><button type="button" onclick="logout()" class="btn btn-default navbar-btn btn-sm navbar-right">Log Out</button>
             </li>
         </ul>
     </div>
@@ -145,7 +153,9 @@
                 <label for="login_password">Password</label> <input type="password"
                                                                     class="form-control input-sm" id="login_password"
                                                                     placeholder="Password">
+                <small><a href="">Forgot your Password?</a></small><br/>
             </div>
+
             <button
                     onclick="login($('#login_username').val(),$('#login_password').val())"
                     type="submit" class="btn btn-default ">Login</button>

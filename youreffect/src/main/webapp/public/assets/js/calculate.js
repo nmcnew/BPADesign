@@ -75,36 +75,35 @@ function dishwasherCalcs(specs, quantity){
     return userEnergy * userECost * quantity;
 }
 function fridgeConsumption(specs, quantity) {
-    var value = getAssumptions();
     var userOpt = specs.fridgeType;
     var userECons = Number(specs.fridgeEConsumption);
-    var energyStarConsumption = value.assumptions[0].fridgeAssump.energyStar.energyConsumption[userOpt];
-    var savings = userECons - energyStarConsumption;
-    return userECons*userECost*quantity;
+//    var energyStarConsumption = value.assumptions.fridgeAssump.energyStar.energyConsumption[userOpt];
+//    var savings = userECons - energyStarConsumption;
+    return userECons*userECost;
 }
 function cFridgeCalcs(specs, quantity){
     var value = getAssumptions();
     var userOpt = specs.cFridgeType;
     var userECons = Number(specs.cFridgeEConsumption);
-    var energyStarConsumption = value.assumptions[0].cFridgeAssump.energyStar.energyConsumption[userOpt];
-    var savings = userECons - energyStarConsumption;
-    return userECons*userECost*quantity;
+//    var energyStarConsumption = value.assumptions.cFridgeAssump.energyStar.energyConsumption[userOpt];
+//    var savings = userECons - energyStarConsumption;
+    return userECons*userECost;
 }
 function freezerCalcs(specs, quantity){
     var value = getAssumptions();
     var userOpt = specs.freezerType;
     var userECons = Number(specs.freezereEConsumption);
-    var energyStarConsumption = value.assumptions[0].freezerAssump.energyStar.energyConsumption[userOpt];
-    var savings = userECons - energyStarConsumption;
-    return userECons*userECost*quantity;
+//    var energyStarConsumption = value.assumptions.freezerAssump.energyStar.energyConsumption[userOpt];
+//    var savings = userECons - energyStarConsumption;
+    return userECons*userECost;
 }
 function acrCalcs(specs, quantity){//Room Air conditioning
     var userCoolCap = Number(specs.acrCoolCap);
     var userEER = Number(specs.eerRating);
     var userState = curUser.state;
     var value = getAssumptions();
-    var userEnergyCons = (quantity * (userCoolCap/userEER)*value.assumptions[0].roomACassumps.stateFullLoadCoolingHours[userState]);
-    return userEnergyCons * userECost;
+    var userEnergyCons = (quantity * (userCoolCap/userEER)*value.roomACassumps.stateFullLoadCoolingHours[userState]);
+    return userEnergyCons * userECost * quantity;
 }
 function accCalcs(specs, quantity){
     var userThermos = Number(specs.accThermos);
@@ -163,7 +162,7 @@ function bulbCalc(specs, quantity){
     var userBulbType = Number(specs.bulbType);
     var userHours = Number(specs.bulbAvgDailyUse);
     var userLifetime = Number(specs.bulbLife);
-    var userConsumption = (userHours/1000 *userBulbType * (userLifetime / 24))*quantity;
+    var userConsumption = (userHours/1000 * userBulbType * (userLifetime / 24))*quantity;
     return userConsumption*userECost;
 
 }

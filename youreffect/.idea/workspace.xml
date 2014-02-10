@@ -6,9 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97712bb5-bda5-49ae-9d15-711cfe219217" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" afterPath="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" />
+    <list default="true" id="97712bb5-bda5-49ae-9d15-711cfe219217" name="Default" comment="added graph&#10;">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/public/register/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/public/register/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="youreffect.iws" />
@@ -73,10 +72,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CheckStats/index.html">
+      <file leaf-file-name="assumptions.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/assumptions.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="13" selection-start="3474" selection-end="3474" vertical-scroll-proportion="-15.458333" vertical-offset="1114" max-vertical-offset="1890">
+            <state line="144" column="1" selection-start="3412" selection-end="3412" vertical-scroll-proportion="-49.041668" vertical-offset="983" max-vertical-offset="2250">
               <folding />
             </state>
           </provider>
@@ -85,16 +84,25 @@
       <file leaf-file-name="lib.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="694" column="34" selection-start="20844" selection-end="20844" vertical-scroll-proportion="0.0" vertical-offset="9880" max-vertical-offset="11685">
+            <state line="598" column="23" selection-start="17866" selection-end="17866" vertical-scroll-proportion="0.0" vertical-offset="8819" max-vertical-offset="11685">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/public/register/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="25" selection-start="1693" selection-end="1693" vertical-scroll-proportion="0.4707113" vertical-offset="480" max-vertical-offset="2430">
+            <state line="13" column="6" selection-start="575" selection-end="575" vertical-scroll-proportion="0.4079498" vertical-offset="0" max-vertical-offset="3120">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainStyles.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/css/MainStyles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="66" column="1" selection-start="910" selection-end="910" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080">
               <folding />
             </state>
           </provider>
@@ -103,17 +111,10 @@
       <file leaf-file-name="calculate.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/calculate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="164" column="4" selection-start="6212" selection-end="6212" vertical-scroll-proportion="0.0" vertical-offset="2093" max-vertical-offset="2610">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="database.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/database/database.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="19" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
-              <folding />
+            <state line="147" column="18" selection-start="5567" selection-end="5567" vertical-scroll-proportion="0.0" vertical-offset="1827" max-vertical-offset="2595">
+              <folding>
+                <marker date="1392003980000" expanded="true" signature="2911:3197" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,8 +133,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/spring/beans/User.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring/beans/Item.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/config/BeanLocations.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/database/Hibernate.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/youreffect/dao/ItemDaoImpl.java" />
@@ -151,7 +150,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/hibernate/Item.hbm.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/model/item.js" />
         <option value="$PROJECT_DIR$/src/main/resources/properties/database.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/public/register/index.html" />
         <option value="$PROJECT_DIR$/enunciate.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/swagger.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/youreffect/config/NamedOperationComparator.java" />
@@ -180,9 +178,12 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/CheckStats/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/database/database.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/calculate.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/assumptions.json" />
+        <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/calculate.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/public/assets/css/MainStyles.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/public/register/index.html" />
       </list>
     </option>
   </component>
@@ -235,6 +236,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -312,6 +314,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YourEffect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YourEffect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="register" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -427,6 +459,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YourEffect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YourEffect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -477,7 +543,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -494,7 +559,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="options.lastSelected" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="options.lastSelected" value="editor.preferences.appearance" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -517,120 +582,6 @@
       <recent name="$PROJECT_DIR$/src/main/resources/hibernate" />
       <recent name="$PROJECT_DIR$/src/main/resources/properties" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree">
-    <UpdateInfo date="Moments ago" ActionInfo="_Update">
-      <UpdatedFiles>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated from server" />
-          <option name="myStatusName" value="Changed on server" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CHANGED_ON_SERVER" />
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Updated" />
-            <option name="myStatusName" value="Changed" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="UPDATED" />
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js</PATH>
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Created" />
-            <option name="myStatusName" value="Created" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="CREATED" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Deleted" />
-            <option name="myStatusName" value="Deleted" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="true" />
-            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Restored" />
-            <option name="myStatusName" value="Will be restored" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="RESTORED" />
-          </FILE-GROUP>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Modified" />
-          <option name="myStatusName" value="Modified" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MODIFIED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Skipped" />
-          <option name="myStatusName" value="Skipped" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SKIPPED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with conflicts" />
-          <option name="myStatusName" value="Will be merged with conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_CONFLICTS" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/public/assets/js/calculate.js</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with tree conflicts" />
-          <option name="myStatusName" value="Merged with tree conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with property conflicts" />
-          <option name="myStatusName" value="Will be merged with property conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged" />
-          <option name="myStatusName" value="Will be merged" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Not in repository" />
-          <option name="myStatusName" value="Not in repository" />
-          <option name="mySupportsDeletion" value="true" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UNKNOWN" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally added" />
-          <option name="myStatusName" value="Locally added" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_ADDED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally removed" />
-          <option name="myStatusName" value="Locally removed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_REMOVED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Switched" />
-          <option name="myStatusName" value="Switched" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SWITCHED" />
-        </FILE-GROUP>
-      </UpdatedFiles>
-    </UpdateInfo>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 7.0">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
@@ -836,12 +787,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
-      <option name="VM_PARAMETERS" value="" />
-      <option name="USER_CFG_CLASS" />
-      <option name="CONTEXT_PROVIDER" />
-      <method />
-    </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -859,6 +804,12 @@
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
     <configuration default="false" name="Tomcat 7.0" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0" ALTERNATIVE_JRE_ENABLED="false">
@@ -952,7 +903,8 @@
       <workItem from="1391899258309" duration="17337000" />
       <workItem from="1391929332404" duration="26000" />
       <workItem from="1391929374083" duration="1423000" />
-      <workItem from="1391969968948" duration="22823000" />
+      <workItem from="1391969968948" duration="22849000" />
+      <workItem from="1392002604641" duration="681000" />
     </task>
     <task id="LOCAL-00001" summary="integrated my updates to the synced project">
       <created>1391399472201</created>
@@ -978,7 +930,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115199000" />
+    <option name="totallyTimeSpent" value="115906000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1436" height="878" extended-state="6" />
@@ -994,11 +946,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880098" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32880098" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880098" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880098" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32880098" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1015,8 +967,8 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880098" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hibernate Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="soapUI Navigator" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1051,6 +1003,22 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/calculate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="164" column="4" selection-start="6212" selection-end="6212" vertical-scroll-proportion="0.0" vertical-offset="2460" max-vertical-offset="2610">
+          <folding>
+            <marker date="1392003980000" expanded="true" signature="2911:3197" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/database/database.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="19" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="165">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="580" column="54" selection-start="17406" selection-end="17406" vertical-scroll-proportion="0.0" vertical-offset="8380" max-vertical-offset="8910">
@@ -1107,11 +1075,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/assumptions.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="47" selection-start="879" selection-end="879" vertical-scroll-proportion="0.69450104" vertical-offset="454" max-vertical-offset="1005" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="26" selection-start="260" selection-end="260" vertical-scroll-proportion="0.32038835" vertical-offset="0" max-vertical-offset="515" />
@@ -1125,11 +1088,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="56" selection-start="1206" selection-end="1208" vertical-scroll-proportion="-3.3" vertical-offset="390" max-vertical-offset="855" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/register/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="127" column="46" selection-start="6362" selection-end="6366" vertical-scroll-proportion="0.3318584" vertical-offset="1755" max-vertical-offset="2970" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/testPage.html">
@@ -1153,8 +1111,8 @@
           <ID>MAVEN</ID>
           <OriginalElement>com.springapp:YourEffect:1.0-SNAPSHOT</OriginalElement>
           <nodes>
-            <node x="" y="">org.springframework.data:spring-data-mongodb:jar:1.3.3.RELEASE/org.springframework:spring-tx:jar:3.1.4.RELEASE/aopalliance:aopalliance:jar:1.0</node>
             <node x="" y="">org.springframework.data:spring-data-mongodb:jar:1.3.3.RELEASE/org.springframework:spring-tx:jar:3.1.4.RELEASE/org.springframework:spring-context:jar:3.1.4.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-mongodb:jar:1.3.3.RELEASE/org.springframework:spring-tx:jar:3.1.4.RELEASE/aopalliance:aopalliance:jar:1.0</node>
             <node x="" y="">org.springframework:spring-web:jar:3.2.0.RELEASE/org.springframework:spring-aop:jar:3.2.0.RELEASE</node>
             <node x="" y="">org.hibernate:hibernate-core:jar:3.6.10.Final/org.hibernate:hibernate-commons-annotations:jar:3.2.0.Final/org.slf4j:slf4j-api:jar:1.5.8</node>
             <node x="" y="">com.google.code.gson:gson:jar:2.2.4</node>
@@ -1180,27 +1138,27 @@
             <node x="" y="">org.springframework.data:spring-data-jpa:jar:1.0.0.RELEASE/org.springframework:spring-orm:jar:3.0.5.RELEASE/org.springframework:spring-jdbc:jar:3.0.5.RELEASE</node>
             <node x="" y="">org.springframework:spring-test:jar:3.2.0.RELEASE/org.springframework:spring-webmvc:jar:3.2.0.RELEASE</node>
             <node x="" y="">org.springframework.data:spring-data-mongodb:jar:1.3.3.RELEASE/org.springframework.data:spring-data-commons:jar:1.6.3.RELEASE/org.springframework:spring-core:jar:3.1.4.RELEASE</node>
-            <node x="" y="">org.springframework.data:spring-data-mongodb:jar:1.3.3.RELEASE/org.springframework:spring-tx:jar:3.1.4.RELEASE/org.springframework:spring-aop:jar:3.1.4.RELEASE</node>
             <node x="" y="">org.springframework:spring-jdbc:jar:2.0.6/org.springframework:spring-dao:jar:2.0.6/commons-logging:commons-logging:jar:1.1</node>
+            <node x="" y="">org.springframework.data:spring-data-mongodb:jar:1.3.3.RELEASE/org.springframework:spring-tx:jar:3.1.4.RELEASE/org.springframework:spring-aop:jar:3.1.4.RELEASE</node>
             <node x="" y="">org.springframework:spring-jdbc:jar:2.0.6/org.springframework:spring-core:jar:2.0.6</node>
-            <node x="" y="">javax.servlet.jsp:jsp-api:jar:2.1</node>
             <node x="" y="">org.springframework.data:spring-data-mongodb:jar:1.3.3.RELEASE/org.springframework:spring-tx:jar:3.1.4.RELEASE/org.springframework:spring-beans:jar:3.1.4.RELEASE</node>
+            <node x="" y="">javax.servlet.jsp:jsp-api:jar:2.1</node>
             <node x="" y="">org.springframework.data:spring-data-jpa:jar:1.0.0.RELEASE/org.springframework:spring-orm:jar:3.0.5.RELEASE/org.springframework:spring-beans:jar:3.0.5.RELEASE</node>
             <node x="" y="">org.springframework:spring-web:jar:3.2.0.RELEASE/org.springframework:spring-context:jar:3.2.0.RELEASE/org.springframework:spring-expression:jar:3.2.0.RELEASE</node>
             <node x="" y="">org.springframework.data:spring-data-jpa:jar:1.0.0.RELEASE/org.aspectj:aspectjrt:jar:1.6.8</node>
             <node x="" y="">commons-dbcp:commons-dbcp:jar:1.0/junit:junit:jar:3.7</node>
             <node x="" y="">org.springframework:spring-jdbc:jar:2.0.6/org.springframework:spring-dao:jar:2.0.6/org.springframework:spring-core:jar:2.0.6</node>
-            <node x="" y="">org.springframework:spring-web:jar:3.2.0.RELEASE/aopalliance:aopalliance:jar:1.0</node>
-            <node x="" y="">javax.servlet:servlet-api:jar:2.5</node>
             <node x="" y="">org.springframework.data:spring-data-mongodb:jar:1.3.3.RELEASE/org.springframework:spring-core:jar:3.1.4.RELEASE</node>
-            <node x="" y="">org.springframework:spring-web:jar:3.2.0.RELEASE/org.springframework:spring-aop:jar:3.2.0.RELEASE/org.springframework:spring-core:jar:3.2.0.RELEASE</node>
+            <node x="" y="">javax.servlet:servlet-api:jar:2.5</node>
+            <node x="" y="">org.springframework:spring-web:jar:3.2.0.RELEASE/aopalliance:aopalliance:jar:1.0</node>
             <node x="" y="">org.hibernate:hibernate-core:jar:3.6.10.Final/commons-collections:commons-collections:jar:3.1</node>
+            <node x="" y="">org.springframework:spring-web:jar:3.2.0.RELEASE/org.springframework:spring-aop:jar:3.2.0.RELEASE/org.springframework:spring-core:jar:3.2.0.RELEASE</node>
             <node x="" y="">org.springframework.data:spring-data-mongodb:jar:1.3.3.RELEASE/org.slf4j:jcl-over-slf4j:jar:1.7.1</node>
-            <node x="" y="">org.springframework.data:spring-data-mongodb:jar:1.3.3.RELEASE/org.springframework.data:spring-data-commons:jar:1.6.3.RELEASE/org.slf4j:slf4j-api:jar:1.7.1</node>
             <node x="" y="">org.springframework.data:spring-data-jpa:jar:1.0.0.RELEASE/org.springframework:spring-core:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-mongodb:jar:1.3.3.RELEASE/org.springframework.data:spring-data-commons:jar:1.6.3.RELEASE/org.slf4j:slf4j-api:jar:1.7.1</node>
             <node x="" y="">org.hibernate:hibernate-entitymanager:jar:3.6.10.Final/javassist:javassist:jar:3.12.0.GA</node>
-            <node x="" y="">commons-dbcp:commons-dbcp:jar:1.0</node>
             <node x="" y="">org.hibernate:hibernate-core:jar:3.6.10.Final/antlr:antlr:jar:2.7.6</node>
+            <node x="" y="">commons-dbcp:commons-dbcp:jar:1.0</node>
             <node x="" y="">org.hibernate:hibernate-core:jar:3.6.10.Final/org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.1.Final</node>
             <node x="" y="">org.springframework:spring-webmvc:jar:3.2.0.RELEASE/org.springframework:spring-beans:jar:3.2.0.RELEASE</node>
             <node x="" y="">org.springframework:spring-core:jar:3.2.0.RELEASE</node>
@@ -1373,32 +1331,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/model/item.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="5" selection-start="3" selection-end="3" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="515">
-          <folding />
-        </state>
+        <state line="0" column="5" selection-start="3" selection-end="3" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="515" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="364" selection-end="364" vertical-scroll-proportion="0.47808766" vertical-offset="0" max-vertical-offset="1905">
-          <folding>
-            <element signature="e#2547#2548#0" expanded="true" />
-            <element signature="e#2579#2580#0" expanded="true" />
-            <element signature="e#2629#2630#0" expanded="true" />
-            <element signature="e#2671#2672#0" expanded="true" />
-            <element signature="e#2706#2707#0" expanded="true" />
-            <element signature="e#2737#2738#0" expanded="true" />
-            <element signature="e#2785#2786#0" expanded="true" />
-            <element signature="e#2825#2826#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="16" column="13" selection-start="364" selection-end="364" vertical-scroll-proportion="0.47808766" vertical-offset="0" max-vertical-offset="1905" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate/User.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="29" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.5533981" vertical-offset="0" max-vertical-offset="515">
-          <folding />
-        </state>
+        <state line="19" column="29" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.5533981" vertical-offset="0" max-vertical-offset="515" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
@@ -1410,9 +1353,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/model/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="14" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
-          <folding />
-        </state>
+        <state line="20" column="14" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -1424,42 +1365,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/database/database.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="19" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+        <state line="5" column="19" selection-start="202" selection-end="202" vertical-scroll-proportion="0.09603073" vertical-offset="0" max-vertical-offset="781">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CheckStats/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="13" selection-start="3474" selection-end="3474" vertical-scroll-proportion="-15.458333" vertical-offset="1114" max-vertical-offset="1890">
+        <state line="99" column="13" selection-start="3474" selection-end="3474" vertical-scroll-proportion="0.0" vertical-offset="1114" max-vertical-offset="1890">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/Chart.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="21375">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="21375" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="45" selection-start="2129" selection-end="2129" vertical-scroll-proportion="0.6048387" vertical-offset="480" max-vertical-offset="2430">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8565">
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/assumptions.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="144" column="1" selection-start="3412" selection-end="3412" vertical-scroll-proportion="-49.041668" vertical-offset="983" max-vertical-offset="2250">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/calculate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="164" column="4" selection-start="6212" selection-end="6212" vertical-scroll-proportion="0.0" vertical-offset="2093" max-vertical-offset="2610">
-          <folding />
+        <state line="147" column="18" selection-start="5567" selection-end="5567" vertical-scroll-proportion="0.0" vertical-offset="1827" max-vertical-offset="2595">
+          <folding>
+            <marker date="1392003980000" expanded="true" signature="2911:3197" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="694" column="34" selection-start="20844" selection-end="20844" vertical-scroll-proportion="0.0" vertical-offset="9880" max-vertical-offset="11685">
+        <state line="598" column="23" selection-start="17866" selection-end="17866" vertical-scroll-proportion="0.0" vertical-offset="8819" max-vertical-offset="11685">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/css/MainStyles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="25" selection-start="1693" selection-end="1693" vertical-scroll-proportion="0.4707113" vertical-offset="480" max-vertical-offset="2430">
+        <state line="66" column="1" selection-start="910" selection-end="910" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/register/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="6" selection-start="575" selection-end="575" vertical-scroll-proportion="0.4079498" vertical-offset="0" max-vertical-offset="3120">
           <folding />
         </state>
       </provider>
