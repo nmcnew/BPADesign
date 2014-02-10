@@ -11,6 +11,7 @@
     <mvc:annotation-driven />
 
     <mvc:resources mapping="/public/**" location="/public/" />
+    <mvc:resources mapping="/doc/**" location="/doc/" />
 
     <context:property-placeholder location="classpath:database/database.properties"/>
 
