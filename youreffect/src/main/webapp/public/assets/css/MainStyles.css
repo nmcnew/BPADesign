@@ -9,21 +9,9 @@ body {
 	margin-left: 17%;
 	margin-right: 17%;
 }
-
-.navbar {
-}
-
 footer {
 	color: #003a75;
 	font-size: small;
-}
-.select-option {
-	color: #D43F3A;
-	font-style: underline;
-}
-.select-option > a {
-	color: #D43F3A;
-	font-style: underline;
 }
 .eOptions > li > a:hover {
 

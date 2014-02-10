@@ -142,7 +142,6 @@ function login(username, password) {
     $("#response-text").html(data.message);
 
 }
-
 /** joint operations */
 
 function saveItems(items) {

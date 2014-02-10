@@ -86,19 +86,20 @@
 
                 </tbody>
 			</table>
-        </div>
-        <div id="graph">
-            <canvas id="myChart" width="800" height="600"></canvas>
-        </div>
-		<script>
-			$("#stat-username").html(curUser.username);
-			$("#stat-email").html(curUser.email);
-			$("#stat-state").html(curUser.state);
-            populateList($('#item-list'),$("#num-results"));
-            function triggerSearch() {
-                populateFilteredList(search($("#key").val(),$('#energy-filter').val()),$('#item-list'),$('#num-results'));
-            }
-		</script>
+            <div id="graph">
+                <canvas id="myChart" width="800" height="600"></canvas>
+            </div>
+            <script>
+                $("#stat-username").html(curUser.username);
+                $("#stat-email").html(curUser.email);
+                $("#stat-state").html(curUser.state);
+                populateList($('#item-list'),$("#num-results"));
+                function triggerSearch() {
+                    populateFilteredList(search($("#key").val(),$('#energy-filter').val()),$('#item-list'),$('#num-results'));
+                }
+            </script>
+        </div><!--end .body tag-->
+
         <div id="myModal" class="modal fade">
             <div class="modal-dialog">
                 <div class="modal-content">
