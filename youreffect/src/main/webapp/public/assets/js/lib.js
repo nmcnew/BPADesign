@@ -124,6 +124,11 @@ function register(username, email, password, state) {
 
 /** user login */
 
+function logout() {
+    localStorage.removeItem("curLogin");
+    location.reload();
+}
+
 function login(username, password) {
     var user = new User(username, '', password, '');
     var data = loginUser(user);

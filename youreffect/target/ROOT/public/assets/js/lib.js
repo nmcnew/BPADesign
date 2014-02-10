@@ -124,6 +124,11 @@ function register(username, email, password, state) {
 
 /** user login */
 
+function logout() {
+    localStorage.removeItem("curLogin");
+    location.reload();
+}
+
 function login(username, password) {
     var user = new User(username, '', password, '');
     var data = loginUser(user);
@@ -142,7 +147,6 @@ function login(username, password) {
     $("#response-text").html(data.message);
 
 }
-
 /** joint operations */
 
 function saveItems(items) {
@@ -572,7 +576,6 @@ function populateFilteredList(hits, list, reply) {
     }
     list.append(s);
     reply.html(hits.length + " results");
-    generateGraph();
 }
 
 function populateList(list,reply) {
@@ -652,14 +655,8 @@ function prepareSpecs(s) {
 }
 
 function generateGraph() {
-
-    var yourData = [];
-
-    var total = 0;
-
     var monthtotals = [0,0,0,0,0,0,0,0,0,0,0,0];
 
-    // iterate through tr and td nodes and pull data from td
     var M = $("#item-list");
     var rows = M.children();
     for (var i = 0; i < rows.length; i ++) {
@@ -667,8 +664,6 @@ function generateGraph() {
         var cols = $(row).children();
         var cost = parseFloat(($(cols[cols.length-1]).html()).toString().split("$")[1]);
         var mo = parseInt(($(cols[cols.length-3]).html()).toString().split("-")[1])-1;
-        console.log(cost);
-        console.log(mo);
         monthtotals[mo] += cost;
     }
 

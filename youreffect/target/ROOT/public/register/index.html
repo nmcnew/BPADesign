@@ -37,7 +37,7 @@
 
             </form> <script
                     type="text/javascript">
-                document.getElementById("curLogin").innerHTML = curUser.username;
+                document.getElementById("curLogin").innerHTML = (curUser.username !== undefined) ? curUser.username : 'Not logged in';
             </script>
 
 
