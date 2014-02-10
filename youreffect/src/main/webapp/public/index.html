@@ -4,6 +4,13 @@
     <title>Your Effect</title>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/MainStyles.css" rel="stylesheet">
+    <script type="text/javascript"
+            src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/model/user.js"></script>
+    <script src="assets/js/model/item.js"></script>
+    <script src="assets/js/lib.js"></script>
+    <script src="assets/js/calculate.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-inverse center" role="navigation">
@@ -26,10 +33,17 @@
                     as:&nbsp;&nbsp;</div>
             </li>
             <li>
-                <div id="curLogin" class="navbar-text small"></div> <script
+                <div id="curLogin" class="navbar-text small"></div><form>
+
+
+            </form> <script
                     type="text/javascript">
-                document.getElementById("curLogin").innerHTML = curUser.username;
+                document.getElementById("curLogin").innerHTML = (curUser.username !== undefined) ? curUser.username : 'Not logged in';
             </script>
+
+
+            </li>
+            <li><button type="button" onclick="logout()" class="btn btn-default navbar-btn btn-sm navbar-right">Log Out</button>
             </li>
         </ul>
     </div>

@@ -7,76 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97712bb5-bda5-49ae-9d15-711cfe219217" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/allclasses-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/allclasses-noframe.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/AppTests.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/controller/IndexController.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/controller/ItemController.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/controller/UserController.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/controller/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/controller/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/controller/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/dao/ItemDao.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/dao/UserDao.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/dao/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/dao/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/dao/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/exception/ItemException.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/exception/LoginException.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/exception/RegisterException.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/exception/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/exception/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/exception/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/impl/ItemDaoImpl.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/impl/UserDaoImpl.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/impl/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/impl/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/impl/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/model/Item.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/model/User.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/model/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/model/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/model/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/service/HashService.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/service/ItemService.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/service/ResponseService.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/service/UserService.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/service/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/service/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/com/youreffect/service/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/constant-values.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/deprecated-list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/help-doc.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/index-files/index-1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/index-files/index-10.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/index-files/index-11.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/index-files/index-12.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/index-files/index-13.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/index-files/index-14.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/index-files/index-15.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/index-files/index-2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/index-files/index-3.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/index-files/index-4.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/index-files/index-5.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/index-files/index-6.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/index-files/index-7.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/index-files/index-8.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/index-files/index-9.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/overview-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/overview-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/overview-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/package-list" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/resources/background.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/resources/tab.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/resources/titlebar.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/resources/titlebar_end.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/serialized-form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/doc/stylesheet.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/com/youreffect/AppTests.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/public/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/public/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="youreffect.iws" />
@@ -140,7 +71,17 @@
     <favorites_list name="youreffect" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/public/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="17" selection-start="514" selection-end="514" vertical-scroll-proportion="0.36659878" vertical-offset="0" max-vertical-offset="1065">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -162,7 +103,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/properties/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/youreffect/impl/UserDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/public/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/youreffect/dao/ItemDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/youreffect/impl/ItemDaoImpl.java" />
@@ -204,6 +144,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/database/database.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/CheckStats/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/public/index.html" />
       </list>
     </option>
   </component>
@@ -272,6 +213,72 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="YourEffect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YourEffect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YourEffect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YourEffect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YourEffect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YourEffect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YourEffect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -756,7 +763,7 @@
       <workItem from="1391929332404" duration="26000" />
       <workItem from="1391929374083" duration="1423000" />
       <workItem from="1391969968948" duration="22849000" />
-      <workItem from="1392002604641" duration="2618000" />
+      <workItem from="1392002604641" duration="3020000" />
     </task>
     <task id="LOCAL-00001" summary="integrated my updates to the synced project">
       <created>1391399472201</created>
@@ -782,7 +789,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117843000" />
+    <option name="totallyTimeSpent" value="118245000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1436" height="878" extended-state="6" />
@@ -935,11 +942,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/dao/ItemDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="27" selection-start="253" selection-end="253" vertical-scroll-proportion="0.34951457" vertical-offset="0" max-vertical-offset="515" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="56" selection-start="1206" selection-end="1208" vertical-scroll-proportion="-3.3" vertical-offset="390" max-vertical-offset="855" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/testPage.html">
@@ -1251,13 +1253,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/register/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="155" column="32" selection-start="7795" selection-end="7795" vertical-scroll-proportion="0.5878661" vertical-offset="2044" max-vertical-offset="3120">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CheckStats/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="50" selection-start="718" selection-end="718" vertical-scroll-proportion="0.48879838" vertical-offset="0" max-vertical-offset="1935">
@@ -1288,6 +1283,20 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="17" selection-start="143" selection-end="143" vertical-scroll-proportion="0.116504855" vertical-offset="0" max-vertical-offset="515">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/register/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="32" selection-start="93" selection-end="93" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="3120">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="17" selection-start="514" selection-end="514" vertical-scroll-proportion="0.36659878" vertical-offset="0" max-vertical-offset="1065">
           <folding />
         </state>
       </provider>
