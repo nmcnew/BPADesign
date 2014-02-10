@@ -31,15 +31,23 @@
 					<li>
 						<a href="../register/">Register</a>
 					</li>
-                    <li>
+                    <li >
                         <div class="navbar-text navbar-left small">Logged in
                             as:&nbsp;&nbsp;</div>
+
                     </li>
                     <li>
-                        <div id="curLogin" class="navbar-text small"></div> <script
+                        <div id="curLogin" class="navbar-text small"></div><form>
+
+
+                    </form> <script
                             type="text/javascript">
-                        document.getElementById("curLogin").innerHTML = curUser.username;
+                        document.getElementById("curLogin").innerHTML = (curUser.username !== undefined) ? curUser.username : 'Not logged in';
                     </script>
+
+
+                    </li>
+                    <li><button type="button" onclick="logout()" class="btn btn-default navbar-btn btn-sm navbar-right">Log Out</button>
                     </li>
 				</ul>
 			</div>
