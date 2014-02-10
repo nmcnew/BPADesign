@@ -16,7 +16,7 @@
     </option>
   </component>
   <component name="JavadocGenerationManager">
-    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/src/main/webapp/public/docs" />
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/src/main/webapp/doc" />
     <option name="OPTION_SCOPE" value="protected" />
     <option name="OPTION_HIERARCHY" value="true" />
     <option name="OPTION_NAVIGATOR" value="true" />

@@ -6,8 +6,67 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97712bb5-bda5-49ae-9d15-711cfe219217" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/public/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/public/index.html" />
+    <list default="true" id="97712bb5-bda5-49ae-9d15-711cfe219217" name="Default" comment="updated index with login information&#10;">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/youreffect/controller/AdminController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/controller/AdminController.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/doc/index-files/index-10.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/index-files/index-9.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/doc/index-files/index-11.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/index-files/index-10.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/doc/index-files/index-13.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/index-files/index-12.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/doc/index-files/index-14.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/index-files/index-13.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/doc/index-files/index-5.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/index-files/index-4.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/doc/index-files/index-7.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/index-files/index-6.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/service/HashService.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/service/HashService.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/controller/IndexController.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/controller/IndexController.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/model/Item.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/model/Item.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/controller/ItemController.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/controller/ItemController.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/dao/ItemDao.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/dao/ItemDao.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/impl/ItemDaoImpl.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/impl/ItemDaoImpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/exception/ItemException.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/exception/ItemException.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/service/ItemService.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/service/ItemService.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/exception/LoginException.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/exception/LoginException.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/exception/RegisterException.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/exception/RegisterException.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/service/ResponseService.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/service/ResponseService.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/model/User.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/model/User.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/controller/UserController.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/controller/UserController.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/dao/UserDao.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/dao/UserDao.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/impl/UserDaoImpl.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/impl/UserDaoImpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/service/UserService.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/service/UserService.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/allclasses-frame.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/allclasses-frame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/allclasses-noframe.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/allclasses-noframe.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/constant-values.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/constant-values.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/deprecated-list.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/deprecated-list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/help-doc.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/help-doc.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/index-files/index-1.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/index-files/index-1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/index-files/index-11.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/index-files/index-11.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/index-files/index-2.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/index-files/index-2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/index-files/index-3.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/index-files/index-3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/index-files/index-5.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/index-files/index-5.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/index-files/index-7.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/index-files/index-7.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/index-files/index-8.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/index-files/index-8.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/overview-frame.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/overview-frame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/overview-summary.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/overview-summary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/overview-tree.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/overview-tree.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/controller/package-frame.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/controller/package-frame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/dao/package-frame.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/dao/package-frame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/exception/package-frame.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/exception/package-frame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/impl/package-frame.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/impl/package-frame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/model/package-frame.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/model/package-frame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/service/package-frame.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/service/package-frame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/controller/package-summary.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/controller/package-summary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/dao/package-summary.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/dao/package-summary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/exception/package-summary.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/exception/package-summary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/impl/package-summary.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/impl/package-summary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/model/package-summary.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/model/package-summary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/service/package-summary.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/service/package-summary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/controller/package-tree.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/controller/package-tree.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/dao/package-tree.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/dao/package-tree.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/exception/package-tree.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/exception/package-tree.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/impl/package-tree.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/impl/package-tree.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/model/package-tree.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/model/package-tree.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/service/package-tree.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/com/youreffect/service/package-tree.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/doc/serialized-form.html" afterPath="$PROJECT_DIR$/src/main/webapp/doc/serialized-form.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="youreffect.iws" />
@@ -71,17 +130,7 @@
     <favorites_list name="youreffect" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/public/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="17" selection-start="514" selection-end="514" vertical-scroll-proportion="0.36659878" vertical-offset="0" max-vertical-offset="1065">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -213,54 +262,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="YourEffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YourEffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YourEffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YourEffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YourEffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -763,7 +764,7 @@
       <workItem from="1391929332404" duration="26000" />
       <workItem from="1391929374083" duration="1423000" />
       <workItem from="1391969968948" duration="22849000" />
-      <workItem from="1392002604641" duration="3020000" />
+      <workItem from="1392002604641" duration="3347000" />
     </task>
     <task id="LOCAL-00001" summary="integrated my updates to the synced project">
       <created>1391399472201</created>
@@ -785,11 +786,15 @@
       <created>1391983433722</created>
       <updated>1391983433722</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="updated index with login information&#10;">
+      <created>1392006934952</created>
+      <updated>1392006934952</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118245000" />
+    <option name="totallyTimeSpent" value="118572000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1436" height="878" extended-state="6" />
@@ -852,7 +857,9 @@
     <MESSAGE value="added recall current users elecRate and costOfGas. Nick i need you to fix the edit button thing. &#10;" />
     <MESSAGE value="updated website with nick's changes and added extra stuff" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;youreffect/src/main/webapp/public/assets/css/MainStyles.css&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;youreffect/src/main/webapp/public/assets/css/MainStyles.css&#10;" />
+    <MESSAGE value="updated index with login information&#10;" />
+    <MESSAGE value="updated javadocs and deleted admin controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated javadocs and deleted admin controller" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1156,11 +1163,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="4" selection-start="297" selection-end="297" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="49" column="36" selection-start="1519" selection-end="1519" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="1965">
@@ -1180,7 +1182,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="364" selection-end="364" vertical-scroll-proportion="0.47808766" vertical-offset="0" max-vertical-offset="1905" />
+        <state line="16" column="13" selection-start="364" selection-end="364" vertical-scroll-proportion="0.47808766" vertical-offset="0" max-vertical-offset="1905">
+          <folding>
+            <element signature="e#2547#2548#0" expanded="true" />
+            <element signature="e#2579#2580#0" expanded="true" />
+            <element signature="e#2629#2630#0" expanded="true" />
+            <element signature="e#2671#2672#0" expanded="true" />
+            <element signature="e#2706#2707#0" expanded="true" />
+            <element signature="e#2737#2738#0" expanded="true" />
+            <element signature="e#2785#2786#0" expanded="true" />
+            <element signature="e#2825#2826#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate/User.hbm.xml">
