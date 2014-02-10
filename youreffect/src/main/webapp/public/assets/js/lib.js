@@ -489,7 +489,7 @@ function removeAlertClass() {
 
 /** get form data to create items */
 
-function submitMainForm() {
+function submitMainForm(){
     var elecRate = $("#elecRate").val();
     var costOfGas = $("#costOfGas").val();
     if (elecRate.length > 0) {
