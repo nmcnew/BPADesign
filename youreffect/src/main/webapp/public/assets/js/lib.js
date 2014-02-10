@@ -572,6 +572,7 @@ function populateFilteredList(hits, list, reply) {
     }
     list.append(s);
     reply.html(hits.length + " results");
+    generateGraph();
 }
 
 function populateList(list,reply) {
@@ -579,12 +580,13 @@ function populateList(list,reply) {
     var items = curItems;
     var s = "";
     $.each(items, function (itemId, item) {
+        console.log(item);
         s = prepareRow(item, s);
         ++count;
     });
     list.append(s);
     reply.html(count + " result(s)");
-
+    generateGraph() ;
 }
 
 function prepareRow(item, s) {
@@ -596,39 +598,40 @@ function prepareRow(item, s) {
     s += ("<td>"+item.dateCreated.split("T")[0]+"</td>");
     s += ("<td><button data-toggle='modal' data-target='#myModal'>Specs</button></td>");
     var costOf = 0;
+    var mySpecs = JSON.parse(item.specs);
     switch(item.name){
         case("Light Bulbs"):
-            costOf = bulbCalc(specsStr, item.quantity);
+            costOf = bulbCalc(mySpecs, item.quantity);
             break;
         case("Central Air Conditioning"):
-            costOf = accCalcs(specsStr, item.quantity);
+            costOf = accCalcs(mySpecs, item.quantity);
             break;
         case("Furnace"):
-            costOf = furnaceCalcs(specsStr, item.quantity);
+            costOf = furnaceCalcs(mySpecs, item.quantity);
             break;
         case("Personal Air Conditioner"):
-            costOf = acrCalcs(specsStr, item.quantity);
+            costOf = acrCalcs(mySpecs, item.quantity);
             break;
         case("Air Purifier"):
-            costOf = airPure(specsStr,item.quantity);
+            costOf = airPure(mySpecs,item.quantity);
             break;
         case("Clothes Washer"):
-            costOf = clothesWasher(specsStr, item.quantity);
+            costOf = clothesWasher(mySpecs, item.quantity);
             break;
         case("Dehumidifier"):
-            costOf = dehumidifierCalcs(specsStr, item.quantity);
+            costOf = dehumidifierCalcs(mySpecs, item.quantity);
             break;
         case("Dishwasher"):
-            costOf = dishwasherCalcs(specsStr, item.quantity);
+            costOf = dishwasherCalcs(mySpecs, item.quantity);
             break;
         case("Refrigerator"):
-            costOf = fridgeConsumption(specsStr,item.quantity);
+            costOf = fridgeConsumption(mySpecs,item.quantity);
             break;
         case("Refrigerator - Compact"):
-            costOf = cFridgeCalcs(specsStr,item.quantity);
+            costOf = cFridgeCalcs(mySpecs,item.quantity);
             break;
         case("Freezer"):
-            costOf = freezerCalcs(specsStr,item.quantity);
+            costOf = freezerCalcs(mySpecs,item.quantity);
             break;
     }
     s += ("<td>$"+ (costOf).toFixed(2) +"</td>");
@@ -647,3 +650,124 @@ function prepareSpecs(s) {
     r += "<tr><td></td><td></td></tr>"
     $("#specs").html(r);
 }
+
+function generateGraph() {
+
+    var yourData = [];
+
+    var total = 0;
+
+    var monthtotals = [0,0,0,0,0,0,0,0,0,0,0,0];
+
+    // iterate through tr and td nodes and pull data from td
+    var M = $("#item-list");
+    var rows = M.children();
+    for (var i = 0; i < rows.length; i ++) {
+        var row = rows[i];
+        var cols = $(row).children();
+        var cost = parseFloat(($(cols[cols.length-1]).html()).toString().split("$")[1]);
+        var mo = parseInt(($(cols[cols.length-3]).html()).toString().split("-")[1])-1;
+        console.log(cost);
+        console.log(mo);
+        monthtotals[mo] += cost;
+    }
+
+    var data = {
+        labels : ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
+        datasets : [
+            {
+                fillColor : "rgba(151,187,205,0.5)",
+                strokeColor : "rgba(151,187,205,1)",
+                data : monthtotals
+            }
+        ]
+    }
+
+    var options = {
+
+        //Boolean - If we show the scale above the chart data
+        scaleOverlay : false,
+
+        //Boolean - If we want to override with a hard coded scale
+        scaleOverride : false,
+
+        //** Required if scaleOverride is true **
+        //Number - The number of steps in a hard coded scale
+        scaleSteps : null,
+        //Number - The value jump in the hard coded scale
+        scaleStepWidth : null,
+        //Number - The scale starting value
+        scaleStartValue : 0,
+
+        //String - Colour of the scale line
+        scaleLineColor : "rgba(0,0,0,.1)",
+
+        //Number - Pixel width of the scale line
+        scaleLineWidth : 1,
+
+        //Boolean - Whether to show labels on the scale
+        scaleShowLabels : true,
+
+        //Interpolated JS string - can access value
+        scaleLabel : "<%=value%>",
+
+        //String - Scale label font declaration for the scale label
+        scaleFontFamily : "'Arial'",
+
+        //Number - Scale label font size in pixels
+        scaleFontSize : 12,
+
+        //String - Scale label font weight style
+        scaleFontStyle : "normal",
+
+        //String - Scale label font colour
+        scaleFontColor : "#666",
+
+        ///Boolean - Whether grid lines are shown across the chart
+        scaleShowGridLines : true,
+
+        //String - Colour of the grid lines
+        scaleGridLineColor : "rgba(0,0,0,.05)",
+
+        //Number - Width of the grid lines
+        scaleGridLineWidth : 1,
+
+        //Boolean - If there is a stroke on each bar
+        barShowStroke : true,
+
+        //Number - Pixel width of the bar stroke
+        barStrokeWidth : 2,
+
+        //Number - Spacing between each of the X value sets
+        barValueSpacing : 5,
+
+        //Number - Spacing between data sets within X values
+        barDatasetSpacing : 1,
+
+        //Boolean - Whether to animate the chart
+        animation : true,
+
+        //Number - Number of animation steps
+        animationSteps : 60,
+
+        //String - Animation easing effect
+        animationEasing : "easeOutQuart",
+
+        //Function - Fires when the animation is complete
+        onAnimationComplete : null
+
+    }
+
+    //Get the context of the canvas element we want to select
+    var ctx = document.getElementById("myChart").getContext("2d");
+    new Chart(ctx).Bar(data,options);
+}
+
+function sum(arr) {
+    var total = 0;
+    for (var i = 0; i < arr.length ; i ++) {
+        total += arr[i];
+    }
+    return total;
+}
+

@@ -80,7 +80,7 @@ function fridgeConsumption(specs, quantity) {
     var userECons = Number(specs.fridgeEConsumption);
     var energyStarConsumption = value.assumptions[0].fridgeAssump.energyStar.energyConsumption[userOpt];
     var savings = userECons - energyStarConsumption;
-    return userECons*userECost;
+    return userECons*userECost*quantity;
 }
 function cFridgeCalcs(specs, quantity){
     var value = getAssumptions();
@@ -88,7 +88,7 @@ function cFridgeCalcs(specs, quantity){
     var userECons = Number(specs.cFridgeEConsumption);
     var energyStarConsumption = value.assumptions[0].cFridgeAssump.energyStar.energyConsumption[userOpt];
     var savings = userECons - energyStarConsumption;
-    return userECons*userECost;
+    return userECons*userECost*quantity;
 }
 function freezerCalcs(specs, quantity){
     var value = getAssumptions();
@@ -96,7 +96,7 @@ function freezerCalcs(specs, quantity){
     var userECons = Number(specs.freezereEConsumption);
     var energyStarConsumption = value.assumptions[0].freezerAssump.energyStar.energyConsumption[userOpt];
     var savings = userECons - energyStarConsumption;
-    return userECons*userECost;
+    return userECons*userECost*quantity;
 }
 function acrCalcs(specs, quantity){//Room Air conditioning
     var userCoolCap = Number(specs.acrCoolCap);
@@ -104,7 +104,7 @@ function acrCalcs(specs, quantity){//Room Air conditioning
     var userState = curUser.state;
     var value = getAssumptions();
     var userEnergyCons = (quantity * (userCoolCap/userEER)*value.assumptions[0].roomACassumps.stateFullLoadCoolingHours[userState]);
-    return userEnergyCons * userECost * quantity;
+    return userEnergyCons * userECost;
 }
 function accCalcs(specs, quantity){
     var userThermos = Number(specs.accThermos);
@@ -162,7 +162,8 @@ function furnaceCalcs(specs, quantity){
 function bulbCalc(specs, quantity){
     var userBulbType = Number(specs.bulbType);
     var userHours = Number(specs.bulbAvgDailyUse);
-    var userConsumption = (userHours/1000 *userBulbType * 365)*quantity;
+    var userLifetime = Number(specs.bulbLife);
+    var userConsumption = (userHours/1000 *userBulbType * (userLifetime / 24))*quantity;
     return userConsumption*userECost;
 
 }
