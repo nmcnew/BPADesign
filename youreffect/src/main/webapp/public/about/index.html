@@ -12,16 +12,14 @@
     <script src="../assets/js/model/item.js"></script>
     <script src="../assets/js/lib.js"></script>
     <script src="../assets/js/calculate.js"></script>
-    <script src="../assets/js/Chart.js"></script>
     <script type="text/javascript">
         $(function(){
-            // Setup drop down menu
-            $('.dropdown-toggle').dropdown();
 
             // Fix input element click problem
             $('.dropdown input, .dropdown label').click(function(e) {
                 e.stopPropagation();
             });
+
 
             $("#loggedIn").hide();
             $("#loginLink").hide();
@@ -40,8 +38,8 @@
         <ul class="nav navbar-nav collapse navbar-collapse">
             <li><a href="../">Home</a></li>
             <li ><a href="../CostCalculator/">Cost Calculator</a></li>
-            <li class="active"><a href="../CheckStats/">Check Stats</a></li>
-            <li><a href="../about">About</a></li>
+            <li><a href="../CheckStats/">Check Stats</a></li>
+            <li class="active"><a href="../about">About</a></li>
             <li ><a href="../register">Register</a></li>
 
             <li id="loginLink" class="dropdown">
