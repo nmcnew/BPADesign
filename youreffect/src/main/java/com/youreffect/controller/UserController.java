@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.youreffect.exception.LoginException;
 import com.youreffect.exception.RegisterException;
 import com.youreffect.model.User;
+import com.youreffect.service.MailService;
 import com.youreffect.service.ResponseService;
 import com.youreffect.service.UserService;
 import org.apache.log4j.Logger;
@@ -37,6 +38,9 @@ public class UserController {
     @Autowired
     private ResponseService responseService;
 
+    @Autowired
+    private MailService mailService;
+
     /**
      * registers user
      * @param data JSON from client
@@ -49,6 +53,7 @@ public class UserController {
         try {
             user = userService.register(user);
             responseService.setMessage("new user successfully registered");
+            mailService.sendMail(user.getEmail(), "WELCOME", "welcome");
         } catch (RegisterException re) {
             responseService.setMessage(re.getMessage());
         }

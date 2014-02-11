@@ -23,6 +23,10 @@ public class UserService {
     @Autowired
     private HashService hashService;
 
+    /** generates salt of random bits */
+    @Autowired
+    private SaltService saltService;
+
     /**
      * sets UserDaoImpl
      * @param userDaoImpl performs spring.database interactions
@@ -39,7 +43,7 @@ public class UserService {
      * @return whether user exists in spring.database by id and password
      */
     public boolean exists (String id, String password) {
-        if (userDaoImpl.readUser(id, password) != null) {
+        if (userDaoImpl.read(id, password) != null) {
             return true;
         }
         return false;
@@ -51,7 +55,7 @@ public class UserService {
      * @return whether user exists in spring.database by id
      */
     public boolean exists (String id) {
-        if (userDaoImpl.readUser(id) != null) {
+        if (userDaoImpl.read(id) != null) {
             return true;
         }
         return false;
@@ -76,7 +80,7 @@ public class UserService {
      */
     public User login (User user) throws LoginException {
         user.setUserId(hashService.md5(user.getUsername()));
-        user.setPassword(hashService.md5(user.getPassword()));
+        user.setPassword(hashService.md5(read(user.getUserId()).getSecret()+user.getPassword()));
         if(!exists(user.getUserId(), user.getPassword())) {
             throw new LoginException("login failed");
         }
@@ -91,8 +95,10 @@ public class UserService {
     public User create(User user) {
         user.setDateRegistered(new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss").format(new Date()));
         user.setUserId(hashService.md5(user.getUsername()));
-        user.setPassword(hashService.md5(user.getPassword()));
-        userDaoImpl.createUser(user);
+        String secret = saltService.generateSalt();
+        user.setSecret(secret);
+        user.setPassword(hashService.md5(user.getSecret()+user.getPassword()));
+        userDaoImpl.create(user);
         return user;
     }
 
@@ -103,7 +109,7 @@ public class UserService {
      * @return user
      */
     public User read(String id, String password) {
-        return userDaoImpl.readUser(id, password);
+        return userDaoImpl.read(id, password);
     }
 
     /**
@@ -112,7 +118,11 @@ public class UserService {
      * @return user
      */
     public User read(String id) {
-        return userDaoImpl.readUser(id);
+        return userDaoImpl.read(id);
+    }
+
+    public User readByEmail(String email) {
+        return userDaoImpl.readByEmail(email);
     }
 
     /**
@@ -120,7 +130,7 @@ public class UserService {
      * @param user user
      */
     public void update(User user) {
-        userDaoImpl.updateUser(user);
+        userDaoImpl.update(user);
     }
 
     /**
@@ -128,7 +138,7 @@ public class UserService {
      * @param id user id
      */
     public void delete(String id) {
-        userDaoImpl.deleteUser(id);
+        userDaoImpl.delete(id);
     }
 
 }

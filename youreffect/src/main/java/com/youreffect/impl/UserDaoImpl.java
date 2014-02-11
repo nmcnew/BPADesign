@@ -17,7 +17,7 @@ public class UserDaoImpl extends HibernateDaoSupport implements UserDao {
      * @param user User object
      */
     @Override
-    public void createUser(User user) {
+    public void create(User user) {
         getHibernateTemplate().save(user);
     }
 
@@ -28,7 +28,7 @@ public class UserDaoImpl extends HibernateDaoSupport implements UserDao {
      * @return User object
      */
     @Override
-    public User readUser(String id, String password) {
+    public User read(String id, String password) {
         List list = getHibernateTemplate().find("from User where user_id=? and password=?",new Object[]{id,password});
         return (list.size() > 0) ? (User) list.get(0) : null;
     }
@@ -39,8 +39,13 @@ public class UserDaoImpl extends HibernateDaoSupport implements UserDao {
      * @return user by id
      */
     @Override
-    public User readUser(String id) {
+    public User read(String id) {
         List list = getHibernateTemplate().find("from User where user_id=?",new Object[]{id});
+        return (list.size() > 0) ? (User) list.get(0) : null;
+    }
+
+    public User readByEmail(String email) {
+        List list = getHibernateTemplate().find("from User where user_email=?",new Object[]{email});
         return (list.size() > 0) ? (User) list.get(0) : null;
     }
 
@@ -49,7 +54,7 @@ public class UserDaoImpl extends HibernateDaoSupport implements UserDao {
      * @param user User reference
      */
     @Override
-    public void updateUser(User user) {
+    public void update(User user) {
         getHibernateTemplate().update(user);
     }
 
@@ -58,7 +63,7 @@ public class UserDaoImpl extends HibernateDaoSupport implements UserDao {
      * @param id user reference
      */
     @Override
-    public void deleteUser(String id) {
+    public void delete(String id) {
         getHibernateTemplate().delete(getHibernateTemplate().get(User.class,id));
     }
 

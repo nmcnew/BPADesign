@@ -8,13 +8,13 @@ import com.youreffect.model.User;
  */
 public interface UserDao {
     /** create user */
-    void createUser(User user);
+    void create(User user);
     /** read user data by id */
-    User readUser(String id);
+    User read(String id);
     /** read user data by id and hashed password */
-    User readUser(String id, String password);
+    User read(String id, String password);
     /** update user by database */
-    void updateUser(User user);
+    void update(User user);
     /** delete user based on id */
-    void deleteUser(String id);
+    void delete(String id);
 }

@@ -15,9 +15,6 @@ public class HashService {
      */
     public HashService(){}
 
-    /** prepended to password prior to hashing to prevent dictionary attacks */
-    private String salt;
-
     /**
      * hashes a string with MD5
      * @param input string value to hash
@@ -27,7 +24,6 @@ public class HashService {
         String md5 = null;
         if(null == input) return null;
         try {
-            input = salt + input;
             MessageDigest digest = MessageDigest.getInstance("MD5");
             digest.update(input.getBytes(), 0, input.length());
             md5 = new BigInteger(1, digest.digest()).toString(16);
@@ -37,11 +33,4 @@ public class HashService {
         return md5;
     }
 
-    /**
-     * set salt
-     * @param salt set salt with this
-     */
-    public void setSalt(String salt) {
-        this.salt = salt;
-    }
 }

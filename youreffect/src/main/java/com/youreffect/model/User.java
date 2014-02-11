@@ -14,6 +14,8 @@ public class User {
     private String email;
     /** user's hashed password */
     private String password;
+    /** user's secret */
+    private String secret;
     /** user's state */
     private String state;
     /** date registered */
@@ -103,6 +105,14 @@ public class User {
      */
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getSecret() {
+        return secret;
+    }
+
+    public void setSecret(String secret) {
+        this.secret = secret;
     }
 
     public String getDateRegistered() {

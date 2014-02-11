@@ -7,6 +7,7 @@ function User() {
     this.username = '';
     this.email = '';
     this.password = '';
+    this.secret = '';
     this.state = '';
     this.dateRegistered = '';
     this.elecRate = 0;
@@ -26,6 +27,7 @@ function User(username, email, password, state) {
     this.username = username;
     this.email = email;
     this.password = password;
+    this.secret = '';
     this.state = state;
     this.dateRegistered = '';
     this.elecRate = 0;
