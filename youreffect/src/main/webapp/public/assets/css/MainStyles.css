@@ -76,7 +76,9 @@ a > .headerImage {
     border-width: 3px;
     border-color: #fff;
     transition: transform .2s, box-shadow .2s;
-    -webkit-transition: transform .2s, box-shadow .2s;
+
+    -webkit-transition-timing-function: ease;
+    -webkit-transition-duration: 0.2s;
 }
 a > .headerImage:hover {
     box-shadow: 0 0 20px #003a75;
@@ -84,6 +86,8 @@ a > .headerImage:hover {
     -webkit-box-shadow: 0 0 20px #003a75;
     transform: scale(.98);
     -webkit-transform: scale(.98);
-    transition: transform .2s ease, box-shadow .2s ease ;
-    -webkit-transition: transform .5s , box-shadow .5s ;
+    transition: transform .2s ease, box-shadow.2s ease ;
+    -webkit-transition-timing-function: ease;
+    -webkit-transition-duration: 0.2s;
+
 }
