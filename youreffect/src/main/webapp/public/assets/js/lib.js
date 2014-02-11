@@ -147,6 +147,11 @@ function login(username, password) {
     $("#response-text").html(data.message);
 
 }
+function logout(){
+    if(localStorage.getItem("curLogin").indexOf > 0){
+        localStorage.removeItem("curLogin");
+    }
+}
 /** joint operations */
 
 function saveItems(items) {
@@ -552,6 +557,7 @@ function submitMainForm(){
         items.push(item);
     }
     saveItems(items);
+    window.location.replace("../CheckStats");
 }
 
 /** search functions */

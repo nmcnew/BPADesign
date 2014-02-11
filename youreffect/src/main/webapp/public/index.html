@@ -28,16 +28,13 @@
             <li>
                 <a href="register/">Register</a>
             </li>
-            <li >
-                <div class="navbar-text navbar-left small">Logged in
-                    as:&nbsp;&nbsp;</div>
-
+            <li>
+                <a href="about/">About</a>
             </li>
             <li>
-                <div id="curLogin" class="navbar-text small"></div><form>
-
-
-            </form> <script
+                <div class="navbar-text navbar-left small">Logged in
+                    as:&nbsp;&nbsp;</div>
+                <div id="curLogin" class="navbar-text small"></div> <script
                     type="text/javascript">
                 document.getElementById("curLogin").innerHTML = (curUser.username !== undefined) ? curUser.username : 'Not logged in';
             </script>
@@ -49,16 +46,19 @@
         </ul>
     </div>
 </nav>
-<div class="imageContainer">
-    <img id="1" class="big-image" src="http://i.imgur.com/n82suI6.png" border="0" alt="Image One">
-</div>
+
 <div class="body">
+    <div class="imageContainer">
+        <a href="CostCalculator/">
+        <img class="headerImage img-thumbnail" src="assets/img/CostCalc.png">
+        </a>
+    </div>
+    <h1>Compare Your Utilities</h1>
 
-    <h1>Check your carbon footprint now!</h1>
-
-    <p>
-        You can check your carbon footprint without even signing up. Click below to try it out!
+    <p>Sign up <a href="/register">here</a> to get started!
     </p>
+
+
 
 </div>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

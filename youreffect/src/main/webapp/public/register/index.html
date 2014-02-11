@@ -15,6 +15,18 @@
         $(function() {
             $("#dialog").hide();
             $("#errorLabel").hide();
+            $("#logoutButton").hide();
+            console.log(curLogin);
+            if(curLogin.indexOf('') > 0){
+                $("#logoutButton").show();
+
+                $("#curLogin").show();
+                $("#logInText").show();
+            }
+            else{
+                $("#curLogin").hide();
+                $("#logInText").hide();
+            }
         })
     </script>
 </head>
@@ -27,22 +39,19 @@
             <li><a href="../CheckStats/">Check Stats</a></li>
             <li class="active"><a href="#">Register</a></li>
             <li >
-                <div class="navbar-text navbar-left small">Logged in
-                    as:&nbsp;&nbsp;</div>
+                <div id="logInText" class="navbar-text navbar-left small">Logged in
+                    as:</div>
 
             </li>
             <li>
-                <div id="curLogin" class="navbar-text small"></div><form>
-
-
-            </form> <script
+                <div id="curLogin" class="navbar-text small"></div><script
                     type="text/javascript">
                 document.getElementById("curLogin").innerHTML = (curUser.username !== undefined) ? curUser.username : 'Not logged in';
             </script>
 
 
             </li>
-            <li><button type="button" onclick="logout()" class="btn btn-default navbar-btn btn-sm navbar-right">Log Out</button>
+            <li><button type="button" id="logoutButton" onclick="logout()" class="btn btn-default navbar-btn btn-sm navbar-right">Log Out</button>
             </li>
         </ul>
     </div>
