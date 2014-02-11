@@ -20,13 +20,15 @@ footer {
 .modal-content {
     background-color: #101010;
 }
-.navbar.center .navbar-inner {
-    text-align: center;
-}
-
-.navbar.center .navbar-inner .nav {
+.navbar .nav li {
     display: inline-block;
     float: none;
+    margin:0;
+    padding: 0;
+}
+.navbar .nav {
+    float: none;
+    text-align: center;
 }
 
 .nav > li > a {
@@ -71,10 +73,12 @@ footer {
 a > .headerImage:hover {
     box-shadow: 0 0 20px #003a75;
     -moz-box-shadow: 0 0 20px #003a75;
-    transform: scale(.95);
+    transform: scale(.98);
     transition: transform .2s ease, box-shadow .2s ease ;
 }
 a > .headerImage {
-
+    border-style: solid;
+    border-width: 3px;
+    border-color: #fff;
     transition: transform .2s, box-shadow .2s;
 }

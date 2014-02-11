@@ -69,81 +69,28 @@
         </ul>
     </div>
 </nav>
-<!-- Actual Body -->
+
 <div class="body">
-    <h2>Your Information</h2>
-    <table class="table">
-        <thead>
-        <tr>
-            <th>Username</th>
-            <th>Email</th>
-            <th>State</th>
-        </tr>
-        </thead>
-        <tr>
-            <td><div id="stat-username"></div></td>
-            <td><div id="stat-email"></div></td>
-            <td><div id="stat-state"></div></td>
-        </tr>
-    </table>
-    <h2>Entry Log</h2>
-    <form>
-        <h4>Search</h4>
-        <div class="col-lg-6">
-            <input onkeyup="triggerSearch()" id="key" type="text" class="form-control" placeholder="Search through your Items">
 
+    <h1>About the Developers</h1>
+    <div class="imageContainer">
+        <div class="imgDiv">
+            <h4>Deeban Ramalingam<br/><small>Lead Back End Developer</small></h4>
+            <img class="headerImage img-circle pull-left" src="../assets/img/Deeban.jpg" alt="Image One"><br/>
+
+            <p>Identified and Developed a RESTful interface for the database. </p>
         </div>
-        <div class="col-lg-4">
-            <select onchange="triggerSearch()" id="energy-filter" class="form-control">
-                <option value="">Energy Filter</option>
-                <option value="electricity">electricity</option>
-                <option value="gasoline">gasoline</option>
-            </select>
-        </div>
-        <br/>
-        <div id="num-results" class="col-lg-12"></div>
-    </form>
-    <table class="table">
-        <thead>
-        <tr><th> Name </th> <th> Energy </th><th> Quantity </th><th> Date </th> <th> View Specs </th> <th> Cost </th></tr>
-        </thead>
-        <tbody id="item-list">
+        <br/><br/>
+        <div class="imgDiv">
+            <h4>Nicholas McNew <br/><small>Lead Front End Developer and Database Designer</small></h4>
+            <img class="headerImage img-circle pull-left" src="../assets/img/nick.jpg" alt="Nicholas McNew"><br/>
 
-        </tbody>
-    </table>
-    <br/>
-    <h2>Monthly Cost</h2>
-    <div id="graph">
-        <canvas id="myChart" width="800" height="600"></canvas>
-    </div>
-    <script>
-        $("#stat-username").html(curUser.username);
-        $("#stat-email").html(curUser.email);
-        $("#stat-state").html(curUser.state);
-        populateList($('#item-list'),$("#num-results"));
-        function triggerSearch() {
-            populateFilteredList(search($("#key").val(),$('#energy-filter').val()),$('#item-list'),$('#num-results'));
-        }
-    </script>
-</div><!--end .body tag-->
-
-<div id="myModal" class="modal fade">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">Item Specifications</h4>
-            </div>
-            <div class="modal-body">
-                <br/>
-                <table id="specs" class="table">
-
-                </table>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
+            <p>Created overall look and feel of the website</p>
         </div>
     </div>
+
 </div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>

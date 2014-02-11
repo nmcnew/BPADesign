@@ -147,6 +147,16 @@ function login(username, password) {
     $("#response-text").html(data.message);
 
 }
+function loginBox(username, password){
+    var user = new User(username, '', password, '');
+    var data = loginUser(user);
+    removeAlertClass();
+    if (data.message.toString().indexOf('successful') != -1) {
+        localStorage.setItem("curLogin", data.data.userId);
+        init();
+        document.getElementById("curLogin").innerHTML = curUser.username;
+    }
+}
 function logout(){
     if(localStorage.getItem("curLogin").indexOf > 0){
         localStorage.removeItem("curLogin");
