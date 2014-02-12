@@ -1,13 +1,6 @@
 var userECost = curUser.elecRate;
 function getAssumptions(){
-    $.ajax({
-        url : '../assets/js/assumptions.json',
-        async : false,
-        dataType : 'json',
-        success : function(response) {
-            return response;
-        }
-    });
+    return $.ajax({type: "GET", url: "../assets/js/assumptions.json", async: false}).responseText;
 }
 function airPure(specs, quantity){//Completed Energy Star and User Sides
     //load variables

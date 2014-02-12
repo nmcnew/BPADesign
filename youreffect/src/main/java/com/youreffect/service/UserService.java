@@ -27,6 +27,9 @@ public class UserService {
     @Autowired
     private SaltService saltService;
 
+    @Autowired
+    private User user;
+
     /**
      * sets UserDaoImpl
      * @param userDaoImpl performs spring.database interactions
@@ -121,8 +124,14 @@ public class UserService {
         return userDaoImpl.read(id);
     }
 
-    public User readByEmail(String email) {
-        return userDaoImpl.readByEmail(email);
+    public User resetPassword(String code, String newPassword) {
+        user = userDaoImpl.readByPassword(code);
+        user.setPassword(newPassword);
+        String secret = saltService.generateSalt();
+        user.setSecret(secret);
+        user.setPassword(hashService.md5(user.getSecret()+user.getPassword()));
+        update(user);
+        return user;
     }
 
     /**

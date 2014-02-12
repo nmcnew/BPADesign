@@ -1,13 +1,6 @@
 var userECost = curUser.elecRate;
 function getAssumptions(){
-    $.ajax({
-        url : '../assets/js/assumptions.json',
-        async : false,
-        dataType : 'json',
-        success : function(response) {
-            return response;
-        }
-    });
+    return $.ajax({type: "GET", url: "../assets/js/assumptions.json", async: false}).responseText;
 }
 function airPure(specs, quantity){//Completed Energy Star and User Sides
     //load variables
@@ -79,7 +72,7 @@ function fridgeConsumption(specs, quantity) {
     var userECons = Number(specs.fridgeEConsumption);
 //    var energyStarConsumption = value.assumptions.fridgeAssump.energyStar.energyConsumption[userOpt];
 //    var savings = userECons - energyStarConsumption;
-    return userECons*userECost;
+    return userECons*userECost * quantity;
 }
 function cFridgeCalcs(specs, quantity){
     var value = getAssumptions();
@@ -87,7 +80,7 @@ function cFridgeCalcs(specs, quantity){
     var userECons = Number(specs.cFridgeEConsumption);
 //    var energyStarConsumption = value.assumptions.cFridgeAssump.energyStar.energyConsumption[userOpt];
 //    var savings = userECons - energyStarConsumption;
-    return userECons*userECost;
+    return userECons*userECost * quantity;
 }
 function freezerCalcs(specs, quantity){
     var value = getAssumptions();
@@ -103,7 +96,7 @@ function acrCalcs(specs, quantity){//Room Air conditioning
     var userState = curUser.state;
     var value = getAssumptions();
     var userEnergyCons = (quantity * (userCoolCap/userEER)*value.roomACassumps.stateFullLoadCoolingHours[userState]);
-    return userEnergyCons * userECost * quantity;
+    return userEnergyCons * userECost ;
 }
 function accCalcs(specs, quantity){
     var userThermos = Number(specs.accThermos);
@@ -146,7 +139,7 @@ function furnaceCalcs(specs, quantity){
     var userFurnaceDate = Number(specs.furnEra);
     var userThermos = Number(specs.furnThermos);
     var userECons;
-    var userMMBTU = userHouseSize * value.assumptions[0].HouseYear[userHouseDate] / value.assumptions[0].furnYear[userHeatHouseFuel][userFurnaceDate];
+    var userMMBTU = userHouseSize * value.HouseYear[userHouseDate] / value.furnYear[userHeatHouseFuel][userFurnaceDate];
     if(userThermos == 1){
         userMMBTU = userMMBTU * (.86);
     }
@@ -163,6 +156,6 @@ function bulbCalc(specs, quantity){
     var userHours = Number(specs.bulbAvgDailyUse);
     var userLifetime = Number(specs.bulbLife);
     var userConsumption = (userHours/1000 * userBulbType * (userLifetime / 24))*quantity;
-    return userConsumption*userECost;
+    return userConsumption*userECost * quantity;
 
 }

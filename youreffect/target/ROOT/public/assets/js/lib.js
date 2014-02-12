@@ -147,10 +147,42 @@ function login(username, password) {
     $("#response-text").html(data.message);
 
 }
+function loginBox(username, password){
+    var user = new User(username, '', password, '');
+    var data = loginUser(user);
+    removeAlertClass();
+    if (data.message.toString().indexOf('successful') != -1) {
+        localStorage.setItem("curLogin", data.data.userId);
+        init();
+        document.getElementById("curLogin").innerHTML = curUser.username;
+    }
+}
+function logout(){
+    if(localStorage.getItem("curLogin").indexOf > 0){
+        localStorage.removeItem("curLogin");
+    }
+}
 /** joint operations */
 
 function saveItems(items) {
     createItemList(items);
+}
+
+function resetPassword(code, password) {
+    var response;
+    $.ajax({
+        async : false,
+        url : getContextRoot('public') + '/user/reset/password/'+code+'/'+password,
+        type : 'POST',
+        contentType : "application/json; charset=utf-8",
+        success : function(data) {
+            var data = JSON.parse(data);
+            console.log(data);
+            response = data;
+            document.location = getContextRoot('public') + '/public/register';
+        }
+    })
+    return response;
 }
 
 /** user operations */
@@ -376,7 +408,7 @@ function addOptionGas() {
         case "furn":
             $(".mainForm").append('<div></div>');
             $($(".mainForm")[0].childNodes[$(".mainForm")[0].childNodes.length - 1]).load('testPage.html #furnWrap');
-            $(".removeable").hide();
+
             $("#furnWrap").hide();
             $("#furnWrap").fadeIn();
             break;
@@ -398,49 +430,49 @@ function addOptionElec() {
         case "acCentral":
             $(".mainForm").append('<div></div>');
             $($(".mainForm")[0].childNodes[$(".mainForm")[0].childNodes.length - 1]).load('testPage.html #accWrapper');
-            $(".removeable").hide();
+
             $("#accWrapper").hide();
             $("#accWrapper").fadeIn();
             break;
         case "acRoom":
             $(".mainForm").append('<div></div>');
             $($(".mainForm")[0].childNodes[$(".mainForm")[0].childNodes.length - 1]).load('testPage.html #acrWrapper');
-            $(".removeable").hide();
+
             $("#acrWrapper").hide();
             $("#acrWrapper").fadeIn();
             break;
         case "purifier":
             $(".mainForm").append('<div></div>');
             $($(".mainForm")[0].childNodes[$(".mainForm")[0].childNodes.length - 1]).load('testPage.html #airPureWrapper');
-            $(".removeable").hide();
+
             $("#airPureWrapper").hide();
             $("#airPureWrapper").fadeIn();
             break;
         case "washer":
             $(".mainForm").append('<div></div>');
             $($(".mainForm")[0].childNodes[$(".mainForm")[0].childNodes.length - 1]).load('testPage.html #clothesWasherWrapper');
-            $(".removeable").hide();
+
             $("#clothesWasherWrapper").hide();
             $("#clothesWasherWrapper").fadeIn();
             break;
         case "dehumidifier":
             $(".mainForm").append('<div></div>');
             $($(".mainForm")[0].childNodes[$(".mainForm")[0].childNodes.length - 1]).load('testPage.html #dehumidWrapper');
-            $(".removeable").hide();
+
             $("#dehumidWrapper").hide();
             $("#dehumidWrapper").fadeIn();
             break;
         case "dishwasher":
             $(".mainForm").append('<div></div>');
             $($(".mainForm")[0].childNodes[$(".mainForm")[0].childNodes.length - 1]).load('testPage.html #dishWashWrapper');
-            $(".removeable").hide();
+
             $("#dishWashWrapper").hide();
             $("#dishWashWrapper").fadeIn();
             break;
         case "freezer":
             $(".mainForm").append('<div></div>');
             $($(".mainForm")[0].childNodes[$(".mainForm")[0].childNodes.length - 1]).load('testPage.html #freezerWrapper');
-            $(".removeable").hide();
+
             $("#freezerWrapper").hide();
             $("#freezerWrapper").fadeIn();
             break;
@@ -448,7 +480,7 @@ function addOptionElec() {
             if ($(".mainForm").children("#lBulbWrapper").length == 0) {
                 $(".mainForm").append('<div></div>');
                 $($(".mainForm")[0].childNodes[$(".mainForm")[0].childNodes.length - 1]).load('testPage.html #lBulbWrapper');
-                $(".removeable").hide();
+
                 $("#lBulbWrapper").hide();
                 $("#lBulbWrapper").fadeIn();
             }
@@ -456,18 +488,19 @@ function addOptionElec() {
         case "fridge":
             $(".mainForm").append('<div></div>');
             $($(".mainForm")[0].childNodes[$(".mainForm")[0].childNodes.length - 1]).load('testPage.html #fridgeWrapper');
-            $(".removeable").hide();
+
             $("#fridgeWrapper").hide();
             $("#fridgeWrapper").fadeIn();
             break;
         case "compactFridge":
             $(".mainForm").append('<div></div>');
             $($(".mainForm")[0].childNodes[$(".mainForm")[0].childNodes.length - 1]).load('testPage.html #cFridgeWrapper');
-            $(".removeable").hide();
+
             $("#cFridgeWrapper").hide();
             $("#cFridgeWrapper").fadeIn();
             break;
     }
+
 }
 
 /** DOM manipulations */
@@ -552,6 +585,7 @@ function submitMainForm(){
         items.push(item);
     }
     saveItems(items);
+    window.location.replace("../CheckStats");
 }
 
 /** search functions */

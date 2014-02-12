@@ -4,20 +4,32 @@
        xmlns:mvc="http://www.springframework.org/schema/mvc"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd
-        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/data/mongo http://www.springframework.org/schema/data/mongo/spring-mongo.xsd">
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
+    <!--
+    ___________________________________________
+
+    SPRING MODEL-VIEW-CONTROLLER CONFIGURATIONS
+
+    Author: Deeban Ramalingam
+    ___________________________________________
+
+    -->
+
+
+    <!-- spring contexts -->
     <context:component-scan base-package="com.youreffect"/>
+    <context:property-placeholder location="classpath:database/database.properties" order="1" ignore-unresolvable="true" />
+    <context:property-placeholder location="classpath:mail/mail.properties" order="2" ignore-unresolvable="true"/>
 
+    <!-- mvc mapping -->
     <mvc:annotation-driven />
-
     <mvc:resources mapping="/public/**" location="/public/" />
     <mvc:resources mapping="/doc/**" location="/doc/" />
 
-    <context:property-placeholder location="classpath:database/database.properties"/>
-
+    <!-- hibernate -->
     <bean id="sessionFactory"
           class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
-
         <property name="dataSource">
             <ref bean="dataSource"/>
         </property>
@@ -36,6 +48,7 @@
         </property>
     </bean>
 
+    <!-- MySQL Database -->
     <bean id="dataSource"
           class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="${jdbc.driverClassName}" />
@@ -44,56 +57,65 @@
         <property name="password" value="${jdbc.password}" />
     </bean>
 
-    <bean id="user" class="com.youreffect.model.User">
-
-    </bean>
-
-    <bean id="userDaoImpl" class="com.youreffect.impl.UserDaoImpl" >
+    <!-- user-related beans -->
+    <bean id="user" class="com.youreffect.model.User" />
+    <bean id="userDaoImpl" class="com.youreffect.impl.UserDaoImpl">
         <property name="sessionFactory" ref="sessionFactory"></property>
     </bean>
-
     <bean id="userservice" class="com.youreffect.service.UserService">
         <property name="userDaoImpl" ref="userDaoImpl"/>
     </bean>
-
-    <bean id="item" class="com.youreffect.model.Item">
-
-    </bean>
-
-    <bean id="items" class="java.util.List" abstract="true">
-
-    </bean>
-
+    <!-- item-related beans -->
+    <bean id="item" class="com.youreffect.model.Item" />
+    <bean id="items" class="java.util.List" abstract="true" />
     <bean id="itemDaoImpl" class="com.youreffect.impl.ItemDaoImpl" >
         <property name="sessionFactory" ref="sessionFactory"></property>
     </bean>
-
     <bean id="itemservice" class="com.youreffect.service.ItemService">
         <property name="itemDaoImpl" ref="itemDaoImpl"/>
     </bean>
 
+    <!-- GSON -->
     <bean id="gson" class="com.google.gson.Gson"></bean>
+    <bean id="jsonObject" class="com.google.gson.JsonObject" />
 
-    <bean id="hashservice" class="com.youreffect.service.HashService" >
-        <property name="salt" value="qwerty12345!@#$%" />
-    </bean>
-
-    <bean id="responserservice" class="com.youreffect.service.ResponseService" >
+    <!-- service -->
+    <!-- hash -->
+    <bean id="hashService" class="com.youreffect.service.HashService" />
+    <!-- salt -->
+    <bean id="saltService" class="com.youreffect.service.SaltService" />
+    <!-- response -->
+    <bean id="responseservice" class="com.youreffect.service.ResponseService" >
         <constructor-arg index="0" value=""/>
         <constructor-arg index="1" value=""/>
     </bean>
-
-    <!-- also add the following beans to get rid of some exceptions -->
-    <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
-    <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping">
+    <!-- mail -->
+    <bean id="mailService" class="com.youreffect.service.MailService">
+        <constructor-arg value="${mail.username}"/>
+        <property name="mailSender" ref="mailSender" />
     </bean>
 
+    <!-- mail client -->
+    <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+        <property name="host" value="${mail.host}" />
+        <property name="port" value="${mail.port}" />
+        <property name="username" value="${mail.username}" />
+        <property name="password" value="${mail.password}" />
+
+        <property name="javaMailProperties">
+            <props>
+                <prop key="mail.smtp.auth">true</prop>
+                <prop key="mail.smtp.starttls.enable">true</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!-- annotations adapter and mapping and view resolver -->
+    <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
+    <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping" />
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-
         <property name="prefix" value="/WEB-INF/view/"/>
-
         <property name="suffix" value=".jsp"/>
-
     </bean>
 
 </beans>

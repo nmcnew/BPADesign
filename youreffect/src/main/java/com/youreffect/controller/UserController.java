@@ -137,4 +137,15 @@ public class UserController {
         logger.info(responseService.toString());
         return responseService.toString();
     }
+
+    @RequestMapping(value = "/reset/password/{code}/{newPassword}", method = RequestMethod.POST)
+    public @ResponseBody String changePassword(@PathVariable String code, @PathVariable String newPassword) {
+        logger.info("POST /user/reset/password/"+code+"/"+newPassword);
+        user = userService.resetPassword(code, newPassword);
+        responseService.setData(user);
+        responseService.setMessage("password changed");
+        user = null;
+        logger.info(responseService.toString());
+        return responseService.toString();
+    }
 }

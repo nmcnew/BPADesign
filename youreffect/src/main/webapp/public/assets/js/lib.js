@@ -168,6 +168,23 @@ function saveItems(items) {
     createItemList(items);
 }
 
+function resetPassword(code, password) {
+    var response;
+    $.ajax({
+        async : false,
+        url : getContextRoot('public') + '/user/reset/password/'+code+'/'+password,
+        type : 'POST',
+        contentType : "application/json; charset=utf-8",
+        success : function(data) {
+            var data = JSON.parse(data);
+            console.log(data);
+            response = data;
+            document.location = getContextRoot('public') + '/public/register';
+        }
+    })
+    return response;
+}
+
 /** user operations */
 
 function registerUser(user) {

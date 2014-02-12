@@ -47,7 +47,7 @@ public class MailController {
         logger.info(username);
         user = userService.read(hashService.md5(username));
         logger.info(user);
-        mailService.sendMail(user.getEmail(),"Your Effect - password recall","Your password code is " + user.getPassword());
+        mailService.sendMail(user.getEmail(),"Your Effect - password recall","Your password reset code is " + user.getPassword());
         responseService.setData(user);
         responseService.setMessage("message successfully sent");
         user = null;

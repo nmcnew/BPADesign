@@ -1,132 +1,147 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Your Effect</title>
-        <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
-        <link href="../assets/css/MainStyles.css" rel="stylesheet">
-        <link href="../assets/css/hover.css" rel="stylesheet">
-		<script type="text/javascript"
-		src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script src="../assets/js/bootstrap.min.js"></script>
-        <script src="../assets/js/model/user.js"></script>
-		<script src="../assets/js/model/item.js"></script>
-        <script src="../assets/js/lib.js"></script>
-		<script src="../assets/js/calculate.js"></script>
-        <script src="../assets/js/Chart.js"></script>
-    </head>
-	<body>
-		<!-- Header -->
-		<nav class="navbar navbar-inverse center" role="navigation">
-			<div class="navbar-inner">
-				<ul class="nav navbar-nav">
-					<li>
-						<a href="../">Home</a>
-					</li>
-					<li>
-						<a href="../CostCalculator">Cost Calculator</a>
-					</li>
-					<li class="active">
-						<a href="../CheckStats/">Check Stats</a>
-					</li>
-					<li>
-						<a href="../register/">Register</a>
-					</li>
-                    <li >
-                        <div class="navbar-text navbar-left small">Logged in
-                            as:&nbsp;&nbsp;</div>
+<head>
+    <title>Your Effect</title>
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/MainStyles.css" rel="stylesheet">
+    <link href="../assets/css/hover.css" rel="stylesheet">
+    <script type="text/javascript"
+            src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/model/user.js"></script>
+    <script src="../assets/js/model/item.js"></script>
+    <script src="../assets/js/lib.js"></script>
+    <script src="../assets/js/calculate.js"></script>
+    <script src="../assets/js/Chart.js"></script>
+    <script type="text/javascript">
+        $(function(){
 
-                    </li>
-                    <li>
-                        <div id="curLogin" class="navbar-text small"></div><form>
+            // Fix input element click problem
+            $('.dropdown input, .dropdown label').click(function(e) {
+                e.stopPropagation();
+            });
 
+            $("#loggedIn").hide();
+            $("#loginLink").hide();
+            if(curUser.userId.length > 0){
+                $("#loggedIn").show();
+            }
+            else{
+                $("#loginLink").show();
+            }
+        });
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-inverse center" role="navigation">
+    <div class="navbar-inner">
+        <ul class="nav navbar-nav collapse navbar-collapse">
+            <li><a href="../">Home</a></li>
+            <li ><a href="../CostCalculator/">Cost Calculator</a></li>
+            <li class="active"><a href="../CheckStats/">Check Stats</a></li>
+            <li><a href="../about">About</a></li>
+            <li ><a href="../register">Register</a></li>
 
-                    </form> <script
-                            type="text/javascript">
-                        document.getElementById("curLogin").innerHTML = (curUser.username !== undefined) ? curUser.username : 'Not logged in';
-                    </script>
+            <li id="loginLink" class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<span class="caret"></span></a>
 
-
-                    </li>
-                    <li><button type="button" onclick="logout()" class="btn btn-default navbar-btn btn-sm navbar-right">Log Out</button>
-                    </li>
-				</ul>
-			</div>
-		</nav>
-		<!-- Actual Body -->
-		<div class="body">
-			<h2>Your Information</h2>
-			<table class="table">
-				<thead>
-					<tr>
-						<th>Username</th>
-						<th>Email</th>
-						<th>State</th>
-					</tr>
-				</thead>
-				<tr>
-					<td><div id="stat-username"></div></td>
-					<td><div id="stat-email"></div></td>
-					<td><div id="stat-state"></div></td>
-				</tr>
-			</table>
-			<h2>Entry Log</h2>
-			<form>
-				<h4>Search</h4>
-				<div class="col-lg-6">
-					<input onkeyup="triggerSearch()" id="key" type="text" class="form-control" placeholder="Search through your Items">
-
-				</div>
-                <div class="col-lg-4">
-                    <select onchange="triggerSearch()" id="energy-filter" class="form-control">
-                        <option value="">Energy Filter</option>
-                        <option value="electricity">electricity</option>
-                        <option value="gasoline">gasoline</option>
-                    </select>
+                <div class="dropdown-menu">
+                    <form class="navbar-search pull-right" style="padding:15px;">
+                        <input type="text" id="uname" class="form-control input-sm" placeholder="Login">
+                        <input type="password" id="pword" class="form-control input-sm" placeholder="Password">
+                        <button type="button" onclick="login($('#uname').val(),$('#pword').val())" value="Login" class="btn btn-primary btn-sm">Log In</button>
+                    </form>
                 </div>
-                <br/>
-                <div id="num-results" class="col-lg-12"></div>
-			</form>
-			<table class="table">
-				<thead>
-                <tr><th> Name </th> <th> Energy </th><th> Quantity </th><th> Date </th> <th> View Specs </th> <th> Cost </th></tr>
-				</thead>
-                <tbody id="item-list">
+            </li>
+            <li id="loggedIn">
+                <a href="#" id="curLogin" class="dropdown-toggle" data-toggle="dropdown"></a>
+                <div class="dropdown-menu">
+                    <ul>
+                        <script type="text/javascript">
+                            document.getElementById("curLogin").innerHTML = (curUser.username !== undefined) ? curUser.username : 'Not logged in';
+                        </script>
+                        <li><a href="#" onclick="logout()">Log Out</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- Actual Body -->
+<div class="body">
+    <h2>Your Information</h2>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>State</th>
+        </tr>
+        </thead>
+        <tr>
+            <td><div id="stat-username"></div></td>
+            <td><div id="stat-email"></div></td>
+            <td><div id="stat-state"></div></td>
+        </tr>
+    </table>
+    <h2>Entry Log</h2>
+    <form>
+        <h4>Search</h4>
+        <div class="col-lg-6">
+            <input onkeyup="triggerSearch()" id="key" type="text" class="form-control" placeholder="Search through your Items">
 
-                </tbody>
-			</table>
-            <br/>
-            <h2>Monthly Cost</h2>
-            <div id="graph">
-                <canvas id="myChart" width="800" height="600"></canvas>
+        </div>
+        <div class="col-lg-4">
+            <select onchange="triggerSearch()" id="energy-filter" class="form-control">
+                <option value="">Energy Filter</option>
+                <option value="electricity">electricity</option>
+                <option value="gasoline">gasoline</option>
+            </select>
+        </div>
+        <br/>
+        <div id="num-results" class="col-lg-12"></div>
+    </form>
+    <table class="table">
+        <thead>
+        <tr><th> Name </th> <th> Energy </th><th> Quantity </th><th> Date </th> <th> View Specs </th> <th> Cost </th></tr>
+        </thead>
+        <tbody id="item-list">
+
+        </tbody>
+    </table>
+    <br/>
+    <h2>Monthly Cost</h2>
+    <div id="graph">
+        <canvas id="myChart" width="800" height="600"></canvas>
+    </div>
+    <script>
+        $("#stat-username").html(curUser.username);
+        $("#stat-email").html(curUser.email);
+        $("#stat-state").html(curUser.state);
+        populateList($('#item-list'),$("#num-results"));
+        function triggerSearch() {
+            populateFilteredList(search($("#key").val(),$('#energy-filter').val()),$('#item-list'),$('#num-results'));
+        }
+    </script>
+</div><!--end .body tag-->
+
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Item Specifications</h4>
             </div>
-            <script>
-                $("#stat-username").html(curUser.username);
-                $("#stat-email").html(curUser.email);
-                $("#stat-state").html(curUser.state);
-                populateList($('#item-list'),$("#num-results"));
-                function triggerSearch() {
-                    populateFilteredList(search($("#key").val(),$('#energy-filter').val()),$('#item-list'),$('#num-results'));
-                }
-            </script>
-        </div><!--end .body tag-->
+            <div class="modal-body">
+                <br/>
+                <table id="specs" class="table">
 
-        <div id="myModal" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Item Specifications</h4>
-                    </div>
-                    <div class="modal-body">
-                        <br/>
-                        <table id="specs" class="table">
-
-                        </table>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
-	</body>
+    </div>
+</div>
+</body>
 </html>
