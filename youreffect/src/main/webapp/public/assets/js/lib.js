@@ -169,7 +169,7 @@ function saveItems(items) {
 }
 
 function resetPassword(code, password) {
-    var response;
+    var response = "";
     $.ajax({
         async : false,
         url : getContextRoot('public') + '/user/reset/password/'+code+'/'+password,
@@ -179,9 +179,16 @@ function resetPassword(code, password) {
             var data = JSON.parse(data);
             console.log(data);
             response = data;
-            document.location = getContextRoot('public') + '/public/register';
         }
-    })
+    });
+    if(response.toString() === "success"){
+        window.location.replace("../register");
+    }
+    else{
+        $("#alertText").text(response + " ,please try again");
+        $(".alert").show();
+    }
+    console.log(response);
     return response;
 }
 
@@ -304,6 +311,7 @@ function createItem(item) {
             console.log(data);
             response = data;
         }
+
     });
     return response;
 }

@@ -38,7 +38,10 @@ footer {
 .nav > li > a:hover {
     transition: all .35s ease;
 }
-
+hr {
+    border-color: #fff;
+    background-color:#fff;
+}
 .imageContainer {
     width: 100%;
     margin:0 auto;
@@ -70,11 +73,10 @@ footer {
 .nav-pills {
 	margin: 0 auto;
 }
-
+.headerImage{
+    border: solid 3px #fff;
+}
 a > .headerImage {
-    border-style: solid;
-    border-width: 3px;
-    border-color: #fff;
     transition: transform .2s, box-shadow .2s;
 
     -webkit-transition-timing-function: ease;

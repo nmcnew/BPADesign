@@ -123,10 +123,10 @@ function accCalcs(specs, quantity){
             break;
     }
     if(userThermos == 1){
-        userEnergyCons = .84*quantity*userState*(1/userSEER)/1000;
+        userEnergyCons = .84*quantity*value.roomACassumps.stateFullLoadCoolingHours[userState]*36000*(1/userSEER)/1000;
     }
     else{
-        userEnergyCons = quantity*userState*(1/userSEER)/1000;
+        userEnergyCons = quantity*value.roomACassumps.stateFullLoadCoolingHours[userState]*36000*(1/userSEER)/1000;
     }
     return userEnergyCons * userECost;
 }
