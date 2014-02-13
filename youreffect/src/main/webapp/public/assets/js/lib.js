@@ -594,7 +594,7 @@ function submitMainForm(){
         items.push(item);
     }
     saveItems(items);
-    //window.location.replace("../CheckStats");
+    window.location.replace("../CheckStats");
 }
 
 /** search functions */
