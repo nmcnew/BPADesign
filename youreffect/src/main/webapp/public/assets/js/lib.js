@@ -415,10 +415,10 @@ function addOptionGas() {
     switch (selected) {
         case "furn":
             $(".mainForm").append('<div></div>');
-            $($(".mainForm")[0].childNodes[$(".mainForm")[0].childNodes.length - 1]).load('testPage.html #furnWrap');
+            $($(".mainForm")[0].childNodes[$(".mainForm")[0].childNodes.length - 1]).load('testPage.html #furnWrapper');
 
-            $("#furnWrap").hide();
-            $("#furnWrap").fadeIn();
+            $("#furnWrapper").hide();
+            $("#furnWrapper").fadeIn();
             break;
     }
 }
@@ -557,6 +557,7 @@ function submitMainForm(){
             var node = $(children[j]);
             if (node.is('h3')) {
                 item.name = $(node).html().split("<")[0].trim();
+                console.log(item.name);
             }
             if (node.is('input')) {
                 if ($(node).attr('name') == 'energy') {
@@ -593,7 +594,7 @@ function submitMainForm(){
         items.push(item);
     }
     saveItems(items);
-    window.location.replace("../CheckStats");
+    //window.location.replace("../CheckStats");
 }
 
 /** search functions */
