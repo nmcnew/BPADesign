@@ -1,7 +1,7 @@
 */.idea/
 */target/
 *.properties
-*/workspace.xml
+.idea/workspace.xml
 #################
 ## Eclipse
 #################

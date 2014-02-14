@@ -508,6 +508,7 @@ function addOptionElec() {
             $("#cFridgeWrapper").fadeIn();
             break;
     }
+    $(".removeable").fadeOut();
 
 }
 
@@ -653,37 +654,37 @@ function prepareRow(item, s) {
     var mySpecs = JSON.parse(item.specs);
     switch(item.name){
         case("Light Bulbs"):
-            costOf = bulbCalc(mySpecs, item.quantity);
+            costOf = bulbCalc(mySpecs, item.quantity)[0];
             break;
         case("Central Air Conditioning"):
-            costOf = accCalcs(mySpecs, item.quantity);
+            costOf = accCalcs(mySpecs, item.quantity)[0];
             break;
         case("Furnace"):
-            costOf = furnaceCalcs(mySpecs, item.quantity);
+            costOf = furnaceCalcs(mySpecs, item.quantity)[0];
             break;
         case("Personal Air Conditioner"):
-            costOf = acrCalcs(mySpecs, item.quantity);
+            costOf = acrCalcs(mySpecs, item.quantity)[0];
             break;
         case("Air Purifier"):
-            costOf = airPure(mySpecs,item.quantity);
+            costOf = airPure(mySpecs,item.quantity)[0];
             break;
         case("Clothes Washer"):
-            costOf = clothesWasher(mySpecs, item.quantity);
+            costOf = clothesWasher(mySpecs, item.quantity)[0];
             break;
         case("Dehumidifier"):
-            costOf = dehumidifierCalcs(mySpecs, item.quantity);
+            costOf = dehumidifierCalcs(mySpecs, item.quantity)[0];
             break;
         case("Dishwasher"):
-            costOf = dishwasherCalcs(mySpecs, item.quantity);
+            costOf = dishwasherCalcs(mySpecs, item.quantity)[0];
             break;
         case("Refrigerator"):
-            costOf = fridgeConsumption(mySpecs,item.quantity);
+            costOf = fridgeConsumption(mySpecs, item.quantity)[0];
             break;
         case("Refrigerator - Compact"):
-            costOf = cFridgeCalcs(mySpecs,item.quantity);
+            costOf = cFridgeCalcs(mySpecs, item.quantity)[0];
             break;
         case("Freezer"):
-            costOf = freezerCalcs(mySpecs,item.quantity);
+            costOf = freezerCalcs(mySpecs, item.quantity)[0];
             break;
     }
     s += ("<td>$"+ (costOf).toFixed(2) +"</td>");
