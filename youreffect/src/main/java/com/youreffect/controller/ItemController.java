@@ -44,7 +44,7 @@ public class ItemController {
     private ResponseService responseService;
 
     /**
-     * creates item
+     * creates item in database
      * @param data JSON from client
      * @return JSON to client
      */
@@ -61,7 +61,7 @@ public class ItemController {
     }
 
     /**
-     * creates list of items
+     * creates list of items in database
      * @param data JSON from client
      * @return JSON to client
      */
@@ -78,7 +78,7 @@ public class ItemController {
     }
 
     /**
-     * views item
+     * views item in database
      * @param id item id
      * @return JSON to client
      */
@@ -99,7 +99,7 @@ public class ItemController {
     }
 
     /**
-     * views list of items
+     * views list of items in database
      * @param id item id
      * @return JSON to client
      */
@@ -115,7 +115,7 @@ public class ItemController {
     }
 
     /**
-     * update item
+     * update item in database
      * @param data JSON from client
      * @return JSON to client
      */
@@ -132,7 +132,7 @@ public class ItemController {
     }
 
     /**
-     * delete item
+     * delete item in database
      * @param id JSON from client
      * @return JSON to client
      */

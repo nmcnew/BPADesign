@@ -1,6 +1,5 @@
 package com.youreffect.controller;
 
-import com.google.gson.Gson;
 import com.youreffect.model.User;
 import com.youreffect.service.HashService;
 import com.youreffect.service.MailService;
@@ -9,7 +8,10 @@ import com.youreffect.service.UserService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * @author Deeban Ramalingam
@@ -25,9 +27,6 @@ public class MailController {
     @Autowired
     private MailService mailService;
 
-    @Autowired
-    private Gson gson;
-
     /** provide a format for sending responses to clients */
     @Autowired
     private ResponseService responseService;
@@ -35,18 +34,23 @@ public class MailController {
     @Autowired
     private UserService userService;
 
+    /** user reference */
     @Autowired
     private User user;
 
+    /** hash away critical data */
     @Autowired
     private HashService hashService;
 
+    /**
+     * uses username to send email to client with password reset code
+     * @param username user username
+     * @return JSON to client
+     */
     @RequestMapping(value = "recall/{username}", method = RequestMethod.GET)
     public @ResponseBody String forgot(@PathVariable String username) {
         logger.info("GET /mail/recall/"+username);
-        logger.info(username);
         user = userService.read(hashService.md5(username));
-        logger.info(user);
         mailService.sendMail(user.getEmail(),"Your Effect - password recall","Your password reset code is " + user.getPassword());
         responseService.setData(user);
         responseService.setMessage("message successfully sent");

@@ -20,8 +20,6 @@ public class User {
     private String state;
     /** date registered */
     private String dateRegistered;
-    /** dates logged in */
-    private String datesLoggedIn;
     /** electricity rate in kilowatt-hr */
     private double elecRate;
     /** cost of gas us dollars per cost per cubic foot*/
@@ -107,42 +105,66 @@ public class User {
         this.password = password;
     }
 
+    /**
+     * get user secret
+     * @return user secret
+     */
     public String getSecret() {
         return secret;
     }
 
+    /**
+     * set user secret
+     * @param secret set user secret to this
+     */
     public void setSecret(String secret) {
         this.secret = secret;
     }
 
+    /**
+     * get date registered
+     * @return date registered
+     */
     public String getDateRegistered() {
         return dateRegistered;
     }
 
+    /**
+     * set date registered
+     * @param dateRegistered set date registered to this
+     */
     public void setDateRegistered(String dateRegistered) {
         this.dateRegistered = dateRegistered;
     }
 
-    public String getDatesLoggedIn() {
-        return datesLoggedIn;
-    }
-
-    public void setDatesLoggedIn(String datesLoggedIn) {
-        this.datesLoggedIn = datesLoggedIn;
-    }
-
+    /**
+     * get cost of gas
+     * @return cost of gas
+     */
     public double getCostOfGas() {
         return costOfGas;
     }
 
+    /**
+     * set cost of gas
+     * @param costOfGas set cost of gas to this
+     */
     public void setCostOfGas(double costOfGas) {
         this.costOfGas = costOfGas;
     }
 
+    /**
+     * get electricity rate
+     * @return electricity rate
+     */
     public double getElecRate() {
         return elecRate;
     }
 
+    /**
+     * set electricity rate
+     * @param elecRate set electricity rate to this
+     */
     public void setElecRate(double elecRate) {
         this.elecRate = elecRate;
     }
@@ -153,7 +175,7 @@ public class User {
      */
     public String toString() {
         return String.format(
-                "User[id=%s, username='%s', email='%s', state='%s', password='%s', dateRegistered='%s', datesLoggedIn='%s', elecRate='%s', costOfGas='%s'",
-                userId, username, email, state, password, dateRegistered, datesLoggedIn, elecRate, costOfGas);
+                "User[id=%s, username='%s', email='%s', state='%s', password='%s', dateRegistered='%s', elecRate='%s', costOfGas='%s'",
+                userId, username, email, state, password, dateRegistered, elecRate, costOfGas);
     }
 }

@@ -85,18 +85,39 @@
         </tr>
     </table>
     <h2>Entry Log</h2>
-    <form>
+    <form onsubmit="return false;">
         <h4>Search</h4>
-        <div class="col-lg-6">
-            <input onkeyup="triggerSearch()" id="key" type="text" class="form-control" placeholder="Search through your Items">
-
+        <div class="col-lg-5">
+            <input id="key" type="text" class="form-control" placeholder="Search through your Items by Name">
         </div>
         <div class="col-lg-4">
-            <select onchange="triggerSearch()" id="energy-filter" class="form-control">
-                <option value="">Energy Filter</option>
+            <select id="date-filter" class="form-control">
+                <option value="">Filter Items by Energy Type</option>
                 <option value="electricity">electricity</option>
                 <option value="gasoline">gasoline</option>
             </select>
+        </div>
+        <div class="col-lg-3">
+            <select id="energy-filter" class="form-control">
+                <option value="0">Filter Items by Date</option>
+                <option value="1">Jan</option>
+                <option value="2">Feb</option>
+                <option value="3">Mar</option>
+                <option value="4">Apr</option>
+                <option value="5">May</option>
+                <option value="6">Jun</option>
+                <option value="7">Jul</option>
+                <option value="8">Aug</option>
+                <option value="9">Sep</option>
+                <option value="10">Oct</option>
+                <option value="11">Nov</option>
+                <option value="12">Dec</option>
+            </select>
+        </div>
+        <br/>
+        <br/>
+        <div class="col-lg-12">
+            <button type="submit" class="btn btn-info" onclick="triggerSearch()">SEARCH</button>
         </div>
         <br/>
         <div id="num-results" class="col-lg-12"></div>
@@ -120,7 +141,7 @@
         $("#stat-state").html(curUser.state);
         populateList($('#item-list'),$("#num-results"));
         function triggerSearch() {
-            populateFilteredList(search($("#key").val(),$('#energy-filter').val()),$('#item-list'),$('#num-results'));
+            populateFilteredList(search($("#key").val(),$('#energy-filter').val(),$('#date-filter').val()),$('#item-list'),$('#num-results'));
         }
     </script>
 </div><!--end .body tag-->

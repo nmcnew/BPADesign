@@ -169,7 +169,7 @@ function saveItems(items) {
 }
 
 function resetPassword(code, password) {
-    var response;
+    var response = "";
     $.ajax({
         async : false,
         url : getContextRoot('public') + '/user/reset/password/'+code+'/'+password,
@@ -179,9 +179,16 @@ function resetPassword(code, password) {
             var data = JSON.parse(data);
             console.log(data);
             response = data;
-            document.location = getContextRoot('public') + '/public/register';
         }
-    })
+    });
+    if(response.toString() === "success"){
+        window.location.replace("../register");
+    }
+    else{
+        $("#alertText").text(response + " ,please try again");
+        $(".alert").show();
+    }
+    console.log(response);
     return response;
 }
 
@@ -304,6 +311,7 @@ function createItem(item) {
             console.log(data);
             response = data;
         }
+
     });
     return response;
 }
@@ -407,10 +415,10 @@ function addOptionGas() {
     switch (selected) {
         case "furn":
             $(".mainForm").append('<div></div>');
-            $($(".mainForm")[0].childNodes[$(".mainForm")[0].childNodes.length - 1]).load('testPage.html #furnWrap');
+            $($(".mainForm")[0].childNodes[$(".mainForm")[0].childNodes.length - 1]).load('testPage.html #furnWrapper');
 
-            $("#furnWrap").hide();
-            $("#furnWrap").fadeIn();
+            $("#furnWrapper").hide();
+            $("#furnWrapper").fadeIn();
             break;
     }
 }
@@ -549,6 +557,7 @@ function submitMainForm(){
             var node = $(children[j]);
             if (node.is('h3')) {
                 item.name = $(node).html().split("<")[0].trim();
+                console.log(item.name);
             }
             if (node.is('input')) {
                 if ($(node).attr('name') == 'energy') {
@@ -582,7 +591,9 @@ function submitMainForm(){
         }
         item.userId = curUser.userId;
         item.specs = JSON.stringify(item.specs);
-        items.push(item);
+        if (item.quantity > 0) {
+            items.push(item);
+        }
     }
     saveItems(items);
     window.location.replace("../CheckStats");
@@ -590,11 +601,11 @@ function submitMainForm(){
 
 /** search functions */
 
-function search(key, filter) {
+function search(key, filter1, filter2) {
     var items = curItems;
     var hits = [];
     $.each(items, function (itemId, item) {
-        if(item.name.toLowerCase().indexOf(key.toLowerCase()) != -1 && (filter.length == 0 || (filter.length > 0 && item.energy == filter))) {
+        if(item.name.toLowerCase().indexOf(key.toLowerCase()) != -1 && (filter1.length == 0 || (filter1.length > 0 && item.energy == filter1)) && (parseInt(filter2) == 0 || parseInt(item.date.toString().split("-")[1]) == filter2)) {
             hits.push(item);
         }
     });
@@ -605,8 +616,10 @@ function populateFilteredList(hits, list, reply) {
     list.empty();
     var s = "";
     for (var i in hits) {
-        var item = hits[i];
-        s = prepareRow(item, s);
+        try {
+            var item = hits[i];
+            s = prepareRow(item, s);
+        } catch (e) {console.log(e);}
     }
     list.append(s);
     reply.html(hits.length + " results");
@@ -617,9 +630,11 @@ function populateList(list,reply) {
     var items = curItems;
     var s = "";
     $.each(items, function (itemId, item) {
-        console.log(item);
-        s = prepareRow(item, s);
-        ++count;
+        try {
+            console.log(item);
+            s = prepareRow(item, s);
+            ++count;
+        } catch (e) {console.log(e);}
     });
     list.append(s);
     reply.html(count + " result(s)");

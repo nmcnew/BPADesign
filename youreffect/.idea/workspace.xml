@@ -6,8 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97712bb5-bda5-49ae-9d15-711cfe219217" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" afterPath="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" />
+    <list default="true" id="97712bb5-bda5-49ae-9d15-711cfe219217" name="Default" comment="fixed furnWrapper form submit&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="youreffect.iws" />
@@ -71,7 +70,17 @@
     <favorites_list name="youreffect" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="MailController.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/MailController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="69" selection-start="1356" selection-end="1356" vertical-scroll-proportion="0.57746476" vertical-offset="59" max-vertical-offset="840">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -99,7 +108,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/youreffect/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/youreffect/service/ItemService.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/youreffect/AppTests.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/controller/ItemController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/youreffect/controller/AdminController.java" />
         <option value="$PROJECT_DIR$/../.gitignore" />
@@ -111,16 +119,12 @@
         <option value="$PROJECT_DIR$/src/main/webapp/public/register/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/database/database.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/CostCalculator/index.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/public/CheckStats/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/mail/mail.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/hash/hash.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/youreffect/impl/ItemDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/service/MailService.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/service/SaltService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate/User.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/model/User.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/youreffect/service/HashService.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/model/user.js" />
@@ -128,13 +132,18 @@
         <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/calculate.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/assumptions.json" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/register/resetPassword.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/controller/MailController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/impl/UserDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/about/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/CostCalculator/testPage.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/public/CheckStats/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/controller/MailController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/impl/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/service/MailService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/service/SaltService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/youreffect/controller/ItemController.java" />
       </list>
     </option>
   </component>
@@ -223,8 +232,30 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
+              <option name="myItemId" value="YourEffect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YourEffect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="youreffect" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -246,59 +277,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YourEffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YourEffect" />
+              <option name="myItemId" value="youreffect" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CostCalculator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YourEffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YourEffect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -789,7 +776,7 @@
       <workItem from="1392087101857" duration="3200000" />
       <workItem from="1392091686949" duration="4907000" />
       <workItem from="1392179475307" duration="7602000" />
-      <workItem from="1392332562173" duration="2265000" />
+      <workItem from="1392332562173" duration="6621000" />
     </task>
     <task id="LOCAL-00001" summary="integrated my updates to the synced project">
       <created>1391399472201</created>
@@ -823,15 +810,19 @@
       <created>1392335109903</created>
       <updated>1392335109903</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fixed furnWrapper form submit&#10;">
+      <created>1392335291518</created>
+      <updated>1392335291518</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149603000" />
+    <option name="totallyTimeSpent" value="153959000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1436" height="878" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -846,11 +837,12 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880098" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32880098" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880098" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880098" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880098" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
@@ -862,7 +854,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880098" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hibernate Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="soapUI Navigator" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -894,7 +885,9 @@
     <MESSAGE value="updated javadocs and deleted admin controller" />
     <MESSAGE value="added secret property to user, removed unnecessary maven dependencies, added functionality for email, organized spring config xml" />
     <MESSAGE value="fixed furnWrapper form submit" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed furnWrapper form submit" />
+    <MESSAGE value="fixed furnWrapper form submit&#10;" />
+    <MESSAGE value="updated javadocs&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated javadocs&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -923,11 +916,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="616">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/dao/ItemDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="27" selection-start="253" selection-end="253" vertical-scroll-proportion="0.34951457" vertical-offset="0" max-vertical-offset="515" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate/Item.hbm.xml">
@@ -1083,23 +1071,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/service/ItemService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="0" selection-start="1506" selection-end="1506" vertical-scroll-proportion="0.0" vertical-offset="584" max-vertical-offset="1365" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/model/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="22" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1830" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="14" selection-start="388" selection-end="388" vertical-scroll-proportion="0.29126215" vertical-offset="0" max-vertical-offset="515">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="3450" />
@@ -1125,43 +1096,6 @@
         <state line="3" column="14" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/service/ResponseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="161" selection-end="161" vertical-scroll-proportion="0.15364917" vertical-offset="0" max-vertical-offset="930" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/ItemController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="7" selection-start="605" selection-end="605" vertical-scroll-proportion="0.13444301" vertical-offset="0" max-vertical-offset="2145">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/impl/ItemDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="5" selection-start="1037" selection-end="1037" vertical-scroll-proportion="0.46601942" vertical-offset="330" max-vertical-offset="1095" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="15" selection-start="496" selection-end="496" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/service/SaltService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="34" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="5" selection-start="2332" selection-end="2332" vertical-scroll-proportion="0.4183267" vertical-offset="1215" max-vertical-offset="1935" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate/User.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="26" selection-start="747" selection-end="747" vertical-scroll-proportion="0.46601942" vertical-offset="0" max-vertical-offset="515" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="85" column="72" selection-start="3679" selection-end="3679" vertical-scroll-proportion="0.5597484" vertical-offset="1008" max-vertical-offset="1890">
@@ -1169,26 +1103,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/service/MailService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="20" selection-start="543" selection-end="543" vertical-scroll-proportion="0.0" vertical-offset="55" max-vertical-offset="585" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/model/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="35" selection-start="138" selection-end="138" vertical-scroll-proportion="0.17475729" vertical-offset="0" max-vertical-offset="600" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/model/item.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="515" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="77" selection-start="645" selection-end="645" vertical-scroll-proportion="0.50209206" vertical-offset="0" max-vertical-offset="1335">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/assumptions.json">
@@ -1198,18 +1115,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CheckStats/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2280">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/calculate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="77" selection-start="343" selection-end="343" vertical-scroll-proportion="0.2038835" vertical-offset="0" max-vertical-offset="2490" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/register/resetPassword.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="44" selection-start="1625" selection-end="1625" vertical-scroll-proportion="-10.625" vertical-offset="300" max-vertical-offset="1305">
@@ -1217,33 +1122,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/MailController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="108" selection-start="1379" selection-end="1379" vertical-scroll-proportion="0.0" vertical-offset="233" max-vertical-offset="810">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="39" selection-start="4493" selection-end="4493" vertical-scroll-proportion="0.0" vertical-offset="1675" max-vertical-offset="2190">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="25" selection-start="3615" selection-end="3615" vertical-scroll-proportion="0.0" vertical-offset="1554" max-vertical-offset="2235" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/img/deeban.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/impl/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="14" selection-start="1316" selection-end="1316" vertical-scroll-proportion="0.0" vertical-offset="460" max-vertical-offset="1080" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/img/nick.jpg">
@@ -1254,11 +1135,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/img/deeban2.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/service/HashService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="26" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="600" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -1272,14 +1148,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="82" column="28" selection-start="4014" selection-end="4014" vertical-scroll-proportion="0.43514645" vertical-offset="1022" max-vertical-offset="1740">
           <folding>
-            <element signature="n#style#0;n#form#0;n#div#0;n#li#5;n#ul#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#div#0;n#li#5;n#ul#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/erd/erd.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CostCalculator/testPage.html">
@@ -1289,9 +1160,209 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/register/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="160" column="172" selection-start="8025" selection-end="8049" vertical-scroll-proportion="-9.916667" vertical-offset="2162" max-vertical-offset="3420">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="77" selection-start="645" selection-end="645" vertical-scroll-proportion="0.50209206" vertical-offset="0" max-vertical-offset="1335">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/CheckStats/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="141" column="14" selection-start="5531" selection-end="5531" vertical-scroll-proportion="-14.916667" vertical-offset="1757" max-vertical-offset="2595">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/calculate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="77" selection-start="343" selection-end="343" vertical-scroll-proportion="-2.0970874" vertical-offset="1185" max-vertical-offset="2490">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/lib.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="586" column="46" selection-start="17298" selection-end="17298" vertical-scroll-proportion="0.32868525" vertical-offset="8625" max-vertical-offset="12255">
+        <state line="589" column="15" selection-start="17352" selection-end="17352" vertical-scroll-proportion="0.64705884" vertical-offset="8527" max-vertical-offset="12345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/dao/ItemDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="27" selection-start="253" selection-end="253" vertical-scroll-proportion="0.29126215" vertical-offset="0" max-vertical-offset="515">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="15" selection-start="496" selection-end="496" vertical-scroll-proportion="0.52427185" vertical-offset="0" max-vertical-offset="515">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/exception/LoginException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="152" selection-end="152" vertical-scroll-proportion="0.17475729" vertical-offset="0" max-vertical-offset="515">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/exception/RegisterException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="158" selection-end="158" vertical-scroll-proportion="0.17475729" vertical-offset="0" max-vertical-offset="515">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/impl/ItemDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="5" selection-start="1037" selection-end="1037" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1095">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/impl/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="22" selection-start="1365" selection-end="1365" vertical-scroll-proportion="0.0" vertical-offset="490" max-vertical-offset="1155">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/model/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="22" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0" vertical-offset="1328" max-vertical-offset="1830">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate/User.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="26" selection-start="747" selection-end="747" vertical-scroll-proportion="0.46601942" vertical-offset="0" max-vertical-offset="515">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/erd/erd.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="177" column="103" selection-start="3688" selection-end="3688" vertical-scroll-proportion="0.0" vertical-offset="2050" max-vertical-offset="2565">
+          <folding>
+            <element signature="e#763#764#0" expanded="true" />
+            <element signature="e#792#793#0" expanded="true" />
+            <element signature="e#912#913#0" expanded="true" />
+            <element signature="e#948#949#0" expanded="true" />
+            <element signature="e#1217#1218#0" expanded="true" />
+            <element signature="e#1257#1258#0" expanded="true" />
+            <element signature="e#1353#1354#0" expanded="true" />
+            <element signature="e#1381#1382#0" expanded="true" />
+            <element signature="e#1785#1786#0" expanded="true" />
+            <element signature="e#1819#1820#0" expanded="true" />
+            <element signature="e#1924#1925#0" expanded="true" />
+            <element signature="e#1955#1956#0" expanded="true" />
+            <element signature="e#2088#2089#0" expanded="true" />
+            <element signature="e#2128#2129#0" expanded="true" />
+            <element signature="e#2227#2228#0" expanded="true" />
+            <element signature="e#2256#2257#0" expanded="true" />
+            <element signature="e#2384#2385#0" expanded="true" />
+            <element signature="e#2420#2421#0" expanded="true" />
+            <element signature="e#2732#2733#0" expanded="true" />
+            <element signature="e#2784#2785#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/assets/js/model/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="35" selection-start="138" selection-end="138" vertical-scroll-proportion="0.009708738" vertical-offset="85" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="23" selection-start="523" selection-end="523" vertical-scroll-proportion="0.26213592" vertical-offset="0" max-vertical-offset="2400">
+          <folding>
+            <element signature="e#1032#1033#0" expanded="true" />
+            <element signature="e#1079#1080#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/service/SaltService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="61" selection-start="94" selection-end="94" vertical-scroll-proportion="0.058252428" vertical-offset="0" max-vertical-offset="515">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/service/ResponseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="55" selection-start="62" selection-end="62" vertical-scroll-proportion="-0.7184466" vertical-offset="415" max-vertical-offset="930">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/service/MailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="34" selection-start="881" selection-end="881" vertical-scroll-proportion="0.5339806" vertical-offset="250" max-vertical-offset="780">
+          <folding>
+            <element signature="e#699#700#0" expanded="true" />
+            <element signature="e#743#744#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/service/ItemService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="0" selection-start="1506" selection-end="1506" vertical-scroll-proportion="0.8737864" vertical-offset="195" max-vertical-offset="1365">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/service/HashService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="26" selection-start="340" selection-end="340" vertical-scroll-proportion="0.24271844" vertical-offset="70" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="20" selection-start="2434" selection-end="2434" vertical-scroll-proportion="0.0" vertical-offset="98" max-vertical-offset="2295">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/ItemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="21" selection-start="2518" selection-end="2518" vertical-scroll-proportion="1.9320388" vertical-offset="40" max-vertical-offset="2145">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="14" selection-start="388" selection-end="388" vertical-scroll-proportion="0.19206145" vertical-offset="0" max-vertical-offset="781">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/youreffect/controller/MailController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="69" selection-start="1356" selection-end="1356" vertical-scroll-proportion="0.57746476" vertical-offset="59" max-vertical-offset="840">
           <folding />
         </state>
       </provider>

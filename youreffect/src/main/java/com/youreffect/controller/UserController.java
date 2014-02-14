@@ -38,6 +38,7 @@ public class UserController {
     @Autowired
     private ResponseService responseService;
 
+    /** send mail to new users */
     @Autowired
     private MailService mailService;
 
@@ -53,7 +54,7 @@ public class UserController {
         try {
             user = userService.register(user);
             responseService.setMessage("new user successfully registered");
-            mailService.sendMail(user.getEmail(), "WELCOME", "welcome");
+            mailService.sendMail(user.getEmail(), "YOUR EFFECT - successful registration", "Dear " + user.getUsername() + ",\n Thank you for registering an account with Your Effect. You can use this tool to input specifications of a common household item in the Cost Calculator. You can also determine how you can reduce electricity and gas costs by viewing the monthly cost graph in your Stats Page!");
         } catch (RegisterException re) {
             responseService.setMessage(re.getMessage());
         }
@@ -85,7 +86,7 @@ public class UserController {
     }
 
     /**
-     * view item
+     * view item in database
      * @param id item id
      * @return JSON to client
      */
@@ -106,7 +107,7 @@ public class UserController {
     }
 
     /**
-     * update item
+     * update item in database
      * @param data JSON from client
      * @return JSON to client
      */
@@ -123,7 +124,7 @@ public class UserController {
     }
 
     /**
-     * delete item
+     * delete user in database
      * @param id item id
      * @return JSON to client
      */
@@ -138,6 +139,12 @@ public class UserController {
         return responseService.toString();
     }
 
+    /**
+     * resets password of user
+     * @param code password reset code
+     * @param newPassword new password
+     * @return JSON to client
+     */
     @RequestMapping(value = "/reset/password/{code}/{newPassword}", method = RequestMethod.POST)
     public @ResponseBody String changePassword(@PathVariable String code, @PathVariable String newPassword) {
         logger.info("POST /user/reset/password/"+code+"/"+newPassword);

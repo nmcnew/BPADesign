@@ -44,6 +44,11 @@ public class UserDaoImpl extends HibernateDaoSupport implements UserDao {
         return (list.size() > 0) ? (User) list.get(0) : null;
     }
 
+    /**
+     * read user by password
+     * @param password user password
+     * @return user by password
+     */
     public User readByPassword(String password) {
         List list = getHibernateTemplate().find("from User where password=?",new Object[]{password});
         return (list.size() > 0) ? (User) list.get(0) : null;

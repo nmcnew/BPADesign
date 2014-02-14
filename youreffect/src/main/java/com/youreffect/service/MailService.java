@@ -1,7 +1,5 @@
 package com.youreffect.service;
 
-import com.youreffect.impl.UserDaoImpl;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.MailSender;
 import org.springframework.mail.SimpleMailMessage;
 
@@ -11,19 +9,33 @@ import org.springframework.mail.SimpleMailMessage;
  */
 public class MailService {
 
-    @Autowired
-    private UserDaoImpl userDaoImpl;
+    /** mail client */
     private MailSender mailSender;
+    /** server e-mail sender address */
     private String from;
 
+    /**
+     * construct with server e-mail sender address initialized
+     * @param from server e-mail sender address
+     */
     public MailService(String from){
         this.from = from;
     }
 
+    /**
+     * set mail client
+     * @param mailSender set mail client to this
+     */
     public void setMailSender(MailSender mailSender) {
         this.mailSender = mailSender;
     }
 
+    /**
+     * send e-mail
+     * @param to recipient address
+     * @param subject subject of email
+     * @param msg content of email
+     */
     public void sendMail(String to, String subject, String msg) {
         SimpleMailMessage message = new SimpleMailMessage();
         message.setFrom(from);

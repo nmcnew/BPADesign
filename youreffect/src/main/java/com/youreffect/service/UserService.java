@@ -27,6 +27,7 @@ public class UserService {
     @Autowired
     private SaltService saltService;
 
+    /** user reference */
     @Autowired
     private User user;
 
@@ -67,6 +68,7 @@ public class UserService {
     /**
      * registers user by creating user in spring.database
      * @param user User object
+     * @return registered use
      */
     public User register (User user) throws RegisterException {
         String checkCopyId = hashService.md5(user.getUsername());
@@ -93,7 +95,7 @@ public class UserService {
     /**
      * create user
      * @param user user
-     * @return user
+     * @return created user
      */
     public User create(User user) {
         user.setDateRegistered(new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss").format(new Date()));
@@ -124,6 +126,12 @@ public class UserService {
         return userDaoImpl.read(id);
     }
 
+    /**
+     * reset user password
+     * @param code password reset code
+     * @param newPassword new password
+     * @return updated user
+     */
     public User resetPassword(String code, String newPassword) {
         user = userDaoImpl.readByPassword(code);
         user.setPassword(newPassword);

@@ -591,7 +591,9 @@ function submitMainForm(){
         }
         item.userId = curUser.userId;
         item.specs = JSON.stringify(item.specs);
-        items.push(item);
+        if (item.quantity > 0) {
+            items.push(item);
+        }
     }
     saveItems(items);
     window.location.replace("../CheckStats");
@@ -599,11 +601,11 @@ function submitMainForm(){
 
 /** search functions */
 
-function search(key, filter) {
+function search(key, filter1, filter2) {
     var items = curItems;
     var hits = [];
     $.each(items, function (itemId, item) {
-        if(item.name.toLowerCase().indexOf(key.toLowerCase()) != -1 && (filter.length == 0 || (filter.length > 0 && item.energy == filter))) {
+        if(item.name.toLowerCase().indexOf(key.toLowerCase()) != -1 && (filter1.length == 0 || (filter1.length > 0 && item.energy == filter1)) && (parseInt(filter2) == 0 || parseInt(item.date.toString().split("-")[1]) == filter2)) {
             hits.push(item);
         }
     });
@@ -614,8 +616,10 @@ function populateFilteredList(hits, list, reply) {
     list.empty();
     var s = "";
     for (var i in hits) {
-        var item = hits[i];
-        s = prepareRow(item, s);
+        try {
+            var item = hits[i];
+            s = prepareRow(item, s);
+        } catch (e) {console.log(e);}
     }
     list.append(s);
     reply.html(hits.length + " results");
@@ -626,9 +630,11 @@ function populateList(list,reply) {
     var items = curItems;
     var s = "";
     $.each(items, function (itemId, item) {
-        console.log(item);
-        s = prepareRow(item, s);
-        ++count;
+        try {
+            console.log(item);
+            s = prepareRow(item, s);
+            ++count;
+        } catch (e) {console.log(e);}
     });
     list.append(s);
     reply.html(count + " result(s)");
