@@ -112,6 +112,10 @@ public class UserController {
         return responseService.toString();
     }
 
+    /**
+     * view list of users in database
+     * @return JSON to client
+     */
     @RequestMapping(value = "/list/view", method = RequestMethod.GET)
     public @ResponseBody String viewList() {
         logger.info("GET /user/list/view/");

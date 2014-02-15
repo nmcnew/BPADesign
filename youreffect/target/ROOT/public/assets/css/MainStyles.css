@@ -1,8 +1,8 @@
 body {
     min-width: 753px;
     height: 100%;
-    background-color: #101010;
-    color: #fff;
+    background-color: #f3f3f3;
+    color: #000;
 }
 
 .body {
@@ -17,14 +17,14 @@ footer {
 
     color: #D43F3A;
 }
-.modal-content {
-    background-color: #101010;
-}
 .navbar .nav li {
     display: inline-block;
     float: none;
     margin:0;
     padding: 0;
+}
+.navbar{
+    box-shadow: 0 0 10px #101010;
 }
 .navbar .nav {
     float: none;
@@ -37,10 +37,6 @@ footer {
 
 .nav > li > a:hover {
     transition: all .35s ease;
-}
-hr {
-    border-color: #fff;
-    background-color:#fff;
 }
 .imageContainer {
     width: 100%;
@@ -74,7 +70,7 @@ hr {
 	margin: 0 auto;
 }
 .headerImage{
-    border: solid 3px #fff;
+    border: solid 3px #003a75;
 }
 a > .headerImage {
     transition: transform .2s, box-shadow .2s;

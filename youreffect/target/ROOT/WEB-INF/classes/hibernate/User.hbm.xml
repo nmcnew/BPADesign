@@ -19,5 +19,6 @@
         <property name="dateRegistered" column="date_reg" type="string" not-null="true"/>
         <property name="elecRate" column="elec_rate" type="double" not-null="true"/>
         <property name="costOfGas" column="cost_of_gas" type="double" not-null="true"/>
+        <property name="isAdmin" column="isAdmin" type="int" not-null="true"/>
     </class>
 </hibernate-mapping>

@@ -124,17 +124,27 @@
     </form>
     <table class="table">
         <thead>
-        <tr><th> Name </th> <th> Energy </th><th> Quantity </th><th> Date </th> <th> View Specs </th> <th> Cost </th></tr>
+        <tr><th> Name </th> <th> Energy </th><th> Quantity </th><th> Date </th> <th> View Specs </th><th>Compare</th> <th> Cost </th></tr>
         </thead>
         <tbody id="item-list">
 
         </tbody>
     </table>
-    <br/>
-    <h2>Monthly Cost</h2>
-    <div id="graph">
-        <canvas id="myChart" width="800" height="600"></canvas>
+    <div class="modal fade" id="compModal" tabindex="-1"
+         role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"
+                            aria-hidden="true" onclick="removeGraph()">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Comparison</h4>
+                </div>
+                <div class="modal-body" id="compBody">
+                </div>
+            </div>
+        </div>
     </div>
+
     <script>
         $("#stat-username").html(curUser.username);
         $("#stat-email").html(curUser.email);
@@ -142,6 +152,9 @@
         populateList($('#item-list'),$("#num-results"));
         function triggerSearch() {
             populateFilteredList(search($("#key").val(),$('#energy-filter').val(),$('#date-filter').val()),$('#item-list'),$('#num-results'));
+        }
+        function removeGraph(){
+            $("#compBody").children("#graph").remove();
         }
     </script>
 </div><!--end .body tag-->

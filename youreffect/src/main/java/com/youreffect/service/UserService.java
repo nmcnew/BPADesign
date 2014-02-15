@@ -159,6 +159,10 @@ public class UserService {
         userDaoImpl.delete(id);
     }
 
+    /**
+     * read user list
+     * @return user list
+     */
     public List<User> readList() {
         return userDaoImpl.readList();
     }
