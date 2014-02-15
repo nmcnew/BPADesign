@@ -24,6 +24,8 @@ public class User {
     private double elecRate;
     /** cost of gas us dollars per cost per cubic foot*/
     private double costOfGas;
+    /** admin access 0 => false, 1 => true */
+    private int isAdmin;
 
     /**
      * get user id
@@ -167,6 +169,22 @@ public class User {
      */
     public void setElecRate(double elecRate) {
         this.elecRate = elecRate;
+    }
+
+    /**
+     * get admin access
+     * @return isAdmin admin access
+     */
+    public int getIsAdmin() {
+        return isAdmin;
+    }
+
+    /**
+     * set admin access
+     * @param isAdmin set admin access to this
+     */
+    public void setIsAdmin(int isAdmin) {
+        this.isAdmin = isAdmin;
     }
 
     /**
