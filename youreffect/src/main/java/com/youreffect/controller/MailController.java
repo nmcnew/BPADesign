@@ -31,6 +31,7 @@ public class MailController {
     @Autowired
     private ResponseService responseService;
 
+    /** perform user operations */
     @Autowired
     private UserService userService;
 

@@ -12,6 +12,7 @@ function User() {
     this.dateRegistered = '';
     this.elecRate = 0;
     this.costOfGas = 0;
+    this.isAdmin = 0;
 }
 
 /**
@@ -20,6 +21,10 @@ function User() {
  * @param email
  * @param password
  * @param state
+ * @param dateRegistered
+ * @param elecRate
+ * @param costOfGas
+ * @param isAdmin
  * @constructor constructs user with username, email, password, and state
  */
 function User(username, email, password, state) {
@@ -32,4 +37,5 @@ function User(username, email, password, state) {
     this.dateRegistered = '';
     this.elecRate = 0;
     this.costOfGas = 0;
+    this.isAdmin = 0;
 }

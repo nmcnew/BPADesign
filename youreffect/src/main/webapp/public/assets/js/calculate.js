@@ -1,6 +1,6 @@
 var userECost = curUser.elecRate;
 function getAssumptions(){
-   return $.ajax({type: "GET", url: "../assets/js/assumptions.json", async: false}).responseText;
+   return JSON.parse($.ajax({type: "GET", url: "../assets/js/assumptions.json", async: false}).responseText);
 }
 function airPure(specs, quantity){//Completed Energy Star and User Sides
     //load variables
@@ -151,7 +151,7 @@ function accCalcs(specs, quantity){
 }
 function furnaceCalcs(specs, quantity){
     var value = getAssumptions();
-    var userHeatHouseFuel = Number(specs.furnFuelType);
+    var userHeatHouseFuel = specs.furnFuelType;
     var userGasRate = curUser.costOfGas;
     var userHouseSize = Number(specs.furnHouseSize);
     var userHouseDate = specs.furnHouseEra;
@@ -166,11 +166,11 @@ function furnaceCalcs(specs, quantity){
         userMMBTU = userMMBTU * (0.86);
         eStarMMBTU *= 0.86
     }
-    if(userHeatHouseFuel.indexOf("gas") > 0 ){
+    if(userHeatHouseFuel.indexOf("gas") >= 0 ){
         userECons = userMMBTU/100000;
         eStarECons = eStarMMBTU/10000;
     }
-    else if(userHeatHouseFuel.indexOf("oil") > 0){
+    else if(userHeatHouseFuel.indexOf("oil") >= 0){
         userECons = userMMBTU/138690*1000000;
         eStarECons = eStarMMBTU/138690*1000000;
     }
