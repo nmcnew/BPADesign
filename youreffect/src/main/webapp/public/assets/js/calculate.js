@@ -158,8 +158,8 @@ function furnaceCalcs(specs, quantity){
     var userFurnaceDate = specs.furnEra;
     var userThermos = Number(specs.furnThermos);
     var userECons;
-    var userMMBTU = userHouseSize * value.HouseYear[userHouseDate] / value.furnYear[userHeatHouseFuel][userFurnaceDate];
-    var eStarMMBTU = userHouseSize * value.HouseYear[userHouseDate] / ((userHeatHouseFuel.indexOf("gas") > 0) ? 0.9 : 0.85);
+    var userMMBTU = userHouseSize * value.HouseYear[userHouseDate] / (value.furnYear[userHeatHouseFuel][userFurnaceDate] * value.HouseYear[userHouseDate]);
+    var eStarMMBTU = userHouseSize * value.HouseYear[userHouseDate] / (((userHeatHouseFuel.indexOf("gas") > 0) ? 0.9 : 0.85) * value.HouseYear[userHouseDate]);
 
     var eStarECons;
     if(userThermos == 1){
