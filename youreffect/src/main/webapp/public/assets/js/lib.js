@@ -714,7 +714,7 @@ function prepareRow(item, s) {
             eStarCost = freezerCalcs(mySpecs, item.quantity)[1];
             break;
     }
-    s += $('<td><button data-toggle="modal" onclick="generateGraph(' + costOf + ',' + eStarCost + ')"class="btn btn-default" data-target="#compModal">Compare</button></td>');
+    s += ('<td><button data-toggle="modal" onclick="generateGraph(' + costOf + ',' + eStarCost + ')"class="btn btn-default" data-target="#compModal">Compare</button></td>');
     s += ("<td>$"+ (costOf).toFixed(2) +"</td>");
     s += ("</tr>");
     return s;
@@ -733,6 +733,7 @@ function prepareSpecs(s) {
 }
 
 function generateGraph(yourNumber, eStar) {
+    $("#compBody").append('<div id="graph"><canvas id="myChart" width="540" height="250"></canvas></div>');
     var data = {
         labels : ["Your Inputs", "Energy Star Requirements"],
         datasets : [

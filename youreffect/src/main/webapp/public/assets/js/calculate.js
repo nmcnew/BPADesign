@@ -67,7 +67,7 @@ function dishwasherCalcs(specs, quantity){
     var userType = specs.dishWashType;
     //machine energy
     var userEnergy= (userREC*(1 -.56))/215;
-    var eStarEnergy = (userType.contains("compact")) ? 222 : 285;
+    var eStarEnergy = (userType.indexOf("compact") > 0) ? 222 : 285;
     //Water Heater Energy
     if(userHotWaterFuel == "elec"){
         userEnergy += userREC*.56/215
@@ -159,7 +159,7 @@ function furnaceCalcs(specs, quantity){
     var userThermos = Number(specs.furnThermos);
     var userECons;
     var userMMBTU = userHouseSize * value.HouseYear[userHouseDate] / value.furnYear[userHeatHouseFuel][userFurnaceDate];
-    var eStarMMBTU = userHouseSize * value.HouseYear[userHouseDate] / (userHeatHouseFuel.contains("gas") ? 0.9 : 0.85);
+    var eStarMMBTU = userHouseSize * value.HouseYear[userHouseDate] / ((userHeatHouseFuel.indexOf("gas") > 0) ? 0.9 : 0.85);
 
     var eStarECons;
     if(userThermos == 1){

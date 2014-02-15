@@ -136,14 +136,11 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal"
-                            aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="myModalLabel">Electric Options</h4>
+                            aria-hidden="true" onclick="removeGraph()">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Comparison</h4>
                 </div>
-                <div class="modal-body">
-                    <h2>Comparison</h2>
-                    <div id="graph">
-                        <canvas id="myChart" width="800" height="600"></canvas>
-                    </div>
+                <div class="modal-body" id="compBody">
+
                 </div>
             </div>
         </div>
@@ -156,6 +153,9 @@
         populateList($('#item-list'),$("#num-results"));
         function triggerSearch() {
             populateFilteredList(search($("#key").val(),$('#energy-filter').val(),$('#date-filter').val()),$('#item-list'),$('#num-results'));
+        }
+        function removeGraph(){
+            $("#compBody").children("#graph").remove();
         }
     </script>
 </div><!--end .body tag-->
