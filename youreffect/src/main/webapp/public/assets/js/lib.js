@@ -306,7 +306,8 @@ function deleteUser(id) {
         success : function(data) {
             var data = JSON.parse(data);
             console.log(data);
-            respons = data;
+            response = data;
+            window.location.reload();
         }
     });
     return response;
@@ -656,7 +657,25 @@ function populateList(list,reply) {
     list.append(s);
     reply.html(count + " result(s)");
 }
+function populateUserFields(){
+    if(curUser.isAdmin == 1){
+        //call users
 
+        var users = [];
+        for(var x in users){
+            var s = "<tr>";
+            s += "<td>"+ x.userId +" </td>";
+            s += "<td>"+ x.username +" </td>";
+            s += "<td>"+ x.email +" </td>";
+            s += "<td>"+ x.state +" </td>";
+            s += "<td>"+ x.elecRate +" </td>";
+            s += "<td>"+ x.costOfGas +" </td>";
+            s += '<td><button type="button" onclick="deleteUser('+ x.userId +')"class="btn btn-danger">Delete</button></td>';
+            s += "</tr>";
+            $("#adminUserView").append("s");
+        }
+    }
+}
 function prepareRow(item, s) {
     var specsStr = JSON.stringify(item.specs);
     s += ("<tr onmouseover='prepareSpecs("+specsStr+")'>");
