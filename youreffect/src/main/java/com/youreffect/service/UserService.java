@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author Deeban Ramalingam
@@ -158,4 +159,11 @@ public class UserService {
         userDaoImpl.delete(id);
     }
 
+    /**
+     * read user list
+     * @return user list
+     */
+    public List<User> readList() {
+        return userDaoImpl.readList();
+    }
 }

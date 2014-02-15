@@ -12,6 +12,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 /**
  * @author Deeban Ramalingam
  * UserController directs all CRUD operations pertaining to User based on the request URL
@@ -41,6 +43,10 @@ public class UserController {
     /** send mail to new users */
     @Autowired
     private MailService mailService;
+
+    /** user list reference */
+    @Autowired
+    private List<User> users;
 
     /**
      * registers user
@@ -102,6 +108,21 @@ public class UserController {
             responseService.setMessage("user returned");
         }
         user = null;
+        logger.info(responseService.toString());
+        return responseService.toString();
+    }
+
+    /**
+     * view list of users in database
+     * @return JSON to client
+     */
+    @RequestMapping(value = "/list/view", method = RequestMethod.GET)
+    public @ResponseBody String viewList() {
+        logger.info("GET /user/list/view/");
+        users = userService.readList();
+        responseService.setData(users);
+        responseService.setMessage(users.size() + " user(s) successfully returned");
+        users = null;
         logger.info(responseService.toString());
         return responseService.toString();
     }

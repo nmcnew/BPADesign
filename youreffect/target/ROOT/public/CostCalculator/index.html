@@ -14,7 +14,6 @@
     <script src="../assets/js/calculate.js"></script>
     <script type="text/javascript">
         $(function(){
-
             // Fix input element click problem
             $('.dropdown input, .dropdown label').click(function(e) {
                 e.stopPropagation();
@@ -110,7 +109,7 @@
 
         </div>
         <br/>
-        <button id="submitBtn" type="button" class="btn btn-success" onclick="submitMainForm()">Submit</button>
+        <button id="submitBtn" type="button" class="btn btn-primary" onclick="submitMainForm()">Submit</button>
     </form>
 
     <div class="modal fade" id="electricOptions" tabindex="-1"
@@ -136,7 +135,7 @@
                         <input type="radio" name="eOptions" value="lightBulb">Light
                         Bulb<br /> <input type="radio" name="eOptions" value="fridge">Refigerator<br />
                         <input type="radio" name="eOptions" value="compactFridge">Refrigerator
-                        - Compact<br />
+                        - Compact<br /><br/>
 
                         <button type="button" onclick="addOptionElec()"
                                 class="btn btn-primary" data-dismiss="modal">Submit</button>

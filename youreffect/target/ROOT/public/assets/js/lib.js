@@ -165,7 +165,24 @@ function logout(){
 /** joint operations */
 
 function saveItems(items) {
+    console.log(items);
     createItemList(items);
+}
+
+function requestPassword(username) {
+    var response = "";
+    $.ajax({
+        async: false,
+        url: getContextRoot('public') + '/mail/recall/' + username,
+        type: 'GET',
+        contentType: 'application/json; charset=utf-8',
+        success: function(data) {
+            var data = JSON.parse(data);
+            console.log(data);
+            response = data;
+        }
+    });
+    return response;
 }
 
 function resetPassword(code, password) {
@@ -508,6 +525,7 @@ function addOptionElec() {
             $("#cFridgeWrapper").fadeIn();
             break;
     }
+    $(".removeable").fadeOut();
 
 }
 
@@ -591,9 +609,10 @@ function submitMainForm(){
         }
         item.userId = curUser.userId;
         item.specs = JSON.stringify(item.specs);
-        if (item.quantity > 0) {
-            items.push(item);
+        if (item.quantity < 1) {
+            item.quantity = 1;
         }
+        items.push(item);
     }
     saveItems(items);
     window.location.replace("../CheckStats");
@@ -605,7 +624,7 @@ function search(key, filter1, filter2) {
     var items = curItems;
     var hits = [];
     $.each(items, function (itemId, item) {
-        if(item.name.toLowerCase().indexOf(key.toLowerCase()) != -1 && (filter1.length == 0 || (filter1.length > 0 && item.energy == filter1)) && (parseInt(filter2) == 0 || parseInt(item.date.toString().split("-")[1]) == filter2)) {
+        if(item.name.toLowerCase().indexOf(key.toLowerCase()) != -1  && (filter2.length == 0 || (filter2.length > 0 && item.energy == filter2))  && (parseInt(filter1) == 0 || parseInt(item.dateCreated.toString().split("-")[1]) == filter1)) {
             hits.push(item);
         }
     });
@@ -630,15 +649,14 @@ function populateList(list,reply) {
     var items = curItems;
     var s = "";
     $.each(items, function (itemId, item) {
-        try {
+        //try {
             console.log(item);
             s = prepareRow(item, s);
             ++count;
-        } catch (e) {console.log(e);}
+        //} catch (e) {console.log(e);}
     });
     list.append(s);
     reply.html(count + " result(s)");
-    generateGraph() ;
 }
 
 function prepareRow(item, s) {
@@ -650,42 +668,55 @@ function prepareRow(item, s) {
     s += ("<td>"+item.dateCreated.split("T")[0]+"</td>");
     s += ("<td><button data-toggle='modal' class='btn btn-default' data-target='#myModal'>Specs</button></td>");
     var costOf = 0;
+    var eStarCost = 0;
     var mySpecs = JSON.parse(item.specs);
     switch(item.name){
         case("Light Bulbs"):
-            costOf = bulbCalc(mySpecs, item.quantity);
+            costOf = bulbCalc(mySpecs, item.quantity)[0];
+            eStarCost = bulbCalc(mySpecs, item.quantity)[1];
             break;
         case("Central Air Conditioning"):
-            costOf = accCalcs(mySpecs, item.quantity);
+            costOf = accCalcs(mySpecs, item.quantity)[0];
+            eStarCost = accCalcs(mySpecs, item.quantity)[1];
             break;
         case("Furnace"):
-            costOf = furnaceCalcs(mySpecs, item.quantity);
+            costOf = furnaceCalcs(mySpecs, item.quantity)[0];
+            eStarCost = furnaceCalcs(mySpecs, item.quantity)[1];
             break;
         case("Personal Air Conditioner"):
-            costOf = acrCalcs(mySpecs, item.quantity);
+            costOf = acrCalcs(mySpecs, item.quantity)[0];
+            eStarCost = acrCalcs(mySpecs, item.quantity)[1];
             break;
         case("Air Purifier"):
-            costOf = airPure(mySpecs,item.quantity);
+            costOf = airPure(mySpecs,item.quantity)[0];
+            eStarCost = airPure(mySpecs, item.quantity)[1];
             break;
         case("Clothes Washer"):
-            costOf = clothesWasher(mySpecs, item.quantity);
+            costOf = clothesWasher(mySpecs, item.quantity)[0];
+            eStarCost = clothesWasher(mySpecs, item.quantity)[1];
             break;
         case("Dehumidifier"):
-            costOf = dehumidifierCalcs(mySpecs, item.quantity);
+            costOf = dehumidifierCalcs(mySpecs, item.quantity)[0];
+            eStarCost = dehumidifierCalcs(mySpecs, item.quantity)[1];
             break;
         case("Dishwasher"):
-            costOf = dishwasherCalcs(mySpecs, item.quantity);
+            costOf = dishwasherCalcs(mySpecs, item.quantity)[0];
+            eStarCost = dishwasherCalcs(mySpecs, item.quantity)[1];
             break;
         case("Refrigerator"):
-            costOf = fridgeConsumption(mySpecs,item.quantity);
+            costOf = fridgeConsumption(mySpecs, item.quantity)[0];
+            eStarCost = fridgeConsumption(mySpecs, item.quantity)[1];
             break;
         case("Refrigerator - Compact"):
-            costOf = cFridgeCalcs(mySpecs,item.quantity);
+            costOf = cFridgeCalcs(mySpecs, item.quantity)[0];
+            eStarCost = cFridgeCalcs(mySpecs, item.quantity)[1];
             break;
         case("Freezer"):
-            costOf = freezerCalcs(mySpecs,item.quantity);
+            costOf = freezerCalcs(mySpecs, item.quantity)[0];
+            eStarCost = freezerCalcs(mySpecs, item.quantity)[1];
             break;
     }
+    s += ('<td><button data-toggle="modal" onclick="generateGraph(' + costOf + ',' + eStarCost + ')"class="btn btn-default" data-target="#compModal">Compare</button></td>');
     s += ("<td>$"+ (costOf).toFixed(2) +"</td>");
     s += ("</tr>");
     return s;
@@ -703,26 +734,15 @@ function prepareSpecs(s) {
     $("#specs").html(r);
 }
 
-function generateGraph() {
-    var monthtotals = [0,0,0,0,0,0,0,0,0,0,0,0];
-
-    var M = $("#item-list");
-    var rows = M.children();
-    for (var i = 0; i < rows.length; i ++) {
-        var row = rows[i];
-        var cols = $(row).children();
-        var cost = parseFloat(($(cols[cols.length-1]).html()).toString().split("$")[1]);
-        var mo = parseInt(($(cols[cols.length-3]).html()).toString().split("-")[1])-1;
-        monthtotals[mo] += cost;
-    }
-
+function generateGraph(yourNumber, eStar) {
+    $("#compBody").append('<div id="graph"><canvas id="myChart" width="540" height="250"></canvas></div>');
     var data = {
-        labels : ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
+        labels : ["Your Inputs", "Energy Star Requirements"],
         datasets : [
             {
                 fillColor : "rgba(151,187,205,0.5)",
                 strokeColor : "rgba(151,187,205,1)",
-                data : monthtotals
+                data : [yourNumber, eStar]
             }
         ]
     }

@@ -165,6 +165,7 @@ function logout(){
 /** joint operations */
 
 function saveItems(items) {
+    console.log(items);
     createItemList(items);
 }
 
@@ -609,9 +610,10 @@ function submitMainForm(){
         }
         item.userId = curUser.userId;
         item.specs = JSON.stringify(item.specs);
-        if (item.quantity > 0) {
-            items.push(item);
+        if (item.quantity < 1) {
+            item.quantity = 1;
         }
+        items.push(item);
     }
     saveItems(items);
     window.location.replace("../CheckStats");
@@ -623,7 +625,7 @@ function search(key, filter1, filter2) {
     var items = curItems;
     var hits = [];
     $.each(items, function (itemId, item) {
-        if(item.name.toLowerCase().indexOf(key.toLowerCase()) != -1 && (filter1.length == 0 || (filter1.length > 0 && item.energy == filter1)) && (parseInt(filter2) == 0 || parseInt(item.date.toString().split("-")[1]) == filter2)) {
+        if(item.name.toLowerCase().indexOf(key.toLowerCase()) != -1  && (filter2.length == 0 || (filter2.length > 0 && item.energy == filter2))  && (parseInt(filter1) == 0 || parseInt(item.dateCreated.toString().split("-")[1]) == filter1)) {
             hits.push(item);
         }
     });
@@ -648,11 +650,11 @@ function populateList(list,reply) {
     var items = curItems;
     var s = "";
     $.each(items, function (itemId, item) {
-        try {
+        //try {
             console.log(item);
             s = prepareRow(item, s);
             ++count;
-        } catch (e) {console.log(e);}
+        //} catch (e) {console.log(e);}
     });
     list.append(s);
     reply.html(count + " result(s)");
