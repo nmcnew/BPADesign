@@ -166,11 +166,11 @@ function furnaceCalcs(specs, quantity){
         userMMBTU = userMMBTU * (0.86);
         eStarMMBTU *= 0.86
     }
-    if(userHeatHouseFuel == "gas"){
+    if(userHeatHouseFuel.indexOf("gas") > 0 ){
         userECons = userMMBTU/100000;
         eStarECons = eStarMMBTU/10000;
     }
-    else if(userHeatHouseFuel == "oil"){
+    else if(userHeatHouseFuel.indexOf("oil") > 0){
         userECons = userMMBTU/138690*1000000;
         eStarECons = eStarMMBTU/138690*1000000;
     }
