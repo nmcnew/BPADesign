@@ -11,8 +11,11 @@
     <script src="../assets/js/lib.js"></script>
     <script src="../assets/js/calculate.js"></script>
     <script>
-        $(function(){
 
+        if(curUser.isAdmin == 0){
+            window.location.replace("../");
+        }
+        $(function(){
             // Fix input element click problem
             $('.dropdown input, .dropdown label').click(function(e) {
                 e.stopPropagation();
@@ -33,7 +36,7 @@
 <nav class="navbar navbar-inverse navbar-static-top center" role="navigation">
     <div class="navbar-inner">
         <ul class="nav navbar-nav collapse navbar-collapse">
-            <li class="active"><a href="../">Home</a></li>
+            <li><a href="../">Home</a></li>
             <li><a href="../CostCalculator/">Cost Calculator</a></li>
             <li><a href="../CheckStats/">Check Stats</a></li>
             <li><a href="../about/">About</a></li>

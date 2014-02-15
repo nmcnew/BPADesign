@@ -154,8 +154,8 @@ function furnaceCalcs(specs, quantity){
     var userHeatHouseFuel = Number(specs.furnFuelType);
     var userGasRate = curUser.costOfGas;
     var userHouseSize = Number(specs.furnHouseSize);
-    var userHouseDate = Number(specs.furnHouseEra);
-    var userFurnaceDate = Number(specs.furnEra);
+    var userHouseDate = specs.furnHouseEra;
+    var userFurnaceDate = specs.furnEra;
     var userThermos = Number(specs.furnThermos);
     var userECons;
     var userMMBTU = userHouseSize * value.HouseYear[userHouseDate] / value.furnYear[userHeatHouseFuel][userFurnaceDate];
