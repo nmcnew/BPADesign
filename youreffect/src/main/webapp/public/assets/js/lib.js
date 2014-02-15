@@ -168,6 +168,22 @@ function saveItems(items) {
     createItemList(items);
 }
 
+function requestPassword(username) {
+    var response = "";
+    $.ajax({
+        async: false,
+        url: getContextRoot('public') + '/mail/recall/' + username,
+        type: 'GET',
+        contentType: 'application/json; charset=utf-8',
+        success: function(data) {
+            var data = JSON.parse(data);
+            console.log(data);
+            response = data;
+        }
+    });
+    return response;
+}
+
 function resetPassword(code, password) {
     var response = "";
     $.ajax({
