@@ -1,0 +1,26 @@
+<table class="table">
+    <tr>
+        <th>User ID</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>State</th>
+        <th>Electricity Rate</th>
+        <th>Cost of Gas</th>
+        <th colspan="2">Action</th>
+    </tr>
+    <tbody id="adminUserView">
+        {{#users}}
+        <tr>
+            <td>{{userId}}</td>
+            <td>{{username}}</td>
+            <td>{{email}}</td>
+            <td>{{state}}</td>
+            <td>{{elecRate}}</td>
+            <td>{{costOfGas}}</td>
+            <td>
+                <button onclick="deleteUser('{{userId}}'); window.location.reload();" class="btn btn-danger">Remove</button>
+            </td>
+        </tr>
+        {{/users}}
+    </tbody>
+</table>

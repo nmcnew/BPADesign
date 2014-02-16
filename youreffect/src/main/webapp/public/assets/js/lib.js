@@ -170,6 +170,7 @@ function saveItems(items) {
 }
 
 function requestPassword(username) {
+    console.log(username);
     var response = "";
     $.ajax({
         async: false,
@@ -180,6 +181,13 @@ function requestPassword(username) {
             var data = JSON.parse(data);
             console.log(data);
             response = data;
+            if (response.message.indexOf("success") != -1) {
+                $("#reset-link-info").html("An email has just been sent to you with the reset password access code. Be " +
+                    "sure to copy and paste it in the appropriate field on the page at the link below.");
+                console.log($("#reset-link-info").html());
+                $("#reset-link").html("Ready to reset password with access code?");
+                $("#reset-link").attr("href","resetPassword.html");
+            }
         }
     });
     return response;
@@ -277,6 +285,22 @@ function readUser(id) {
         }
     });
     return response;
+}
+
+function readUserList() {
+    var response;
+    $.ajax({
+        async : false,
+        url : getContextRoot('public') + '/user/list/view/',
+        type : 'GET',
+        contentType : "application/json; charset=utf-8",
+        success : function(data) {
+            var data = JSON.parse(data);
+            console.log(data);
+            response = data;
+        }
+    });
+    return response.data;
 }
 
 function updateUser(user) {
