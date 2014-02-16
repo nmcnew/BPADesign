@@ -125,8 +125,9 @@ function register(username, email, password, state) {
 /** user login */
 
 function logout() {
+    console.log("logout");
     localStorage.removeItem("curLogin");
-    location.reload();
+    window.location.reload();
 }
 
 function login(username, password) {
@@ -157,11 +158,6 @@ function loginBox(username, password){
         document.getElementById("curLogin").innerHTML = curUser.username;
     }
 }
-function logout(){
-    if(localStorage.getItem("curLogin").indexOf > 0){
-        localStorage.removeItem("curLogin");
-    }
-}
 /** joint operations */
 
 function saveItems(items) {
@@ -170,6 +166,7 @@ function saveItems(items) {
 }
 
 function requestPassword(username) {
+    console.log(username);
     var response = "";
     $.ajax({
         async: false,
@@ -180,6 +177,13 @@ function requestPassword(username) {
             var data = JSON.parse(data);
             console.log(data);
             response = data;
+            if (response.message.indexOf("success") != -1) {
+                $("#reset-link-info").html("An email has just been sent to you with the reset password access code. Be " +
+                    "sure to copy and paste it in the appropriate field on the page at the link below.");
+                console.log($("#reset-link-info").html());
+                $("#reset-link").html("Ready to reset password with access code?");
+                $("#reset-link").attr("href","resetPassword.html");
+            }
         }
     });
     return response;
@@ -279,6 +283,22 @@ function readUser(id) {
     return response;
 }
 
+function readUserList() {
+    var response;
+    $.ajax({
+        async : false,
+        url : getContextRoot('public') + '/user/list/view/',
+        type : 'GET',
+        contentType : "application/json; charset=utf-8",
+        success : function(data) {
+            var data = JSON.parse(data);
+            console.log(data);
+            response = data;
+        }
+    });
+    return response.data;
+}
+
 function updateUser(user) {
     var response;
     $.ajax({
@@ -307,7 +327,8 @@ function deleteUser(id) {
         success : function(data) {
             var data = JSON.parse(data);
             console.log(data);
-            respons = data;
+            response = data;
+            window.location.reload();
         }
     });
     return response;
@@ -658,7 +679,25 @@ function populateList(list,reply) {
     list.append(s);
     reply.html(count + " result(s)");
 }
+function populateUserFields(){
+    if(curUser.isAdmin == 1){
+        //call users
 
+        var users = [];
+        for(var x in users){
+            var s = "<tr>";
+            s += "<td>"+ x.userId +" </td>";
+            s += "<td>"+ x.username +" </td>";
+            s += "<td>"+ x.email +" </td>";
+            s += "<td>"+ x.state +" </td>";
+            s += "<td>"+ x.elecRate +" </td>";
+            s += "<td>"+ x.costOfGas +" </td>";
+            s += '<td><button type="button" onclick="deleteUser('+ x.userId +')"class="btn btn-danger">Delete</button></td>';
+            s += "</tr>";
+            $("#adminUserView").append("s");
+        }
+    }
+}
 function prepareRow(item, s) {
     var specsStr = JSON.stringify(item.specs);
     s += ("<tr onmouseover='prepareSpecs("+specsStr+")'>");

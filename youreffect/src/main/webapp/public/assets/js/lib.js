@@ -125,8 +125,9 @@ function register(username, email, password, state) {
 /** user login */
 
 function logout() {
+    console.log("logout");
     localStorage.removeItem("curLogin");
-    location.reload();
+    window.location.reload();
 }
 
 function login(username, password) {
@@ -155,11 +156,6 @@ function loginBox(username, password){
         localStorage.setItem("curLogin", data.data.userId);
         init();
         document.getElementById("curLogin").innerHTML = curUser.username;
-    }
-}
-function logout(){
-    if(localStorage.getItem("curLogin").indexOf > 0){
-        localStorage.removeItem("curLogin");
     }
 }
 /** joint operations */

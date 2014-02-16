@@ -13,8 +13,11 @@
     <script src="assets/js/lib.js"></script>
     <script src="assets/js/calculate.js"></script>
     <script>
-        $(function(){
+        $(function() {
+            $("#dialog").hide();
+            $("#errorLabel").hide();
 
+            // Fix input element click problem
             $('.dropdown input, .dropdown label').click(function(e) {
                 e.stopPropagation();
             });

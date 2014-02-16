@@ -14,13 +14,14 @@
     <script src="../assets/js/lib.js"></script>
     <script src="../assets/js/calculate.js"></script>
     <script type="text/javascript">
-        $(function(){
+        $(function() {
+            $("#dialog").hide();
+            $("#errorLabel").hide();
 
             // Fix input element click problem
             $('.dropdown input, .dropdown label').click(function(e) {
                 e.stopPropagation();
             });
-
 
             $("#loggedIn").hide();
             $("#loginLink").hide();
@@ -42,6 +43,7 @@
             <li><a href="../CheckStats/">Check Stats</a></li>
             <li class="active"><a href="../about">About</a></li>
             <li ><a href="../register">Register</a></li>
+
 
             <li id="loginLink" class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<span class="caret"></span></a>
