@@ -202,15 +202,14 @@ function resetPassword(code, password) {
             response = data;
         }
     });
-    if(response.toString() === "success"){
+    if(response.message.indexOf('password changed') != -1) {
         window.location.replace("../register");
     }
-    else{
-        $("#alertText").text(response + " ,please try again");
+    else {
+        $("#alertText").text("Please try again");
         $(".alert").show();
     }
     console.log(response);
-    return response;
 }
 
 /** user operations */

@@ -86,9 +86,12 @@ public class UserService {
      */
     public User login (User user) throws LoginException {
         user.setUserId(hashService.md5(user.getUsername()));
-        user.setPassword(hashService.md5(read(user.getUserId()).getSecret()+user.getPassword()));
+        if (!exists(user.getUserId())) {
+            throw new LoginException("login failed - no such username");
+        }
+        user.setPassword(hashService.md5(read(user.getUserId()).getSecret() + user.getPassword()));
         if(!exists(user.getUserId(), user.getPassword())) {
-            throw new LoginException("login failed");
+            throw new LoginException("login failed - check password");
         }
         return read(user.getUserId(), user.getPassword());
     }
